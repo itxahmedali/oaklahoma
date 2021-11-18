@@ -1,0 +1,119 @@
+<div class="main-bg d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Find Your <span> Dream House </span> By Us</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="search">
+  <div class="search-box">
+    <div class="search-tabs">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy"
+            type="button" role="tab" aria-controls="pills-buy" aria-selected="true" target="_self">For Buy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button"
+            role="tab" aria-controls="pills-rent" aria-selected="false" target="_self">For Rent</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
+          <div class="d-flex justify-content-between">
+            <input type="text" placeholder="Enter Address State,City,Zip">
+            <div class="search-btn">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
+          <div class="d-flex justify-content-between">
+            <input type="text" placeholder="Enter Address State,City,Zip">
+            <div class="search-btn">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- slick slider -->
+<div class="container">
+<div class="latest-properties">
+  <h1 class="text-center">Latest Properties</h1>
+  <div class="properties-slider">
+
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div class="heart-icon">
+          <i class="fa fa-heart fa-lg"></i>
+        </div>
+        <img src="{{ slide.img }}" alt="" width="100%">
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="">{{slide.address}}</label>
+            </div>
+            <div class="col-sm-12 ">
+              <div class="upper-cols d-flex">
+                <label for="">{{slide.bedroom}}</label>
+                <label for="">{{slide.bathroom}}</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="lower-cols">
+                <label for="">{{slide.sqft}}</label>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right">
+              <label for="" class="text-right">{{slide.price | currency:"USD"}}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+<!-- want to section -->
+
+  <div class="want-to-sec">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="img-box">
+              <img src="../../../../assets/1x/want-img1.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3>Want To But Your</h3>
+            <h1>Dream House?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+            <button class="view-btn">View More</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 second-col">
+        <div class="row flex-row-reverse">
+          <div class="col-lg-6">
+            <div class="img-box">
+              <img src="../../../../assets/1x/want-img2.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3>Want To But Your</h3>
+            <h1>Dream House?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+            <button class="view-btn">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
