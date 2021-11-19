@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import "~@ng-select/ng-select/themes/default.theme.css";
 @font-face {
     font-family: rubikbold;
     src: url(./assets/fonts/Rubik/Rubik-Bold.ttf);
@@ -30,6 +31,7 @@
     background: #000;
     border: none;
     border-radius: 50px;
+    width: fit-content;
 }
 
 /* commons */
@@ -119,3 +121,4 @@
 .mb10 {
   margin-bottom: 10rem !important
 }
+

@@ -28,6 +28,7 @@
     "strictTemplates": true
   },
   "compilerOptions":{
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false
   }
 }

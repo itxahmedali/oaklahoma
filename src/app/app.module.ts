@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +18,8 @@ import { LoginmodalsComponent } from './components/pages/loginmodals/loginmodals
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
 import { PropertiesComponent } from './components/pages/properties/properties.component';
+import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
+
 
 @NgModule({
   declarations: [
@@ -32,12 +36,15 @@ import { PropertiesComponent } from './components/pages/properties/properties.co
     SignupComponent,
     ForgotpasswordComponent,
     PropertiesComponent,
+    ArticleinnerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgSelectModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

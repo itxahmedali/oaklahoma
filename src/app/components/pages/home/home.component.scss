@@ -415,7 +415,7 @@
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
           align-items: center;
-
+          transition: 0.5s all ease-in-out;
           label {
             font-size: 20px;
             font-family: rubiklight;
@@ -554,7 +554,7 @@
   }
 
   input {
-    width: 68%;
+    width: 70%;
   }
 
   .search {
@@ -621,11 +621,11 @@
 
   ::ng-deep {
     .prev-arrow {
-      left: -15px;
+      display: none !important;
     }
 
     .next-arrow {
-      right: -15px;
+      display: none !important;
     }
   }
 
@@ -671,6 +671,12 @@
       }
     }
   }
+
+  .want-to-sec {
+    .second-col {
+      text-align: left;
+    }
+  }
 }
 
 @media only screen and (max-width:414px) {
@@ -688,7 +694,7 @@
   .search {
 
     .search-box {
-
+      margin-bottom: 2rem;
       width: 90%;
       min-height: 150px;
 
@@ -702,12 +708,17 @@
         }
 
         input {
-          width: 60%;
+          width: 100%;
         }
 
         .search-btn {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
           button {
-            min-width: 110px;
+            margin: 20px auto 0 auto;
+            min-width: 160px;
           }
         }
       }
@@ -760,16 +771,4 @@
   }
 }
 
-@media only screen and (max-width:375px) {
-  .search {
-    .search-box {
-      .search-tabs {
-        .search-btn {
-          button {
-            min-width: 100px;
-          }
-        }
-      }
-    }
-  }
-}
+@media only screen and (max-width:375px) {}
