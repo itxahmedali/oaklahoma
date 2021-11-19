@@ -42,12 +42,6 @@ footer {
 
       button {
         margin-top: 1rem;
-        width: fit-content;
-        padding: 8px 2.3rem;
-        color: #fff;
-        background: #000;
-        border: none;
-        border-radius: 50px;
       }
     }
 
@@ -88,8 +82,11 @@ footer {
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
         a{
           color: #4D4D4D;
+          text-decoration: none;
         }
     }
   }
