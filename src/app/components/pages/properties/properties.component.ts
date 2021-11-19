@@ -21,6 +21,10 @@ export class PropertiesComponent implements OnInit {
       { id: 3, value: 70 },
       { id: 4, value: 80 },
   ];
+  // sorting:any;
+  // sort=[
+
+  // ]
   constructor() { }
 
   ngOnInit(): void {
