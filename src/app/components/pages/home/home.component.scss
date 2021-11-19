@@ -140,6 +140,7 @@
     transform: translateY(-50%);
     border: none;
     background: none;
+    z-index: 10;
   }
 
   .next-arrow {
@@ -149,6 +150,7 @@
     transform: translateY(-50%);
     border: none;
     background: none;
+    z-index: 10;
   }
 }
 
@@ -364,6 +366,7 @@
     }
   }
 }
+
 // articles section
 .cstm-container {
   .articles-section {
@@ -659,6 +662,7 @@
         .article {
           width: 90%;
           margin: 2% auto;
+
           button {
             width: 50px;
             height: 50px;
@@ -668,6 +672,7 @@
         .article2 {
           width: 90%;
           margin: 2% auto;
+
           button {
             width: 50px;
             height: 50px;
@@ -728,6 +733,7 @@
   .review-banner {
     flex-direction: column;
   }
+
   .cstm-container {
     .articles-section {
       .articles {
@@ -739,6 +745,7 @@
       }
     }
   }
+
   .download-section {
     text-align: center;
 
@@ -763,6 +770,20 @@
 
         img {
           width: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .search {
+    .search-box {
+      .search-tabs {
+        .search-btn {
+          button {
+            min-width: 100px;
+          }
         }
       }
     }

@@ -65,14 +65,20 @@ export class HomeComponent implements OnInit {
   slideConfig = {
     "slidesToShow": 3, "slidesToScroll": 1, prevArrow: '<button class="slide-arrow prev-arrow" > <i class="fa fa-chevron-left fa-lg"></i></button>',
     nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right fa-lg"></i></button>',
-    responsive: [
+    'responsive': [
       {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+        'breakpoint': 769,
+        'settings': {
+          'slidesToShow': 2
         }
       },
+      {
+        'breakpoint': 415,
+        'settings': {
+          'slidesToShow': 1
+        }
+
+      }
     ]
   };
 
