@@ -1,0 +1,146 @@
+footer {
+  .footer-row {
+    position: relative;
+    width: 100%;
+    background-color: #F4F4F4;
+    padding: 50px 0 100px 0;
+
+    h4 {
+      font-family: rubiksemibold;
+      color: #000;
+    }
+
+    .logo-sec,
+    .newsletter-sec {
+      width: 30%;
+    }
+
+    .links-sec {
+      width: 20%;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        color: #4D4D4D;
+        text-decoration: none;
+        font-family: rubikregular;
+        margin: 2px 0;
+        font-size: 15px;
+      }
+    }
+
+    .newsletter-sec {
+      input {
+        border: 1px solid #4D4D4D;
+        border-radius: 50px;
+        padding: 5px 10px;
+        background: none;
+        outline: none;
+      }
+
+      button {
+        margin-top: 1rem;
+        width: fit-content;
+        padding: 8px 2.3rem;
+        color: #fff;
+        background: #000;
+        border: none;
+        border-radius: 50px;
+      }
+    }
+
+    .logo-sec {
+      .img-box {
+        width: 250px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #4D4D4D;
+        font-family: rubikregular;
+      }
+
+      .icons {
+        margin-top: 1rem;
+
+        img {
+          width: 100px;
+          height: 35px;
+          object-fit: contain;
+
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .copyright{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+        a{
+          color: #4D4D4D;
+        }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  footer {
+    .footer-row {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h4 {
+          margin: 1rem;
+        }
+
+        .logo-sec,
+        .newsletter-sec {
+          width: 100%;
+        }
+
+        .links-sec {
+          width: 100%;
+
+        }
+
+        .newsletter-sec {
+          justify-content: center;
+          align-items: center;
+          input{
+            width: 50%;
+          }
+        }
+
+        .logo-sec {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+
+
+          .icons {
+            align-items: center;
+            justify-content: center;
+
+          }
+        }
+      }
+    }
+  }
+}

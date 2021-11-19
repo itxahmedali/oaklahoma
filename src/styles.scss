@@ -1,5 +1,22 @@
 @import '~bootstrap/scss/bootstrap';
 @font-face {
+  font-family: rubikbold;
+  src: url(./assets/fonts/Rubik/Rubik-Bold.ttf);
+}
+@font-face {
+  font-family: rubiksemibold;
+  src: url(./assets/fonts/Rubik/Rubik-SemiBold.ttf);
+}
+@font-face {
   font-family: rubiklight;
   src: url(./assets/fonts/Rubik/Rubik-Light.ttf);
 }
+@font-face {
+  font-family: rubikregular;
+  src: url(./assets/fonts/Rubik/Rubik-Regular.ttf);
+}
+.cstm-container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+

@@ -1,3 +1,4 @@
+<!-- home banner -->
 <div class="main-bg d-flex align-items-center">
   <div class="container">
     <div class="row">
@@ -7,6 +8,7 @@
     </div>
   </div>
 </div>
+<!-- home search box -->
 <div class="search">
   <div class="search-box">
     <div class="search-tabs">
@@ -41,52 +43,52 @@
     </div>
   </div>
 </div>
-
 <!-- slick slider -->
 <div class="container">
-<div class="latest-properties">
-  <h1 class="text-center">Latest Properties</h1>
-  <div class="properties-slider">
+  <div class="latest-properties">
+    <h1 class="text-center">Latest Properties</h1>
+    <div class="properties-slider">
 
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
-      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-        <div class="heart-icon">
-          <i class="fa fa-heart fa-lg"></i>
-        </div>
-        <img src="{{ slide.img }}" alt="" width="100%">
-        <div class="content">
-          <div class="row">
-            <div class="col-sm-12">
-              <label for="">{{slide.address}}</label>
-            </div>
-            <div class="col-sm-12 ">
-              <div class="upper-cols d-flex">
-                <label for="">{{slide.bedroom}}</label>
-                <label for="">{{slide.bathroom}}</label>
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <div class="heart-icon">
+            <i class="fa fa-heart fa-lg"></i>
+          </div>
+          <img src="{{ slide.img }}" alt="" width="100%">
+          <div class="content">
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="">{{slide.address}}</label>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="lower-cols">
-                <label for="">{{slide.sqft}}</label>
+              <div class="col-sm-12 ">
+                <div class="upper-cols d-flex">
+                  <label for="">{{slide.bedroom}}</label>
+                  <label for="">{{slide.bathroom}}</label>
+                </div>
               </div>
-            </div>
-            <div class="col-sm-6 text-right">
-              <label for="" class="text-right">{{slide.price | currency:"USD"}}</label>
+              <div class="col-sm-6">
+                <div class="lower-cols">
+                  <label for="">{{slide.sqft}}</label>
+                </div>
+              </div>
+              <div class="col-sm-6 text-right">
+                <label for="" class="text-right">{{slide.price | currency:"USD"}}</label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </ngx-slick-carousel>
+      </ngx-slick-carousel>
+    </div>
   </div>
-</div>
-<!-- want to section -->
+  <!-- want to section -->
 
   <div class="want-to-sec">
     <div class="row">
       <div class="col-lg-12">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex justify-content-end">
             <div class="img-box">
               <img src="../../../../assets/1x/want-img1.png" alt="">
             </div>
@@ -94,7 +96,10 @@
           <div class="col-lg-6">
             <h3>Want To But Your</h3>
             <h1>Dream House?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio
+              eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
             <button class="view-btn">View More</button>
           </div>
         </div>
@@ -107,9 +112,12 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <h3>Want To But Your</h3>
-            <h1>Dream House?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+            <h3>Need a Luxury Home</h3>
+            <h1>For Rent?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio
+              eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
             <button class="view-btn">View More</button>
           </div>
         </div>
@@ -117,3 +125,132 @@
     </div>
   </div>
 </div>
+<!-- reviews-counter -->
+<div class="review-banner d-flex justify-content-around">
+  <div class="columns text-center">
+    <h1>588</h1>
+    <h5>Property for sell</h5>
+  </div>
+  <div class="columns text-center">
+    <h1>412</h1>
+    <h5>Property for rent</h5>
+  </div>
+  <div class="columns text-center">
+    <h1>112</h1>
+    <h5>Recently sold</h5>
+  </div>
+  <div class="columns text-center">
+    <h1>4.5</h1>
+    <h5>Reviews</h5>
+  </div>
+</div>
+<!-- download section -->
+<div class="download-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="head d-flex align-items-center">
+          <h1>Download</h1>
+          <img src="../../../../assets/1x/logo-2.png" alt="">
+        </div>
+        <h4>Use Our App For Buy And Rent <br> Property Faster</h4>
+
+        <div class="download-icons">
+          <label for="">Available on</label>
+          <div class="icons d-flex">
+            <img src="../../../../assets/1x/play-store.png" alt="">
+            <img src="../../../../assets/1x/app-store.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="img-box">
+          <img src="../../../../assets/1x/download-prop.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cstm-container">
+  <div class="articles-section">
+    <h1 class="text-center">
+      News & Articles
+    </h1>
+    <div class="articles">
+      <div class="article">
+        <div class="img-box">
+          <img src="../../../../assets/1x/article1.png" alt="">
+          <div class="content d-flex justify-content-between">
+            <label for="">
+              Ten Benefits Of Rentals That May Change
+              Your Perspective
+            </label>
+            <button>
+              <i class="fa fa-arrow-right fa-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="img-box">
+          <img src="../../../../assets/1x/article2.png" alt="">
+          <div class="content d-flex justify-content-between">
+            <label for="">
+              Ten Benefits Of Rentals That May Change
+              Your Perspective
+            </label>
+            <button>
+              <i class="fa fa-arrow-right fa-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="article2">
+        <div class="img-box">
+          <img src="../../../../assets/1x/article3.png" alt="">
+          <div class="content d-flex justify-content-between">
+            <label for="">
+              Ten Benefits Of Rentals That May Change
+              Your Perspective
+            </label>
+            <button>
+              <i class="fa fa-arrow-right fa-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="article2">
+        <div class="img-box">
+          <img src="../../../../assets/1x/article4.png" alt="">
+          <div class="content d-flex justify-content-between">
+            <label for="">
+              Ten Benefits Of Rentals That May Change
+              Your Perspective
+            </label>
+            <button>
+              <i class="fa fa-arrow-right fa-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="article2">
+        <div class="img-box">
+          <img src="../../../../assets/1x/article5.png" alt="">
+          <div class="content d-flex justify-content-between">
+            <label for="">
+              Ten Benefits Of Rentals That May Change
+              Your Perspective
+            </label>
+            <button>
+              <i class="fa fa-arrow-right fa-lg"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="load-more-btn">
+    <button>Load More</button>
+  </div>
+</div>
+<app-footer></app-footer>
