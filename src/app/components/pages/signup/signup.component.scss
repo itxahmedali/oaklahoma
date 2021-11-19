@@ -52,12 +52,43 @@
 
 .signup-form {
     text-align: center;
+    margin-top: 5rem;
     input {
         width: 50%;
         margin-top: 1.5rem;
         padding: 16px;
         border-radius: 50px;
         border: none;
+        font-family: rubiklight;
+        color: #808080;
+        outline: none;
+        background: #E6E6E6;
+    }
+    input::placeholder {
+        font-family: rubiklight;
+        color: #808080;
+    }
+}
+
+.signup-line {
+    font-family: rubiklight;
+    color: #808080;
+    margin-top: 2rem;
+    span {
+        color: #F9BE3D;
+    }
+}
+
+.sign-up-btn {
+    margin-top: 2rem;
+    p {
+        margin-top: 10px;
+        color: #808080;
+        font-family: rubiklight;
+    }
+    a {
+        color: #F9BE3D;
+        font-family: rubiklight;
     }
 }
 
@@ -99,7 +130,14 @@
     }
 }
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+    .signup-form {
+        margin-top: 2rem;
+        input {
+            width: 100%;
+        }
+    }
+}
 
 @media only screen and (max-width:414px) {
     .main-bg {
