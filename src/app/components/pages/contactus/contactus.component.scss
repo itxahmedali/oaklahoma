@@ -42,6 +42,53 @@
     }
 }
 
+.signup-heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: rubiklight;
+}
+
+.signup-form {
+    text-align: center;
+    margin-top: 5rem;
+    input {
+        width: 50%;
+        margin-top: 1.5rem;
+        padding: 16px;
+        border-radius: 50px;
+        border: none;
+        font-family: rubiklight;
+        color: #808080;
+        outline: none;
+        background: #E6E6E6;
+    }
+    .input-message {
+        height: 200px;
+        width: 50%;
+        border-radius: 10px;
+        border: none;
+        margin-top: 1.5rem;
+        padding: 16px;
+        font-family: rubiklight;
+        color: #808080;
+        outline: none;
+        background: #E6E6E6;
+    }
+    .input-message::placeholder {
+        font-family: rubiklight;
+        color: #808080;
+    }
+    input::placeholder {
+        font-family: rubiklight;
+        color: #808080;
+    }
+}
+
+.sign-up-btn {
+    margin-top: 2rem;
+}
+
 @media only screen and (min-width:2560px) {
     .main-bg {
         height: 800px !important;
@@ -84,6 +131,9 @@
     .signup-form {
         margin-top: 2rem;
         input {
+            width: 100%;
+        }
+        .input-message {
             width: 100%;
         }
     }
