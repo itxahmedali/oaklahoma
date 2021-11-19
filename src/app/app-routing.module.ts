@@ -8,6 +8,7 @@ import { LoginmodalsComponent } from './components/pages/loginmodals/loginmodals
 
 import { HomeComponent } from './components/pages/home/home.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
+import { ContactusComponent } from './components/pages/contactus/contactus.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'articles', component:ArticlesComponent},
   {path:'login', component:LoginmodalsComponent},
   {path:'signup', component:SignupComponent},
+  {path:'contactus', component:ContactusComponent},
 ];
 
 @NgModule({
