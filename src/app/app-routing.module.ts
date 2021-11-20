@@ -10,6 +10,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { ContactusComponent } from './components/pages/contactus/contactus.component';
 import { PropertiesComponent } from './components/pages/properties/properties.component';
+import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component'; 
 
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'signup', component:SignupComponent},
   {path:'contactus', component:ContactusComponent},
   {path:'properties', component:PropertiesComponent},
+  {path:'articles-inner', component:ArticleinnerComponent},
 ];
 
 @NgModule({
