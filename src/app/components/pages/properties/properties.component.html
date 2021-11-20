@@ -2,7 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 left-side">
-
+        <!-- <ngx-google-map [mapType]="'ROADMAP'" [multiplePlaces]="false"></ngx-google-map> -->
+        <!-- <ngx-google-map></ngx-google-map> -->
+        <!-- <google-map></google-map> -->
+        <!-- <agm-map [latitude]='lat' [longitude]='long' [mapTypeId]='googleMapType'>
+        </agm-map> -->
+        <!-- <agm-map>
+      </agm-map> -->
+      <!-- <div #mapContainer id="map"></div> -->
       </div>
       <div class="col-lg-6 right-side">
         <h2>Oklahoma Homes For Sale</h2>
@@ -21,10 +28,46 @@
         </div>
         <div class="filters-label">
           <label for="">12 of 2000 Homes</label>
-          <ng-select placeholder="Sort">
-
+          <ng-select placeholder="Sort" class="sort">
+            <ng-option>
+              Sort: Recomended
+            </ng-option>
+            <ng-option>
+              Sort: Name
+            </ng-option>
           </ng-select>
         </div>
+          <div class="properties-slider">
+             <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide">
+                <div class="heart-icon">
+                  <i class="fa fa-heart"></i>
+                </div>
+                <img src="{{ property.img }}" alt="" width="100%">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <label for="">{{property.address}}</label>
+                    </div>
+                    <div class="col-sm-12 ">
+                      <div class="upper-cols d-flex">
+                        <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
+                        <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="lower-cols">
+                        <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                      <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <pagination-controls (pageChange)="p = $event" previousLabel=""
+          nextLabel="" ></pagination-controls>
       </div>
     </div>
   </div>

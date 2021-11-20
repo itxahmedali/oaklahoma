@@ -1,5 +1,14 @@
 import { NgModule } from '@angular/core';
+// ng select
 import { NgSelectModule } from '@ng-select/ng-select';
+// ng pagination
+import {NgxPaginationModule} from 'ngx-pagination';
+// ng google map
+// import {} from 'googlemaps';
+// import { NgxGoogleMapModule } from 'ngx-google-map'
+// import { GoogleMapsModule } from '@angular/google-maps'
+// import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -37,6 +46,7 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
     ForgotpasswordComponent,
     PropertiesComponent,
     ArticleinnerComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -45,8 +55,21 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
     SlickCarouselModule,
     NgSelectModule,
     FormsModule,
+    NgxPaginationModule,
+    // NgxGoogleMapModule,
+    // GoogleMapsModule,
+    // AgmCoreModule
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
+    // })
+    // AgmCoreModule
   ],
-  providers: [],
+  providers: [
+    // GoogleMapsModule,
+    // AgmCoreModule
+    // AgmCoreModule
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
