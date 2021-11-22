@@ -98,6 +98,104 @@ a:not([href]):not([class]) {
 .agm-map-container-inner{
   border-radius: 25px;
 }
+
+// toggle btn
+.toggle-btn{
+  input[type="checkbox"] {
+    visibility: hidden;
+    &:checked + label {
+      transform: rotate(360deg);
+      background-color: #4D4D4D;
+      &:before {
+        transform: translateX(23px);
+        background-color: #FFF;
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    width: 45px;
+    height: 20px;
+    border: 1px solid #4D4D4D;
+    border-radius: 99em;
+    position: relative;
+    transition: transform .75s ease-in-out;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+    margin: 0;
+
+    &:before {
+      transition: transform .75s ease;
+      transition-delay: .5s;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 14px;
+    height: 14px;
+      background-color: #4D4D4D;
+      border-radius: 50%;
+      top: 2px;
+    left: 3px;
+    }
+  }
+}
+.status-timeon .ng-select.ng-select-single .ng-select-container{
+  border: 1px solid #4D4D4D ;
+  background: none;
+  height: 40px;
+}
+// checkbox cstm
+.box {
+	margin: 25px 0;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	label {
+		font-size: 16px;
+		color: #666666;
+		position: absolute;
+		z-index: 10;
+		padding-left: 30px;
+		cursor: pointer;
+    font-family: rubikregular;
+    margin: 0;
+
+	}
+	input {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		&:checked~.check {
+			border-color: #fff;
+			box-shadow: 0px 0px 0px 15px #666666 inset;
+			&::after {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+	.check {
+		width: 15px;
+		height: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		border-radius: 100px;
+		background-color: #fff;
+		border: 2px solid #666666;
+		box-shadow: 0px 0px 0px 0px #666666 inset;
+		transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+	}
+}
+// more less button
+.more{
+  background: none;
+    border: none;
+    color: #B48618;
+    font-size: 17px;
+}
 // commons
 .hide{
   display: none;
@@ -222,4 +320,7 @@ a:not([href]):not([class]) {
   outline: none;
   min-width: 200px;
   font-family: 'rubikregular';
+}
+.ng-dropdown-panel.ng-select-bottom{
+  top:110%;
 }

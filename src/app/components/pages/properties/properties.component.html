@@ -17,7 +17,7 @@
             <ng-select [items]="max_value" bindLabel="value" bindValue="id" [(ngModel)]="maxValue" placeholder="No Max">
             </ng-select>
           </div>
-          <button class="my_class" (click)="clickEvent($event)" [ngClass]="status ? 'text-before' : 'text-after'">
+          <button class="more" (click)="clickEvent($event)" [ngClass]="status ? 'text-before' : 'text-after'">
             {{btnVal}} <i class="fa fa-chevron-down"></i>
           </button>
         </div>
@@ -192,7 +192,159 @@
           </div>
           <div class="listing-status mt2">
             <h6 class="mb1">Listing Status</h6>
+            <div class="toggle-btn d-flex align-items-center">
+              <p for="">For Sale</p>
+              <input type="checkbox" id="toggle1" />
+              <label for="toggle1"></label>
+            </div>
+          </div>
+          <div class="status-timeon mt2">
+            <div class="row">
+              <div class="col-lg-6 mb1">
+                <div class="status">
+                  <h6>Status</h6>
+                  <ng-select placeholder="Active + Coming Soon Listings">
+                    <ng-option>
+                      Active + Coming Soon Listings
+                    </ng-option>
+                  </ng-select>
 
+                </div>
+
+                <div class="status-check">
+                  <div class="box">
+                    <input id="one" type="checkbox">
+                    <span class="check"></span>
+                    <label for="one">Open Houses</label>
+                  </div>
+                  <div class="box">
+                    <input id="two" type="checkbox">
+                    <span class="check"></span>
+                    <label for="two">Self Tour Only</label>
+                  </div>
+                  <div class="box">
+                    <input id="three" type="checkbox">
+                    <span class="check"></span>
+                    <label for="three">3D Walkthrough & Video Tour</label>
+                  </div>
+                  <div class="box">
+                    <input id="four" type="checkbox">
+                    <span class="check"></span>
+                    <label for="four">Exclude 55+ Communities</label>
+                  </div>
+                  <div class="box">
+                    <input id="five" type="checkbox">
+                    <span class="check"></span>
+                    <label for="five">Price Reduced</label>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-lg-6 mb1">
+                <div class="timeon">
+                  <h6>Time on Oklahoma</h6>
+                  <ng-select placeholder="No Min">
+                    <ng-option>
+                      1
+                    </ng-option>
+                    <ng-option>
+                      2
+                    </ng-option>
+                    <ng-option>
+                      3
+                    </ng-option>
+                    <ng-option>
+                      4
+                    </ng-option>
+                    <ng-option>
+                      5
+                    </ng-option>
+                  </ng-select>
+
+                </div>
+
+                <div class="timeon-check">
+                  <div class="box">
+                    <input id="six" type="checkbox">
+                    <span class="check"></span>
+                    <label for="six">Fixer-Uppers Only</label>
+                  </div>
+                  <div class="box">
+                    <input id="seven" type="checkbox">
+                    <span class="check"></span>
+                    <label for="seven">Exclude Short Sales</label>
+                  </div>
+                  <div class="box">
+                    <input id="eight" type="checkbox">
+                    <span class="check"></span>
+                    <label for="eight">Exclude Land Leases</label>
+                  </div>
+                  <div class="box">
+                    <input id="nine" type="checkbox">
+                    <span class="check"></span>
+                    <label for="nine">Redfin Listings Only</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb1">
+                <div class="timeon">
+                  <h6>Listing Type</h6>
+                </div>
+
+                <div class="timeon-check">
+                  <div class="box">
+                    <input id="ten" type="checkbox">
+                    <span class="check"></span>
+                    <label for="ten">MLS Lisitngs</label>
+                  </div>
+                  <div class="box">
+                    <input id="eleven" type="checkbox">
+                    <span class="check"></span>
+                    <label for="eleven">New Construction</label>
+                  </div>
+                  <div class="box">
+                    <input id="twelve" type="checkbox">
+                    <span class="check"></span>
+                    <label for="twelve">Agent-listed</label>
+                  </div>
+                  <div class="box">
+                    <input id="thirteen" type="checkbox">
+                    <span class="check"></span>
+                    <label for="thirteen">MLS-Listed Foreclosures</label>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-lg-6 mb1">
+                <div class="box">
+                  <input id="thirteen" type="checkbox">
+                  <span class="check"></span>
+                  <label for="thirteen">For Sale by Owner</label>
+                </div>
+                <div class="box">
+                  <input id="fifteen" type="checkbox">
+                  <span class="check"></span>
+                  <label for="fifteen">Foreclosures</label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button class="more" (click)="seelessclickEvent($event)" [ngClass]="status2 ? 'text-before' : 'text-after'">
+            {{btnVal1}} <i class="fa fa-chevron-down"></i>
+          </button>
+          <div class="row mt2" [ngClass]="status2 ? 'show' : 'hide'">
+            <div class="col-lg-6 mb1">
+              <div class="sold">
+                <div class="toggle-btn d-flex align-items-center">
+                  <p for="">For Sale</p>
+                  <input type="checkbox" id="toggle2" />
+                  <label for="toggle2"></label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

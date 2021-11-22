@@ -20,6 +20,17 @@ export class PropertiesComponent implements OnInit {
       this.btnVal = "More Filters"
     }
   }
+  btnVal1 = "See Less";
+  status2: boolean = false;
+  seelessclickEvent(event:any) {
+    this.status2 = !this.status2;
+    if(this.status2 == false){
+      this.btnVal1 = "See More"
+    }
+    else{
+      this.btnVal1 = "See Less"
+    }
+  }
   minValue: any;
 
   min_value = [

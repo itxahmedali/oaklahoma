@@ -217,7 +217,19 @@
             }
           }
         }
-      }
+        .listing-status,
+        .sold{
+          .toggle-btn{
+            p{
+              margin: 0;
+              color:#4D4D4D;
+              font-family: rubikregular;
+            }
+          }
+        }
+
+        }
+
 
       agm-map {
         height: 60%;
