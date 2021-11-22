@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-properties',
@@ -6,6 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./properties.component.scss']
 })
 export class PropertiesComponent implements OnInit {
+  // more filters
+  btnVal = "More Filters";
+  status: boolean = false;
+  clickEvent(event:any) {
+    this.status = !this.status;
+    if(this.status == false){
+      this.btnVal = "Fewer Filters"
+    }
+    else{
+      this.btnVal = "More Filters"
+    }
+  }
   minValue: any;
 
   min_value = [
@@ -219,8 +233,29 @@ export class PropertiesComponent implements OnInit {
   p: number = 1;
   totalRecords: any = 10;
   collection: any[];
-  // google map
-  locations: []
+  // // google map
+  lat: number = 36.084621;
+  lng: number = -96.921387;
+
+  // cities
+  cities = [
+    {
+      name: "Oklahoma",
+      price: 5000
+    },
+    {
+      name: "Edmond",
+      price: 5000
+    },
+    {
+      name: "Tulsa",
+      price: 5000
+    },
+    {
+      name: "Norman",
+      price: 5000
+    },
+  ]
   constructor() { }
 
   ngOnInit(): void {

@@ -68,23 +68,7 @@
 
     .search-tabs {
 
-      .nav-pills .nav-link.active,
-      .nav-pills .show>.nav-link {
-        color: #fff;
-        background-color: #b48618;
-        font-weight: 400;
 
-      }
-
-      .nav-pills .nav-link {
-        min-width: 130px;
-        border-radius: 50px !important;
-        background-color: #F2F2F2;
-        margin-right: 10px;
-        color: #000;
-        font-weight: 500;
-        margin-bottom: 0.5rem;
-      }
 
       input {
         border-radius: 50px;
@@ -416,6 +400,7 @@
           border-bottom-right-radius: 10px;
           align-items: center;
           transition: 0.5s all ease-in-out;
+
           label {
             font-size: 20px;
             font-family: rubiklight;

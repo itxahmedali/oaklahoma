@@ -4,6 +4,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
 // ng pagination
 import {NgxPaginationModule} from 'ngx-pagination';
 // ng google map
+import { AgmCoreModule } from '@agm/core';
+// import {} from 'googlemaps';
 // import {} from 'googlemaps';
 // import { NgxGoogleMapModule } from 'ngx-google-map'
 // import { GoogleMapsModule } from '@angular/google-maps'
@@ -56,13 +58,9 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
     NgSelectModule,
     FormsModule,
     NgxPaginationModule,
-    // NgxGoogleMapModule,
-    // GoogleMapsModule,
-    // AgmCoreModule
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
-    // })
-    // AgmCoreModule
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
+    })
   ],
   providers: [
     // GoogleMapsModule,

@@ -71,17 +71,37 @@ a:not([href]):not([class]) {
   padding-left: 0;
   margin: 20px 0 40px 0;
 }
+
 .ngx-pagination .pagination-next,
-.ngx-pagination .pagination-previous{
+.ngx-pagination .pagination-previous {
   display: none;
 }
-// map
-#map {
-  height: 500px;
-  width: 100%;
- }
-/* commons */
 
+// tabs
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #b48618;
+  font-weight: 400;
+
+}
+
+.nav-pills .nav-link {
+  min-width: 130px;
+  border-radius: 50px !important;
+  background-color: #F2F2F2;
+  margin-right: 10px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.agm-map-container-inner{
+  border-radius: 25px;
+}
+// commons
+.hide{
+  display: none;
+}
 .mt1 {
   margin-top: 1rem !important
 }

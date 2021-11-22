@@ -1,15 +1,10 @@
 <div class="properties-section">
   <div class="container">
-    <div class="row">
+    <div class="row mt2 mb4">
       <div class="col-lg-6 left-side">
-        <!-- <ngx-google-map [mapType]="'ROADMAP'" [multiplePlaces]="false"></ngx-google-map> -->
-        <!-- <ngx-google-map></ngx-google-map> -->
-        <!-- <google-map></google-map> -->
-        <!-- <agm-map [latitude]='lat' [longitude]='long' [mapTypeId]='googleMapType'>
-        </agm-map> -->
-        <!-- <agm-map>
-      </agm-map> -->
-      <!-- <div #mapContainer id="map"></div> -->
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
       </div>
       <div class="col-lg-6 right-side">
         <h2>Oklahoma Homes For Sale</h2>
@@ -22,52 +17,184 @@
             <ng-select [items]="max_value" bindLabel="value" bindValue="id" [(ngModel)]="maxValue" placeholder="No Max">
             </ng-select>
           </div>
-          <button>
-            More Filters <i class="fa fa-chevron-down"></i>
+          <button class="my_class" (click)="clickEvent($event)" [ngClass]="status ? 'text-before' : 'text-after'">
+            {{btnVal}} <i class="fa fa-chevron-down"></i>
           </button>
         </div>
-        <div class="filters-label">
-          <label for="">12 of 2000 Homes</label>
-          <ng-select placeholder="Sort" class="sort">
-            <ng-option>
-              Sort: Recomended
-            </ng-option>
-            <ng-option>
-              Sort: Name
-            </ng-option>
-          </ng-select>
-        </div>
+        <div class="more-filter" [ngClass]="status ? 'show' : 'hide'">
+          <div class="filters-label">
+            <label for="">12 of 2000 Homes</label>
+            <ng-select placeholder="Sort" class="sort">
+              <ng-option>
+                Sort: Recomended
+              </ng-option>
+              <ng-option>
+                Sort: Name
+              </ng-option>
+            </ng-select>
+          </div>
           <div class="properties-slider">
-             <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide">
-                <div class="heart-icon">
-                  <i class="fa fa-heart"></i>
-                </div>
-                <img src="{{ property.img }}" alt="" width="100%">
-                <div class="content">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <label for="">{{property.address}}</label>
+            <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide">
+              <div class="heart-icon">
+                <i class="fa fa-heart"></i>
+              </div>
+              <img src="{{ property.img }}" alt="" width="100%">
+              <div class="content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <label for="">{{property.address}}</label>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <div class="upper-cols d-flex">
+                      <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
+                      <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
                     </div>
-                    <div class="col-sm-12 ">
-                      <div class="upper-cols d-flex">
-                        <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
-                        <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
-                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lower-cols">
+                      <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="lower-cols">
-                        <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 text-right">
-                      <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
-                    </div>
+                  </div>
+                  <div class="col-sm-6 text-right">
+                    <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
-          <pagination-controls (pageChange)="p = $event" previousLabel=""
-          nextLabel="" ></pagination-controls>
+
+          <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+
+          <div class="prices-sec">
+            <h2>Average Prices in Oklahoma</h2>
+            <h5>Cities</h5>
+            <div class="cities d-flex flex-wrap">
+              <div class="city" *ngFor="let city of cities">
+                <h6>{{city.name + " City homes for sales"}}</h6>
+                <label for="">{{city.price | currency:"USD"}}</label>
+              </div>
+            </div>
+            <button class="see-more mb3"> See More <i class="fa fa-chevron-down"></i></button>
+          </div>
+          <div class="school-sec">
+            <h2>See Schools Nearby</h2>
+            <ul class="nav nav-pills mb-3 mt1" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-elementry-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-elementry" type="button" role="tab" aria-controls="pills-elementry"
+                  aria-selected="true" target="_self">Elementry</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-middle-tab" data-bs-toggle="pill" data-bs-target="#pills-middle"
+                  type="button" role="tab" aria-controls="pills-middle" aria-selected="false"
+                  target="_self">Middle</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-high-tab" data-bs-toggle="pill" data-bs-target="#pills-high"
+                  type="button" role="tab" aria-controls="pills-high" aria-selected="false" target="_self">High</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-elementry" role="tabpanel"
+                aria-labelledby="pills- schools-tabelementry-tab">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <p class="mb1">No elementry schools in this region</p>
+                  <p>School data provided by GreatSchools. School service boundaries are intended to be used as
+                    reference
+                    only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade schools-tab" id="pills-middle" role="tabpanel"
+                aria-labelledby="pills-middle-tab">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <p class="mb1">No Middle schools in this region</p>
+                  <p>School data provided by GreatSchools. School service boundaries are intended to be used as
+                    reference
+                    only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade schools-tab" id="pills-high" role="tabpanel" aria-labelledby="pills-high-tab">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <p class="mb1">No High schools in this region</p>
+                  <p>School data provided by GreatSchools. School service boundaries are intended to be used as
+                    reference
+                    only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fewer-filter mt2" [ngClass]="status ? 'hide' : 'show'">
+          <div class="bed-baths d-flex justify-content-between">
+            <div class="beds">
+              <h6>Beds</h6>
+              <input type="text" placeholder="No Min">
+              <label for="">to</label>
+              <input type="text" placeholder="No Min">
+            </div>
+            <div class="baths">
+              <h6>Baths</h6>
+              <input type="text" placeholder="No Min">
+            </div>
+          </div>
+          <div class="property-type mt2">
+            <h6>Property Type</h6>
+            <div class="property-btns d-flex flex-wrap">
+              <button>
+                <img src="../../../../assets/1x/btn1.png" alt="">
+                <label for="">
+                  Home
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn2.png" alt="">
+                <label for="">
+                  Townhouse
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn3.png" alt="">
+                <label for="">
+                  Condo
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn4.png" alt="">
+                <label for="">
+                  Land
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn5.png" alt="">
+                <label for="">
+                  Multi-Family
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn6.png" alt="">
+                <label for="">
+                  Manufactured
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn7.png" alt="">
+                <label for="">
+                  Co-op
+                </label>
+              </button>
+              <button>
+                <img src="../../../../assets/1x/btn8.png" alt="">
+                <label for="">
+                  Other
+                </label>
+              </button>
+            </div>
+          </div>
+          <div class="listing-status mt2">
+            <h6 class="mb1">Listing Status</h6>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
