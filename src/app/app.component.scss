@@ -1,0 +1,79 @@
+.modalMain {
+      border-radius: 20px;
+      .loginModal {
+        background-color: #1A1A1A;
+        color: #fff;
+        border-radius: 8px;
+      }
+      .emailInputI {
+          border: none;
+          outline: none;
+          padding: 10px 10px 10px 10px;
+          border-radius: 50px;
+          width: 100%;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          font-family: 'rubiklight';
+      }
+      .continueBtn {
+        background-color: #B48618;
+        padding: 10px 1.5rem;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-family: 'rubiklight';
+      }
+      .forgetPara {
+        font-size: 13px;
+        font-family: 'rubiklight';
+      }
+      .orPara {
+            position: relative;
+          text-align: center;
+      }
+      .orPara::before{
+        content: "";
+        width: 117px;
+        height: 1px;
+        background: #efefef;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+      .orPara::after{
+        content: "";
+        width: 117px;
+        height: 1px;
+        background: #efefef;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        // left: 0;
+        bottom: 0;
+      }
+
+      .IconsImage {
+        height: 30px;
+        width: 30px;
+            margin-right: 15px;
+      }
+      .containueWithBtns  {
+            background-color: #fff;
+            border-radius: 41px;
+            text-align: center;
+            padding: 10px 5px 10px 10px;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+      }
+      .iconsText {
+            border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 15px;
+    color: #4D4D4D;
+    font-family: 'rubiksemibold';
+      }
+}
