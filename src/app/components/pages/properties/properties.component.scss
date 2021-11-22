@@ -12,36 +12,272 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        .filter-dropdown{
+        margin-top: 2rem;
+        font-family: 'rubikregular';
+
+        .filter-dropdown {
           display: flex;
-        align-items: baseline;
-        ng-select{
-          margin-left: 10px;
-        }
+          align-items: baseline;
+
+          label {
+            font-family: 'rubikregular';
+            color: #4D4D4D;
+          }
+
+          ng-select {
+            margin-left: 10px;
+          }
 
         }
+
         button {
           background: none;
           border: none;
           color: #B48618;
+          font-size: 17px;
+        }
+      }
+
+      .filters-label {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        label {
+          color: #333333;
+          font-family: 'rubikregular';
+        }
+      }
+
+      // properties items
+      .properties-slider {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          background: #000000ad;
+          max-width: 385px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          padding: 10px;
+
+          label {
+            margin: 0;
+            color: #fff;
+            font-size: 13px;
+
+            strong {
+              font-family: rubikbold;
+            }
+          }
+        }
+
+        .slide {
+          position: relative;
+          width: 250px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right: auto;
+
+          img {
+            border-radius: 15px;
+          }
+
+          .heart-icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #000000b8;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .fa-heart:before {
+              content: "\F08A";
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .prices-sec {
+        h5 {
+          font-family: rubiksemibold;
+          color: #000;
+        }
+
+        .cities {
+          .city {
+            width: 250px;
+            margin: 5px auto 5px 0;
+            font-family: 'rubikregular';
+
+            h6 {
+              color: #B48618;
+            }
+
+            label {
+              color: #666666;
+            }
+          }
+        }
+
+        .see-more {
+          background: none;
+          border: none;
+          color: #B48618;
+          font-size: 17px;
+          padding: 0;
+        }
+      }
+
+      .school-sec {
+        .schools-tab {
+          p {
+            color: #666666;
+            font-family: rubikregular;
+          }
+        }
+      }
+
+      .fewer-filter {
+        h6 {
+          font-family: rubiksemibold;
+          color: #000;
+        }
+
+        .beds {
+          label {
+            margin: 0 10px;
+            font-size: 12px;
+          }
+
+          input {
+            max-width: 120px;
+            border: 1px solid #b48618;
+            border-radius: 50px;
+            padding: 8px 10px;
+            outline: none;
+            margin-top: 5px;
+
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .baths {
+          input {
+            max-width: 300px;
+            border: 1px solid #b48618;
+            border-radius: 50px;
+            padding: 8px 10px;
+            outline: none;
+            margin-top: 5px;
+
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .property-type {
+          .property-btns {
+            button {
+              display: flex;
+              flex-direction: column;
+              width: 150px;
+              height: 70px;
+              justify-content: center;
+              align-items: center;
+              margin: 5px 10px 5px 0;
+              background: none;
+              border: 1px solid #4d4d4d;
+              border-radius: 60px;
+
+              img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+
+              label {
+                margin: 0;
+                font-family: rubiklight;
+                color: #666666;
+              }
+            }
+          }
+        }
+      }
+
+      agm-map {
+        height: 60%;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+
+        // properties items
+        .properties-slider {
+          .slide {
+            width: 220px;
+          }
         }
       }
     }
   }
+}
 
-  ::ng-deep {
-    .ng-select .ng-clear-wrapper {
-      display: none;
+@media only screen and (max-width:768px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+
+        // properties items
+        .properties-slider {
+          .slide {
+            width: 210px;
+            margin: 10px;
+          }
+        }
+      }
     }
-    .ng-select .ng-select-container .ng-value-container .ng-placeholder{
-      color:#333333;
-    }
-    .ng-select.ng-select-single .ng-select-container {
-      border-radius: 50px;
-      background-color: #F2F2F2;
-      border:none;
-      color:#333333;
-      min-width: 100px;
+  }
+}
+
+@media only screen and (max-width:414px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+
+        // properties items
+        .properties-slider {
+          .content {
+            label {
+              font-size: 17px;
+            }
+          }
+
+          .slide {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
