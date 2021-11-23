@@ -5,15 +5,22 @@
         color: #fff;
         border-radius: 8px;
       }
+      .loginHeading {
+          font-family: poppinregular;
+          font-size: 13px;
+      }
       .emailInputI {
-          border: none;
-          outline: none;
-          padding: 10px 10px 10px 10px;
-          border-radius: 50px;
-          width: 100%;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          font-family: 'rubiklight';
+            border: none;
+            outline: none;
+            padding: 10px 10px 10px 15px;
+            border-radius: 50px;
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 13px;
+            font-family: "rubiklight";
+            margin-left: auto;
+            margin-right: auto;
       }
       .continueBtn {
         background-color: #B48618;
@@ -22,58 +29,148 @@
         border: none;
         outline: none;
         color: #fff;
-        font-family: 'rubiklight';
+        font-family: "rubiklight";
+        font-size: 14px;
+        margin-left: auto;
+        margin-bottom: 7px;
+        margin-right: auto;
       }
       .forgetPara {
-        font-size: 13px;
-        font-family: 'rubiklight';
+        font-size: 12px;
+        font-family: "rubiklight";
+        color: #fff;
+        border: none;
+        outline: none;
+        text-decoration: none;
       }
       .orPara {
             position: relative;
-          text-align: center;
+            text-align: center;
+            font-family: 'poppinregular';
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 30px;
       }
       .orPara::before{
-        content: "";
-        width: 117px;
-        height: 1px;
-        background: #efefef;
-        position: absolute;
-        top: 14px;
-        right: 0;
-        left: 0;
-        bottom: 0;
+          content: "";
+          width: 116px;
+          height: 1px;
+          background: #efefef;
+          position: absolute;
+          top: 18px;
+          right: 0;
+          left: 0;
+          bottom: 0;
       }
       .orPara::after{
-        content: "";
-        width: 117px;
-        height: 1px;
-        background: #efefef;
-        position: absolute;
-        top: 14px;
-        right: 0;
-        // left: 0;
-        bottom: 0;
+          content: "";
+          width: 118px;
+          height: 1px;
+          background: #efefef;
+          position: absolute;
+          top: 18px;
+          right: 0;
+          bottom: 0;
       }
 
       .IconsImage {
-        height: 30px;
-        width: 30px;
-            margin-right: 15px;
+          height: 20px;
+          width: 20px;
+          margin-right: 10px;
+          margin-top: -2px;
       }
       .containueWithBtns  {
             background-color: #fff;
             border-radius: 41px;
             text-align: center;
-            padding: 10px 5px 10px 10px;
+            padding: 7px 5px 10px 13px;
             margin-top: 0.5rem;
             margin-bottom: 1rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
       }
       .iconsText {
-            border: none;
-    background: transparent;
-    text-align: center;
-    font-size: 15px;
-    color: #4D4D4D;
-    font-family: 'rubiksemibold';
+          border: none;
+          background: transparent;
+          text-align: center;
+          font-size: 12px;
+          color: #4D4D4D;
+          font-family: 'rubiksemibold';
       }
+      .freesignIn {
+          font-family: poppinregular;
+          font-size: 15px;
+          text-align: center;
+          color: #b48618;
+          margin-top: 1.5rem;
+          margin-bottom: 0.4rem;
+      }
+      .emailInput2 {
+        margin-top: 0;
+        margin-bottom: .8rem;
+      }
+      .crossIcon {
+          position: absolute;
+          top: 9px;
+          right: 15px;
+          font-size: 20px;
+      }
+}
+
+@media only screen and (max-width: 540px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 42%;
+      }
+      .orPara::before {
+    width: 223px;
+}
+ .orPara::after {
+    width: 223px;
+}
+}
+}
+@media only screen and (max-width: 414px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 57%;
+      }
+      .orPara::before {
+    width: 162px;
+}
+ .orPara::after {
+    width: 162px;
+}
+}
+}
+@media only screen and (max-width: 375px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 65%;
+      }
+      .orPara::before {
+    width: 148px;
+}
+ .orPara::after {
+    width: 148px;
+}
+}
+}
+@media only screen and (max-width: 360px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 72%;
+      }
+      .orPara::before {
+    width: 135px;
+}
+ .orPara::after {
+    width: 135px;
+}
+}
 }
