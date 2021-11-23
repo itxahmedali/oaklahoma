@@ -31,6 +31,7 @@ import { SignupComponent } from './components/pages/signup/signup.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
 import { PropertiesComponent } from './components/pages/properties/properties.component';
 import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
+import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
     ForgotpasswordComponent,
     PropertiesComponent,
     ArticleinnerComponent,
+    PropertyinnerComponent,
 
   ],
   imports: [
@@ -64,10 +66,6 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
     })
   ],
   providers: [
-    // GoogleMapsModule,
-    // AgmCoreModule
-    // AgmCoreModule
-
   ],
   bootstrap: [AppComponent]
 })

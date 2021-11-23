@@ -38,6 +38,7 @@
   border: none;
   border-radius: 50px;
   width: fit-content;
+  cursor: pointer;
 }
 
 // pagination
@@ -208,6 +209,12 @@ a:not([href]):not([class]) {
       background: none !important;
       min-height: 40px;
     }
+    .ng-select .ng-arrow-wrapper .ng-arrow{
+      border-color: #b48618 transparent transparent;
+    }
+    .ng-select.ng-select-opened>.ng-select-container .ng-arrow{
+      border-color: transparent transparent #b48618 ;
+    }
   }
   .pool {
     .ng-select-container {
@@ -215,6 +222,12 @@ a:not([href]):not([class]) {
       background: none !important;
       height: 40px !important;
       min-height: 40px;
+    }
+    .ng-select .ng-arrow-wrapper .ng-arrow{
+      border-color: #4D4D4D transparent transparent;
+    }
+    .ng-select.ng-select-opened>.ng-select-container .ng-arrow{
+      border-color: transparent transparent #4D4D4D ;
     }
   }
 }
@@ -227,14 +240,22 @@ a:not([href]):not([class]) {
     background: none !important;
     min-height: 40px;
   }
+  .ng-select .ng-arrow-wrapper .ng-arrow{
+    border-color: #b48618 transparent transparent;
+  }
+  .ng-select.ng-select-opened>.ng-select-container .ng-arrow{
+    border-color: transparent transparent #b48618 ;
+  }
 }
 // ng map
 agm-map {
   height: 1100px;
 
 }
-// collapseable div
+img{
 
+}
+.cls-1{fill: green !important;}
 // commons
 .hide{
   display: none;

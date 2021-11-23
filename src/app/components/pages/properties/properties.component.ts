@@ -286,9 +286,15 @@ export class PropertiesComponent implements OnInit {
       price: 5000
     },
   ]
-  bathrommItem:any=[
-    {qty:0}
-  ]
+  filter(event){
+    var target = event.target
+    if($(target).hasClass('filter-btn')){
+      $(target).toggleClass("filter-bg")
+    }
+    else{
+      return
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
