@@ -31,7 +31,11 @@ import { SignupComponent } from './components/pages/signup/signup.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
 import { PropertiesComponent } from './components/pages/properties/properties.component';
 import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
+<<<<<<< HEAD
 import { TermsComponent } from './components/pages/terms/terms.component';
+=======
+import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
+>>>>>>> 965eaee83f672a496fa6184630b9aae4f20c53c9
 
 
 @NgModule({
@@ -50,7 +54,11 @@ import { TermsComponent } from './components/pages/terms/terms.component';
     ForgotpasswordComponent,
     PropertiesComponent,
     ArticleinnerComponent,
+<<<<<<< HEAD
     TermsComponent,
+=======
+    PropertyinnerComponent,
+>>>>>>> 965eaee83f672a496fa6184630b9aae4f20c53c9
 
   ],
   imports: [
@@ -66,10 +74,6 @@ import { TermsComponent } from './components/pages/terms/terms.component';
     })
   ],
   providers: [
-    // GoogleMapsModule,
-    // AgmCoreModule
-    // AgmCoreModule
-
   ],
   bootstrap: [AppComponent]
 })

@@ -198,6 +198,19 @@
 
         .property-type {
           .property-btns {
+            .filter-bg {
+              background: linear-gradient(0deg, #b48618 41%, #ffffff 0%);
+              transition:all 1s ease-in-out;
+              border: 1px solid #B48618;
+
+              label {
+                color: #fff;
+              }
+               .cls-1{
+                fill:#fff;
+              }
+            }
+
             button {
               display: flex;
               flex-direction: column;
@@ -209,6 +222,7 @@
               background: none;
               border: 1px solid #4d4d4d;
               border-radius: 60px;
+              transition:all 1s ease-in-out;
 
               img {
                 width: 30px;
@@ -224,6 +238,7 @@
               }
             }
           }
+
         }
 
         .listing-status,
@@ -248,27 +263,64 @@
             width: 50%;
           }
         }
-        .keywords{
-          input{
+
+        .keywords {
+          input {
             width: 100%;
             max-width: 100%;
           }
         }
-        .school{
-          p{
+
+        .school {
+          p {
             color: #666666;
             font-family: rubikregular;
             margin-left: 5px;
           }
         }
-        .reset-btn{
-          color:#B48618;
+
+        .reset-btn {
+          color: #B48618;
           font-size: 18px;
           font-family: rubiklight;
         }
       }
 
+      .bath-counter,
+      .garage-counter {
+        position: relative;
+        width: 100%;
 
+        input {
+          text-align: center;
+        }
+
+        .plus-btn {
+          position: absolute;
+          left: 15px;
+          border: none;
+          background: none;
+          top: 10px;
+          font-size: 20px;
+          font-family: 'rubikregular';
+        }
+
+        .min-btn {
+          position: absolute;
+          right: 10px;
+          border: none;
+          background: none;
+          top: 3px;
+          font-size: 30px;
+          font-family: 'rubikregular';
+        }
+      }
+
+      .garage-counter {
+        .min-btn {
+          right: 65%;
+        }
+      }
 
     }
   }

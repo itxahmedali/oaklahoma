@@ -110,4 +110,67 @@
         margin-top: 0;
         margin-bottom: .8rem;
       }
+      .crossIcon {
+          position: absolute;
+          top: 9px;
+          right: 15px;
+          font-size: 20px;
+      }
+}
+
+@media only screen and (max-width: 540px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 42%;
+      }
+      .orPara::before {
+    width: 223px;
+}
+ .orPara::after {
+    width: 223px;
+}
+}
+}
+@media only screen and (max-width: 414px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 57%;
+      }
+      .orPara::before {
+    width: 162px;
+}
+ .orPara::after {
+    width: 162px;
+}
+}
+}
+@media only screen and (max-width: 375px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 65%;
+      }
+      .orPara::before {
+    width: 148px;
+}
+ .orPara::after {
+    width: 148px;
+}
+}
+}
+@media only screen and (max-width: 360px) {
+
+  .modalMain {
+      .containueWithBtns  {
+            width: 72%;
+      }
+      .orPara::before {
+    width: 135px;
+}
+ .orPara::after {
+    width: 135px;
+}
+}
 }
