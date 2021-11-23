@@ -5,6 +5,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import {NgxPaginationModule} from 'ngx-pagination';
 // ng google map
 import { AgmCoreModule } from '@agm/core';
+// ng animation
 // import {} from 'googlemaps';
 // import {} from 'googlemaps';
 // import { NgxGoogleMapModule } from 'ngx-google-map'

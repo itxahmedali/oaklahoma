@@ -143,11 +143,11 @@ a:not([href]):not([class]) {
 .status-timeon .ng-select.ng-select-single .ng-select-container{
   border: 1px solid #4D4D4D ;
   background: none;
-  height: 40px;
+  min-height: 40px;
 }
 // checkbox cstm
 .box {
-	margin: 25px 0;
+	margin: 25px 0 25px 20px;
 	display: flex;
 	align-items: center;
 	user-select: none;
@@ -195,7 +195,46 @@ a:not([href]):not([class]) {
     border: none;
     color: #B48618;
     font-size: 17px;
+    padding: 0;
 }
+// see more drop down
+.stories-pool{
+  .min-max{
+    .ng-select-container{
+      max-width: 120px !important;
+      border: 1px solid #b48618 !important;
+      border-radius: 50px !important;
+      outline: none !important;
+      background: none !important;
+      min-height: 40px;
+    }
+  }
+  .pool {
+    .ng-select-container {
+      border: 1px solid #4D4D4D !important;
+      background: none !important;
+      height: 40px !important;
+      min-height: 40px;
+    }
+  }
+}
+.school-rating{
+  .ng-select-container{
+    max-width: 40% !important;
+    border: 1px solid #b48618 !important;
+    border-radius: 50px !important;
+    outline: none !important;
+    background: none !important;
+    min-height: 40px;
+  }
+}
+// ng map
+agm-map {
+  height: 1100px;
+
+}
+// collapseable div
+
 // commons
 .hide{
   display: none;
@@ -296,6 +335,7 @@ a:not([href]):not([class]) {
 
 .ng-select .ng-select-container .ng-value-container .ng-placeholder {
   color: #333333;
+  font-size: 12px;
 }
 
 .ng-select.ng-select-single .ng-select-container {
@@ -307,6 +347,7 @@ a:not([href]):not([class]) {
   min-width: 100px;
   box-shadow: none;
   font-family: 'rubikregular';
+  min-height: 40px;
 
 }
 
@@ -323,4 +364,12 @@ a:not([href]):not([class]) {
 }
 .ng-dropdown-panel.ng-select-bottom{
   top:110%;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background-color: #b48618;
+  color: #fff;
+}
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected, .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked {
+  color: #fff;
+  background-color: #b48618;
 }

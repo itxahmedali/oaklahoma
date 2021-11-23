@@ -6,11 +6,12 @@ import * as $ from 'jquery';
   selector: 'app-properties',
   templateUrl: './properties.component.html',
   styleUrls: ['./properties.component.scss']
+
 })
 export class PropertiesComponent implements OnInit {
-  // more filters
+  // more filters or fewer filters buttons
   btnVal = "More Filters";
-  status: boolean = false;
+  status: boolean = true;
   clickEvent(event:any) {
     this.status = !this.status;
     if(this.status == false){
@@ -20,9 +21,13 @@ export class PropertiesComponent implements OnInit {
       this.btnVal = "More Filters"
     }
   }
-  btnVal1 = "See Less";
+  // see more or less buttons
+  btnVal1 = "See More";
+  btnVal2 = "See More";
   status2: boolean = false;
+  status3: boolean = false;
   seelessclickEvent(event:any) {
+
     this.status2 = !this.status2;
     if(this.status2 == false){
       this.btnVal1 = "See More"
@@ -31,6 +36,20 @@ export class PropertiesComponent implements OnInit {
       this.btnVal1 = "See Less"
     }
   }
+  seeless2clickEvent(event:any) {
+
+    this.status3 = !this.status3;
+    if(this.status3 == false){
+      this.btnVal2= "See More"
+    }
+    else{
+      this.btnVal2 = "See Less"
+    }
+  }
+  public isCollapsed = true;
+  public isCollapsed2 = true;
+
+
   minValue: any;
 
   min_value = [
@@ -266,6 +285,9 @@ export class PropertiesComponent implements OnInit {
       name: "Norman",
       price: 5000
     },
+  ]
+  bathrommItem:any=[
+    {qty:0}
   ]
   constructor() { }
 

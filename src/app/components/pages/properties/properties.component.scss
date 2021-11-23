@@ -148,9 +148,15 @@
       }
 
       .fewer-filter {
+
+        h5,
         h6 {
           font-family: rubiksemibold;
           color: #000;
+        }
+
+        h6 {
+          font-family: rubikregular;
         }
 
         .beds {
@@ -173,7 +179,9 @@
           }
         }
 
-        .baths {
+        .baths,
+        .garage-spots,
+        .keywords {
           input {
             max-width: 300px;
             border: 1px solid #b48618;
@@ -217,24 +225,51 @@
             }
           }
         }
+
         .listing-status,
-        .sold{
-          .toggle-btn{
-            p{
+        .sold {
+          .toggle-btn {
+            p {
               margin: 0;
-              color:#4D4D4D;
+              color: #4D4D4D;
               font-family: rubikregular;
             }
           }
         }
 
+        .stories-pool {
+          .min-max {
+            label {
+              margin: 0 5px;
+            }
+          }
+
+          .pool {
+            width: 50%;
+          }
         }
-
-
-      agm-map {
-        height: 60%;
-
+        .keywords{
+          input{
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+        .school{
+          p{
+            color: #666666;
+            font-family: rubikregular;
+            margin-left: 5px;
+          }
+        }
+        .reset-btn{
+          color:#B48618;
+          font-size: 18px;
+          font-family: rubiklight;
+        }
       }
+
+
+
     }
   }
 }
