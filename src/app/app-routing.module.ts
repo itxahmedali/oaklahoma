@@ -12,6 +12,7 @@ import { ContactusComponent } from './components/pages/contactus/contactus.compo
 import { PropertiesComponent } from './components/pages/properties/properties.component';
 import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
+import { TermsComponent } from './components/pages/terms/terms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,6 +27,8 @@ const routes: Routes = [
   { path: 'properties', component: PropertiesComponent },
   { path: 'articles-inner', component: ArticleinnerComponent },
   { path: 'forgot', component: ForgotpasswordComponent },
+  { path: 'terms', component: TermsComponent },
+  
 
 ];
 
