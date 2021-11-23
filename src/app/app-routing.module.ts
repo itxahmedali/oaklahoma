@@ -10,20 +10,23 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { ContactusComponent } from './components/pages/contactus/contactus.component';
 import { PropertiesComponent } from './components/pages/properties/properties.component';
-import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component'; 
+import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
+import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home', pathMatch: 'full' },
-  {path:'home', component:HomeComponent},
-  {path:'forbuy', component:ForbuyComponent},
-  {path:'forrent', component:ForrentComponent},
-  {path:'aboutus', component:AboutusComponent},
-  {path:'articles', component:ArticlesComponent},
-  {path:'login', component:LoginmodalsComponent},
-  {path:'signup', component:SignupComponent},
-  {path:'contactus', component:ContactusComponent},
-  {path:'properties', component:PropertiesComponent},
-  {path:'articles-inner', component:ArticleinnerComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'forbuy', component: ForbuyComponent },
+  { path: 'forrent', component: ForrentComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'articles', component: ArticlesComponent },
+  { path: 'login', component: LoginmodalsComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'properties', component: PropertiesComponent },
+  { path: 'articles-inner', component: ArticleinnerComponent },
+  { path: 'forgot', component: ForgotpasswordComponent },
+
 ];
 
 @NgModule({
