@@ -1,391 +1,403 @@
 // banner section
 .main-bg {
-  position: relative;
-
-  &:before {
-    background: url(../../../../assets/1x/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  &:after {
-    background: url(../../../../assets/1x/bg-overlay.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .row {
-    width: 100%;
-
-    h1 {
-      font-size: 3.5rem;
-      color: #fff;
-      font-family: rubiklight;
-
-      span {
-        font-family: rubikbold;
-        color: #B48618;
-      }
+    position: relative;
+    &:before {
+        background: url(../../../../assets/1x/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
-  }
+    &:after {
+        background: url(../../../../assets/1x/bg-overlay.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .row {
+        width: 100%;
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            font-family: rubiklight;
+            span {
+                font-family: rubikbold;
+                color: #B48618;
+            }
+        }
+    }
 }
-
 
 // download section
 .download-section {
-
-  font-family: rubiklight;
-  // background-color: #F0F4F7;
-  position: relative;
-  padding-top: 30px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    // background: url(../../../../assets/1x/download-bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-
-  h1 {
-    font-family: rubiksemibold;
-  }
-
-  .head {
-    h1 {
-      font-size: 35px;
-    }
-
-    img {
-      width: 150px;
-      height: 100px;
-      object-fit: contain;
-      margin-left: 20px;
-    }
-  }
-
-  h4 {
-    transform: translateY(-15px);
-    color: #4D4D4D;
-    font-size: 22px;
-    font-family: rubikregular;
-  }
-
-
-
-  .download-icons {
-    position: absolute;
-    width: 100%;
-    bottom: 30px;
-
-    label {
-      font-weight: 600;
-    }
-
-    .icons {
-      width: 130px;
-      min-height: 45px;
-      object-fit: contain;
-
-      img {
+    font-family: rubiklight;
+    // background-color: #F0F4F7;
+    position: relative;
+    padding-top: 30px;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         width: 100%;
-
-        &:last-child {
-          margin-left: 20px;
+        height: 100%;
+        // background: url(../../../../assets/1x/download-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    h1 {
+        font-family: rubiksemibold;
+    }
+    .head {
+        h1 {
+            font-size: 35px;
         }
-      }
+        img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            margin-left: 20px;
+        }
     }
-  }
-
-  .img-box {
-    width: 500px;
-    height: 350px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    h4 {
+        transform: translateY(-15px);
+        color: #4D4D4D;
+        font-size: 22px;
+        font-family: rubikregular;
     }
-  }
+    .download-icons {
+        // position: absolute;
+        width: 100%;
+        bottom: 30px;
+        label {
+            font-weight: 600;
+        }
+        .icons {
+            width: 130px;
+            min-height: 45px;
+            object-fit: contain;
+            img {
+                width: 100%;
+                &:last-child {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .img-box {
+        width: 500px;
+        height: 350px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
 // abotusContainer
 .abotusContainer {
-  position: relative;
-  .getToknowImg {
-       width: 53%;
-    height: 770px;
-  }
-  .aboutUsPara {
-    position: absolute;
-    background-color: #fff;
-    width: 51.5%;
-    top: 11%;
-    right: 0%;
-    padding: 40px 16px 75px 47px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 0px 64px -7px;
-  }
-  .aboutUsPara h3 {
-    font-family: 'rubiksemibold';
-    color: #000;
-    font-size: 45px;
-    margin-bottom: 25px;
-  }
-  .aboutUsPara p {
-    font-family: poppinregular;
-    font-size: 15px;
-    color: #666666;
-  }
+    position: relative;
+    .getToknowImg {
+        width: 53%;
+        height: 770px;
+    }
+    .aboutUsPara {
+        position: absolute;
+        background-color: #fff;
+        width: 51.5%;
+        top: 11%;
+        right: 0%;
+        padding: 40px 16px 75px 47px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 64px -7px;
+    }
+    .aboutUsPara h3 {
+        font-family: 'rubiksemibold';
+        color: #000;
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+    .aboutUsPara p {
+        font-family: poppinregular;
+        font-size: 15px;
+        color: #666666;
+    }
 }
 
 //  Our Mission
 .ourMissionContainer {
-  .missionHeader h1 {
+    .missionHeader h1 {
         text-align: center;
-    font-family: 'rubiksemibold';
-    font-size: 45px;
-  }
-  .ourMissonPara p {
-    color: #B48618;
-    font-family:'rubiksemibold';
-    text-align: center;
-  }
+        font-family: rubiksemibold;
+        font-size: 43px;
+    }
+    .ourMissonPara p {
+        color: #B48618;
+        font-family: poppinregular;
+        text-align: center;
+    }
 }
 
 // review-banner
 .review-banner {
-  background-color: #B48618;
-  color: #fff;
-        font-family: 'rubiklight';
-
-  .reviewsbox1 {
-    margin: 1.5rem 0;
-    text-align: center;
-  }
-  .reviewsbox2 {
-     margin: 1.5rem 0;
-    text-align: center;
-  }
-  .reviewsbox1 h1 {
-        font-family: 'rubiklight';
-    font-size: 40px;
-  }
-  .reviewsbox2 .iconimagebox {
-       width: 50px;
-    height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 9px;
-  }
-  .reviewsbox2 p {
+    background-color: #B48618;
+    color: #fff;
     font-family: 'rubiklight';
-  }
-
+    .reviewsbox1 {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    .reviewsbox2 {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    .reviewsbox1 h1 {
+        font-family: 'rubiklight';
+        font-size: 40px;
+    }
+    .reviewsbox2 .iconimagebox {
+        width: 50px;
+        height: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 9px;
+    }
+    .reviewsbox2 p {
+        font-family: 'rubiklight';
+    }
 }
 
 // media queries
 @media only screen and (min-width:2560px) {
-  .main-bg {
-    height: 800px !important;
-  }
+    .main-bg {
+        height: 800px !important;
+    }
 }
 
 @media only screen and (min-width:1920px) {
-  .main-bg {
-    height: 900px;
-  }
+    .main-bg {
+        height: 900px;
+    }
 }
+
 @media only screen and (max-width:1600px) {
-  .main-bg {
-    height: 700px;
-  }
-
-
-
+    .main-bg {
+        height: 700px;
+    }
 }
+
 @media only screen and (max-width:1440px) {
-  .main-bg {
-    height: 650px;
-  }
-
-  input {
-    width: 72%;
-  }
-
-  .cstm-container {
-    .articles-section {
-      .articles {
-
-        .article {
-          width: 707px;
-        }
-
-        .article2 {
-          width: 470px;
-        }
-      }
+    .main-bg {
+        height: 650px;
     }
-  }
+    input {
+        width: 72%;
+    }
+    .cstm-container {
+        .articles-section {
+            .articles {
+                .article {
+                    width: 707px;
+                }
+                .article2 {
+                    width: 470px;
+                }
+            }
+        }
+    }
 }
+
 @media only screen and (max-width:1366px) {
-  .main-bg {
-    height: 520px;
-  }
-
-
+    .main-bg {
+        height: 520px;
+    }
 }
+
 @media only screen and (max-width:1024px) {
-  .main-bg {
-    height: 770px;
-  }
+    .main-bg {
+        height: 770px;
+    }
 }
+
 @media only screen and (max-width:768px) {
-  .search {
-    .search-box {
-      width: 70%;
-    }
-  }
-
-  ::ng-deep {
-    .prev-arrow {
-      display: none !important;
-    }
-
-    .next-arrow {
-      display: none !important;
-    }
-  }
-
-  .img-box {
-    width: 100% !important;
-  }
-
-  .download-section {
-    .download-icons {
-      position: static;
-    }
-  }
-
-  .cstm-container {
-    .articles-section {
-      .articles {
-
-        .article {
-          width: 90%;
-          margin: 2% auto;
-
-          button {
-            width: 50px;
-            height: 50px;
-          }
+    .search {
+        .search-box {
+            width: 70%;
         }
-
-        .article2 {
-          width: 90%;
-          margin: 2% auto;
-
-          button {
-            width: 50px;
-            height: 50px;
-          }
-        }
-
-        .img-box {
-          .content {
-            align-items: baseline;
-          }
-        }
-      }
     }
-  }
-
-  .want-to-sec {
-    .second-col {
-      text-align: left;
+     ::ng-deep {
+        .prev-arrow {
+            display: none !important;
+        }
+        .next-arrow {
+            display: none !important;
+        }
     }
-  }
-  // abotusContainer
-.abotusContainer {
-  .aboutUsPara {
-   width: 55%;
-    top: 9%;
-    right: 0%;
-    padding: 26px 10px 30px 24px;
-  }
-  .aboutUsPara h3 {
-    font-size: 35px;
-  }
-}
-// review-banner
-.review-banner {
-  flex-direction: column;
-  .reviewsbox1 {
-    margin: 1.5rem 0;
-    text-align: center;
-  }
-  .reviewsbox2 {
-     margin: 1.5rem 0;
-    text-align: center;
-  }
-  .reviewsbox1 h1 {
-        font-family: 'rubiklight';
-    font-size: 35px;
-  }
-
-
-}
+    .img-box {
+        width: 100% !important;
+    }
+    .download-section {
+        .download-icons {
+            position: static;
+        }
+    }
+    .cstm-container {
+        .articles-section {
+            .articles {
+                .article {
+                    width: 90%;
+                    margin: 2% auto;
+                    button {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .article2 {
+                    width: 90%;
+                    margin: 2% auto;
+                    button {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .img-box {
+                    .content {
+                        align-items: baseline;
+                    }
+                }
+            }
+        }
+    }
+    .want-to-sec {
+        .second-col {
+            text-align: left;
+        }
+    }
+    // abotusContainer
+    .abotusContainer {
+        .aboutUsPara {
+            width: 55%;
+            top: 9%;
+            right: 0%;
+            padding: 26px 10px 30px 24px;
+        }
+        .aboutUsPara h3 {
+            font-size: 30px;
+        }
+    }
+    // review-banner
+    .review-banner {
+        flex-direction: column;
+        .reviewsbox1 {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        .reviewsbox2 {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        .reviewsbox1 h1 {
+            font-family: 'rubiklight';
+            font-size: 35px;
+        }
+    }
+    .ourMissionContainer .missionHeader h1 {
+        font-size: 40px;
+    }
 }
 
-@media only screen and  (max-width: 540px) {
-   // abotusContainer
-  .abotusContainer{
-    flex-direction: column;
-    .getToknowImg {
-      width: 100%;
+@media only screen and (max-width: 540px) {
+    // abotusContainer
+    .abotusContainer {
+        flex-direction: column;
+        margin-top: 1rem !important;
+        .getToknowImg {
+            width: 100%;
+            height: 635px;
+        }
+        .aboutUsPara {
+            position: relative;
+            width: 100%;
+            box-shadow: none;
+            text-align: center;
+            padding: 10px 0px 15px 0px;
+        }
+        .aboutUsPara h3 {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+        .aboutUsPara p {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
     }
-    .aboutUsPara {
-          position: relative;
-    width: 100%;
-    box-shadow: none;
-    text-align: center;
+    .ourMissionContainer {
+        margin-top: 0rem !important;
     }
-    .aboutUsPara  h3 {
-          margin-bottom: 10px;
+    .ourMissionContainer .missionHeader h1 {
+        font-size: 25px;
     }
-  }
-
-
+    .ourMissionContainer .ourMissonPara p {
+        font-size: 12px;
+    }
+    .download-section .head h1 {
+        font-size: 25px;
+    }
+    .download-section h4 {
+        font-size: 17px;
+    }
+    .review-banner {
+        margin-bottom: -1rem !important;
+        margin-top: 2rem !important;
+    }
 }
 
 @media only screen and (max-width:414px) {
-
-  .main-bg {
-    height: 500px;
-
-  }
-
-  }
+    .main-bg {
+        height: 500px;
+    }
+    // abotusContainer
+    .abotusContainer {
+        .aboutUsPara h3 {
+            font-size: 20px;
+        }
+        .aboutUsPara {
+            padding: 15px 0px 15px 0px;
+        }
+    }
+    .ourMissionContainer {
+        margin-top: 0rem !important;
+    }
+    .ourMissionContainer .missionHeader h1 {
+        font-size: 20px;
+    }
+    .ourMissionContainer .ourMissonPara p {
+        font-size: 12px;
+    }
+    .download-section .head h1 {
+        font-size: 20px;
+    }
+    .download-section h4 {
+        font-size: 13px;
+    }
+    .review-banner {
+        margin-bottom: -3rem !important;
+    }
+}

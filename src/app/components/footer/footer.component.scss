@@ -141,3 +141,39 @@ footer {
     }
   }
 }
+@media only screen and(max-width:414px) {
+  footer {
+    .footer-row {
+      .container {
+
+        .newsletter-sec {
+          input{
+            width: 70%;
+          }
+        }
+
+
+
+        }
+
+    }
+  }
+}
+@media only screen and(max-width:375px) {
+  footer {
+    .footer-row {
+      .container {
+
+        .newsletter-sec {
+          input{
+            width: 80%;
+          }
+        }
+
+
+
+        }
+
+    }
+  }
+}
