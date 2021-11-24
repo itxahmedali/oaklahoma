@@ -14,6 +14,8 @@ import { ArticleinnerComponent } from './components/pages/articleinner/articlein
 import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
 import { TermsComponent } from './components/pages/terms/terms.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+import { ResetComponent } from './components/pages/reset/reset.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'articles-inner', component: ArticleinnerComponent },
   { path: 'forgot', component: ForgotpasswordComponent },
   { path: 'terms', component: TermsComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'reset', component: ResetComponent },
 
 
 ];
