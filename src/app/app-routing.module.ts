@@ -13,8 +13,26 @@ import { PropertiesComponent } from './components/pages/properties/properties.co
 import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
 import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
 import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgotpassword.component';
+import { TermsComponent } from './components/pages/terms/terms.component';
 
 const routes: Routes = [
+<<<<<<< HEAD
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'forbuy', component: ForbuyComponent },
+  { path: 'forrent', component: ForrentComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'articles', component: ArticlesComponent },
+  { path: 'login', component: LoginmodalsComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'properties', component: PropertiesComponent },
+  { path: 'articles-inner', component: ArticleinnerComponent },
+  { path: 'forgot', component: ForgotpasswordComponent },
+  { path: 'terms', component: TermsComponent },
+  
+
+=======
   {path:'',redirectTo:'home', pathMatch: 'full' },
   {path:'home', component:HomeComponent},
   {path:'forbuy', component:ForbuyComponent},
@@ -28,6 +46,7 @@ const routes: Routes = [
   {path:'propertyinner', component:PropertyinnerComponent},
   {path:'articles-inner', component:ArticleinnerComponent},
   {path:'forgot', component:ForgotpasswordComponent},
+>>>>>>> 965eaee83f672a496fa6184630b9aae4f20c53c9
 ];
 
 @NgModule({
