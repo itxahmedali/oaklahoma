@@ -16,19 +16,22 @@ import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgo
 import { TermsComponent } from './components/pages/terms/terms.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home', pathMatch: 'full' },
-  {path:'home', component:HomeComponent},
-  {path:'forbuy', component:ForbuyComponent},
-  {path:'forrent', component:ForrentComponent},
-  {path:'aboutus', component:AboutusComponent},
-  {path:'articles', component:ArticlesComponent},
-  {path:'login', component:LoginmodalsComponent},
-  {path:'signup', component:SignupComponent},
-  {path:'contactus', component:ContactusComponent},
-  {path:'properties', component:PropertiesComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'forbuy', component: ForbuyComponent },
+  { path: 'forrent', component: ForrentComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'articles', component: ArticlesComponent },
+  { path: 'login', component: LoginmodalsComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'properties', component: PropertiesComponent },
   {path:'propertyinner', component:PropertyinnerComponent},
-  {path:'articles-inner', component:ArticleinnerComponent},
-  {path:'forgot', component:ForgotpasswordComponent},
+  { path: 'articles-inner', component: ArticleinnerComponent },
+  { path: 'forgot', component: ForgotpasswordComponent },
+  { path: 'terms', component: TermsComponent },
+
+
 ];
 
 @NgModule({

@@ -21,7 +21,7 @@
             {{btnVal}} <i class="fa fa-chevron-down"></i>
           </button>
         </div>
-        <div class="more-filter" *ngIf="status;" >
+        <div class="more-filter" *ngIf="status;">
           <div class="filters-label">
             <label for="">12 of 2000 Homes</label>
             <ng-select placeholder="Sort" class="sort">
@@ -33,8 +33,9 @@
               </ng-option>
             </ng-select>
           </div>
-          <div class="properties-slider" >
-            <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide" routerLink='/propertyinner'>
+          <div class="properties-slider">
+            <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide"
+              routerLink='/propertyinner'>
               <div class="heart-icon">
                 <i class="fa fa-heart"></i>
               </div>
@@ -132,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="fewer-filter mt2" *ngIf="!status;" >
+        <div class="fewer-filter mt2" *ngIf="!status;">
           <div class="bed-baths d-flex justify-content-between">
             <div class="beds">
               <h5>Beds</h5>
@@ -295,7 +296,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 mb1">
+              <div class="col-lg-6 mb1 checks-col1">
                 <div class="timeon">
                   <h5>Listing Type</h5>
                 </div>
@@ -323,7 +324,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 mb1">
+              <div class="col-lg-6 mb1 checks-col2">
                 <div class="box">
                   <input id="fourteen" type="checkbox">
                   <span class="check"></span>
@@ -395,7 +396,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 mb1">
+              <div class="col-lg-6 mb1 checks-col1">
                 <div class="garage-check">
                   <div class="box">
                     <input id="sixteen" type="checkbox">
@@ -440,7 +441,7 @@
 
                 </div>
               </div>
-              <div class="col-lg-6 mb1">
+              <div class="col-lg-6 mb1 checks-col2">
                 <div class="box">
                   <input id="twentyfour" type="checkbox">
                   <span class="check"></span>
