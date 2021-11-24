@@ -33,6 +33,8 @@ import { PropertiesComponent } from './components/pages/properties/properties.co
 import { ArticleinnerComponent } from './components/pages/articleinner/articleinner.component';
 import { TermsComponent } from './components/pages/terms/terms.component';
 import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+import { ResetComponent } from './components/pages/reset/reset.component';
 
 
 @NgModule({
@@ -53,6 +55,8 @@ import { PropertyinnerComponent } from './components/pages/propertyinner/propert
     ArticleinnerComponent,
     TermsComponent,
     PropertyinnerComponent,
+    ProfileComponent,
+    ResetComponent,
 
   ],
   imports: [
