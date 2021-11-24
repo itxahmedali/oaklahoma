@@ -1,0 +1,157 @@
+// <!-- Buttons --> //
+.topButtonsSection {
+    padding-top: 10rem;
+    margin-bottom: 2rem;
+    .cusotmBlack_btn {
+        background-color: #F2F2F2;
+        margin: 0 5px;
+        color: #000;
+        font-family: rubiklight;
+        padding: 0;
+        height: 45px;
+        width: 135px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .heart-icon {
+        background-color: #B48618;
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        padding: 9px 10px 0px 13px;
+        border-radius: 56px;
+        .fa-heart {
+            color: #fff;
+        }
+    }
+    .heart-icon2 {
+        background-color: #505050;
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        padding: 9px 10px 0px 13px;
+        border-radius: 56px;
+        .fa-share {
+            color: #fff;
+        }
+    }
+}
+
+// bannerBox
+.bannerBox {
+    .imageBox {
+        height: 600px;
+    }
+    .buttonsBox {
+        bottom: 10px;
+        left: 50px;
+    }
+    .bannerButton {
+        background-color: #F2F2F2;
+        margin: 0 5px;
+        color: #000;
+        font-family: rubiklight;
+        padding: 0;
+        height: 50px;
+        width: 231px;
+        font-size: 15px;
+        border: none;
+        font-weight: bold;
+        border-radius: 95px;
+    }
+}
+
+// slick slider
+.carousel {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    .slick-slide {
+        margin: 10px;
+    }
+    .slick-slide img {
+        width: 100%;
+        border: 2px solid #fff;
+    }
+    .wrapper .slick-dots li button:before {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+// use for style elements coming from typescript
+::ng-deep {
+    .prev-arrow {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        z-index: 10;
+    }
+    .next-arrow {
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        z-index: 10;
+    }
+}
+
+// latest-properties
+.latest-properties {
+    margin-top: .5rem;
+    h1 {
+        margin-bottom: 30px;
+        font-family: rubiksemibold;
+        color: #000;
+    }
+    .slick-slide {
+        overflow: hidden;
+        img {
+            border: none;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    .properties-slider {
+        position: relative;
+        .content {
+            position: absolute;
+            bottom: 0;
+            background: #000000ad;
+            max-width: 385px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 10px;
+            label {
+                margin: 0;
+                color: #fff;
+                font-size: 17px;
+            }
+        }
+        .slide {
+            position: relative;
+            cursor: pointer;
+            .heart-icon {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: #000000b8;
+                border-radius: 50px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fa-heart:before {
+                    content: "\F08A";
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
