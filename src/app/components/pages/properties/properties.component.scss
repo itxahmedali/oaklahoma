@@ -14,6 +14,7 @@
         justify-content: space-between;
         margin-top: 2rem;
         font-family: 'rubikregular';
+        flex-wrap: wrap;
 
         .filter-dropdown {
           display: flex;
@@ -200,14 +201,15 @@
           .property-btns {
             .filter-bg {
               background: linear-gradient(0deg, #b48618 41%, #ffffff 0%);
-              transition:all 1s ease-in-out;
+              transition: all 1s ease-in-out;
               border: 1px solid #B48618;
 
               label {
                 color: #fff;
               }
-               .cls-1{
-                fill:#fff;
+
+              .cls-1 {
+                fill: #fff;
               }
             }
 
@@ -222,7 +224,7 @@
               background: none;
               border: 1px solid #4d4d4d;
               border-radius: 60px;
-              transition:all 1s ease-in-out;
+              transition: all 1s ease-in-out;
 
               img {
                 width: 30px;
@@ -253,6 +255,8 @@
         }
 
         .stories-pool {
+          flex-wrap: wrap;
+
           .min-max {
             label {
               margin: 0 5px;
@@ -345,14 +349,30 @@
 @media only screen and (max-width:768px) {
   .properties-section {
     .row {
-      .col-lg-6 {
+      .right-side {
+        margin-top: 2rem;
 
         // properties items
         .properties-slider {
           .slide {
             width: 210px;
             margin: 10px;
+
+            .content {
+              label {
+                font-size: 11px;
+              }
+            }
           }
+        }
+
+        .checks-col2 {
+          transform: translateY(-30px);
+          margin-bottom: 0 !important;
+        }
+
+        .checks-col1 {
+          margin-bottom: 0 !important;
         }
       }
     }
@@ -368,12 +388,55 @@
         .properties-slider {
           .content {
             label {
-              font-size: 17px;
+              font-size: 17px !important;
             }
           }
 
           .slide {
             width: 100%;
+          }
+        }
+
+        .beds {
+
+          input {
+            max-width: 150px !important;
+            width: 150px;
+          }
+        }
+
+        .stories-pool {
+          .pool {
+            margin-top: 2rem;
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+        .beds {
+          input {
+            max-width: 130px !important;
+            width: 130px;
+          }
+        }
+
+        .filters {
+          .filter-dropdown {
+            ng-select {
+              min-width: 140px;
+            }
+
+          }
+
+          button {
+            margin-top: 1rem;
           }
         }
       }
