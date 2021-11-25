@@ -1,92 +1,80 @@
 .navbar {
-  width: 100%;
-  background-color: transparent;
-  font-family: rubiklight;
-  position: fixed;
-  z-index: 1;
-  transition: 0.5s all ease-in-out;
-
-  .navbar-brand {
-    width: 130px;
-    max-height: 70px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      object-fit: cover;
+    width: 100%;
+    background-color: transparent;
+    font-family: rubiklight;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    .navbar-brand {
+        width: 130px;
+        max-height: 70px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
-  }
-
-  ul {
-    list-style: none;
-
-    li {
-      margin-right: 30px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      a {
-        color: #fff;
-        cursor: pointer;
-        font-size: 14px;
-
-        &:hover {
-          text-decoration: none;
+    ul {
+        list-style: none;
+        li {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                color: #fff;
+                cursor: pointer;
+                font-size: 14px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .active {
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 130%;
+                    height: 1px;
+                    background-color: #fff;
+                    bottom: -2px;
+                    left: -14%;
+                }
+            }
+            .signup-btn {
+                background-color: #B48618;
+                padding: 10px 1.5rem;
+                border-radius: 50px;
+                a {
+                    font-size: 14px;
+                }
+            }
         }
-      }
-
-      .active {
-        position: relative;
-
-        &:before {
-          content: "";
-          position: absolute;
-          width: 130%;
-          height: 1px;
-          background-color: #fff;
-          bottom: -2px;
-          left: -14%;
-        }
-      }
-
-      .signup-btn {
-        background-color: #B48618;
-        padding: 10px 1.5rem;
-        border-radius: 50px;
-
-        a {
-          font-size: 14px;
-        }
-      }
     }
-  }
 }
 
 .mobile-nav {
-  display: none;
+    display: none;
 }
 
 @media screen and (max-width:768px) {
-  .navbar {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    .navbar-brand {
-      width: 130px;
-      max-height: 70px;
-      overflow: hidden;
-
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
+    .navbar {
+        display: none;
     }
-  }
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        .navbar-brand {
+            width: 130px;
+            max-height: 70px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }

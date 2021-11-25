@@ -1,0 +1,1048 @@
+/*--End Tab Styling--*/
+
+
+/*--Start Account Setting Styling--*/
+
+
+/*--End Account Setting Styling--*/
+
+
+/*--Start Saved Search Styling--*/
+
+
+/*--End Saved Search Styling--*/
+
+
+/*--Start Email Settings Styling--*/
+
+
+/* Customize the label (the container) */
+
+
+/* Hide the browser's default radio button */
+
+
+/* Create a custom radio button */
+
+
+/* When the radio button is checked, add a blue background */
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+
+/* Show the indicator (dot/circle) when checked */
+
+
+/* Style the indicator (dot/circle) */
+
+
+/*--End Email Settings Styling--*/
+
+
+/*--Start Wishlist Styling--*/
+
+
+/*--End Wishlist Styling--*/
+
+
+/*--Start Media Query--*/
+
+.nav {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.mt-5 {
+    margin-top: 1.5rem !important;
+}
+
+.nav-pills {
+    .nav-link {
+        color: #000000;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        font-family: rubikregular;
+        border-radius: 20px;
+    }
+    .nav-link.active {
+        color: #fff !important;
+        background: #B48618;
+        padding: 10px 40px;
+    }
+}
+
+.accountSettingHeading {
+    text-align: center;
+    font-family: rubiksemibold;
+    font-size: 36px;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-family: rubikregular;
+    font-size: 46px;
+    margin-top: 3rem;
+    color: #000000;
+}
+
+.emailSettingHeading {
+    text-align: center;
+    font-family: rubiksemibold;
+    color: #000000;
+}
+
+.accountSettingProfileImage {
+    display: flex;
+    justify-content: center;
+    img {
+        text-align: center;
+        border-radius: 50%;
+        object-fit: contain;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.fullName {
+    input {
+        width: 100%;
+        border: none;
+        border: 1px solid #B48618;
+        padding: 10px 20px;
+        border-radius: 40px;
+        outline: none;
+        margin-bottom: 20px;
+        color: #666666;
+        font-family: rubiklight;
+        font-size: 14px;
+    }
+}
+
+.emailAddress {
+    input {
+        width: 100%;
+        border: none;
+        border: 1px solid #B48618;
+        padding: 10px 20px;
+        border-radius: 40px;
+        outline: none;
+        margin-bottom: 20px;
+        color: #666666;
+        font-family: rubiklight;
+        font-size: 14px;
+    }
+}
+
+.phoneNo {
+    input {
+        width: 100%;
+        border: none;
+        border: 1px solid #B48618;
+        padding: 10px 20px;
+        border-radius: 40px;
+        outline: none;
+        margin-bottom: 20px;
+        color: #666666;
+        font-family: rubiklight;
+        font-size: 14px;
+    }
+}
+
+.savedSearchText {
+    border: none;
+    outline: none;
+    font-family: rubikregular;
+    width: 90%;
+    color: #1A1A1A;
+    font-size: 16px;
+    p {
+        font-family: rubikregular;
+        color: #1A1A1A;
+    }
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: rubikregular;
+    width: 90%;
+    color: #1A1A1A;
+    font-size: 16px;
+}
+
+.saveUpdate {
+    text-align: center;
+    button {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 25px;
+        letter-spacing: 0.4px;
+        font-family: rubiklight;
+        font-size: 14px;
+    }
+}
+
+.changePassword {
+    text-align: center;
+    button {
+        color: #B48618;
+        letter-spacing: 0.4px;
+        font-family: rubiksemibold;
+        border: none;
+        font-size: 14px;
+    }
+}
+
+.emailTypeButton {
+    button {
+        color: #B48618;
+        letter-spacing: 0.4px;
+        font-family: rubiklight;
+        border: none;
+        font-size: 14px;
+    }
+}
+
+.accountLink {
+    h2 {
+        font-family: rubikregular;
+        font-size: 24px;
+        color: #000000;
+    }
+}
+
+.closeLink {
+    h2 {
+        font-family: rubikregular;
+        font-size: 24px;
+        color: #000000;
+    }
+}
+
+.accountLinkFacebook {
+    img {
+        border-radius: 0px;
+        width: 30px;
+        height: 30px;
+    }
+    background-color: #CCE1FF;
+    padding: 15px 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    p {
+        padding-left: 20px;
+        font-size: 14px;
+        color: #666666;
+        font-family: rubikregular;
+    }
+}
+
+.accountLinkGoogle {
+    background-color: #CCE1FF;
+    padding: 15px 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    p {
+        padding-left: 20px;
+        font-size: 14px;
+        color: #666666;
+        font-family: poppinregular;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.closeLinkText {
+    p {
+        font-family: poppinregular;
+        font-size: 14px;
+        color: #666666;
+    }
+}
+
+.closeAccount {
+    button {
+        border: none;
+        font-size: 20px;
+        color: #B48618;
+        font-family: rubikregular;
+        letter-spacing: 0.4px;
+        font-size: 16px;
+        margin-bottom: 2rem;
+    }
+}
+
+.accountSettingBox {
+    position: relative;
+}
+
+.accountSettingEditImage {
+    img {
+        width: 50%;
+    }
+    position: absolute;
+    top: 24.5%;
+    left: 44%;
+    i {
+        position: absolute;
+        left: 22%;
+        top: 22%;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.emailFavourite {
+    border: 1px solid #B48618;
+    border-radius: 50px;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wishlistFilter {
+    border: 1px solid #B48618;
+    border-radius: 50px;
+    display: flex;
+    padding: 14px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-padding {
+    padding: 0;
+}
+
+.saved {
+    border: 1px solid #B48618;
+    border-radius: 50px;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 96.5%;
+    margin: auto;
+    padding-right: 0;
+}
+
+.savedSearchListOne {
+    border: 1px solid #B48618;
+    border-radius: 50px;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.savedSearchEditDelete {
+    i {
+        font-size: 18px;
+        margin-left: 10px;
+        color: #B48618;
+    }
+}
+
+.containercs {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-family: rubikregular;
+    color: #000000;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked {
+            ~ {
+                .checkmark {
+                    background-color: #ffffff;
+                    &:after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .checkmark {
+        &:after {
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #b59600;
+        }
+    }
+}
+
+.containercss {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-family: rubiklight;
+    color: #000000;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked {
+            ~ {
+                .checkmark {
+                    background-color: #ffffff;
+                    &:after {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .checkmark {
+        &:after {
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #b59600;
+        }
+    }
+    h6 {
+        font-family: rubiklight;
+        color: #000000;
+    }
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #80808057;
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.emailFavouriteRadioButton {
+    width: 80%;
+    margin: auto;
+}
+
+.savedRadioButton {
+    width: 90%;
+    margin: auto;
+}
+
+.emailFavouriteHeading {
+    font-family: rubiklight;
+    color: #1A1A1A;
+}
+
+.savedHeading {
+    font-family: rubiklight;
+    color: #1A1A1A;
+}
+
+.recommendedRadioButton {
+    h6 {
+        font-family: rubiklight;
+        color: #1A1A1A;
+    }
+    p {
+        font-size: 14px;
+        color: #666666;
+        font-family: rubiklight;
+    }
+    width: 80%;
+    margin: auto;
+    font-family: rubiklight;
+}
+
+.emailTypeRadioButton {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.emailTypeHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+}
+
+.savedSearchHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+}
+
+.recommendedHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+    p {
+        font-size: 14px;
+        color: #666666;
+        font-family: rubiklight;
+    }
+}
+
+.homeSearchHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+}
+
+.homeReportHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+}
+
+.newsFeedHeading {
+    font-family: rubiksemibold;
+    color: #1A1A1A;
+}
+
+.wishlistCardImage {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+.subWishlistCardImage {
+    position: absolute;
+    top: 4%;
+    right: 3%;
+    background-color: #000000;
+    width: 36px;
+    height: 34px;
+    padding: 3px 8px;
+    border-radius: 50px;
+    opacity: 0.7;
+    font-size: 20px;
+    color: #fff;
+}
+
+.wishlistCardImageTextBox {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    top: 65%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 72px;
+    p {
+        font-size: 12px;
+        color: #FFFFFF;
+        margin-top: 6px;
+        margin-left: 10px;
+        font-family: rubiklight;
+    }
+    h6 {
+        color: #FFFFFF;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        font-family: rubiksemibold;
+    }
+}
+
+.under-line {
+    border-bottom: 1px solid #666666;
+    padding-bottom: 0px !important;
+}
+
+.wishlistCardTextOne {
+    padding: 10px 10px;
+    width: 100%;
+    h6 {
+        font-family: rubiklight;
+        color: #4D4D4D;
+    }
+    p {
+        font-family: rubikmedium;
+        color: #666666;
+    }
+}
+
+.wishlistButton {
+    button {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px 30px;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        font-family: rubiklight;
+        letter-spacing: 0.4px;
+        margin-top: 10px;
+    }
+}
+
+.dropdown {
+    h6 {
+        font-family: rubikmedium;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        color: #000000;
+    }
+    span {
+        font-family: rubiklight;
+        margin: 0px 10px;
+        color: #666666;
+    }
+    button {
+        border: none;
+    }
+}
+
+.filterDropdownLink {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #666666;
+    font-family: rubiklight;
+}
+
+.dropdown-toggle {
+    color: #4D4D4D;
+}
+
+.wishlistMap {
+    color: #B48618;
+    font-family: rubiklight;
+    margin-top: 6px;
+    h6 {
+        margin-left: 8px;
+    }
+}
+
+i {
+    h6 {
+        color: #B48618;
+        font-family: rubiklight;
+        margin-top: 6px;
+    }
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-button-next {
+    color: white;
+    font-size: 16px;
+    &::after {
+        font-size: 25px;
+    }
+}
+
+.swiper-button-prev {
+    color: white;
+    font-size: 16px;
+    &:after {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .accountSettingEditImage {
+        position: absolute;
+        top: 28.5%;
+        left: 44%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .accountSettingEditImage {
+        position: absolute;
+        top: 216px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .accountSettingEditImage {
+        position: absolute;
+        top: 217px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .accountSettingEditImage {
+        top: 216px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav {
+        width: 80%;
+    }
+    .accountLinkGoogle {
+        p {
+            font-family: rubiklight;
+        }
+        padding: 12px 25px;
+    }
+    .accountLinkFacebook {
+        p {
+            font-family: rubiklight;
+        }
+        padding: 12px 25px;
+    }
+    .emailTypeRadioButton {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .savedRadioButton {
+        width: 80%;
+        margin: auto;
+    }
+    .wishlistCardImageTextBox {
+        height: 64px;
+        top: 64%;
+        p {
+            font-size: 11px;
+        }
+    }
+    .accountSettingEditImage {
+        top: 217px;
+        left: 41.7%;
+        i {
+            position: absolute;
+            left: 22.5%;
+            top: 24%;
+            color: white;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        width: 100%;
+    }
+    .nav-item {
+        display: flex;
+        justify-content: center;
+    }
+    .emailFavouriteRadioButton {
+        width: 100%;
+        label {
+            margin-right: 10px;
+        }
+    }
+    .savedRadioButton {
+        width: 100%;
+        width: 100%;
+        margin: auto;
+        label {
+            margin-right: 10px;
+        }
+    }
+    .emailTypeRadioButton {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .wishlistCardImage {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+    .wishlistCardImageTextBox {
+        top: 75%;
+    }
+    .wishlistMap {
+        top: 29%;
+        left: 44%;
+    }
+    .accountSettingEditImage {
+        top: 217px;
+        left: 38.5%;
+        i {
+            position: absolute;
+            left: 23%;
+            top: 22%;
+            color: white;
+            font-size: 16px;
+        }
+    }
+    .recommendedHeading {
+        p {
+            font-size: 12px;
+        }
+    }
+    .recommendedRadioButton {
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .accountLinkGoogle {
+        margin-bottom: 20px;
+    }
+    .wishlistMap {
+        top: 48.5%;
+        left: 72%;
+    }
+    .wishlistCardImageTextBox {
+        top: 78%;
+    }
+    .wishlistButton {
+        text-align: center;
+    }
+    .accountSettingEditImage {
+        top: 220px;
+        left: 34.5%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .accountSettingProfileImage {
+        img {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .nav-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .accountLinkGoogle {
+        margin-bottom: 25px;
+    }
+    .emailFavourite {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 1px solid #B48618;
+        border-radius: 10px;
+        display: flex;
+        padding: 12px 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .saved {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 10px 25px;
+        width: 90%;
+    }
+    .emailFavouriteRadioButton {
+        flex-wrap: wrap;
+        width: 85%;
+        margin: 10px auto;
+    }
+    .savedRadioButton {
+        flex-wrap: wrap;
+        width: 102%;
+        margin: auto;
+    }
+    .containercs {
+        width: 110px;
+        margin-top: 10px;
+    }
+    .emailTypeRadioButton {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
+        label {
+            width: 170px;
+        }
+    }
+    .wishlistCardImageTextBox {
+        top: 71%;
+    }
+    .wishlistButton {
+        text-align: center;
+    }
+    .wishlistCardText {
+        margin-top: 20px;
+    }
+    .wishlistFilter {
+        position: relative;
+        border: 1px solid #B48618;
+        border-radius: 10px;
+        display: flex;
+        padding: 12px 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wishlistMap {
+        position: absolute;
+        top: 6%;
+        left: 68%;
+    }
+    .accountSettingEditImage {
+        img {
+            width: 60%;
+        }
+        top: 199px;
+        left: 28.6%;
+        i {
+            left: 27%;
+            top: 22%;
+        }
+    }
+    .savedSearchText {
+        width: 75%;
+    }
+    input {
+        width: 75%;
+    }
+    .dropdown {
+        span {
+            font-size: 14px;
+        }
+    }
+    .filterDropdown {
+        width: 50%;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    .recommendedRadioButton {
+        width: 100%;
+    }
+    .accountSettingHeading {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .emailSettingHeading {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .wishlistCardImageTextBox {
+        top: 66%;
+    }
+    .wishlistFilter {
+        padding: 10px 20px;
+        border: 1px solid #B48618;
+        border-radius: 10px;
+        display: flex;
+        padding: 10px 6px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .containercs {
+        width: 90px;
+        margin-top: 10px;
+    }
+    .accountSettingEditImage {
+        img {
+            width: 65%;
+        }
+        left: 25.7%;
+        i {
+            left: 30%;
+        }
+    }
+    .emailFavourite {
+        border: 1px solid #B48618;
+        border-radius: 10px;
+        display: flex;
+        padding: 10px 6px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .wishlistMap {
+        position: absolute;
+        top: 4%;
+        left: 65%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .accountSettingEditImage {
+        position: absolute;
+        top: 196px;
+        left: 69px;
+        img {
+            width: 70%;
+        }
+    }
+}
