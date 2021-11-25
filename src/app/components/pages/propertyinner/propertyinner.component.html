@@ -1,76 +1,84 @@
 <!-- Buttons -->
 <div class="container">
-    <div class="topButtonsSection d-flex justify-content-between">
-        <div class="buttonsBox d-flex justify-content-between">
-            <Button class="black-btn cusotmBlack_btn">Overview</Button>
-            <Button class="black-btn cusotmBlack_btn">Description</Button>
-            <Button class="black-btn cusotmBlack_btn">Property Details</Button>
-            <Button class="black-btn cusotmBlack_btn">Schools</Button>
-        </div>
-        <div class="iconsBtnbox d-flex ">
-            <div class="heart-icon">
-                <i class="fa fa-heart"></i>
-            </div>
-            <div class="heart-icon2">
-                <!-- <img width="100%" height="100%" src="../../../../assets/1x/shareIconB.png" alt=""> -->
-                <i class="fa fa-share"></i>
-            </div>
-        </div>
+  <div class="topButtonsSection d-flex justify-content-between">
+    <div class="buttonsBox d-flex justify-content-between">
+      <Button class="black-btn cusotmBlack_btn">Overview</Button>
+      <Button class="black-btn cusotmBlack_btn">Description</Button>
+      <Button class="black-btn cusotmBlack_btn">Property Details</Button>
+      <Button class="black-btn cusotmBlack_btn">Schools</Button>
     </div>
-</div>
+    <div class="iconsBtnbox d-flex ">
+      <div class="heart-icon">
+        <i class="fa fa-heart"></i>
+      </div>
+      <div class="heart-icon2">
+        <!-- <img width="100%" height="100%" src="../../../../assets/1x/shareIconB.png" alt=""> -->
+        <i class="fa fa-share"></i>
+      </div>
+    </div>
+  </div>
 
-<!-- banner Image -->
-<div class="container">
-    <div class="bannerBox position-relative ">
-        <div class="imageBox">
-            <img src="../../../../assets/1x/slider-img1.png" width="100%" height="100%" alt="">
-        </div>
-        <div class="buttonsBox d-flex position-absolute">
-            <button class="bannerButton">
+  <div class="bannerBox position-relative ">
+    <div class="imageBox">
+      <img src="../../../../assets/1x/slider-img1.png" width="100%" height="100%" alt="">
+    </div>
+    <div class="buttonsBox d-flex position-absolute">
+      <button class="bannerButton">
         3D Walkthrough
       </button>
-            <button class="bannerButton">
+      <button class="bannerButton">
         Street View
       </button>
-        </div>
     </div>
-</div>
+  </div>
 
-<!-- slick slider -->
-<div class="container">
-    <div class="latest-properties">
-
-        <div class="properties-slider">
-
-            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                    <div class="heart-icon">
-                        <i class="fa fa-heart fa-lg"></i>
-                    </div>
-                    <img src="{{ slide.img }}" alt="" width="100%">
-                    <div class="content">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <label for="">{{slide.address}}</label>
-                            </div>
-                            <div class="col-sm-12 ">
-                                <div class="upper-cols d-flex">
-                                    <label for="">{{slide.bedroom}}</label>
-                                    <label for="">{{slide.bathroom}}</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="lower-cols">
-                                    <label for="">{{slide.sqft}}</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 text-right">
-                                <label for="" class="text-right">{{slide.price | currency:"USD"}}</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ngx-slick-carousel>
+  <div class="latest-properties property">
+    <div class="properties-slider">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%">
         </div>
+      </ngx-slick-carousel>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="head">
+        <h1>770 West Senna Ave. Spiro, OK 74959</h1>
+        <div class="content d-flex justify-content-between">
+          <div class="price">
+            <h5>$750000</h5>
+          </div>
+          <div class="details d-flex justify-content-between">
+            <div class="beds detail">
+              <h5>2</h5>
+              <label for="">Bed</label>
+            </div>
+            <div class="baths detail">
+              <h5>4</h5>
+              <label for="">Bath</label>
+            </div>
+            <div class="sqft detail">
+              <h5>1500</h5>
+              <label for="">Sq.ft</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container1">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="map-container2">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
 </div>

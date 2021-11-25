@@ -80,26 +80,16 @@
 }
 
 // use for style elements coming from typescript
-::ng-deep {
-    .prev-arrow {
-        position: absolute;
-        left: -30px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: none;
-        background: none;
-        z-index: 10;
-    }
-    .next-arrow {
-        position: absolute;
-        right: -30px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: none;
-        background: none;
-        z-index: 10;
-    }
-}
+// ::ng-deep {
+//   .property{
+//     .prev-arrow,
+//     .next-arrow{
+//       background: #fff;
+//     box-shadow: 0px 0px 12px 0px #7f7f7f;
+//     border-radius: 100px;
+//     }
+//   }
+// }
 
 // latest-properties
 .latest-properties {
@@ -119,20 +109,6 @@
     }
     .properties-slider {
         position: relative;
-        .content {
-            position: absolute;
-            bottom: 0;
-            background: #000000ad;
-            max-width: 385px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            padding: 10px;
-            label {
-                margin: 0;
-                color: #fff;
-                font-size: 17px;
-            }
-        }
         .slide {
             position: relative;
             cursor: pointer;
@@ -155,3 +131,32 @@
         }
     }
 }
+
+// map container
+
+.map-container2{
+  agm-map{
+    height: 250px;
+  }
+}
+// property details
+.row{
+  .col-lg-8{
+    .map-container1{
+      agm-map{
+        height: 450px;
+      }
+    }
+    .head{
+      .content{
+        .price{}
+        .details{
+          .detial{
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
