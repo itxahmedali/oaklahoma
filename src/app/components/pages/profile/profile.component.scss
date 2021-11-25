@@ -1,52 +1,3 @@
-/*--End Tab Styling--*/
-
-
-/*--Start Account Setting Styling--*/
-
-
-/*--End Account Setting Styling--*/
-
-
-/*--Start Saved Search Styling--*/
-
-
-/*--End Saved Search Styling--*/
-
-
-/*--Start Email Settings Styling--*/
-
-
-/* Customize the label (the container) */
-
-
-/* Hide the browser's default radio button */
-
-
-/* Create a custom radio button */
-
-
-/* When the radio button is checked, add a blue background */
-
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-
-/* Show the indicator (dot/circle) when checked */
-
-
-/* Style the indicator (dot/circle) */
-
-
-/*--End Email Settings Styling--*/
-
-
-/*--Start Wishlist Styling--*/
-
-
-/*--End Wishlist Styling--*/
-
-
-/*--Start Media Query--*/
 
 // tab-pane
 .tab-pane {
@@ -62,7 +13,7 @@
 }
 
 .mt-5 {
-    margin-top: 1.5rem !important;
+    margin-top: 2rem !important;
 }
 
 .nav-pills {
@@ -89,8 +40,8 @@
 
 h1 {
     text-align: center;
-    font-family: 'rubiksemibold';
-    font-size: 46px;
+    font-family: rubiksemibold;
+    font-size: 40px;
     margin-top: 2rem;
     color: #1A1A1A;
 }
@@ -122,7 +73,6 @@ h1 {
         border-radius: 40px;
         outline: none;
         margin-bottom: 20px;
-        color: #666666;
         font-family: rubikregular;
         font-size: 14px;
     }
@@ -137,7 +87,6 @@ h1 {
         border-radius: 40px;
         outline: none;
         margin-bottom: 20px;
-        color: #666666;
         font-family: rubikregular;
         font-size: 14px;
     }
@@ -152,7 +101,6 @@ h1 {
         border-radius: 40px;
         outline: none;
         margin-bottom: 20px;
-        color: #666666;
         font-family: rubikregular;
         font-size: 14px;
     }
@@ -182,16 +130,6 @@ input {
 
 .saveUpdate {
     text-align: center;
-    button {
-        background-color: #000000;
-        color: #ffffff;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 25px;
-        letter-spacing: 0.4px;
-        font-family: rubiklight;
-        font-size: 14px;
-    }
 }
 
 .changePassword {
@@ -199,7 +137,7 @@ input {
     button {
         color: #B48618;
         letter-spacing: 0.4px;
-        font-family: rubiklight;
+        font-family: rubikregular;
         border: none;
         font-size: 14px;
         background-color: transparent;
@@ -210,10 +148,11 @@ input {
     button {
         color: #B48618;
         letter-spacing: 0.4px;
-        font-family: rubiklight;
+        font-family: rubikregular;
         border: none;
-        font-size: 14px;
+        font-size: 16px;
         background-color: transparent;
+
     }
 }
 
@@ -240,7 +179,7 @@ input {
         height: 30px;
     }
     background-color: #CCE1FF;
-    padding: 15px 40px;
+    padding: 12px 24px;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -254,7 +193,7 @@ input {
 
 .accountLinkGoogle {
     background-color: #CCE1FF;
-    padding: 15px 40px;
+    padding: 12px 24px;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -273,7 +212,7 @@ input {
 .closeLinkText {
     p {
         font-family: poppinregular;
-        font-size: 14px;
+        font-size: 12px;
         color: #666666;
     }
 }
@@ -301,8 +240,9 @@ input {
         width: 50%;
     }
     position: absolute;
-    top: 24.5%;
-    left: 44%;
+    top: 210px;
+    left: 43%;
+
     i {
         position: absolute;
         left: 22%;
@@ -480,12 +420,12 @@ p {
 }
 
 .emailFavouriteHeading {
-    font-family: rubiklight;
+    font-family: rubikregular;
     color: #1A1A1A;
 }
 
 .savedHeading {
-    font-family: rubiklight;
+    font-family: rubikregular;
     color: #1A1A1A;
 }
 
@@ -495,7 +435,7 @@ p {
         color: #1A1A1A;
     }
     p {
-        font-size: 14px;
+        font-size: 12px;
         color: #666666;
         font-family: rubiklight;
     }
@@ -524,7 +464,7 @@ p {
     font-family: rubiksemibold;
     color: #1A1A1A;
     p {
-        font-size: 14px;
+        font-size: 12px;
         color: #666666;
         font-family: rubiklight;
     }
@@ -583,8 +523,8 @@ p {
     }
     h6 {
         color: #FFFFFF;
-        margin-top: 24px;
-        margin-right: 10px;
+        margin-top: 14px;
+        margin-right: 12px;
         font-size: 18px;
         font-family: rubikregular;
     }
@@ -603,7 +543,7 @@ p {
         color: #4D4D4D;
     }
     p {
-        font-family: rubikmedium;
+        font-family: rubikregular;
         color: #666666;
     }
 }
@@ -732,7 +672,7 @@ body {
         margin: 0 10px;
         label {
             margin-bottom: 0;
-            font-family: 'rubiksemibold';
+            font-family: rubiksemibold;
             margin-left: 5px;
         }
     }
@@ -740,7 +680,7 @@ body {
         margin: 0 10px;
         label {
             margin-bottom: 0;
-            font-family: 'rubiksemibold';
+            font-family: rubiksemibold;
             margin-left: 5px;
         }
     }
@@ -754,10 +694,12 @@ body {
     }
 }
 
+/*--Start Media Query--*/
+
 @media only screen and (min-width: 2560px) {
     .accountSettingEditImage {
         position: absolute;
-        top: 28.5%;
+        top: 24.2% !important;
         left: 44%;
     }
 }
@@ -765,22 +707,21 @@ body {
 @media only screen and (min-width: 1920px) {
     .accountSettingEditImage {
         position: absolute;
-        top: 216px;
+        top: 24.3;
         left: 43%;
     }
 }
-
 @media only screen and (max-width: 1600px) {
     .accountSettingEditImage {
         position: absolute;
-        top: 217px;
+        top: 24.3%;
         left: 43%;
     }
 }
 
 @media only screen and (max-width: 1366px) {
     .accountSettingEditImage {
-        top: 216px;
+        top: 24.3%;
         left: 43%;
     }
 }
@@ -812,21 +753,30 @@ body {
     }
     .wishlistCardImageTextBox {
         height: 64px;
-        top: 64%;
+        top: 62.5%;
         p {
             font-size: 11px;
         }
     }
     .accountSettingEditImage {
-        top: 217px;
-        left: 41.7%;
+        top: 24.3%;
+        left: 41.4%;
         i {
             position: absolute;
-            left: 22.5%;
-            top: 24%;
+            left: 23%;
+            top: 26%;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
         }
+    }
+    .containercs {
+      padding-left: 22px;
+    }
+    .wishlistCardText  {
+      margin-top: 0px !important;
+    }
+    .wishlistButton button{
+      margin-top: 0px !important;
     }
 }
 
@@ -865,21 +815,21 @@ body {
         }
     }
     .wishlistCardImageTextBox {
-        top: 75%;
+        top: 78.3%;
     }
     .wishlistMap {
         top: 29%;
         left: 44%;
     }
     .accountSettingEditImage {
-        top: 217px;
-        left: 38.5%;
+        top: 18.8%;
+        left: 38.4%;
         i {
             position: absolute;
-            left: 23%;
-            top: 22%;
+            left: 22%;
+            top: 28%;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
         }
     }
     .recommendedHeading {
@@ -892,9 +842,40 @@ body {
             font-size: 12px;
         }
     }
+    .accountSettingHeading h1,
+    .wishlistHeading h1,
+    .savedSearchHeading h1,
+    .emailSettingHeading h1 {
+      font-size: 32px;
+    }
+    .wishlistCardImageText h6 {
+      margin-top: 10px;
+    }
+    .wishlistButton, button{
+      text-align: center;
+      margin-top: 5px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
+  .nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+    .closeLink{
+      margin-top: 36px !important;
+    }
+    .wishListFilters {
+      border: 1px solid #B48618;
+      border-radius: 20px;
+  }
+  .emailFavourite {
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px;
+  }
+
     .accountLinkGoogle {
         margin-bottom: 20px;
     }
@@ -909,7 +890,8 @@ body {
         text-align: center;
     }
     .accountSettingEditImage {
-        top: 216px;
+      position: absolute;
+        top: 18.3%;
         left: 34%;
     }
     .wishListFilters {
@@ -952,13 +934,17 @@ body {
         padding: 12px 5px;
         justify-content: space-between;
         align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px !important;
+        text-align: center;
     }
     .saved {
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 10px;
         padding: 10px 25px;
-        width: 90%;
+        width: 100%;
     }
     .emailFavouriteRadioButton {
         flex-wrap: wrap;
@@ -983,7 +969,7 @@ body {
         }
     }
     .wishlistCardImageTextBox {
-        top: 71%;
+        top: 78.5%;
     }
     .wishlistButton {
         text-align: center;
@@ -1009,7 +995,7 @@ body {
         img {
             width: 60%;
         }
-        top: 199px;
+        top: 18.5%;
         left: 28.6%;
         i {
             left: 27%;
@@ -1044,11 +1030,63 @@ body {
     .emailSettingHeading {
         font-size: 30px;
     }
+    .emailTypeHeading h4,
+    .savedSearchHeading h4,
+    .recommendedHeading h4,
+    .homeSearchHeading h4,
+    .homeReportHeading h4,
+    .newsFeedHeading h4{
+      font-size: 22px;
+    }
+    .emailAddress,
+    .phoneNo  {
+      margin-top: 8px !important;
+    }
+    .saveUpdate {
+      margin-top: 16px !important;
+    }
+    .closeLink {
+      margin-top: 40px !important;
+    }
+    .wishListFilters  {
+      border-radius: 15px;
+    }
+    .savedSearchBox {
+      width: 95%;
+      margin: auto;
+    }
+    .emailTypeBox{
+      width: 95%;
+      margin: auto;
+    }
+    .recommendedBox {
+      width: 90%;
+      margin: auto;
+    }
+    .emailTypeRadioButton {
+      width: 338px;
+      margin-top: -15px;
+    }
+    .emailTypeButton{
+      margin-top: 15px !important;
+    }
+    .savedHeading {
+      text-align: center;
+    }
+    .nav-pills {
+
+      .nav-link.active {
+          color: #fff !important;
+          background: #B48618;
+          padding: 10px 26px;
+      }
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
     .wishlistCardImageTextBox {
-        top: 66%;
+        top: 78.3%;
     }
     .wishlistFilter {
         padding: 10px 20px;
@@ -1085,6 +1123,14 @@ body {
         top: 4%;
         left: 65%;
     }
+    .nav-pills {
+
+      .nav-link.active {
+          color: #fff !important;
+          background: #B48618;
+          padding: 10px 17px;
+      }
+}
 }
 
 @media only screen and (max-width: 360px) {
@@ -1093,7 +1139,22 @@ body {
         top: 196px;
         left: 69px;
         img {
-            width: 70%;
+            width: 71%;
         }
     }
+    .nav-pills {
+
+      .nav-link {
+        font-size: 14px;
+      }
+      .nav-link.active {
+          color: #fff !important;
+          background: #B48618;
+          padding: 5px 10px;
+      }
 }
+}
+
+/*--End Media Query--*/
+
+
