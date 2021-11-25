@@ -11,5 +11,14 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // filter(event) {
+  //   var target = event.target
+  //   if ($(target).hasClass('filter-btn')) {
+  //     $(target).toggleClass("filter-bg")
+  //   }
+  //   else {
+  //     return
+  //   }
+  // }
+  isCollapsed = false;
 }
