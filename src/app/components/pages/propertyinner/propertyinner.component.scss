@@ -90,7 +90,6 @@
 //     }
 //   }
 // }
-
 // latest-properties
 .latest-properties {
     margin-top: .5rem;
@@ -133,30 +132,42 @@
 }
 
 // map container
-
-.map-container2{
-  agm-map{
-    height: 250px;
-  }
+.map-container2 {
+    agm-map {
+        height: 250px;
+    }
 }
+
 // property details
-.row{
-  .col-lg-8{
-    .map-container1{
-      agm-map{
-        height: 450px;
-      }
-    }
-    .head{
-      .content{
-        .price{}
-        .details{
-          .detial{
-            min-width: 100px;
-          }
+.row {
+    .col-lg-8 {
+        .map-container1 {
+            agm-map {
+                height: 450px;
+            }
         }
-      }
+        .head {
+            span {
+                font-family: rubikregular;
+                font-size: 38px;
+            }
+            h1 {
+                font-family: rubiksemibold;
+                font-size: 38px;
+            }
+            .content {
+                .price {
+                    h5 {
+                        font-size: 26px;
+                        font-family: rubiksemibold;
+                    }
+                }
+                .details {
+                    .detial {
+                        min-width: 100px;
+                    }
+                }
+            }
+        }
     }
-  }
 }
-
