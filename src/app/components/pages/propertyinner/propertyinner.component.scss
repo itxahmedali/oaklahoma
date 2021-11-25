@@ -19,7 +19,7 @@
         height: 40px;
         margin: 0 4px;
         padding: 9px 10px 0px 13px;
-        border-radius: 56px;
+        border-radius: 10px;
         .fa-heart {
             color: #fff;
         }
@@ -30,7 +30,7 @@
         height: 40px;
         margin: 0 4px;
         padding: 9px 10px 0px 13px;
-        border-radius: 56px;
+        border-radius: 10px;
         .fa-share {
             color: #fff;
         }
@@ -57,7 +57,7 @@
         font-size: 15px;
         border: none;
         font-weight: bold;
-        border-radius: 95px;
+        border-radius: 10px;
     }
 }
 
@@ -169,5 +169,257 @@
                 }
             }
         }
+    }
+}
+
+.get-in-touch-form {
+    text-align: center;
+    h1 {
+        font-family: rubikregular;
+        color: 1A1A1A;
+    }
+    .get-form-input {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        border-radius: 50px;
+        border: 1px solid #4D4D4D;
+        font-family: rubiklight;
+        color: #808080;
+        outline: none;
+    }
+    .get-form-textarea {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: 1px solid #4D4D4D;
+        font-family: rubiklight;
+        color: #808080;
+        outline: none;
+    }
+    .get-touch-btn {
+        padding: 8px 2.3rem;
+        color: #fff;
+        background: #000;
+        border: none;
+        border-radius: 50px;
+        width: 50%;
+        cursor: pointer;
+    }
+}
+
+.section-1-inner {
+    h2 {
+        font-family: rubikregular;
+        color: 1A1A1A;
+    }
+    p {
+        font-family: poppinregular;
+        color: #666666;
+        margin-bottom: 0px;
+    }
+    button {
+        border: none;
+        color: #B48618;
+        font-size: 14px;
+        font-family: poppinregular;
+        padding: 0;
+    }
+}
+
+.section-2-inner {
+    h3 {
+        font-family: rubikregular;
+        color: 1A1A1A;
+    }
+    .grey-text {
+        color: #4D4D4D;
+        font-size: 16px;
+        font-family: poppinregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    .yellow-text {
+        color: #B48618;
+        font-size: 16px;
+        font-family: poppinregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
+
+.section-3-inner {
+    h3 {
+        font-family: rubikregular;
+        color: 1A1A1A;
+    }
+    .grey-text {
+        color: #4D4D4D;
+        font-size: 16px;
+        font-family: poppinregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    .yellow-text {
+        color: #B48618;
+        font-size: 16px;
+        font-family: poppinregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
+
+.section-4-inner {
+    h2 {
+        font-family: rubikregular;
+        color: 1A1A1A;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.section-5-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        padding-left: 2rem;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.section-7-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        padding-left: 2rem;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.section-11-inner {
+    .vistrula-text-line {
+        font-size: 18px;
+        font-family: poppinregular;
+        color: #666666;
+    }
+    .last-section-text-main {
+        p {
+            color: #B48618;
+            font-size: 18px;
+            font-family: rubiksemibold;
+            margin: 0;
+        }
+        span {
+            font-size: 16px;
+            font-family: poppinregular;
+            color: #666666;
+        }
+    }
+    .last-section-text {
+        text-align: center;
+        line-height: 16px;
+        p {
+            color: #B48618;
+            font-size: 18px;
+            font-family: rubiksemibold;
+            margin: 0px;
+            i {
+                color: #4D4D4D;
+            }
+        }
+        span {
+            font-size: 12px;
+            font-family: poppinregular;
+            color: #666666;
+        }
+    }
+    .text-style-black {
+        font-size: 18px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
     }
 }
