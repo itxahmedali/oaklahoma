@@ -692,225 +692,237 @@
                         <h4>Email Types</h4>
                     </div>
                     <div class="emailTypeRadioButtonBox mt-5">
+                        <!-- <div class="emailTypeButton mt-5"> -->
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="emailTypeRadioButton d-flex justify-content-between">
-                                    <label class="containercs">New Listings
-                    <input type="radio" checked="checked" name="radio1">
-                    <span class="checkmark"></span>
-                  </label>
-                                    <label class="containercs">Open house Updates
-                    <input type="radio" name="radio1">
-                    <span class="checkmark"></span>
-                  </label>
-                                    <label class="containercs">Price changes
-                    <input type="radio" name="radio1">
-                    <span class="checkmark"></span>
-                  </label>
-                                    <label class="containercs">Status Changes
-                    <input type="radio" name="radio1">
-                    <span class="checkmark"></span>
-                  </label>
+                        <button type="button" class="" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+              Show Less
+            </button>
+                        <!-- </div> -->
+                        <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="emailTypeRadioButton d-flex justify-content-between">
+                                        <label class="containercs">New Listings
+                      <input type="radio" checked="checked" name="radio1">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Open house Updates
+                      <input type="radio" name="radio1">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Price changes
+                      <input type="radio" name="radio1">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Status Changes
+                      <input type="radio" name="radio1">
+                      <span class="checkmark"></span>
+                    </label>
+                                    </div>
                                 </div>
                             </div>
+
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="emailTypeRadioButton">
+                                        <label class="containercs">Sold Listings
+                      <input type="radio" name="radio1">
+                      <span class="checkmark"></span>
+                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+
+
+
 
                     </div>
 
+                </div>
+
+                <div class="savedSearchBox mt-5">
+                    <div class="savedSearchHeading mt-1">
+                        <h4>Saved Search</h4>
+                    </div>
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="emailTypeRadioButton">
-                                <label class="containercs">Sold Listings
-                  <input type="radio" name="radio1">
-                  <span class="checkmark"></span>
-                </label>
+                        <div class="emailFavourite mt-5">
+                            <div class="col-lg-6">
+                                <div class="emailFavouriteHeading mt-1">
+                                    <h6>Oklahoma City</h6>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="emailTypeButton mt-5">
-                        <button>Show Less</button>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="savedSearchBox mt-5">
-                <div class="savedSearchHeading mt-1">
-                    <h4>Saved Search</h4>
-                </div>
-                <div class="row">
-                    <div class="emailFavourite mt-5">
-                        <div class="col-lg-6">
-                            <div class="emailFavouriteHeading mt-1">
-                                <h6>Oklahoma City</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="emailFavouriteRadioButton d-flex justify-content-between">
-                                <label class="containercs">Instant
-                  <input type="radio" checked="checked" name="radio2">
-                  <span class="checkmark"></span>
-                </label>
-                                <label class="containercs">Daily
-                  <input type="radio" name="radio2">
-                  <span class="checkmark"></span>
-                </label>
-                                <label class="containercs">Weekly
-                  <input type="radio" name="radio2">
-                  <span class="checkmark"></span>
-                </label>
-                                <label class="containercs">Monthly
-                  <input type="radio" name="radio2">
-                  <span class="checkmark"></span>
-                </label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="emailTypeBox mt-5">
-                    <div class="emailTypeHeading">
-                        <h4>Email Types</h4>
-                    </div>
-                    <div class="emailTypeRadioButtonBox mt-5">
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="emailTypeRadioButton d-flex justify-content-between">
-                                    <label class="containercs">New Listings
-                    <input type="radio" checked="checked" name="radio3">
+                            <div class="col-lg-6">
+                                <div class="emailFavouriteRadioButton d-flex justify-content-between">
+                                    <label class="containercs">Instant
+                    <input type="radio" checked="checked" name="radio2">
                     <span class="checkmark"></span>
                   </label>
-                                    <label class="containercs">Open house Updates
-                    <input type="radio" name="radio3">
+                                    <label class="containercs">Daily
+                    <input type="radio" name="radio2">
                     <span class="checkmark"></span>
                   </label>
-                                    <label class="containercs">Price changes
-                    <input type="radio" name="radio3">
+                                    <label class="containercs">Weekly
+                    <input type="radio" name="radio2">
                     <span class="checkmark"></span>
                   </label>
-                                    <label class="containercs">Status Changes
-                    <input type="radio" name="radio3">
+                                    <label class="containercs">Monthly
+                    <input type="radio" name="radio2">
                     <span class="checkmark"></span>
                   </label>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="emailTypeRadioButton">
-                                    <label class="containercs">Sold Listings
-                    <input type="radio" name="radio3">
-                    <span class="checkmark"></span>
-                  </label>
+                        </div>
+                    </div>
+                    <div class="emailTypeBox mt-5">
+                        <div class="emailTypeHeading">
+                            <h4>Email Types</h4>
+                        </div>
+                        <!-- <div class="emailTypeRadioButtonBox mt-5"> -->
+                        <!-- <div class="emailTypeButton mt-5"> -->
+                        <!-- <button>Show Less</button> -->
+                        <button type="button" class="" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+              Show Less
+            </button>
+                        <!-- </div> -->
+
+
+                        <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="emailTypeRadioButton d-flex justify-content-between">
+                                        <label class="containercs">New Listings
+                      <input type="radio" checked="checked" name="radio3">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Open house Updates
+                      <input type="radio" name="radio3">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Price changes
+                      <input type="radio" name="radio3">
+                      <span class="checkmark"></span>
+                    </label>
+                                        <label class="containercs">Status Changes
+                      <input type="radio" name="radio3">
+                      <span class="checkmark"></span>
+                    </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="emailTypeRadioButton">
+                                        <label class="containercs">Sold Listings
+                      <input type="radio" name="radio3">
+                      <span class="checkmark"></span>
+                    </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- </div> -->
 
-                        <div class="emailTypeButton mt-5">
-                            <button>Show Less</button>
-                        </div>
+                    </div>
+                </div>
 
+
+                <div class="recommendedBox mt-5">
+                    <div class="recommendedHeading">
+                        <h4>Recommended for you</h4>
+                        <p>Recommended homes based on your searches and favorites.</p>
+                    </div>
+                    <div class="recommendedRadioButton mt-5">
+                        <label class="containercss">Recommended Home
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+                    <div class="homeSearchHeading mt-5">
+                        <h4>Home Search Insights</h4>
+                    </div>
+                    <div class="recommendedRadioButton mt-5">
+                        <label class="containercss">
+              <h6>Home discovery & trends</h6>
+              <p>Find new homes you'll love & stay on top of the latest market trends.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+                    <div class="recommendedRadioButton mt-4">
+                        <label class="containercss">
+              <h6>Price whisperer</h6>
+              <p>Hear about listings that fit your search criteria before they hit the market, and provide feedback on
+                pricing.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+                    <div class="recommendedRadioButton mt-4">
+                        <label class="containercss">
+              <h6>Last call</h6>
+              <p>Get notified when a home that you have shown interest in receives an offer, or has an offer review
+                date approaching.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+                    <div class="recommendedRadioButton mt-4">
+                        <label class="containercss">
+              <h6>Weekend open houses</h6>
+              <p>Find new homes you'll love & stay on top of the latest market trends.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+                    <div class="recommendedRadioButton mt-4">
+                        <label class="containercss">
+              <h6>Newsletter from my agent</h6>
+              <p>Get notified about the latest trends in the real estate market from your local Redfin agent.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+
+                    <div class="homeReportHeading mt-5">
+                        <h4>Home reports</h4>
+                    </div>
+                    <div class="recommendedRadioButton mt-5">
+                        <label class="containercss">
+              <h6>Comparable home updates</h6>
+              <p>Get notifications when homes sell and affect your estimate.</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+                    </div>
+
+                    <div class="newsFeedHeading mt-5">
+                        <h4>News & Feeds</h4>
+                    </div>
+                    <div class="recommendedRadioButton mt-5">
+                        <label class="containercss">
+              <h6>Oklahoma news and feeds</h6>
+              <p>Stay up to date</p>
+              <input type="checkbox" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
                     </div>
 
                 </div>
             </div>
 
+            <!--End Email Settings Content Tab-->
 
-            <div class="recommendedBox mt-5">
-                <div class="recommendedHeading">
-                    <h4>Recommended for you</h4>
-                    <p>Recommended homes based on your searches and favorites.</p>
-                </div>
-                <div class="recommendedRadioButton mt-5">
-                    <label class="containercss">Recommended Home
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-                <div class="homeSearchHeading mt-5">
-                    <h4>Home Search Insights</h4>
-                </div>
-                <div class="recommendedRadioButton mt-5">
-                    <label class="containercss">
-            <h6>Home discovery & trends</h6>
-            <p>Find new homes you'll love & stay on top of the latest market trends.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-                <div class="recommendedRadioButton mt-4">
-                    <label class="containercss">
-            <h6>Price whisperer</h6>
-            <p>Hear about listings that fit your search criteria before they hit the market, and provide feedback on
-              pricing.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-                <div class="recommendedRadioButton mt-4">
-                    <label class="containercss">
-            <h6>Last call</h6>
-            <p>Get notified when a home that you have shown interest in receives an offer, or has an offer review
-              date approaching.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-                <div class="recommendedRadioButton mt-4">
-                    <label class="containercss">
-            <h6>Weekend open houses</h6>
-            <p>Find new homes you'll love & stay on top of the latest market trends.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-                <div class="recommendedRadioButton mt-4">
-                    <label class="containercss">
-            <h6>Newsletter from my agent</h6>
-            <p>Get notified about the latest trends in the real estate market from your local Redfin agent.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-
-                <div class="homeReportHeading mt-5">
-                    <h4>Home reports</h4>
-                </div>
-                <div class="recommendedRadioButton mt-5">
-                    <label class="containercss">
-            <h6>Comparable home updates</h6>
-            <p>Get notifications when homes sell and affect your estimate.</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-
-                <div class="newsFeedHeading mt-5">
-                    <h4>News & Feeds</h4>
-                </div>
-                <div class="recommendedRadioButton mt-5">
-                    <label class="containercss">
-            <h6>Oklahoma news and feeds</h6>
-            <p>Stay up to date</p>
-            <input type="checkbox" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-                </div>
-
-            </div>
         </div>
-
-        <!--End Email Settings Content Tab-->
-
+        <!--End Main Content Tab-->
     </div>
-    <!--End Main Content Tab-->
-</div>
-<!--End Tabs-->
+    <!--End Tabs-->
