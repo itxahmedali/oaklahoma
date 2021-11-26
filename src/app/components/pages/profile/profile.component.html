@@ -87,7 +87,8 @@
             <button class="black-btn">Save Updates</button>
           </div>
           <div class="changePassword mt-3">
-            <button>Forget Or Change Password</button>
+            <button class='more ' href="javascript:void(0)" data-bs-toggle="modal"
+              data-bs-target="#ChangePassword">Forget Or Change Password</button>
           </div>
           <div class="accountLink mt-5">
             <h2>Linked Accounts</h2>
@@ -171,6 +172,7 @@
         <div class="wishlistCardBox mt-5">
           <div class="row">
             <div class="col-lg-4">
+<<<<<<< HEAD
               <div class="wishlistCardImage">
                 <div id="carouselExampleControls"  class="carousel slide"  data-interval="false">
                   <div class="carousel-inner">
@@ -203,6 +205,32 @@
                   <div class="wishlistCardImageText d-flex justify-content-between">
                     <p>3 bd, 2 bath,<br>1360 sqft</p>
                     <h6>$700,000</h6>
+=======
+
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wishlistCardImage">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
+                      <div class="subWishlistCardImage">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                      <div class="wishlistCardImageTextBox">
+                        <p> 770 West Senna Ave. Spiro, OK 74959 </p>
+                        <div class="wishlistCardImageText d-flex justify-content-between">
+                          <p>3 bd, 2 bath,<br>1360 sqft</p>
+                          <h6>$750,000</h6>
+                        </div>
+                      </div>
+                    </div>
+>>>>>>> cd2eec8ac51f43a511d3c996ef71ccfd8c933c24
                   </div>
                 </div>
               </div>
@@ -266,6 +294,7 @@
         <div class="wishlistCardBox mt-5">
           <div class="row">
             <div class="col-lg-4">
+<<<<<<< HEAD
 
               <div class="wishlistCardImage">
                 <div id="carouselExampleControls" class="carousel slide"  data-interval="false">
@@ -299,6 +328,31 @@
                   <div class="wishlistCardImageText d-flex justify-content-between">
                     <p>3 bd, 2 bath,<br>1360 sqft</p>
                     <h6>$1200-3000</h6>
+=======
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wishlistCardImage">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
+                      <div class="subWishlistCardImage">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                      <div class="wishlistCardImageTextBox">
+                        <p> 770 West Senna Ave. Spiro, OK 74959 </p>
+                        <div class="wishlistCardImageText d-flex justify-content-between">
+                          <p>3 bd, 2 bath,<br>1360 sqft</p>
+                          <h6>$1200-3000</h6>
+                        </div>
+                      </div>
+                    </div>
+>>>>>>> cd2eec8ac51f43a511d3c996ef71ccfd8c933c24
                   </div>
                 </div>
               </div>
@@ -363,6 +417,7 @@
         <div class="wishlistCardBox mt-5">
           <div class="row">
             <div class="col-lg-4">
+<<<<<<< HEAD
 
               <div class="wishlistCardImage">
                 <div id="carouselExampleControls" class="carousel slide" data-interval="false">
@@ -396,6 +451,31 @@
                   <div class="wishlistCardImageText d-flex justify-content-between">
                     <p>3 bd, 2 bath,<br>1360 sqft</p>
                     <h6>$1200-3000</h6>
+=======
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wishlistCardImage">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
+                      <div class="subWishlistCardImage">
+                        <i class="fa fa-heart"></i>
+                      </div>
+                      <div class="wishlistCardImageTextBox">
+                        <p> 770 West Senna Ave. Spiro, OK 74959 </p>
+                        <div class="wishlistCardImageText d-flex justify-content-between">
+                          <p>3 bd, 2 bath,<br>1360 sqft</p>
+                          <h6>$1200-3000</h6>
+                        </div>
+                      </div>
+                    </div>
+>>>>>>> cd2eec8ac51f43a511d3c996ef71ccfd8c933c24
                   </div>
                 </div>
               </div>

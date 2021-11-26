@@ -134,14 +134,14 @@ input {
 
 .changePassword {
     text-align: center;
-    button {
-        color: #B48618;
-        letter-spacing: 0.4px;
-        font-family: rubikregular;
-        border: none;
-        font-size: 14px;
-        background-color: transparent;
-    }
+    // button {
+    //     color: #B48618;
+    //     letter-spacing: 0.4px;
+    //     font-family: rubikregular;
+    //     border: none;
+    //     font-size: 14px;
+    //     background-color: transparent;
+    // }
 }
 
 .emailTypeButton {
@@ -485,11 +485,6 @@ p {
     color: #1A1A1A;
 }
 
-.wishlistCardImage {
-    position: relative;
-    width: 90%;
-    height: 100%;
-}
 
 .subWishlistCardImage {
     position: absolute;
