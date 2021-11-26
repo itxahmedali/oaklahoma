@@ -1,0 +1,24 @@
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="collapse1.toggle()"
+    [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseExample1">
+    Toggle
+  </button>
+</p>
+<div #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+  <div class="card">
+    <div class="card-body">
+      You can collapse this card by clicking Toggle
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-outline-primary" (click)="collapse2.toggle()" [attr.aria-expanded]="!setCollapse"
+  aria-controls="collapseExample2">
+  Toggle
+</button>
+<div #collapse2="ngbCollapse" [(ngbCollapse)]="setCollapse">
+  <div class="card">
+    <div class="card-body">
+      You can collapse this card by clicking Toggle
+    </div>
+  </div>
+</div>

@@ -84,10 +84,11 @@
             </div>
           </div>
           <div class="saveUpdate mt2">
-            <button class="black-btn">Save Update</button>
+            <button class="black-btn">Save Updates</button>
           </div>
           <div class="changePassword mt-3">
-            <button>Forget Or Change Password</button>
+            <button class='more ' href="javascript:void(0)" data-bs-toggle="modal"
+              data-bs-target="#ChangePassword">Forget Or Change Password</button>
           </div>
           <div class="accountLink mt-5">
             <h2>Linked Accounts</h2>
@@ -666,13 +667,7 @@
             <h4>Email Types</h4>
           </div>
           <div class="emailTypeRadioButtonBox mt-5">
-            <!-- <div class="emailTypeButton mt-5"> -->
 
-            <button type="button" class="" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-              aria-controls="collapseExample">
-              Show Less
-            </button>
-            <!-- </div> -->
             <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
 
               <div class="row">
@@ -713,7 +708,11 @@
               </div>
 
             </div>
-
+            <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)"
+              [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
+              aria-controls="collapseExample">
+              {{btnVal1}}
+            </button>
             <div class="savedSearchBox mt-5">
               <div class="savedSearchHeading mt-1">
                 <h4>Saved Search</h4>
@@ -752,18 +751,9 @@
                 <div class="emailTypeHeading">
                   <h4>Email Types</h4>
                 </div>
-                <!-- <div class="emailTypeRadioButtonBox mt-5"> -->
-                <!-- <div class="emailTypeButton mt-5"> -->
-                <!-- <button>Show Less</button> -->
-                <button type="button" class="" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-                  aria-controls="collapseExample">
-                  Show Less
-                </button>
-                <!-- </div> -->
 
 
-                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-
+                <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
 
                   <div class="row">
                     <div class="col-lg-12">
@@ -799,8 +789,12 @@
                     </div>
                   </div>
                 </div>
-                <!-- </div> -->
 
+                <button type="button" class="more mb2" (click)="collapse2.toggle(); seeless2clickEvent($event)"
+                  [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
+                  aria-controls="collapseExample">
+                  {{btnVal2}}
+                </button>
               </div>
             </div>
 
