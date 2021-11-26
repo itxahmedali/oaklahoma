@@ -61,6 +61,20 @@
     z-index: 10;
 }
 
+.wishlistCardImage {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    .next-arrow{
+      right: -3px !important;
+    color: #fff !important;
+    }
+    .prev-arrow {
+          left: 0 !important;
+    color: #fff !important;
+    }
+}
+
 // pagination
 a:not([href]):not([class]) {
     border: 1px solid #000;

@@ -177,7 +177,14 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="wishlistCardImage">
-                      <img src="../../../../assets/1x/home.png" class="img-fluid">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
                       <div class="subWishlistCardImage">
                         <i class="fa fa-heart"></i>
                       </div>
@@ -291,7 +298,14 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="wishlistCardImage">
-                      <img src="../../../../assets/1x/home.png" class="img-fluid">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
                       <div class="subWishlistCardImage">
                         <i class="fa fa-heart"></i>
                       </div>
@@ -403,7 +417,14 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="wishlistCardImage">
-                      <img src="../../../../assets/1x/home.png" class="img-fluid">
+                      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                          <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                      </ngx-slick-carousel>
+                      <!-- <img src="../../../../assets/1x/home.png" class="img-fluid"> -->
                       <div class="subWishlistCardImage">
                         <i class="fa fa-heart"></i>
                       </div>

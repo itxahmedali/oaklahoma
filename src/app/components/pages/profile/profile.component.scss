@@ -489,6 +489,14 @@ p {
     position: relative;
     width: 90%;
     height: 100%;
+    .next-arrow{
+      right: -3px !important;
+    color: #fff !important;
+    }
+    .prev-arrow {
+          left: 0 !important;
+    color: #fff !important;
+    }
 }
 
 .subWishlistCardImage {
