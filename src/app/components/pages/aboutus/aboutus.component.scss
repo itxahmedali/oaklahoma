@@ -110,6 +110,9 @@
             object-fit: contain;
         }
     }
+    .forPhone{
+          display: none;
+        }
 }
 
 // abotusContainer
@@ -277,6 +280,12 @@
     .download-section {
         .download-icons {
             position: static;
+        }
+        .forWeb{
+          display: none
+        }
+        .forPhone{
+          display: block;
         }
     }
     .cstm-container {
