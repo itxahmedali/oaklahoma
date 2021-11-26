@@ -61,6 +61,8 @@
     z-index: 10;
 }
 
+// .wishlistCardImage {
+
 .wishlistCardImage {
     position: relative;
     width: 90%;
@@ -539,6 +541,19 @@ agm-map {
 
 .mb10 {
     margin-bottom: 10rem !important
+}
+
+@media only screen and (max-width:1024px ) {
+  // latest-properties
+.propertyCustom {
+  .properties-slider{
+  .next-arrow{
+     display: none !important
+    }
+    .prev-arrow {
+         display: none !important
+    }}
+}
 }
 
 @media only screen and (max-width:768px) {

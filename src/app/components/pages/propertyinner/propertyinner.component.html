@@ -1,726 +1,734 @@
 <!-- Buttons -->
 <div class="container">
-    <div class="topButtonsSection d-flex justify-content-between">
-        <div class="buttonsBox d-flex justify-content-between">
-            <Button class="black-btn cusotmBlack_btn">Overview</Button>
-            <Button class="black-btn cusotmBlack_btn">Description</Button>
-            <Button class="black-btn cusotmBlack_btn">Property Details</Button>
-            <Button class="black-btn cusotmBlack_btn">Schools</Button>
-        </div>
-        <div class="iconsBtnbox d-flex">
-            <div class="heart-icon">
-                <i class="fa fa-heart"></i>
-            </div>
-            <div class="heart-icon2">
-                <!-- <img width="100%" height="100%" src="../../../../assets/1x/shareIconB.png" alt=""> -->
-                <i class="fa fa-share"></i>
-            </div>
-        </div>
+  <div class="topButtonsSection d-flex justify-content-between">
+    <div class="buttonsBox d-flex justify-content-between">
+      <Button class="black-btn cusotmBlack_btn">Overview</Button>
+      <Button class="black-btn cusotmBlack_btn">Description</Button>
+      <Button class="black-btn cusotmBlack_btn">Property Details</Button>
+      <Button class="black-btn cusotmBlack_btn">Schools</Button>
     </div>
-    <div class="bannerBox position-relative">
-        <div class="imageBox">
-            <img src="../../../../assets/1x/slider-img1.png" width="100%" height="100%" alt="">
-        </div>
-        <div class="buttonsBox d-flex position-absolute">
-            <button class="bannerButton">
-                3D Walkthrough
-            </button>
-            <button class="bannerButton">
-                Street View
-            </button>
-        </div>
+    <div class="iconsBtnbox d-flex">
+      <div class="heart-icon">
+        <i class="fa fa-heart"></i>
+      </div>
+      <div class="heart-icon2">
+        <!-- <img width="100%" height="100%" src="../../../../assets/1x/shareIconB.png" alt=""> -->
+        <i class="fa fa-share"></i>
+      </div>
     </div>
-    <div class="latest-properties property">
-        <div class="properties-slider">
-            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                    <img src="{{ slide.img }}" alt="" width="100%">
-                </div>
-            </ngx-slick-carousel>
-        </div>
+  </div>
+  <div class="bannerBox position-relative">
+    <div class="imageBox">
+      <img src="../../../../assets/1x/slider-img1.png" width="100%" height="100%" alt="">
     </div>
-    <div class="row mt4">
-        <div class="col-lg-8">
-            <div class="head">
-                <h1>770 West Senna Ave. <span> Spiro, OK 74959 </span> </h1>
-                <div class="content d-flex justify-content-between mt2 align-items-center">
-                    <div class="price">
-                        <h5>$750000</h5>
-                    </div>
-                    <div class="details d-flex justify-content-between">
-                        <div class="beds detail">
-                            <h5>2</h5>
-                            <label for="">Bed</label>
-                        </div>
-                        <div class="baths detail">
-                            <h5>4</h5>
-                            <label for="">Bath</label>
-                        </div>
-                        <div class="sqft detail">
-                            <h5>1500</h5>
-                            <label for="">Sq.ft</label>
-                        </div>
-                    </div>
-                </div>
+    <div class="buttonsBox d-flex position-absolute">
+      <button class="bannerButton">
+        3D Walkthrough
+      </button>
+      <button class="bannerButton">
+        Street View
+      </button>
+    </div>
+  </div>
+  <div class="latest-properties property propertyCustom">
+    <div class="properties-slider">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+  <div class="row mt4">
+    <div class="col-lg-8">
+      <div class="head">
+        <h1>770 West Senna Ave. <span> Spiro, OK 74959 </span> </h1>
+        <div class="content d-flex justify-content-between mt2 align-items-center">
+          <div class="price">
+            <h5>$750000</h5>
+          </div>
+          <div class="details d-flex justify-content-between">
+            <div class="beds detail">
+              <h5>2</h5>
+              <label for="">Bed</label>
             </div>
-            <div class="Description-section-1-inner mt2">
-                <div>
-                    <h2>Description</h2>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis </p>
-                    <button>Continue Reading</button>
-                </div>
+            <div class="baths detail">
+              <h5>4</h5>
+              <label for="">Bath</label>
             </div>
-            <div class="Status-section-2-inner mt2">
-                <div>
-                    <h3>Home Facts</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>Status</span>
-                            </div>
-                            <div class="yellow-text">
-                                <span>Active</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>Time</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>2 hours</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>Property Type</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>Condo</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>HOA Dues</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>$984/month</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>Year Built</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>2006</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>Community</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>CHI - Near South Side</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
-                            flex-wrap">
-                            <div class="grey-text">
-                                <span>MLS#</span>
-                            </div>
-                            <div class="yellow-text">
-                                <span>123456</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="sqft detail">
+              <h5>1500</h5>
+              <label for="">Sq.ft</label>
             </div>
-            <div class="Price-section-3-inner mt4">
-                <div>
-                    <h3>Price Insights</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
+          </div>
+        </div>
+      </div>
+      <div class="Description-section-1-inner mt2">
+        <div>
+          <h2>Description</h2>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis
+            nisl ut aliquip ex ea commodo consequat. Duis </p>
+          <button>Continue Reading</button>
+        </div>
+      </div>
+      <div class="Status-section-2-inner mt2">
+        <div>
+          <h3>Home Facts</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
                             flex-wrap">
-                            <div class="grey-text">
-                                <span>List Price</span>
-                            </div>
-                            <div class="yellow-text">
-                                <span>$750,000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
+              <div class="grey-text">
+                <span>Status</span>
+              </div>
+              <div class="yellow-text">
+                <span>Active</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
                             flex-wrap">
-                            <div class="grey-text">
-                                <span>Price/Sq.ft</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>132</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="cstm-row d-flex justify-content-between
+              <div class="grey-text">
+                <span>Time</span>
+              </div>
+              <div class="grey-text">
+                <span>2 hours</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
                             flex-wrap">
-                            <div class="grey-text">
-                                <span>Est.Mo Payment</span>
-                            </div>
-                            <div class="grey-text">
-                                <span>$2000</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="grey-text">
+                <span>Property Type</span>
+              </div>
+              <div class="grey-text">
+                <span>Condo</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>HOA Dues</span>
+              </div>
+              <div class="grey-text">
+                <span>$984/month</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>Year Built</span>
+              </div>
+              <div class="grey-text">
+                <span>2006</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>Community</span>
+              </div>
+              <div class="grey-text">
+                <span>CHI - Near South Side</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>MLS#</span>
+              </div>
+              <div class="yellow-text">
+                <span>123456</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Price-section-3-inner mt4">
+        <div>
+          <h3>Price Insights</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>List Price</span>
+              </div>
+              <div class="yellow-text">
+                <span>$750,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>Price/Sq.ft</span>
+              </div>
+              <div class="grey-text">
+                <span>132</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="cstm-row d-flex justify-content-between
+                            flex-wrap">
+              <div class="grey-text">
+                <span>Est.Mo Payment</span>
+              </div>
+              <div class="grey-text">
+                <span>$2000</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            </div>
-            <div class="map-container1 mt5">
-                <agm-map [latitude]="lat" [longitude]="lng">
-                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-                </agm-map>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="map-container2">
-                <agm-map [latitude]="lat" [longitude]="lng">
-                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-                </agm-map>
-            </div>
-            <div class="get-in-touch-form mt3">
-                <div>
-                    <h1>Get In Touch</h1>
-                </div>
-                <div>
-                    <div>
-                        <input class="get-form-input" type="text" placeholder="Full Name">
-                    </div>
-                    <div>
-                        <input class="get-form-input" type="text" placeholder="Email">
-                    </div>
-                    <div>
-                        <input class="get-form-input" type="text" placeholder="Phone No">
-                    </div>
-                    <div>
-                        <textarea class="get-form-textarea" name="" placeholder="Message" id="" cols="20" rows="8"></textarea>
-                    </div>
-                    <div class="mt1">
-                        <button class="get-touch-btn">Send</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="map-container1 mt5">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
     </div>
-    <div class="col-lg-10">
-        <div class="Property-section-4-inner mt4">
-            <div>
-                <h2>Property Details</h2>
-            </div>
-            <div class="vistrula-text-line mt2">
-                <span>Virtual Tour, Parking / Garage, Exterior Features,
-                    Multi-Unit Information</span>
-            </div>
-            <div class="row mt3">
-                <div class="col-lg-6">
-                    <div class="text-style ">
-                        <label class="text-style-black">Virtual Tour</label>
-                        <a href="">Virtual Tour (External Link)</a>
-                    </div>
-                    <div class="text-list mt1">
-                        <label class="text-style-black">Parking Information</label>
-                        <ul>
-                            <li># Of Cars: 2</li>
-                            <li># of Garage Spaces: 2</li>
-                            <li>Parking: Garage</li>
-                            <li>Garage Ownership: Deeded Sold Separately</li>
-                            <li>Garage On-Site: Yes</li>
-                            <li>Garage Type: Detached</li>
-                            <li>Garage Details: Garage Door Opener(s),Heated</li>
-                            <li>Deeded Garage Cost: $50,000</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="text-list">
-                        <label class="text-style-black">Building Information</label>
-                        <ul>
-                            <li># Of Units in Building: 187</li>
-                            <li>Living Area Source: Estimated</li>
-                            <li>Exterior Building Type: Concrete</li>
-                            <li>Age: 11-15 Years</li>
-                            <li>Built Before 1978 (Y/N): No</li>
-                        </ul>
-                    </div>
-                    <div class="text-list mt1">
-                        <label class="text-style-black">Community Information</label>
-                        <ul>
-                            <li>Management: Manager On-site,Monday through Friday</li>
-                            <li>Pets Allowed (Y/N): Yes</li>
-                            <li>Pets Allowed: Additional Pet Rent,Cats OK,Dogs OK</li>
-                            <li>Max Pet Weight: 999</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="col-lg-4">
+      <div class="map-container2">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+      <div class="get-in-touch-form mt3">
+        <div>
+          <h1>Get In Touch</h1>
         </div>
-        <div class="Interior-section-5-inner mt4">
-            <div>
-                <h4>Interior Features</h4>
-            </div>
-            <div class="row mt2">
-                <div class="col-lg-6">
-                    <div class="text-list mt1">
-                        <label class="text-style-black">Bathroom Information</label>
-                        <ul>
-                            <li># of Baths (Full): 2</li>
-                            <li>Bath Amenities: Separate Shower,Double Sink</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 1 Information</label>
-                        <ul>
-                            <li> Room Type: Den</li>
-                            <li> Dimensions: 11X8</li>
-                            <li> Level: Main</li>
-                            <li>Flooring: Hardwood</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 2 Information</label>
-                        <ul>
-                            <li>Room Type: Walk In Closet</li>
-                            <li>Dimensions: 5X6</li>
-                            <li>Level: Main</li>
-                            <li>Flooring: Hardwood</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 3 Information</label>
-                        <ul>
-                            <li>Room Type: Bedroom 2</li>
-                            <li> Dimensions: 11X8</li>
-                            <li> Level: Main</li>
-                            <li>Flooring: Hardwood</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 4 Information</label>
-                        <ul>
-                            <li> Room Type: Kitchen</li>
-                            <li> Dimensions: 9X10</li>
-                            <li> Level: Main</li>
-                            <li> Flooring: Hardwood</li>
-                            <li> Kitchen Type: Eating Area-Breakfast</li>
-                            <li>Bar,Granite Counters</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="text-list mt1">
-                        <label class="text-style-black">Bedroom Information</label>
-                        <ul>
-                            <li># Of Units in Building: 187</li>
-                            <li>Living Area Source: Estimated</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 5 Information</label>
-                        <ul>
-                            <li> Room Type: Living Room</li>
-                            <li> Dimensions: 15X22</li>
-                            <li> Level: Main</li>
-                            <li> Flooring: Hardwood
+        <div>
+          <div>
+            <input class="get-form-input" type="text" placeholder="Full Name">
+          </div>
+          <div>
+            <input class="get-form-input" type="text" placeholder="Email">
+          </div>
+          <div>
+            <input class="get-form-input" type="text" placeholder="Phone No">
+          </div>
+          <div>
+            <textarea class="get-form-textarea" name="" placeholder="Message" id="" cols="20" rows="8"></textarea>
+          </div>
+          <div class="mt1">
+            <button class="get-touch-btn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-10">
+    <div class="Property-section-4-inner mt4">
+      <div>
+        <h2>Property Details</h2>
+      </div>
+      <div class="vistrula-text-line mt2">
+        <span>Virtual Tour, Parking / Garage, Exterior Features,
+          Multi-Unit Information</span>
+      </div>
+      <div class="row mt3">
+        <div class="col-lg-6">
+          <div class="text-style ">
+            <label class="text-style-black">Virtual Tour</label>
+            <a href="">Virtual Tour (External Link)</a>
+          </div>
+          <div class="text-list mt1">
+            <label class="text-style-black">Parking Information</label>
+            <ul>
+              <li># Of Cars: 2</li>
+              <li># of Garage Spaces: 2</li>
+              <li>Parking: Garage</li>
+              <li>Garage Ownership: Deeded Sold Separately</li>
+              <li>Garage On-Site: Yes</li>
+              <li>Garage Type: Detached</li>
+              <li>Garage Details: Garage Door Opener(s),Heated</li>
+              <li>Deeded Garage Cost: $50,000</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-list">
+            <label class="text-style-black">Building Information</label>
+            <ul>
+              <li># Of Units in Building: 187</li>
+              <li>Living Area Source: Estimated</li>
+              <li>Exterior Building Type: Concrete</li>
+              <li>Age: 11-15 Years</li>
+              <li>Built Before 1978 (Y/N): No</li>
+            </ul>
+          </div>
+          <div class="text-list mt1">
+            <label class="text-style-black">Community Information</label>
+            <ul>
+              <li>Management: Manager On-site,Monday through Friday</li>
+              <li>Pets Allowed (Y/N): Yes</li>
+              <li>Pets Allowed: Additional Pet Rent,Cats OK,Dogs OK</li>
+              <li>Max Pet Weight: 999</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Interior-section-5-inner mt4">
+      <div>
+        <h4>Interior Features</h4>
+      </div>
+      <div class="row mt2">
+        <div class="col-lg-6">
+          <div class="text-list mt1">
+            <label class="text-style-black">Bathroom Information</label>
+            <ul>
+              <li># of Baths (Full): 2</li>
+              <li>Bath Amenities: Separate Shower,Double Sink</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 1 Information</label>
+            <ul>
+              <li> Room Type: Den</li>
+              <li> Dimensions: 11X8</li>
+              <li> Level: Main</li>
+              <li>Flooring: Hardwood</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 2 Information</label>
+            <ul>
+              <li>Room Type: Walk In Closet</li>
+              <li>Dimensions: 5X6</li>
+              <li>Level: Main</li>
+              <li>Flooring: Hardwood</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 3 Information</label>
+            <ul>
+              <li>Room Type: Bedroom 2</li>
+              <li> Dimensions: 11X8</li>
+              <li> Level: Main</li>
+              <li>Flooring: Hardwood</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 4 Information</label>
+            <ul>
+              <li> Room Type: Kitchen</li>
+              <li> Dimensions: 9X10</li>
+              <li> Level: Main</li>
+              <li> Flooring: Hardwood</li>
+              <li> Kitchen Type: Eating Area-Breakfast</li>
+              <li>Bar,Granite Counters</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-list mt1">
+            <label class="text-style-black">Bedroom Information</label>
+            <ul>
+              <li># Of Units in Building: 187</li>
+              <li>Living Area Source: Estimated</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 5 Information</label>
+            <ul>
+              <li> Room Type: Living Room</li>
+              <li> Dimensions: 15X22</li>
+              <li> Level: Main</li>
+              <li> Flooring: Hardwood
 
 
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Room 6 Information</label>
-                        <ul>
-                            <li> Room Type: Master Bedroom</li>
-                            <li> Dimensions: 12X19</li>
-                            <li> Level: Main</li>
-                            <li> Bath: Full</li>
-                            <li> Flooring: Hardwood</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Additional Rooms Information</label>
-                        <ul>
-                            <li> Dining Room: None</li>
-                            <li> Basement Description: None</li>
-                            <li> Laundry Features: In Unit, Laundry Closet</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Interior Features</label>
-                        <ul>
-                            <li> Interior Features: Hardwood Floors, Laundry Hook-Up in Unit, Walk-In Closet(s)</li>
-                            <li> Window Features: Display Window(s)</li>
-                        </ul>
-                    </div>
-                    <div class="text-list">
-                        <label class="text-style-black">Equipment</label>
-                        <ul>
-                            <li>Appliances: Range, Microwave, Dishwasher, Refrigerator, Washer, Dryer, Disposal, Stainless Steel Appliance(s)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+              </li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Room 6 Information</label>
+            <ul>
+              <li> Room Type: Master Bedroom</li>
+              <li> Dimensions: 12X19</li>
+              <li> Level: Main</li>
+              <li> Bath: Full</li>
+              <li> Flooring: Hardwood</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Additional Rooms Information</label>
+            <ul>
+              <li> Dining Room: None</li>
+              <li> Basement Description: None</li>
+              <li> Laundry Features: In Unit, Laundry Closet</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Interior Features</label>
+            <ul>
+              <li> Interior Features: Hardwood Floors, Laundry Hook-Up in Unit, Walk-In Closet(s)</li>
+              <li> Window Features: Display Window(s)</li>
+            </ul>
+          </div>
+          <div class="text-list">
+            <label class="text-style-black">Equipment</label>
+            <ul>
+              <li>Appliances: Range, Microwave, Dishwasher, Refrigerator, Washer, Dryer, Disposal, Stainless Steel
+                Appliance(s)</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 <div class="yellow-section-6-inner mt3">
-    <div class="col-lg-8 yellow-background">
-        <div class="cstm-container d-flex justify-content-between flex-wrap">
-            <div>
-                <h4>Interested In Home?</h4>
-            </div>
-            <div class="heading-2">
-                <button class="black-btn">Take a Tour</button>
-            </div>
-        </div>
+  <div class="col-lg-8 yellow-background">
+    <div class="cstm-container d-flex justify-content-between flex-wrap">
+      <div>
+        <h4>Interested In Home?</h4>
+      </div>
+      <div class="heading-2">
+        <button class="black-btn">Take a Tour</button>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="container">
-    <div class="Homeowners-section-7-inner mt6">
-        <div class="vistrula-text-line mt2">
-            <span>Homeowners Association, School / Neighborhood, Taxes / Assessments, Financing</span>
-        </div>
-        <div class="row mt2">
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Homeowners Association Information</label>
-                    <ul>
-                        <li>Association Fee: $984</li>
-                        <li>Association Fee Frequency: Monthly</li>
-                        <li>Association Fee Includes: Heat, Air Conditioning, Water, Insurance, Doorman, Clubhouse, Exercise Facilities, Pool, Exterior Maintenance, Scavenger, Snow Removal, Internet</li>
-                        <li>Association Amenities: Bike Room/Bike Trails, Door Person, Elevator(s), Exercise Room, Storage, On Site Manager/Engineer, Park, Party Room, Sundeck, Pool, Receiving Room, Service Elevator(s)</li>
-                    </ul>
-                </div>
-                <div class="text-list">
-                    <label class="text-style-black">School Information</label>
-                    <ul>
-                        <li>Elementary School District: 299</li>
-                        <li>Elementary School: National Teachers </li>
-                        <li>Elementary Sch</li>
-                        <li>Middle Or Junior School District: 299</li>
-                        <li>Middle Or Junior School: National Teachers Elementary Sch</li>
-                        <li>High School District: 299</li>
-                        <li>High School: Phillips Academy High School</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Tax Information</label>
-                    <ul>
-                        <li>Tax Annual Amount: $5,250</li>
-                        <li>Tax Year: 2020</li>
-                        <li>Tax Exemptions: Homeowner</li>
-                    </ul>
-                </div>
-                <div class="text-list">
-                    <label class="text-style-black">Financial Information</label>
-                    <ul>
-                        <li> Special Service Area: N</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <div class="Homeowners-section-7-inner mt6">
+    <div class="vistrula-text-line mt2">
+      <span>Homeowners Association, School / Neighborhood, Taxes / Assessments, Financing</span>
     </div>
-    <div class="Utilities-section-8-inner mt4">
+    <div class="row mt2">
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Homeowners Association Information</label>
+          <ul>
+            <li>Association Fee: $984</li>
+            <li>Association Fee Frequency: Monthly</li>
+            <li>Association Fee Includes: Heat, Air Conditioning, Water, Insurance, Doorman, Clubhouse, Exercise
+              Facilities, Pool, Exterior Maintenance, Scavenger, Snow Removal, Internet</li>
+            <li>Association Amenities: Bike Room/Bike Trails, Door Person, Elevator(s), Exercise Room, Storage, On Site
+              Manager/Engineer, Park, Party Room, Sundeck, Pool, Receiving Room, Service Elevator(s)</li>
+          </ul>
+        </div>
+        <div class="text-list">
+          <label class="text-style-black">School Information</label>
+          <ul>
+            <li>Elementary School District: 299</li>
+            <li>Elementary School: National Teachers </li>
+            <li>Elementary Sch</li>
+            <li>Middle Or Junior School District: 299</li>
+            <li>Middle Or Junior School: National Teachers Elementary Sch</li>
+            <li>High School District: 299</li>
+            <li>High School: Phillips Academy High School</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Tax Information</label>
+          <ul>
+            <li>Tax Annual Amount: $5,250</li>
+            <li>Tax Year: 2020</li>
+            <li>Tax Exemptions: Homeowner</li>
+          </ul>
+        </div>
+        <div class="text-list">
+          <label class="text-style-black">Financial Information</label>
+          <ul>
+            <li> Special Service Area: N</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Utilities-section-8-inner mt4">
+    <div>
+      <h4>Utilities</h4>
+    </div>
+    <div class="row mt2">
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Utility Information</label>
+          <ul>
+            <li>Water Source: Lake Michigan</li>
+            <li>Sewer: Public Sewer</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Heating & Cooling</label>
+          <ul>
+            <li>Heating: Natural Gas, Electric</li>
+            <li>Cooling: Central Air</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="LotDetails-section-9-inner mt4">
+    <div>
+      <h4>Property / Lot Details</h4>
+    </div>
+    <div class="row mt2">
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Property Information</label>
+          <ul>
+            <li># of Rooms: 5</li>
+            <li>Ownership: Condo</li>
+            <li>Property Currently Being Leased: No</li>
+            <li>Rebuilt (Y/N): No</li>
+            <li>Rehab (Y/N): No</li>
+            <li>Exterior Features: Balcony</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Lot Information</label>
+          <ul>
+            <li>Dimensions: COMMON</li>
+            <li>Lot Features: Park Adjacent, Water View</li>
+            <li>WaterfrontYN: Yes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Location-section-10-inner mt4">
+    <div>
+      <h4>Location Details</h4>
+    </div>
+    <div class="row mt2">
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Location Information</label>
+          <ul>
+            <li>Township: Oklahoma</li>
+            <li>Corporate Limits: Oklahoma</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="text-list mt1">
+          <label class="text-style-black">Lot Information</label>
+          <ul>
+            <li>Dimensions: COMMON</li>
+            <li>Lot Features: Park Adjacent, Water View</li>
+            <li>WaterfrontYN: Yes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Schools-section-11-inner mt4">
+    <div class="row">
+      <div class="col-lg-8">
         <div>
-            <h4>Utilities</h4>
+          <h2>Schools</h2>
         </div>
-        <div class="row mt2">
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Utility Information</label>
-                    <ul>
-                        <li>Water Source: Lake Michigan</li>
-                        <li>Sewer: Public Sewer</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Heating & Cooling</label>
-                    <ul>
-                        <li>Heating: Natural Gas, Electric</li>
-                        <li>Cooling: Central Air</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="vistrula-text-line mt1">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
         </div>
+        <label class="text-style-black mt2">Schools Listing</label>
+      </div>
     </div>
-    <div class="LotDetails-section-9-inner mt4">
-        <div>
-            <h4>Property / Lot Details</h4>
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-baseline flex-wrap">
+        <div class="last-section-text-main">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+          </div>
+          <div>
+            <span>Public School Serves this home</span>
+          </div>
         </div>
-        <div class="row mt2">
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Property Information</label>
-                    <ul>
-                        <li># of Rooms: 5</li>
-                        <li>Ownership: Condo</li>
-                        <li>Property Currently Being Leased: No</li>
-                        <li>Rebuilt (Y/N): No</li>
-                        <li>Rehab (Y/N): No</li>
-                        <li>Exterior Features: Balcony</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Lot Information</label>
-                    <ul>
-                        <li>Dimensions: COMMON</li>
-                        <li>Lot Features: Park Adjacent, Water View</li>
-                        <li>WaterfrontYN: Yes</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="last-section-text">
+          <div>
+            <p>500</p>
+          </div>
+          <div>
+            <span>Students</span>
+          </div>
         </div>
+        <div class="last-section-text">
+          <div>
+            <p>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div>
+            <span>Ratings</span>
+          </div>
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>0.6 mi</p>
+          </div>
+          <div>
+            <span>Distance</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="Location-section-10-inner mt4">
-        <div>
-            <h4>Location Details</h4>
-        </div>
-        <div class="row mt2">
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Location Information</label>
-                    <ul>
-                        <li>Township: Oklahoma</li>
-                        <li>Corporate Limits: Oklahoma</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="text-list mt1">
-                    <label class="text-style-black">Lot Information</label>
-                    <ul>
-                        <li>Dimensions: COMMON</li>
-                        <li>Lot Features: Park Adjacent, Water View</li>
-                        <li>WaterfrontYN: Yes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="Schools-section-11-inner mt4">
-        <div class="row">
-            <div class="col-lg-8">
-                <div>
-                    <h2>Schools</h2>
-                </div>
-                <div class="vistrula-text-line mt1">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis </p>
-                </div>
-                <label class="text-style-black mt2">Schools Listing</label>
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <div class="d-flex justify-content-between align-items-baseline flex-wrap">
-                <div class="last-section-text-main">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                    </div>
-                    <div>
-                        <span>Public School Serves this home</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>500</p>
-                    </div>
-                    <div>
-                        <span>Students</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                    </div>
-                    <div>
-                        <span>Ratings</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>0.6 mi</p>
-                    </div>
-                    <div>
-                        <span>Distance</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <div class="d-flex justify-content-between align-items-baseline flex-wrap">
-                <div class="last-section-text-main">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                    </div>
-                    <div>
-                        <span>Public School Serves this home</span>
-                    </div>
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-baseline flex-wrap">
+        <div class="last-section-text-main">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+          </div>
+          <div>
+            <span>Public School Serves this home</span>
+          </div>
 
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>500</p>
-                    </div>
-                    <div>
-                        <span>Students</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                    </div>
-                    <div>
-                        <span>Ratings</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>0.6 mi</p>
-                    </div>
-                    <div>
-                        <span>Distance</span>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class="col-lg-8">
-            <div class="d-flex justify-content-between align-items-baseline flex-wrap">
-                <div class="last-section-text-main">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                    </div>
-                    <div>
-                        <span>Public School Serves this home</span>
-                    </div>
-
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>500</p>
-                    </div>
-                    <div>
-                        <span>Students</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                    </div>
-                    <div>
-                        <span>Ratings</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>0.6 mi</p>
-                    </div>
-                    <div>
-                        <span>Distance</span>
-                    </div>
-                </div>
-            </div>
+        <div class="last-section-text">
+          <div>
+            <p>500</p>
+          </div>
+          <div>
+            <span>Students</span>
+          </div>
         </div>
-        <div class="col-lg-8">
-            <div class="d-flex justify-content-between align-items-baseline flex-wrap">
-                <div class="last-section-text-main">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
-                    </div>
-                    <div>
-                        <span>Public School Serves this home</span>
-                    </div>
-
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>500</p>
-                    </div>
-                    <div>
-                        <span>Students</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </p>
-                    </div>
-                    <div>
-                        <span>Ratings</span>
-                    </div>
-                </div>
-                <div class="last-section-text">
-                    <div>
-                        <p>0.6 mi</p>
-                    </div>
-                    <div>
-                        <span>Distance</span>
-                    </div>
-                </div>
-            </div>
+        <div class="last-section-text">
+          <div>
+            <p>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div>
+            <span>Ratings</span>
+          </div>
         </div>
+        <div class="last-section-text">
+          <div>
+            <p>0.6 mi</p>
+          </div>
+          <div>
+            <span>Distance</span>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-baseline flex-wrap">
+        <div class="last-section-text-main">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+          </div>
+          <div>
+            <span>Public School Serves this home</span>
+          </div>
+
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>500</p>
+          </div>
+          <div>
+            <span>Students</span>
+          </div>
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div>
+            <span>Ratings</span>
+          </div>
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>0.6 mi</p>
+          </div>
+          <div>
+            <span>Distance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="d-flex justify-content-between align-items-baseline flex-wrap">
+        <div class="last-section-text-main">
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+          </div>
+          <div>
+            <span>Public School Serves this home</span>
+          </div>
+
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>500</p>
+          </div>
+          <div>
+            <span>Students</span>
+          </div>
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </p>
+          </div>
+          <div>
+            <span>Ratings</span>
+          </div>
+        </div>
+        <div class="last-section-text">
+          <div>
+            <p>0.6 mi</p>
+          </div>
+          <div>
+            <span>Distance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
