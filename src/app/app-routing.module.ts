@@ -16,6 +16,7 @@ import { ForgotpasswordComponent } from './components/pages/forgotpassword/forgo
 import { TermsComponent } from './components/pages/terms/terms.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
+import { TestCompoComponent } from './test-compo/test-compo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,12 +29,14 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'contactus', component: ContactusComponent },
   { path: 'properties', component: PropertiesComponent },
-  {path:'propertyinner', component:PropertyinnerComponent},
+  { path: 'propertyinner', component: PropertyinnerComponent },
   { path: 'articles-inner', component: ArticleinnerComponent },
   { path: 'forgot', component: ForgotpasswordComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'reset', component: ResetComponent },
+  { path: 'testComp', component: TestCompoComponent },
+
 
 
 ];
