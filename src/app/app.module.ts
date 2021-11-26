@@ -35,6 +35,7 @@ import { TermsComponent } from './components/pages/terms/terms.component';
 import { PropertyinnerComponent } from './components/pages/propertyinner/propertyinner.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
+import { TestCompoComponent } from './test-compo/test-compo.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { ResetComponent } from './components/pages/reset/reset.component';
     PropertyinnerComponent,
     ProfileComponent,
     ResetComponent,
+    TestCompoComponent,
 
   ],
   imports: [
