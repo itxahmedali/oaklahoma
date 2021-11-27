@@ -3,9 +3,9 @@
     padding-top: 10rem;
     margin-bottom: 2rem;
     .cusotmBlack_btn {
-        background-color: #F2F2F2;
+        background-color: #B48618;
         margin: 0 5px;
-        color: #000;
+        color: #fff;
         font-family: rubiklight;
         padding: 0;
         height: 45px;
@@ -40,7 +40,14 @@
 // bannerBox
 .bannerBox {
     .imageBox {
-        height: 600px;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+            object-fit: center;
+            width: 100%;
+            height: 100%;
+        }
     }
     .buttonsBox {
         bottom: 10px;
@@ -57,7 +64,7 @@
         font-size: 15px;
         border: none;
         font-weight: bold;
-        border-radius: 10px;
+        border-radius: 30px;
     }
 }
 
@@ -158,13 +165,18 @@
             .content {
                 .price {
                     h5 {
-                        font-size: 26px;
-                        font-family: rubiksemibold;
+                        font-size: 28px;
+                        font-family: rubikregular;
                     }
                 }
                 .details {
+                    width: 50%;
+                    .beds {
+                        text-align: center;
+                    }
                     .detial {
                         min-width: 100px;
+                        text-align: center;
                     }
                 }
             }
@@ -209,7 +221,7 @@
     }
 }
 
-.section-1-inner {
+.Description-section-1-inner {
     h2 {
         font-family: rubikregular;
         color: 1A1A1A;
@@ -228,7 +240,7 @@
     }
 }
 
-.section-2-inner {
+.Status-section-2-inner {
     h3 {
         font-family: rubikregular;
         color: 1A1A1A;
@@ -249,7 +261,7 @@
     }
 }
 
-.section-3-inner {
+.Price-section-3-inner {
     h3 {
         font-family: rubikregular;
         color: 1A1A1A;
@@ -270,7 +282,7 @@
     }
 }
 
-.section-4-inner {
+.Property-section-4-inner {
     h2 {
         font-family: rubikregular;
         color: 1A1A1A;
@@ -306,7 +318,7 @@
     }
 }
 
-.section-5-inner {
+.Interior-section-5-inner {
     h4 {
         font-family: rubikregular;
         color: #333333;
@@ -343,7 +355,15 @@
     }
 }
 
-.section-7-inner {
+.yellow-section-6-inner {
+    width: 100%;
+    .yellow-background {
+        background: #B48618;
+        padding: 40px 40px 40px 160px;
+    }
+}
+
+.Homeowners-section-7-inner {
     h4 {
         font-family: rubikregular;
         color: #333333;
@@ -380,7 +400,118 @@
     }
 }
 
-.section-11-inner {
+.Utilities-section-8-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        padding-left: 2rem;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.LotDetails-section-9-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        padding-left: 2rem;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.Location-section-10-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        padding-left: 2rem;
+    }
+    .vistrula-text-line {
+        padding-left: 2rem;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubiksemibold;
+        color: #1A1A1A;
+    }
+    li {
+        color: #666666;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
+}
+
+.Schools-section-11-inner {
     .vistrula-text-line {
         font-size: 18px;
         font-family: poppinregular;
@@ -421,5 +552,677 @@
         font-size: 18px;
         font-family: rubiksemibold;
         color: #1A1A1A;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            background: #B48618;
+            padding: 40px 40px 40px 160px !important;
+            h4 {
+                transform: translateX(520px) !important;
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            background: #B48618;
+            padding: 40px 40px 40px 160px !important;
+            h4 {
+                transform: translateX(250px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            background: #B48618;
+            padding: 40px 40px 40px 160px !important;
+            h4 {
+                transform: translateX(80px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            background: #B48618;
+            padding: 40px 40px 40px 120px !important;
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            background: #B48618;
+            padding: 40px 40px 40px 50px !important;
+            h4 {
+                transform: translateX(0px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .row {
+        margin-top: 1rem !important;
+        .col-lg-8 {
+            .map-container1 {
+                agm-map {
+                    height: 450px;
+                }
+            }
+            .head {
+                span {
+                    font-family: rubikregular;
+                    font-size: 38px;
+                }
+                h1 {
+                    font-family: rubiksemibold;
+                    font-size: 38px;
+                }
+                .content {
+                    margin-top: 1rem !important;
+                    .price {
+                        h5 {
+                            font-size: 22px;
+                            font-family: rubikregular;
+                        }
+                    }
+                    .details {
+                        width: 50%;
+                        .beds {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .baths {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .sqft {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .detial {
+                            min-width: 100px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .col-lg-4 {
+            display: flex;
+            flex-direction: column-reverse;
+            .map-container2 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+    .topButtonsSection {
+        width: 100%;
+        .buttonsBox {
+            width: 100%;
+        }
+        .cusotmBlack_btn {
+            font-family: rubiklight;
+            padding: 0;
+            height: 45px;
+            width: 100% !important;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .bannerBox {
+        .imageBox {
+            height: 265px;
+            border-radius: 20px;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+        }
+        .buttonsBox {
+            bottom: 10px;
+            left: 0px !important;
+            width: 100% !important;
+        }
+        .bannerButton {
+            font-family: rubiklight;
+            padding: 0;
+            height: 50px;
+            width: 231px;
+            font-size: 15px;
+            border: none;
+            font-weight: bold;
+        }
+    }
+    .Description-section-1-inner {
+        margin-top: 1rem !important;
+        h2 {
+            font-family: rubikregular;
+            color: 1A1A1A;
+        }
+        p {
+            font-family: poppinregular;
+            color: #666666;
+            margin-bottom: 0px;
+        }
+        button {
+            border: none;
+            color: #B48618;
+            font-size: 14px;
+            font-family: poppinregular;
+            padding: 0;
+        }
+    }
+    .Price-section-3-inner {
+        margin-top: 2rem !important;
+        h3 {
+            font-family: rubikregular;
+            color: 1A1A1A;
+        }
+        .grey-text {
+            color: #4D4D4D;
+            font-size: 16px;
+            font-family: poppinregular;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .yellow-text {
+            color: #B48618;
+            font-size: 16px;
+            font-family: poppinregular;
+            width: fit-content;
+            margin-top: 10px;
+        }
+    }
+    .Interior-section-5-inner {
+        margin-top: 2rem !important;
+    }
+    .yellow-section-6-inner {
+        width: 100%;
+        .yellow-background {
+            background: #B48618;
+            padding: 30px 0px !important;
+            width: 100%;
+            h4 {
+                transform: translateX(0px);
+                margin-bottom: 1rem;
+            }
+        }
+        .col-lg-8 {
+            .cstm-container {
+                justify-content: center !important;
+                .heading-2 {
+                    justify-content: center;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Homeowners-section-7-inner {
+        margin-top: 4rem !important;
+    }
+    .Utilities-section-8-inner {
+        margin-top: 2rem !important;
+    }
+    .LotDetails-section-9-inner {
+        margin-top: 2rem !important;
+    }
+    .Location-section-10-inner {
+        margin-top: 2rem !important;
+    }
+    .Schools-section-11-inner {
+        margin-top: 2.5rem !important;
+    }
+    .Schools-section-11-inner {
+        .last-section-text-main {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .last-section-text {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                font-family: rubiksemibold;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .text-style-black {
+            font-size: 18px;
+        }
+    }
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+        .vistrula-text-line {
+            padding-left: 0;
+        }
+    }
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Utilities-section-8-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .row {
+        margin-top: 1rem !important;
+        .col-lg-8 {
+            .map-container1 {
+                agm-map {
+                    height: 450px;
+                }
+            }
+            .head {
+                span {
+                    font-family: rubikregular;
+                    font-size: 30px;
+                }
+                h1 {
+                    font-family: rubiksemibold;
+                    font-size: 30px;
+                }
+                .content {
+                    margin-top: 1rem !important;
+                    .price {
+                        h5 {
+                            font-size: 16px;
+                            font-family: rubikregular;
+                        }
+                    }
+                    .details {
+                        width: 50%;
+                        .beds {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .baths {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .sqft {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .detial {
+                            min-width: 100px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .col-lg-4 {
+            display: flex;
+            flex-direction: column-reverse;
+            .map-container2 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .topButtonsSection {
+        flex-wrap: wrap;
+        width: 100%;
+        .buttonsBox {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: unset !important;
+            .cusotmBlack_btn {
+                justify-content: flex-start;
+                font-family: rubiklight;
+                padding: 0;
+                height: 40px;
+                width: 30% !important;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 5px;
+            }
+        }
+        .iconsBtnbox {
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 1rem;
+            margin-right: 12px;
+        }
+    }
+    .bannerBox {
+        .imageBox {
+            height: 220px;
+            border-radius: 20px;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+        }
+        .buttonsBox {
+            bottom: 10px;
+            left: 0px !important;
+            width: 100% !important;
+        }
+        .bannerButton {
+            background-color: #F2F2F2;
+            margin: 0 5px;
+            color: #000;
+            font-family: rubiklight;
+            padding: 0;
+            height: 40px;
+            width: 120px;
+            font-size: 12px;
+            border: none;
+            font-weight: bold;
+        }
+    }
+    .Description-section-1-inner {
+        h2 {
+            font-family: rubikregular;
+            color: 1A1A1A;
+            font-size: 26px !important;
+        }
+        p {
+            font-family: poppinregular;
+            color: #666666;
+            margin-bottom: 0px;
+            font-size: 16px;
+        }
+        button {
+            border: none;
+            color: #B48618;
+            font-size: 14px;
+            font-family: poppinregular;
+            padding: 0;
+        }
+    }
+    .Property-section-4-inner {
+        .vistrula-text-line {
+            padding-left: 0;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            padding-left: 0;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .yellow-section-6-inner {
+        width: 100%;
+        .yellow-background {
+            background: #B48618;
+            padding: 30px 0px !important;
+            width: 100%;
+            h4 {
+                transform: translateX(0px);
+            }
+        }
+        .col-lg-8 {
+            .cstm-container {
+                justify-content: center !important;
+                .heading-2 {
+                    justify-content: center;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+        .vistrula-text-line {
+            padding-left: 0;
+        }
+    }
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Utilities-section-8-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Schools-section-11-inner {
+        .last-section-text-main {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .last-section-text {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                font-family: rubiksemibold;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .text-style-black {
+            font-size: 18px;
+        }
+    }
+    .latest-properties {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+        .vistrula-text-line {
+            padding-left: 0;
+        }
+    }
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
+    }
+    .Utilities-section-8-inner {
+        h4 {
+            padding-left: 0;
+            font-size: 22px;
+        }
     }
 }
