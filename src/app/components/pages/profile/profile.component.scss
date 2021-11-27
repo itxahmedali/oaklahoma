@@ -134,14 +134,7 @@ input {
 
 .changePassword {
     text-align: center;
-    // button {
-    //     color: #B48618;
-    //     letter-spacing: 0.4px;
-    //     font-family: rubikregular;
-    //     border: none;
-    //     font-size: 14px;
-    //     background-color: transparent;
-    // }
+
 }
 
 .emailTypeButton {
@@ -485,11 +478,6 @@ p {
     color: #1A1A1A;
 }
 
-.wishlistCardImage {
-    position: relative;
-    width: 90%;
-    height: 100%;
-}
 
 .subWishlistCardImage {
     position: absolute;
@@ -545,20 +533,6 @@ p {
     p {
         font-family: rubikregular;
         color: #666666;
-    }
-}
-
-.wishlistButton {
-    button {
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px 30px;
-        border: none;
-        outline: none;
-        border-radius: 50px;
-        font-family: rubiklight;
-        letter-spacing: 0.4px;
-        margin-top: 10px;
     }
 }
 
@@ -692,6 +666,16 @@ body {
             margin-right: 5px;
         }
     }
+}
+
+.filtersMapIcon i {
+  margin-right: 8px;
+}
+.savedSearchEditDelete {
+  display: flex;
+}
+.savedSearchEditDelete i {
+  margin-right: 10px;
 }
 
 /*--Start Media Query--*/
@@ -957,7 +941,7 @@ body {
         margin: auto;
     }
     .containercs {
-        width: 110px;
+        width: 105px;
         margin-top: 10px;
     }
     .emailTypeRadioButton {
@@ -1006,7 +990,7 @@ body {
         width: 75%;
     }
     input {
-        width: 75%;
+        width: 85%;
     }
     .dropdown {
         span {
@@ -1152,6 +1136,9 @@ body {
           background: #B48618;
           padding: 5px 10px;
       }
+}
+.containercs {
+  width: 85px;
 }
 }
 
