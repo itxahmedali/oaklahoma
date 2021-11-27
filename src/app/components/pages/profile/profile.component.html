@@ -688,7 +688,11 @@
             <h4>Email Types</h4>
           </div>
           <div class="emailTypeRadioButtonBox mt-5">
-
+            <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)"
+              [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
+              aria-controls="collapseExample">
+              {{btnVal1}}
+            </button>
             <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
 
               <div class="row">
@@ -729,11 +733,7 @@
               </div>
 
             </div>
-            <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)"
-              [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
-              aria-controls="collapseExample">
-              {{btnVal1}}
-            </button>
+
             <div class="savedSearchBox mt-5">
               <div class="savedSearchHeading mt-1">
                 <h4>Saved Search</h4>
@@ -772,7 +772,11 @@
                 <div class="emailTypeHeading">
                   <h4>Email Types</h4>
                 </div>
-
+                <button type="button" class="more mb2" (click)="collapse2.toggle(); seeless2clickEvent($event)"
+                  [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
+                  aria-controls="collapseExample">
+                  {{btnVal2}}
+                </button>
 
                 <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
 
@@ -811,11 +815,7 @@
                   </div>
                 </div>
 
-                <button type="button" class="more mb2" (click)="collapse2.toggle(); seeless2clickEvent($event)"
-                  [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
-                  aria-controls="collapseExample">
-                  {{btnVal2}}
-                </button>
+
               </div>
             </div>
 

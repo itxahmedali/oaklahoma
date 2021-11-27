@@ -52,7 +52,7 @@
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
         (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
         (beforeChange)="beforeChange($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide" routerLink='/propertyinner'>
           <div class="heart-icon">
             <i class="fa fa-heart fa-lg"></i>
           </div>
@@ -101,7 +101,7 @@
               consectetur adipisicing elit.
               Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet
               ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
-            <button class="black-btn">View More</button>
+            <button class="black-btn" routerLink='/forbuy'>View More</button>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@
               consectetur adipisicing elit.
               Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet
               ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
-            <button class="black-btn">View More</button>
+            <button class="black-btn" routerLink='/forbuy'>View More</button>
           </div>
         </div>
       </div>
@@ -192,7 +192,7 @@
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button>
+            <button routerLink='/articles'>
               <i class="fa fa-arrow-right fa-lg"></i>
             </button>
           </div>
@@ -206,7 +206,7 @@
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button>
+            <button routerLink='/articles'>
               <i class="fa fa-arrow-right fa-lg"></i>
             </button>
           </div>
@@ -220,7 +220,7 @@
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button>
+            <button routerLink='/articles'>
               <i class="fa fa-arrow-right fa-lg"></i>
             </button>
           </div>
@@ -234,13 +234,13 @@
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button>
+            <button routerLink='/articles'>
               <i class="fa fa-arrow-right fa-lg"></i>
             </button>
           </div>
         </div>
       </div>
-      <div class="article2">
+      <div class="article2" routerLink='/articles'>
         <div class="img-box">
           <img src="../../../../assets/1x/article5.png" alt="">
           <div class="content d-flex justify-content-between">
@@ -257,6 +257,6 @@
     </div>
   </div>
   <div class="load-more-btn">
-    <button class="black-btn">Load More</button>
+    <button class="black-btn" routerLink='/articles'>Load More</button>
   </div>
 </div>

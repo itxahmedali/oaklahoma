@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forbuy',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForbuyComponent implements OnInit {
 
-  constructor() { }
+  public href: string = "";
 
-  ngOnInit(): void {
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.href = this.router.url;
+    console.log(this.router.url);
   }
 
 }
