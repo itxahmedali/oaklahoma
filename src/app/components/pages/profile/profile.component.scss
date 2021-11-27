@@ -692,9 +692,10 @@ body {
 .filtersMapIcon i {
   margin-right: 8px;
 }
-
-.savedSearchEditDelete i {
+.savedSearchEditDelete {
   display: flex;
+}
+.savedSearchEditDelete i {
   margin-right: 10px;
 }
 
