@@ -167,6 +167,32 @@
     .article2 {
         margin-top: 2rem;
     }
+    .cstm-container {
+        .article {
+            .content {
+                button {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+            }
+        }
+        .articles-section {
+            margin-top: 5rem;
+            h1 {}
+            .articles {
+                .article {}
+                .article2 {
+                    margin-top: 0;
+                }
+                .formargin {
+                    margin-top: 0;
+                }
+            }
+        }
+        .img-box {
+            margin-top: 2rem;
+        }
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -176,6 +202,34 @@
             h1 {
                 font-size: 2.5rem;
             }
+        }
+    }
+    .cstm-container {
+        .article {
+            .content {
+                button {
+                    height: 40px !important;
+                    width: 40px !important;
+                }
+            }
+        }
+    }
+    .cstm-container {
+        .articles-section {
+            margin-top: 5rem;
+            h1 {}
+            .articles {
+                .article {}
+                .article2 {
+                    margin-top: 0;
+                }
+                .formargin {
+                    margin-top: 0;
+                }
+            }
+        }
+        .img-box {
+            margin-top: 1.5rem;
         }
     }
 }
