@@ -689,6 +689,15 @@ body {
     }
 }
 
+.filtersMapIcon i {
+  margin-right: 8px;
+}
+
+.savedSearchEditDelete i {
+  display: flex;
+  margin-right: 10px;
+}
+
 /*--Start Media Query--*/
 
 @media only screen and (min-width: 2560px) {

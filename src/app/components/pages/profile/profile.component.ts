@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-profile',
@@ -46,6 +47,10 @@ export class ProfileComponent implements OnInit {
   //     this.btnVal2 = "See Less"
   //   }
   // }
+
+
+
+
   // see more or less buttons
   btnVal1 = "See More";
   btnVal2 = "See More";
