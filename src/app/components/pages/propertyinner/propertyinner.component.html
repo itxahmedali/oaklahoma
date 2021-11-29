@@ -33,8 +33,8 @@
   <div class="latest-properties property customProp">
     <div class="properties-slider customSlider ">
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-        (beforeChange)="beforeChange($event)">
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
+        >
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%">
         </div>

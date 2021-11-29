@@ -32,9 +32,30 @@
         color: #fff;
         cursor: pointer;
         font-size: 14px;
-
+        position: relative;
         &:hover {
           text-decoration: none;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          background-color: #fff;
+          bottom: -2px;
+          left: -14%;
+          transition: 0.5s all ease-in-out;
+        }
+      }
+      .signup-btn{
+        &:before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          background-color: #fff;
+          bottom: -2px;
+          left: -14%;
         }
       }
 
@@ -138,6 +159,7 @@
           left: -14%;
         }
       }
+      
 
       .signup-btn {
         background-color: #B48618;

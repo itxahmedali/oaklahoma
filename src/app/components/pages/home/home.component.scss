@@ -50,11 +50,11 @@
         background: #fff;
         position: absolute;
         width: 50%;
-        min-height: 150px;
+        // min-height: 150px;
         left: 50%;
         transform: translateX(-50%);
         top: -100px;
-        padding: 1rem 2rem;
+        padding: 1rem;
         border-radius: 10px;
         box-shadow: 0px 10px 44px -6px #00000073;
         -webkit-box-shadow: 0px 10px 44px -6px #00000073;
@@ -62,9 +62,12 @@
         .search-tabs {
             input {
                 border-radius: 50px;
-                padding: 10px;
-                border: 1px solid #B3B3B3;
+                padding: 8px 18px;
+                border: 1px solid lightgrey;
                 outline: none;
+                font-family: "rubikregular";
+                font-size: 14px;
+                width: 100%;
             }
         }
     }
@@ -382,20 +385,20 @@
     .main-bg {
         height: 800px !important;
     }
-    .search-tabs {
-        input {
-            width: 85%;
-        }
-    }
+    // .search-tabs {
+    //     input {
+    //         width: 85%;
+    //     }
+    // }
 }
 
 @media only screen and (min-width:1920px) {
     .main-bg {
         height: 900px;
     }
-    input {
-        width: 79%;
-    }
+    // input {
+    //     width: 79%;
+    // }
 }
 
 @media only screen and (min-width:1600px) {
@@ -417,18 +420,18 @@
     .main-bg {
         height: 700px;
     }
-    input {
-        width: 75%;
-    }
+    // input {
+    //     width: 75%;
+    // }
 }
 
 @media only screen and (max-width:1440px) {
     .main-bg {
         height: 650px;
     }
-    input {
-        width: 72%;
-    }
+    // input {
+    //     width: 72%;
+    // }
     .cstm-container {
         .articles-section {
             .articles {
@@ -447,9 +450,9 @@
     .main-bg {
         height: 520px;
     }
-    input {
-        width: 70%;
-    }
+    // input {
+    //     width: 70%;
+    // }
     .cstm-container {
         .articles-section {
             .articles {
@@ -468,9 +471,9 @@
     .main-bg {
         height: 770px;
     }
-    input {
-        width: 70%;
-    }
+    // input {
+    //     width: 70%;
+    // }
     .search {
         .search-box {
             .search-tabs {
@@ -593,18 +596,21 @@
                 .nav-pills .nav-link {
                     min-width: 100px;
                 }
-                input {
-                    width: 100%;
-                }
+                // input {
+                //     width: 100%;
+                // }
                 .search-btn {
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     button {
-                        margin: 20px auto 0 auto;
+                        margin: 10px auto 0 auto;
                         min-width: 160px;
                     }
                 }
+            }
+            input{
+                padding:15px !important
             }
         }
     }
@@ -647,3 +653,5 @@
 }
 
 @media only screen and (max-width:375px) {}
+
+

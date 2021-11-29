@@ -12,7 +12,7 @@
 <div class="search">
   <div class="search-box">
     <div class="search-tabs">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy"
             type="button" role="tab" aria-controls="pills-buy" aria-selected="true" target="_self">For Buy</button>
@@ -24,10 +24,16 @@
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
-          <div class="d-flex flex-wrap justify-content-between">
-            <input type="text" placeholder="Enter Address,City,State,ZIP">
-            <div class="search-btn">
-              <button class="black-btn btn-slide-left">Search</button>
+          <div class="">
+            <div class="row">
+              <div class="col-lg-9 pr-lg-0">
+                <input type="text" placeholder="Enter Address,City,State,ZIP">
+              </div>
+              <div class="col-lg-3">
+                <div class="search-btn">
+                  <button class="black-btn btn-slide-left">Search</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ObservableService } from 'src/app/services/observable.service';
 
@@ -10,7 +10,8 @@ import { ObservableService } from 'src/app/services/observable.service';
 export class HomeComponent implements OnInit {
   href: string;
   constructor(
-    private router: Router
+    private router: Router,
+    private cd: ChangeDetectorRef,
   ) {
 
   }
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.href = this.router.url;
     ObservableService.webUrl.next(this.href)
+    this.cd.detectChanges();
   }
   // property slider
   slides = [

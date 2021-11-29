@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { ObservableService } from 'src/app/services/observable.service';
 import * as $ from 'jquery';
@@ -12,26 +12,20 @@ export class HeaderComponent implements OnInit {
 
   public href: string = "";
   pageName = [
-    'forbuy',
-    'forrent',
-    'aboutus',
-    'articles',
-    'login',
-    'signup',
-    'contactus',
-    'properties',
     'propertyinner',
     'articles-inner',
     'forgot',
     'terms',
     'profile',
     'reset',
-    'testComp',
   ]
   pageNameCon: boolean = false;
 
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private cd: ChangeDetectorRef,
+    ) { }
 
   ngOnInit() {
     this.href = this.router.url;
@@ -44,14 +38,23 @@ export class HeaderComponent implements OnInit {
   urlCheck(r) {
     console.log(r)
     let url = r.split("/")[1]
-    // if (url.includes(this.pageName)) {
-    //   this.pageNameCon = true
-    // }
-    this.pageName.map((val) => {
-      if (val == url) {
+    // this.pageName.map((val) => {
+    //   if (val == url) {
+    //     this.pageNameCon = true;
+    //     this.cd.detectChanges();
+    //     console.log(this.pageNameCon)
+    //   }
+    // })
+
+    for(var i = 0; i < this.pageName.length; i++){
+      if(this.pageName[i] == url){
         this.pageNameCon = true;
+        break
+      }else{
+        this.pageNameCon = false;
       }
-    })
+    }
+    this.cd.detectChanges();
   }
 
   public isVisited = false;

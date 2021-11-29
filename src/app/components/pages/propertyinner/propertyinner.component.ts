@@ -75,12 +75,4 @@ export class PropertyinnerComponent implements OnInit {
     console.log('breakpoint');
   }
 
-  afterChange(e) {
-    console.log('afterChange');
-  }
-
-  beforeChange(e) {
-    console.log('beforeChange');
-  }
-
 }
