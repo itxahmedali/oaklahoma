@@ -142,6 +142,7 @@
         }
       }
     }
+
   }
 }
 
@@ -1042,15 +1043,15 @@
 
   .LotDetails-section-9-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 18px;
     }
   }
 
   .Location-section-10-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 18px;
     }
   }
 
@@ -1063,17 +1064,18 @@
 
   .Interior-section-5-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+       padding-left: 1rem;
+      font-size: 18px;
     }
   }
 
   .Utilities-section-8-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+       padding-left: 1rem;
+      font-size: 18px;
     }
   }
+
 }
 
 @media only screen and (max-width:414px) {
@@ -1329,36 +1331,36 @@
 
   .LotDetails-section-9-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+       padding-left: 1rem;
+      font-size: 15px;
     }
   }
 
   .Location-section-10-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 15px;
     }
   }
 
   .Homeowners-section-7-inner {
     .vistrula-text-line {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 15px;
     }
   }
 
   .Interior-section-5-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 15px;
     }
   }
 
   .Utilities-section-8-inner {
     h4 {
-      padding-left: 0;
-      font-size: 22px;
+      padding-left: 1rem;
+      font-size: 15px;
     }
   }
 
@@ -1397,6 +1399,18 @@
     width: 100%;
     margin-top: 1rem;
   }
+  .vistrula-text-line,
+.Interior-section-5-inner,
+.Location-section-10-inner,
+.LotDetails-section-9-inner,
+.Utilities-section-8-inner,
+.Homeowners-section-7-inner{
+  h4{
+
+    font-size: 15px;
+  }
+}
+
 }
 
 @media only screen and (max-width:375px) {

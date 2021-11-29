@@ -591,4 +591,26 @@ agm-map {
     agm-map {
         height: 300px;
     }
+    .slide-arrow{
+         display: none !important
+    }
+}
+
+@media only screen and  (max-width:414px) {
+  // .customProp .properties-slider .customProp .next-arrow  {
+  //     display: none !important;
+  //   }
+
+// .propertyCustom {
+//   .properties-slider{
+//   .next-arrow{
+//      display: none !important
+//     }
+//     .prev-arrow {
+//          display: none !important
+//     }}
+// }
+.slide-arrow{
+         display: none !important
+    }
 }
