@@ -1,528 +1,512 @@
 <div class="properties-section">
-  <div class="container">
-    <div class="row mt2 mb4">
-      <div class="col-lg-6 left-side">
-        <agm-map [latitude]="lat" [longitude]="lng">
-          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-        </agm-map>
-      </div>
-      <div class="col-lg-6 right-side">
-        <h2 *ngIf="href == '/propertiesbuy'">Oklahoma Homes For Sale</h2>
-        <h2 *ngIf="href == '/propertiesrent'">Oklahoma Homes For Rent</h2>
-        <div class="filters">
-          <div class="filter-dropdown">
-            <label for="">Price</label>
-            <!-- filters input dropdown -->
-            <ng-select [items]="min_value" bindLabel="value" bindValue="id" [(ngModel)]="minValue" placeholder="No Min">
-            </ng-select>
-            <ng-select [items]="max_value" bindLabel="value" bindValue="id" [(ngModel)]="maxValue" placeholder="No Max">
-            </ng-select>
-          </div>
-          <button class="more" (click)="clickEvent($event)" [ngClass]="status ? 'text-before' : 'text-after'">
+    <div class="container">
+        <div class="row mt4 mb4">
+            <div class="col-lg-6 left-side">
+                <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </div>
+            <div class="col-lg-6 right-side">
+                <h2 *ngIf="href == '/propertiesbuy'">Oklahoma Homes For Sale</h2>
+                <h2 *ngIf="href == '/propertiesrent'">Oklahoma Homes For Rent</h2>
+                <div class="filters">
+                    <div class="filter-dropdown">
+                        <label for="">Price</label>
+                        <!-- filters input dropdown -->
+                        <ng-select [items]="min_value" bindLabel="value" bindValue="id" [(ngModel)]="minValue" placeholder="No Min">
+                        </ng-select>
+                        <ng-select [items]="max_value" bindLabel="value" bindValue="id" [(ngModel)]="maxValue" placeholder="No Max">
+                        </ng-select>
+                    </div>
+                    <button class="more" (click)="clickEvent($event)" [ngClass]="status ? 'text-before' : 'text-after'">
             {{btnVal}} <i class="fa fa-chevron-down"></i>
           </button>
-        </div>
-        <div class="more-filter" *ngIf="status;">
-          <div class="filters-label">
-            <label for="">12 of 2000 Homes</label>
-            <ng-select placeholder="Sort" class="sort">
-              <ng-option>
-                Sort: Recomended
-              </ng-option>
-              <ng-option>
-                Sort: Name
-              </ng-option>
-            </ng-select>
-          </div>
-          <div class="properties-slider">
-            <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide"
-              routerLink='/propertyinner'>
-              <div class="heart-icon">
-                <i class="fa fa-heart"></i>
-              </div>
-              <img src="{{ property.img }}" alt="" width="100%">
-              <div class="content">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <label for="">{{property.address}}</label>
-                  </div>
-                  <div class="col-sm-12 ">
-                    <div class="upper-cols d-flex">
-                      <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
-                      <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="lower-cols">
-                      <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 text-right">
-                    <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="more-filter" *ngIf="status;">
+                    <div class="filters-label">
+                        <label for="">12 of 2000 Homes</label>
+                        <ng-select placeholder="Sort" class="sort">
+                            <ng-option>
+                                Sort: Recomended
+                            </ng-option>
+                            <ng-option>
+                                Sort: Name
+                            </ng-option>
+                        </ng-select>
+                    </div>
+                    <div class="properties-slider">
+                        <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide" routerLink='/propertyinner'>
+                            <div class="heart-icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <img src="{{ property.img }}" alt="" width="100%">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label for="">{{property.address}}</label>
+                                    </div>
+                                    <div class="col-sm-12 ">
+                                        <div class="upper-cols d-flex">
+                                            <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
+                                            <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="lower-cols">
+                                            <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 text-right">
+                                        <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+                    <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
 
-          <div class="prices-sec">
-            <h2>Average Prices in Oklahoma</h2>
-            <h5>Cities</h5>
-            <div class="cities d-flex flex-wrap">
-              <div class="city" *ngFor="let city of cities">
-                <h5>{{city.name + " City homes for sales"}}</h5>
-                <label for="">{{city.price | currency:"USD"}}</label>
-              </div>
-            </div>
-          </div>
+                    <div class="prices-sec mt2">
+                        <h3>Average Prices in Oklahoma</h3>
+                        <h5>Cities</h5>
+                        <div class="cities d-flex flex-wrap">
+                            <div class="city" *ngFor="let city of cities">
+                                <h6>{{city.name + " City homes for sales"}}</h6>
+                                <label for="">{{city.price | currency:"USD"}}</label>
+                            </div>
+                        </div>
+                    </div>
 
-          <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)"
-            [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
-            aria-controls="collapseExample">
+                    <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)" [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
             {{btnVal1}} <i class="fa fa-chevron-down"></i>
           </button>
-          <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-            <div class="school-sec">
-              <h2>See Schools Nearby</h2>
-              <ul class="nav nav-pills mb-3 mt1" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-elementry-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-elementry" type="button" role="tab" aria-controls="pills-elementry"
-                    aria-selected="true" target="_self">Elementry</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-middle-tab" data-bs-toggle="pill" data-bs-target="#pills-middle"
-                    type="button" role="tab" aria-controls="pills-middle" aria-selected="false"
-                    target="_self">Middle</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-high-tab" data-bs-toggle="pill" data-bs-target="#pills-high"
-                    type="button" role="tab" aria-controls="pills-high" aria-selected="false"
-                    target="_self">High</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade schools-tab show active" id="pills-elementry" role="tabpanel"
-                  aria-labelledby="pills- schools-tabelementry-tab">
-                  <div class="d-flex flex-wrap justify-content-between">
-                    <p class="mb1">No elementry schools in this region</p>
-                    <p>School data provided by GreatSchools. School service boundaries are intended to be used as
-                      reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
-                  </div>
+                    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                        <div class="prices-sec">
+                            <h3>See Schools Nearby</h3>
+                            <ul class="nav nav-pills mb-3 mt1" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-elementry-tab" data-bs-toggle="pill" data-bs-target="#pills-elementry" type="button" role="tab" aria-controls="pills-elementry" aria-selected="true" target="_self">Elementry</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-middle-tab" data-bs-toggle="pill" data-bs-target="#pills-middle" type="button" role="tab" aria-controls="pills-middle" aria-selected="false" target="_self">Middle</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-high-tab" data-bs-toggle="pill" data-bs-target="#pills-high" type="button" role="tab" aria-controls="pills-high" aria-selected="false" target="_self">High</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade schools-tab show active" id="pills-elementry" role="tabpanel" aria-labelledby="pills- schools-tabelementry-tab">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="mb1">No elementry schools in this region</p>
+                                        <p>School data provided by GreatSchools. School service boundaries are intended to be used as reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade schools-tab" id="pills-middle" role="tabpanel" aria-labelledby="pills-middle-tab">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="mb1">No Middle schools in this region</p>
+                                        <p>School data provided by GreatSchools. School service boundaries are intended to be used as reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade schools-tab" id="pills-high" role="tabpanel" aria-labelledby="pills-high-tab">
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="mb1">No High schools in this region</p>
+                                        <p>School data provided by GreatSchools. School service boundaries are intended to be used as reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade schools-tab" id="pills-middle" role="tabpanel"
-                  aria-labelledby="pills-middle-tab">
-                  <div class="d-flex flex-wrap justify-content-between">
-                    <p class="mb1">No Middle schools in this region</p>
-                    <p>School data provided by GreatSchools. School service boundaries are intended to be used as
-                      reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
-                  </div>
-                </div>
-                <div class="tab-pane fade schools-tab" id="pills-high" role="tabpanel" aria-labelledby="pills-high-tab">
-                  <div class="d-flex flex-wrap justify-content-between">
-                    <p class="mb1">No High schools in this region</p>
-                    <p>School data provided by GreatSchools. School service boundaries are intended to be used as
-                      reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="fewer-filter mt2" *ngIf="!status;">
-          <div class="bed-baths d-flex justify-content-between">
-            <div class="beds">
-              <h5>Beds</h5>
-              <input type="text" placeholder="No Min">
-              <label for="">to</label>
-              <input type="text" placeholder="No Min">
-            </div>
-            <div class="baths">
-              <h5>Baths</h5>
-              <div class="bath-counter">
-                <button class="plus-btn">+</button>
-                <input type="text" placeholder="No Min">
-                <button class="min-btn">-</button>
-              </div>
-            </div>
-          </div>
-          <div class="property-type mt2">
-            <h5>Property Type</h5>
-            <div class="property-btns d-flex flex-wrap">
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn1.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-1.png" alt="" *ngIf="!filtericon">
+                <div class="fewer-filter mt2" *ngIf="!status;">
+                    <div class="bed-baths d-flex justify-content-between">
+                        <div class="beds">
+                            <h5>Beds</h5>
+                            <input type="text" placeholder="No Min">
+                            <label for="">to</label>
+                            <input type="text" placeholder="No Min">
+                        </div>
+                        <div class="baths">
+                            <h5>Baths</h5>
+                            <div class="bath-counter">
+                                <button class="plus-btn">+</button>
+                                <input type="text" placeholder="No Min">
+                                <button class="min-btn">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-type mt2">
+                        <h5>Property Type</h5>
+                        <div class="property-btns d-flex flex-wrap">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn1.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-1.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Home
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn2.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-2.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn2.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-2.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Townhouse
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn3.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-3.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn3.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-3.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Condo
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn4.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-4.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn4.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-4.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Land
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn5.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-5.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn5.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-5.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Multi-Family
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn6.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-6.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn6.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-6.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Manufactured
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn7.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-7.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn7.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-7.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Co-op
                 </label>
               </button>
-              <button (click)="filter($event)" class="filter-btn">
-                <img src="../../../../assets/1x/btn8.png" alt="" *ngIf="filtericon">
-                <img src="../../../../assets/1x/white-8.png" alt="" *ngIf="!filtericon">
+                            <button (click)="filter($event)" class="filter-btn">
+                <img src="../../../../assets/1x/btn8.png" alt="">
+                <!-- <img src="../../../../assets/1x/white-8.png" alt="" *ngIf="!filtericon"> -->
                 <label for="" class="filterlabel">
                   Other
                 </label>
               </button>
-            </div>
-          </div>
-          <div class="listing-status mt2">
-            <h5 class="mb1">Listing Status</h5>
-            <div class="toggle-btn d-flex align-items-center">
-              <p for="">For Sale</p>
-              <input type="checkbox" id="toggle1" />
-              <label for="toggle1"></label>
-            </div>
-          </div>
-          <div class="status-timeon mt2">
-            <div class="row">
-              <div class="col-lg-6 mb1">
-                <div class="status">
-                  <h5>Status</h5>
-                  <ng-select placeholder="Active + Coming Soon Listings">
-                    <ng-option>
-                      Active + Coming Soon Listings
-                    </ng-option>
-                  </ng-select>
-                </div>
-                <div class="status-check">
-                  <div class="box">
-                    <input id="one" type="checkbox">
-                    <span class="check"></span>
-                    <label for="one">Open Houses</label>
-                  </div>
-                  <div class="box">
-                    <input id="two" type="checkbox">
-                    <span class="check"></span>
-                    <label for="two">Self Tour Only</label>
-                  </div>
-                  <div class="box">
-                    <input id="three" type="checkbox">
-                    <span class="check"></span>
-                    <label for="three">3D Walkthrough & Video Tour</label>
-                  </div>
-                  <div class="box">
-                    <input id="four" type="checkbox">
-                    <span class="check"></span>
-                    <label for="four">Exclude 55+ Communities</label>
-                  </div>
-                  <div class="box">
-                    <input id="five" type="checkbox">
-                    <span class="check"></span>
-                    <label for="five">Price Reduced</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 mb1">
-                <div class="timeon">
-                  <h5>Time on Oklahoma</h5>
-                  <ng-select placeholder="No Min">
-                    <ng-option>
-                      1
-                    </ng-option>
-                    <ng-option>
-                      2
-                    </ng-option>
-                    <ng-option>
-                      3
-                    </ng-option>
-                    <ng-option>
-                      4
-                    </ng-option>
-                    <ng-option>
-                      5
-                    </ng-option>
-                  </ng-select>
+                        </div>
+                    </div>
+                    <div class="listing-status mt2">
+                        <h5 class="mb1">Listing Status</h5>
+                        <div class="toggle-btn d-flex align-items-center">
+                            <p for="">For Sale</p>
+                            <input type="checkbox" id="toggle1" />
+                            <label for="toggle1"></label>
+                        </div>
+                    </div>
+                    <div class="status-timeon mt2">
+                        <div class="row">
+                            <div class="col-lg-6 mb1">
+                                <div class="status">
+                                    <h5>Status</h5>
+                                    <ng-select placeholder="Active + Coming Soon Listings">
+                                        <ng-option>
+                                            Active + Coming Soon Listings
+                                        </ng-option>
+                                    </ng-select>
+                                </div>
+                                <div class="status-check">
+                                    <div class="box">
+                                        <input id="one" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="one">Open Houses</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="two" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="two">Self Tour Only</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="three" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="three">3D Walkthrough & Video Tour</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="four" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="four">Exclude 55+ Communities</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="five" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="five">Price Reduced</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb1">
+                                <div class="timeon">
+                                    <h5>Time on Oklahoma</h5>
+                                    <ng-select placeholder="No Min">
+                                        <ng-option>
+                                            1
+                                        </ng-option>
+                                        <ng-option>
+                                            2
+                                        </ng-option>
+                                        <ng-option>
+                                            3
+                                        </ng-option>
+                                        <ng-option>
+                                            4
+                                        </ng-option>
+                                        <ng-option>
+                                            5
+                                        </ng-option>
+                                    </ng-select>
 
-                </div>
+                                </div>
 
-                <div class="timeon-check">
-                  <div class="box">
-                    <input id="six" type="checkbox">
-                    <span class="check"></span>
-                    <label for="six">Fixer-Uppers Only</label>
-                  </div>
-                  <div class="box">
-                    <input id="seven" type="checkbox">
-                    <span class="check"></span>
-                    <label for="seven">Exclude Short Sales</label>
-                  </div>
-                  <div class="box">
-                    <input id="eight" type="checkbox">
-                    <span class="check"></span>
-                    <label for="eight">Exclude Land Leases</label>
-                  </div>
-                  <div class="box">
-                    <input id="nine" type="checkbox">
-                    <span class="check"></span>
-                    <label for="nine">Oklahoma Listings Only</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 mb1 checks-col1">
-                <div class="timeon">
-                  <h5>Listing Type</h5>
-                </div>
+                                <div class="timeon-check">
+                                    <div class="box">
+                                        <input id="six" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="six">Fixer-Uppers Only</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="seven" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="seven">Exclude Short Sales</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="eight" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="eight">Exclude Land Leases</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="nine" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="nine">Oklahoma Listings Only</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb1 checks-col1">
+                                <div class="timeon">
+                                    <h5>Listing Type</h5>
+                                </div>
 
-                <div class="timeon-check">
-                  <div class="box">
-                    <input id="ten" type="checkbox">
-                    <span class="check"></span>
-                    <label for="ten">MLS Lisitngs</label>
-                  </div>
-                  <div class="box">
-                    <input id="eleven" type="checkbox">
-                    <span class="check"></span>
-                    <label for="eleven">New Construction</label>
-                  </div>
-                  <div class="box">
-                    <input id="twelve" type="checkbox">
-                    <span class="check"></span>
-                    <label for="twelve">Agent-listed</label>
-                  </div>
-                  <div class="box">
-                    <input id="thirteen" type="checkbox">
-                    <span class="check"></span>
-                    <label for="thirteen">MLS-Listed Foreclosures</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 mb1 checks-col2">
-                <div class="box">
-                  <input id="fourteen" type="checkbox">
-                  <span class="check"></span>
-                  <label for="fourteen">For Sale by Owner</label>
-                </div>
-                <div class="box">
-                  <input id="fifteen" type="checkbox">
-                  <span class="check"></span>
-                  <label for="fifteen">Foreclosures</label>
-                </div>
-              </div>
+                                <div class="timeon-check">
+                                    <div class="box">
+                                        <input id="ten" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="ten">MLS Lisitngs</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="eleven" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="eleven">New Construction</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="twelve" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="twelve">Agent-listed</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="thirteen" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="thirteen">MLS-Listed Foreclosures</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb1 checks-col2">
+                                <div class="box">
+                                    <input id="fourteen" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="fourteen">For Sale by Owner</label>
+                                </div>
+                                <div class="box">
+                                    <input id="fifteen" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="fifteen">Foreclosures</label>
+                                </div>
+                            </div>
 
-            </div>
-          </div>
+                        </div>
+                    </div>
 
-          <button type="button" class="more mb2" (click)="collapse.toggle(); seeless2clickEvent($event)"
-            [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed"
-            aria-controls="collapseExample">
+                    <button type="button" class="more mb2" (click)="collapse.toggle(); seeless2clickEvent($event)" [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
             {{btnVal2}} <i class="fa fa-chevron-down"></i>
           </button>
-          <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
-            <div class="row">
-              <div class="col-lg-12 mb1">
-                <div class="sold">
-                  <div class="toggle-btn d-flex align-items-center">
-                    <p for="">For Sale</p>
-                    <input type="checkbox" id="toggle2" />
-                    <label for="toggle2"></label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 mt1">
-                <div class="stories-pool d-flex justify-content-between">
-                  <div class="stories">
-                    <h6>Stories</h6>
-                    <div class="min-max d-flex justify-content-between align-items-center">
-                      <ng-select placeholder="No Min">
-                        <ng-option>1</ng-option>
-                        <ng-option>2</ng-option>
-                        <ng-option>3</ng-option>
-                        <ng-option>4</ng-option>
-                      </ng-select>
-                      <label for="">to</label>
-                      <ng-select placeholder="No Min">
-                        <ng-option>5</ng-option>
-                        <ng-option>6</ng-option>
-                        <ng-option>7</ng-option>
-                        <ng-option>8</ng-option>
-                      </ng-select>
-                    </div>
-                  </div>
-                  <div class="pool">
-                    <h6>Pool Type</h6>
-                    <ng-select placeholder="Select One">
-                      <ng-option>
-                        Active + Coming Soon Listings
-                      </ng-option>
-                    </ng-select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 mt2">
-                <div class="garage-spots">
-                  <h6>Garage Spots</h6>
-                  <div class="garage-counter">
-                    <button class="plus-btn">+</button>
-                    <input type="text" placeholder="No Min">
-                    <button class="min-btn">-</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 mb1 checks-col1">
-                <div class="garage-check">
-                  <div class="box">
-                    <input id="sixteen" type="checkbox">
-                    <span class="check"></span>
-                    <label for="sixteen">RV Parking</label>
-                  </div>
-                  <div class="box">
-                    <input id="seventeen" type="checkbox">
-                    <span class="check"></span>
-                    <label for="seventeen">Air Conditioning</label>
-                  </div>
-                  <div class="box">
-                    <input id="eighteen" type="checkbox">
-                    <span class="check"></span>
-                    <label for="eighteen">Fire Place</label>
-                  </div>
-                  <div class="box">
-                    <input id="nineteen" type="checkbox">
-                    <span class="check"></span>
-                    <label for="nineteen">Primary Bedroom on Main Floor</label>
-                  </div>
-                  <div class="box">
-                    <input id="twenty" type="checkbox">
-                    <span class="check"></span>
-                    <label for="twenty">Waterfront</label>
-                  </div>
-                  <div class="box">
-                    <input id="twentyone" type="checkbox">
-                    <span class="check"></span>
-                    <label for="twentyone">Has View</label>
-                  </div>
-                  <div class="box">
-                    <input id="twentytwo" type="checkbox">
-                    <span class="check"></span>
-                    <label for="twentytwo">Agent-listed</label>
-                  </div>
-                  <div class="box">
-                    <input id="twentythree" type="checkbox">
-                    <span class="check"></span>
-                    <label for="twentythree">Include Outdoor Parking</label>
-                  </div>
+                    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sold">
+                                    <div class="toggle-btn d-flex align-items-center">
+                                        <p for="">Sold</p>
+                                        <input type="checkbox" id="toggle2" />
+                                        <label for="toggle2"></label>
+                                    </div>
+                                    <h5>Home Amenities</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt1">
+                                <div class="stories-pool d-flex justify-content-between">
+                                    <div class="stories">
+                                        <h6>Stories</h6>
+                                        <div class="min-max d-flex justify-content-between align-items-center">
+                                            <ng-select placeholder="No Min">
+                                                <ng-option>1</ng-option>
+                                                <ng-option>2</ng-option>
+                                                <ng-option>3</ng-option>
+                                                <ng-option>4</ng-option>
+                                            </ng-select>
+                                            <label for="">to</label>
+                                            <ng-select placeholder="No Min">
+                                                <ng-option>5</ng-option>
+                                                <ng-option>6</ng-option>
+                                                <ng-option>7</ng-option>
+                                                <ng-option>8</ng-option>
+                                            </ng-select>
+                                        </div>
+                                    </div>
+                                    <div class="pool">
+                                        <h6>Pool Type</h6>
+                                        <ng-select placeholder="Select One">
+                                            <ng-option>
+                                                Active + Coming Soon Listings
+                                            </ng-option>
+                                        </ng-select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt2">
+                                <div class="garage-spots">
+                                    <h6>Garage Spots</h6>
+                                    <div class="garage-counter">
+                                        <button class="plus-btn">+</button>
+                                        <input type="text" placeholder="No Min">
+                                        <button class="min-btn">-</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb1 checks-col1">
+                                <div class="garage-check">
+                                    <div class="box">
+                                        <input id="sixteen" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="sixteen">RV Parking</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="seventeen" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="seventeen">Air Conditioning</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="eighteen" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="eighteen">Fire Place</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="nineteen" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="nineteen">Primary Bedroom on Main Floor</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="twenty" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="twenty">Waterfront</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="twentyone" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="twentyone">Has View</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="twentytwo" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="twentytwo">Agent-listed</label>
+                                    </div>
+                                    <div class="box">
+                                        <input id="twentythree" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="twentythree">Include Outdoor Parking</label>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb1 checks-col2">
+                                <div class="box">
+                                    <input id="twentyfour" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentyfour">Basement</label>
+                                </div>
+                                <div class="box">
+                                    <input id="twentyfive" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentyfive">Pets Allowed</label>
+                                </div>
+                                <div class="box">
+                                    <input id="twentysix" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentysix">Washer/Dryer Hookup</label>
+                                </div>
+                                <div class="box">
+                                    <input id="twentyseven" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentyseven">Guest House</label>
+                                </div>
+                                <div class="box">
+                                    <input id="twentyeight" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentyeight">Elevator</label>
+                                </div>
+                                <div class="box">
+                                    <input id="twentynine" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="twentynine">Green Home</label>
+                                </div>
+                                <div class="box">
+                                    <input id="thirty" type="checkbox">
+                                    <span class="check"></span>
+                                    <label for="thirty">Accessible Home</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb1">
+                                <div class="keywords">
+                                    <h6>Keywords</h6>
+                                    <input type="text" placeholder="e.g. office, fireplace, or guest house">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt1">
+                                <div class="school">
+                                    <h5 class="mb1">Schools</h5>
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <p class="mb1">No elementry schools in this region</p>
+                                        <p>School data provided by GreatSchools. School service boundaries are intended to be used as reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt2">
+                                <div class="school-rating">
+                                    <h6>Great School Ratings</h6>
+                                    <ng-select placeholder="Select One">
+                                        <ng-option>1</ng-option>
+                                        <ng-option>2</ng-option>
+                                        <ng-option>3</ng-option>
+                                        <ng-option>4</ng-option>
+                                    </ng-select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 d-flex align-items-center justify-content-between mt3">
+                                <div class="reset-btn">
+                                    Reset
+                                </div>
+                                <div class="apply-fiters black-btn btn-slide-left">
+                                    Apply Filters
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-6 mb1 checks-col2">
-                <div class="box">
-                  <input id="twentyfour" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentyfour">Basement</label>
-                </div>
-                <div class="box">
-                  <input id="twentyfive" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentyfive">Pets Allowed</label>
-                </div>
-                <div class="box">
-                  <input id="twentysix" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentysix">Washer/Dryer Hookup</label>
-                </div>
-                <div class="box">
-                  <input id="twentyseven" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentyseven">Guest House</label>
-                </div>
-                <div class="box">
-                  <input id="twentyeight" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentyeight">Elevator</label>
-                </div>
-                <div class="box">
-                  <input id="twentynine" type="checkbox">
-                  <span class="check"></span>
-                  <label for="twentynine">Green Home</label>
-                </div>
-                <div class="box">
-                  <input id="thirty" type="checkbox">
-                  <span class="check"></span>
-                  <label for="thirty">Accessible Home</label>
-                </div>
-              </div>
-              <div class="col-lg-12 mb1">
-                <div class="keywords">
-                  <h6>Keywords</h6>
-                  <input type="text" placeholder="e.g. office, fireplace, or guest house">
-                </div>
-              </div>
-              <div class="col-lg-12 mt1">
-                <div class="school">
-                  <h5 class="mb1">Schools</h5>
-                  <div class="d-flex flex-wrap justify-content-between">
-                    <p class="mb1">No elementry schools in this region</p>
-                    <p>School data provided by GreatSchools. School service boundaries are intended to be used as
-                      reference only. To verify enrollment eligibility for a property, contact the school directly.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 mt2">
-                <div class="school-rating">
-                  <h6>Great School Ratings</h6>
-                  <ng-select placeholder="Select One">
-                    <ng-option>1</ng-option>
-                    <ng-option>2</ng-option>
-                    <ng-option>3</ng-option>
-                    <ng-option>4</ng-option>
-                  </ng-select>
-                </div>
-              </div>
-              <div class="col-lg-12 d-flex align-items-center justify-content-between mt3">
-                <div class="reset-btn">
-                  Reset
-                </div>
-                <div class="apply-fiters black-btn btn-slide-left">
-                  Apply Filters
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
