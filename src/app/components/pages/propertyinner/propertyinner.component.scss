@@ -26,12 +26,14 @@
     color: white;
   }
 
+
+
   .heart-icon {
     background-color: #B48618;
     width: 40px;
     height: 40px;
     margin: 0 4px;
-    padding: 9px 10px 0px 13px;
+    padding: 7px 10px 0px 10px;
     border-radius: 100px;
 
     .fa-heart {
@@ -44,7 +46,7 @@
     width: 40px;
     height: 40px;
     margin: 0 4px;
-    padding: 9px 10px 0px 13px;
+    padding: 7px 10px 0px 10px;
     border-radius: 100px;
 
     .fa-share {
@@ -57,7 +59,7 @@
 .bannerBox {
   .imageBox {
     height: 500px;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
 
     img {
@@ -73,7 +75,7 @@
   }
 
   .bannerButton {
-    background-color: #F2F2F2;
+    background-color: #f1f1f1;
     margin: 0 5px;
     color: #000;
     font-family: rubiklight;
@@ -84,6 +86,11 @@
     border: none;
     font-weight: bold;
     border-radius: 30px;
+    margin-bottom: 5px;
+  }
+  .bannerButton:hover {
+    background-color: #B48618;
+    color: white;
   }
 }
 
@@ -105,6 +112,11 @@
   .wrapper .slick-dots li button:before {
     font-size: 20px;
     color: white;
+  }
+  .slide {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 15px;
   }
 }
 
@@ -176,7 +188,7 @@
     .head {
       span {
         font-family: rubikregular;
-        font-size: 38px;
+        font-size: 36px;
         color:#000;
 
       }
@@ -189,9 +201,10 @@
       }
 
       .content {
+        width: 90%;
         .price {
           h5 {
-            font-size: 28px;
+            font-size: 24px;
             font-family: rubiksemibold;
             color:#000;
             margin: 0;
@@ -279,43 +292,50 @@
 
 .Description-section-1-inner {
   h2 {
-    font-family: rubikregular;
-    color: #000;
+    font-family: rubiksemibold;
+    color: #000000;
+    font-size: 28px;
   }
 
   p {
-    font-family: poppinregular;
+    font-family: rubiklight;
     color: #666666;
     margin-bottom: 0px;
+    font-size: 14px;
   }
 
   button {
     border: none;
     color: #B48618;
     font-size: 14px;
-    font-family: poppinregular;
+    font-family: rubiklight;
     padding: 0;
+    margin-top: 10px;
+  }
+  button i {
+    margin-left: 10px;
   }
 }
 
 .Status-section-2-inner {
   h3 {
-    font-family: rubikregular;
-    color: #000;
+    font-family: rubiksemibold;
+    color: #000000;
+    font-size: 28px;
   }
 
   .grey-text {
     color: #4D4D4D;
-    font-size: 16px;
-    font-family: poppinregular;
+    font-size: 14px;
+    font-family: rubiklight;
     width: fit-content;
     margin-top: 10px;
   }
 
   .yellow-text {
     color: #B48618;
-    font-size: 16px;
-    font-family: poppinregular;
+    font-size: 14px;
+        font-family: rubikregular;
     width: fit-content;
     margin-top: 10px;
   }
@@ -323,22 +343,23 @@
 
 .Price-section-3-inner {
   h3 {
-    font-family: rubikregular;
-    color: #000;
+    font-family: rubiksemibold;
+    color: #000000;
+    font-size: 28px;
   }
 
   .grey-text {
     color: #4D4D4D;
-    font-size: 16px;
-    font-family: poppinregular;
+    font-size: 14px;
+    font-family: rubiklight;
     width: fit-content;
     margin-top: 10px;
   }
 
   .yellow-text {
     color: #B48618;
-    font-size: 16px;
-    font-family: poppinregular;
+    font-size: 14px;
+    font-family: rubikregular;
     width: fit-content;
     margin-top: 10px;
   }
@@ -347,7 +368,8 @@
 .Property-section-4-inner {
   h2 {
     font-family: rubiksemibold;
-    color: #000;
+    color: #000000;
+    font-size: 28px;
   }
 
 
@@ -372,14 +394,14 @@
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
@@ -387,7 +409,7 @@
   h4 {
     font-family: rubikregular;
     color: #333333;
-
+    font-size: 16px
   }
 
 
@@ -405,21 +427,21 @@
 
     a {
       color: #B48618;
-      font-family: rubikregular;
+      font-family: rubiklight;
       font-size: 14px;
     }
   }
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
@@ -431,11 +453,14 @@
     padding: 40px 40px 40px 160px;
     h4{
       color:#fff;
+    font-family: rubikregular;
+
     }
 
     .black-btn {
       &:hover {
         color: #fff !important;
+        font-size: 14px;
       }
     }
   }
@@ -469,14 +494,14 @@
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
@@ -508,14 +533,14 @@
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
@@ -548,14 +573,14 @@
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
@@ -587,40 +612,41 @@
 
   .text-style-black {
     font-size: 16px;
-    font-family: rubiksemibold;
-    color: #000;
+    font-family: rubikregular;
+    color: #000000;
   }
 
   li {
     color: #666666;
-    font-size: 16px;
-    font-family: rubikregular;
+    font-size: 14px;
+    font-family: rubiklight;
   }
 }
 
 .Schools-section-11-inner {
 
   h2{
-    color:#000;
+    color:#000000;
     font-family: rubiksemibold;
+    font-size: 28px;
   }
   .vistrula-text-line {
-    font-size: 18px;
-    font-family: poppinregular;
+    font-size: 14px;
+    font-family: rubiklight;
     color: #666666;
   }
 
   .last-section-text-main {
     p {
       color: #B48618;
-      font-size: 18px;
-      font-family: rubiksemibold;
+      font-size: 16px;
+      font-family: rubikregular;
       margin: 0;
     }
 
     span {
-      font-size: 16px;
-      font-family: poppinregular;
+      font-size: 14px;
+      font-family: rubiklight;
       color: #666666;
     }
   }
@@ -631,9 +657,10 @@
 
     p {
       color: #B48618;
-      font-size: 18px;
-      font-family: rubiksemibold;
-      margin: 0px;
+      font-size: 16px;
+      font-family: rubikregular;
+      margin-bottom: 4px;
+
 
       i {
         color: #4D4D4D;
@@ -641,14 +668,14 @@
     }
 
     span {
-      font-size: 12px;
-      font-family: poppinregular;
+      font-size: 14px;
+      font-family: rubiklight;
       color: #666666;
     }
   }
 
   .text-style-black {
-    font-size: 18px;
+    font-size: 20px;
     font-family: rubiksemibold;
     color: #000;
   }
@@ -664,8 +691,10 @@
     background: transparent;
     box-shadow: 0px 0px 10px #9c9c9c7d;
     padding: 1rem;
-    color:#000;
-    font-size: 23px;
+    color:#000000;
+    font-size: 16px;
+    font-family: rubikregular;
+
   }
 }
  .properties-slider {
@@ -1095,7 +1124,7 @@
     }
 
     .text-style-black {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
@@ -1191,8 +1220,10 @@
 
           .price {
             h5 {
-              font-size: 16px;
-              font-family: rubikregular;
+              font-size: 22px;
+              font-family: rubiksemibold;
+
+
             }
           }
 
@@ -1322,10 +1353,10 @@
     }
 
     p {
-      font-family: poppinregular;
+      font-family: rubiklight;
       color: #666666;
       margin-bottom: 0px;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     button {
