@@ -20,43 +20,6 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  // filter(event) {
-  //   var target = event.target
-  //   if ($(target).hasClass('filter-btn')) {
-  //     $(target).toggleClass("filter-bg")
-  //   }
-  //   else {
-  //     return
-  //   }
-  // }
-  // see more or less buttons
-  // see more or less buttons
-  // btnVal1 = "See More";
-  // btnVal2 = "See More";
-  // status2: boolean = false;
-  // status3: boolean = false;
-  // seelessclickEvent(event: any) {
-
-  //   this.status2 = !this.status2;
-  //   if (this.status2 == false) {
-  //     this.btnVal1 = "See More"
-  //   }
-  //   else {
-  //     this.btnVal1 = "See Less"
-  //   }
-  // }
-  // seeless2clickEvent(event: any) {
-
-  //   this.status3 = !this.status3;
-  //   if (this.status3 == false) {
-  //     this.btnVal2 = "See More"
-  //   }
-  //   else {
-  //     this.btnVal2 = "See Less"
-  //   }
-  // }
-
-
 
 
   // see more or less buttons
@@ -68,24 +31,24 @@ export class ProfileComponent implements OnInit {
 
     this.status2 = !this.status2;
     if (this.status2 == false) {
-      this.btnVal1 = "See Less"
+      this.btnVal1 = "See More"
     }
     else {
-      this.btnVal1 = "See More"
+      this.btnVal1 = "See Less"
     }
   }
   seeless2clickEvent(event: any) {
 
     this.status3 = !this.status3;
     if (this.status3 == false) {
-      this.btnVal2 = "See Less"
-    }
-    else {
       this.btnVal2 = "See More"
     }
+    else {
+      this.btnVal2 = "See Less"
+    }
   }
-  public isCollapsed = false;
-  public isCollapsed2 = false;
+  public isCollapsed = true;
+  public isCollapsed2 = true;
 
 
   // property slider

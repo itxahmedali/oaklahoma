@@ -5,13 +5,6 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import {NgxPaginationModule} from 'ngx-pagination';
 // ng google map
 import { AgmCoreModule } from '@agm/core';
-// ng animation
-// import {} from 'googlemaps';
-// import {} from 'googlemaps';
-// import { NgxGoogleMapModule } from 'ngx-google-map'
-// import { GoogleMapsModule } from '@angular/google-maps'
-// import { AgmCoreModule } from '@agm/core';
-// import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -36,7 +29,6 @@ import { PropertyinnerComponent } from './components/pages/propertyinner/propert
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
-import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -73,7 +65,6 @@ import { NgwWowModule } from 'ngx-wow';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
     }),
-    NgwWowModule
   ],
   providers: [
   ],
