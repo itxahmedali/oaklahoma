@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ObservableService } from 'src/app/services/observable.service';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -103,14 +103,26 @@ export class HomeComponent implements OnInit {
   breakpoint(e) {
     console.log('breakpoint');
   }
+  propertysell:number = 0;
+  propertyrent:number = 0;
+  propertysold:number = 0;
+  propertysellstop:any = setInterval(()=>{
+    this.propertysell++;
+    if(this.propertysell == 55){
+      clearInterval(this.propertysellstop)
+    }
 
-  // afterChange(e) {
-  //   console.log('afterChange');
-  // }
-
-  // beforeChange(e) {
-  //   console.log('beforeChange');
-  // }
-
-
+  },10)
+  propertyrentstop:any = setInterval(()=>{
+    this.propertyrent++;
+    if(this.propertyrent == 412){
+      clearInterval(this.propertyrentstop)
+    }
+  },10)
+  propertysoldstop:any = setInterval(()=>{
+    this.propertysold++;
+    if(this.propertysold == 112){
+      clearInterval(this.propertysoldstop)
+    }
+  },10)
 }
