@@ -1,4 +1,3 @@
-
 // tab-pane
 .tab-pane {
     margin-bottom: 2rem;
@@ -23,7 +22,6 @@
         letter-spacing: 0.4px;
         font-family: rubikregular;
         border-radius: 20px;
-
     }
     .nav-link.active {
         color: #fff !important;
@@ -135,7 +133,6 @@ input {
 
 .changePassword {
     text-align: center;
-
 }
 
 .emailTypeButton {
@@ -146,7 +143,6 @@ input {
         border: none;
         font-size: 16px;
         background-color: transparent;
-
     }
 }
 
@@ -236,7 +232,6 @@ input {
     position: absolute;
     top: 210px;
     left: 43%;
-
     i {
         position: absolute;
         left: 22%;
@@ -439,9 +434,9 @@ p {
 }
 
 .emailTypeRadioButton {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .emailTypeHeading {
@@ -478,7 +473,6 @@ p {
     font-family: rubiksemibold;
     color: #000;
 }
-
 
 .subWishlistCardImage {
     position: absolute;
@@ -670,14 +664,17 @@ body {
 }
 
 .filtersMapIcon i {
-  margin-right: 8px;
+    margin-right: 8px;
 }
+
 .savedSearchEditDelete {
-  display: flex;
+    display: flex;
 }
+
 .savedSearchEditDelete i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 
 /*--Start Media Query--*/
 
@@ -696,6 +693,7 @@ body {
         left: 43%;
     }
 }
+
 @media only screen and (max-width: 1600px) {
     .accountSettingEditImage {
         position: absolute;
@@ -755,13 +753,13 @@ body {
         }
     }
     .containercs {
-      padding-left: 22px;
+        padding-left: 22px;
     }
-    .wishlistCardText  {
-      margin-top: 0px !important;
+    .wishlistCardText {
+        margin-top: 0px !important;
     }
-    .wishlistButton button{
-      margin-top: 0px !important;
+    .wishlistButton button {
+        margin-top: 0px !important;
     }
 }
 
@@ -831,36 +829,36 @@ body {
     .wishlistHeading h1,
     .savedSearchHeading h1,
     .emailSettingHeading h1 {
-      font-size: 32px;
+        font-size: 32px;
     }
     .wishlistCardImageText h6 {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-    .wishlistButton, button{
-      text-align: center;
-      margin-top: 5px;
+    .wishlistButton,
+    button {
+        text-align: center;
+        margin-top: 5px;
     }
 }
 
 @media only screen and (max-width: 540px) {
-  .nav {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-    .closeLink{
-      margin-top: 36px !important;
+    .nav {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .closeLink {
+        margin-top: 36px !important;
     }
     .wishListFilters {
-      border: 1px solid #B48618;
-      border-radius: 20px;
-  }
-  .emailFavourite {
-    width: 90%;
-    margin: auto;
-    padding: 0px 10px;
-  }
-
+        border: 1px solid #B48618;
+        border-radius: 20px;
+    }
+    .emailFavourite {
+        width: 90%;
+        margin: auto;
+        padding: 0px 10px;
+    }
     .accountLinkGoogle {
         margin-bottom: 20px;
     }
@@ -875,7 +873,7 @@ body {
         text-align: center;
     }
     .accountSettingEditImage {
-      position: absolute;
+        position: absolute;
         top: 18.3%;
         left: 34%;
     }
@@ -1020,53 +1018,51 @@ body {
     .recommendedHeading h4,
     .homeSearchHeading h4,
     .homeReportHeading h4,
-    .newsFeedHeading h4{
-      font-size: 22px;
+    .newsFeedHeading h4 {
+        font-size: 22px;
     }
     .emailAddress,
-    .phoneNo  {
-      margin-top: 8px !important;
+    .phoneNo {
+        margin-top: 8px !important;
     }
     .saveUpdate {
-      margin-top: 16px !important;
+        margin-top: 16px !important;
     }
     .closeLink {
-      margin-top: 40px !important;
+        margin-top: 40px !important;
     }
-    .wishListFilters  {
-      border-radius: 15px;
+    .wishListFilters {
+        border-radius: 15px;
     }
     .savedSearchBox {
-      width: 95%;
-      margin: auto;
+        width: 95%;
+        margin: auto;
     }
-    .emailTypeBox{
-      width: 95%;
-      margin: auto;
+    .emailTypeBox {
+        width: 95%;
+        margin: auto;
     }
     .recommendedBox {
-      width: 90%;
-      margin: auto;
+        width: 90%;
+        margin: auto;
     }
     .emailTypeRadioButton {
-      width: 338px;
-      margin-top: -15px;
+        width: 338px;
+        margin-top: 0px;
     }
-    .emailTypeButton{
-      margin-top: 15px !important;
+    .emailTypeButton {
+        margin-top: 15px !important;
     }
     .savedHeading {
-      text-align: center;
+        text-align: center;
     }
     .nav-pills {
-
-      .nav-link.active {
-          color: #fff !important;
-          background: #B48618;
-          padding: 10px 26px;
-      }
-  }
-
+        .nav-link.active {
+            color: #fff !important;
+            background: #B48618;
+            padding: 10px 26px;
+        }
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1109,13 +1105,12 @@ body {
         left: 65%;
     }
     .nav-pills {
-
-      .nav-link.active {
-          color: #fff !important;
-          background: #B48618;
-          padding: 10px 17px;
-      }
-}
+        .nav-link.active {
+            color: #fff !important;
+            background: #B48618;
+            padding: 10px 17px;
+        }
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -1128,21 +1123,19 @@ body {
         }
     }
     .nav-pills {
+        .nav-link {
+            font-size: 14px;
+        }
+        .nav-link.active {
+            color: #fff !important;
+            background: #B48618;
+            padding: 5px 10px;
+        }
+    }
+    .containercs {
+        width: 85px;
+    }
+}
 
-      .nav-link {
-        font-size: 14px;
-      }
-      .nav-link.active {
-          color: #fff !important;
-          background: #B48618;
-          padding: 5px 10px;
-      }
-}
-.containercs {
-  width: 85px;
-}
-}
 
 /*--End Media Query--*/
-
-
