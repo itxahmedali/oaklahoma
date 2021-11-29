@@ -134,14 +134,7 @@ input {
 
 .changePassword {
     text-align: center;
-    // button {
-    //     color: #B48618;
-    //     letter-spacing: 0.4px;
-    //     font-family: rubikregular;
-    //     border: none;
-    //     font-size: 14px;
-    //     background-color: transparent;
-    // }
+
 }
 
 .emailTypeButton {
@@ -543,20 +536,6 @@ p {
     }
 }
 
-.wishlistButton {
-    button {
-        background-color: #000000;
-        color: #ffffff;
-        padding: 10px 30px;
-        border: none;
-        outline: none;
-        border-radius: 50px;
-        font-family: rubiklight;
-        letter-spacing: 0.4px;
-        margin-top: 10px;
-    }
-}
-
 .dropdown {
     h6 {
         font-family: rubiksemibold;
@@ -692,9 +671,10 @@ body {
 .filtersMapIcon i {
   margin-right: 8px;
 }
-
-.savedSearchEditDelete i {
+.savedSearchEditDelete {
   display: flex;
+}
+.savedSearchEditDelete i {
   margin-right: 10px;
 }
 
@@ -1010,7 +990,7 @@ body {
         width: 75%;
     }
     input {
-        width: 75%;
+        width: 85%;
     }
     .dropdown {
         span {

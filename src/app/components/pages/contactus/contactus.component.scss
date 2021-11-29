@@ -153,6 +153,11 @@
             width: 100%;
         }
     }
+    .signup-form {
+        .sort {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -162,6 +167,11 @@
             h1 {
                 font-size: 2.5rem;
             }
+        }
+    }
+    .signup-form {
+        .sort {
+            width: 100%;
         }
     }
 }
