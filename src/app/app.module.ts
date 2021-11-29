@@ -29,7 +29,7 @@ import { PropertyinnerComponent } from './components/pages/propertyinner/propert
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
-
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -62,6 +62,7 @@ import { TestCompoComponent } from './test-compo/test-compo.component';
     NgSelectModule,
     FormsModule,
     NgxPaginationModule,
+    NgwWowModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
     }),

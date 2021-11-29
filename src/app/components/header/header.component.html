@@ -38,11 +38,11 @@
 </nav>
 
 <!-- small screen navbar -->
-<nav class="mobile-nav navbar">
+<nav class="mobile-nav navbar" [ngClass]="pageNameCon ? 'bgBlack' : ''">
 
   <div class="container position-relative">
     <a class="navbar-brand" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">
-      <img src="../../../assets/1x/logo.png" alt="">
+      <img src="../../../assets/SVG/logo.svg" alt="">
     </a>
     <div class="sidenav-btn" id="nav-icon1" (click)="sidenav($event)">
       <span></span>
