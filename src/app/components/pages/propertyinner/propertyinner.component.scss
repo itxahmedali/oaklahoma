@@ -4,15 +4,26 @@
   margin-bottom: 2rem;
 
   .cusotmBlack_btn {
-    background-color: #B48618;
+    background-color: #f1f1f1;
     margin: 0 5px;
-    color: #fff;
+    color: #000000;
     font-family: rubiklight;
     padding: 0;
     height: 45px;
     width: 135px;
     font-size: 14px;
     font-weight: bold;
+  }
+
+  .cusotmBlack_btn .active {
+    background-color: #B48618;
+    color: white;
+  }
+
+
+  .cusotmBlack_btn:hover {
+    background-color: #B48618;
+    color: white;
   }
 
   .heart-icon {
