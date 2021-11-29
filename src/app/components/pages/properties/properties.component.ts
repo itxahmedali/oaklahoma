@@ -287,9 +287,11 @@ export class PropertiesComponent implements OnInit {
       price: 5000
     },
   ]
+  filtericon: boolean = true;
   filter(event) {
     var target = event.target
     if ($(target).hasClass('filter-btn')) {
+      this.filtericon = !this.filtericon;
       $(target).toggleClass("filter-bg")
     }
     else {
@@ -297,7 +299,7 @@ export class PropertiesComponent implements OnInit {
     }
   }
 
-  href: string
+  public href: string
   constructor(
     private router: Router
   ) {

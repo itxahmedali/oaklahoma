@@ -35,15 +35,52 @@
     margin: 0 auto;
 }
 
-.black-btn {
-    padding: 8px 2.3rem;
+
+// .black-btn {
+//     padding: 8px 2.3rem;
+//     color: #fff;
+//     background: #000;
+//     border: none;
+//     border-radius: 50px;
+//     width: fit-content;
+//     cursor: pointer;
+//     transition: all 0.5s ease;
+// }
+.black-btn  {
+  padding: 8px 2.3rem;
     color: #fff;
     background: #000;
     border: none;
     border-radius: 50px;
     width: fit-content;
     cursor: pointer;
+    transition: all 0.5s ease;
+  cursor:pointer;
+  border: 1px solid transparent;
+  min-width: 150px;
 }
+.black-btn:hover {
+  outline: 0;
+  color: rgb(0, 0, 0);
+
+}
+.black-btn:active {
+  outline: 0;
+  color: rgb(0, 0, 0);
+}
+.btn-slide-left {
+  background: linear-gradient(to left, #000 50%, transparent 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+}
+.btn-slide-left:hover {
+  background-position: left bottom;
+  border: 1px solid #000;
+}
+
+
+
+
 
 // carousel next previous btn
 .prev-arrow {

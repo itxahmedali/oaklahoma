@@ -101,7 +101,7 @@
             align-items: center;
 
             .fa-heart:before {
-              content: "\F08A";
+              // content: "\F08A";
               color: #fff;
             }
           }
@@ -200,12 +200,14 @@
         .property-type {
           .property-btns {
             .filter-bg {
-              background: linear-gradient(0deg, #b48618 41%, #ffffff 0%);
-              transition: all 1s ease-in-out;
+              // background: linear-gradient(184deg, #b48618 10%, #ffffff 100%);
+              // transition: all 0.1s ease-in-out;
               border: 1px solid #B48618;
+              background-color: #B48618;
 
               label {
                 color: #fff;
+
               }
 
               .cls-1 {

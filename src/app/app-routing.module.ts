@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
 import { ForbuyComponent } from './components/pages/forbuy/forbuy.component';
-import { ForrentComponent } from './components/pages/forrent/forrent.component';
 import { ArticlesComponent } from './components/pages/articles/articles.component';
 import { LoginmodalsComponent } from './components/pages/loginmodals/loginmodals.component';
-
 import { HomeComponent } from './components/pages/home/home.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { ContactusComponent } from './components/pages/contactus/contactus.component';
@@ -23,13 +21,13 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'forbuy', component: ForbuyComponent },
   { path: 'forrent', component: ForbuyComponent },
-  // { path: 'forrent', component: ForrentComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'articles', component: ArticlesComponent },
   { path: 'login', component: LoginmodalsComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'contactus', component: ContactusComponent },
-  { path: 'properties', component: PropertiesComponent },
+  { path: 'propertiesbuy', component: PropertiesComponent },
+  { path: 'propertiesrent', component: PropertiesComponent },
   { path: 'propertyinner', component: PropertyinnerComponent },
   { path: 'articles-inner', component: ArticleinnerComponent },
   { path: 'forgot', component: ForgotpasswordComponent },

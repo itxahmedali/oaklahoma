@@ -42,7 +42,7 @@
             }
         }
     }
-    
+
     // search box section
     .search {
         position: relative;
@@ -92,18 +92,18 @@
             }
         }
     }
-    
+
     // properties items
     .housesForSeal {
         font-size: 35px;
         color: #000;
         font-family: rubiksemibold;
     }
-    
+
     .black-btn1 {
         padding: 13px 4rem;
     }
-    
+
     .slick-slide {
         overflow: hidden;
         img {
@@ -112,7 +112,7 @@
             object-fit: cover;
         }
     }
-    
+
     .properties-slider {
         position: relative;
         display: flex;
@@ -156,13 +156,13 @@
                 justify-content: center;
                 align-items: center;
                 .fa-heart:before {
-                    content: "\F08A";
+                    // content: "\f004";
                     color: #fff;
                 }
             }
         }
     }
-    
+
     // media queries
     @media only screen and (min-width:2560px) {
         .main-bg {
@@ -177,7 +177,7 @@
             width: 33%
         }
     }
-    
+
     @media only screen and (min-width:1920px) {
         .main-bg {
             height: 900px;
@@ -186,7 +186,7 @@
             width: 79%;
         }
     }
-    
+
     @media only screen and (min-width:1600px) {
         .cstm-container {
             .articles-section {
@@ -201,7 +201,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:1600px) {
         .main-bg {
             height: 700px;
@@ -210,7 +210,7 @@
             width: 75%;
         }
     }
-    
+
     @media only screen and (max-width:1440px) {
         .main-bg {
             height: 650px;
@@ -231,7 +231,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:1366px) {
         .main-bg {
             height: 520px;
@@ -252,7 +252,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:1024px) {
         .main-bg {
             height: 770px;
@@ -287,7 +287,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:768px) {
         .search {
             .search-box {
@@ -350,7 +350,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:540px) {
         .mainbtnsBox {
             flex-wrap: wrap;
@@ -360,7 +360,7 @@
             margin: 5px 6px !important;
         }
     }
-    
+
     @media only screen and (max-width: 414px) {
         .main-bg {
             height: 500px;
@@ -465,7 +465,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width:375px) {
         .mainbtnsBox {
             // flex-wrap: wrap;

@@ -1,5 +1,6 @@
 // banner section
 .main-bg {
+
     position: relative;
     &:before {
         background: url(../../../../assets/1x/aboutus.png);
@@ -235,11 +236,22 @@
 
 @media only screen and (max-width:1024px) {
     .main-bg {
-        height: 770px;
-    }
+      height: 770px;
+      // have to change after clipping mask background
+        overflow: hidden;
+        &:before {
+            width: 1300px;
+        }
+      }
 }
 
 @media only screen and (max-width:768px) {
+  .main-bg {
+    // have to change after clipping mask background
+      &:before {
+          width: 1045px;
+      }
+    }
     .search {
         .search-box {
             width: 70%;
@@ -354,6 +366,12 @@
 }
 
 @media only screen and (max-width: 540px) {
+  .main-bg {
+    // have to change after clipping mask background
+      &:before {
+          width:800px;
+      }
+    }
     // abotusContainer
     .abotusContainer {
         flex-direction: column;
@@ -401,8 +419,12 @@
 
 @media only screen and (max-width:414px) {
     .main-bg {
-        height: 500px;
-    }
+      height: 500px;
+      // have to change after clipping mask background
+        &:before {
+            width: 600px;
+        }
+      }
     // abotusContainer
     .abotusContainer {
         .aboutUsPara h3 {
@@ -446,4 +468,13 @@
       justify-content: center;
       object-fit: contain;
   }
+}
+
+@media only screen and (max-width:375px){
+  .main-bg {
+    // have to change after clipping mask background
+      &:before {
+          width: 550px;
+      }
+    }
 }

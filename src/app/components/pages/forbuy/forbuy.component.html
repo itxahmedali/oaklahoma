@@ -6,7 +6,7 @@
         <h1>Want to <span> Buy </span> your <span>Dream House?</span></h1>
       </div>
       <div class="col-lg-6" *ngIf="href == '/forrent'">
-        <h1>Find the <span> perfect </span> <br> <span>rentals</span></h1>
+        <h1>Find the <span> Perfect </span> <br> <span>Rentals</span></h1>
       </div>
     </div>
   </div>
@@ -38,11 +38,11 @@
           </ng-select>
         </div>
         <div class="buttonsBox1">
-          <button class="black-btn">Search</button>
+          <button class="black-btn btn-slide-left">Search</button>
         </div>
       </div>
     </div>
-    <div class="buttonsBox1">
+    <!-- <div class="buttonsBox1">
       <ng-select placeholder="Sort">
         <ng-option>
           No Max
@@ -51,15 +51,15 @@
           100
         </ng-option>
       </ng-select>
-    </div>
-    <div class="buttonsBox1">
+    </div> -->
+    <!-- <div class="buttonsBox1">
       <button class="black-btn">Search</button>
-    </div>
+    </div> -->
   </div>
 </div>
 
-</div>
-</div>
+<!-- </div>
+</div> -->
 <!-- slick slider -->
 <div class="container">
   <h1 class="text-center housesForSeal mt7 mb2" *ngIf="href == '/forbuy'">Oklahoma City Houses For Sale</h1>
@@ -152,7 +152,8 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt2 mb3">
-    <button class="black-btn black-btn1 " routerLink='/properties'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See All</button>
   </div>
 
 </div>
@@ -249,7 +250,8 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt2 mb3">
-    <button class="black-btn black-btn1 " routerLink='/properties'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See All</button>
   </div>
 
 </div>
@@ -345,7 +347,8 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt2 mb3">
-    <button class="black-btn black-btn1 " routerLink='/properties'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See All</button>
   </div>
 
 </div>
@@ -445,7 +448,8 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt2 mb4">
-    <button class="black-btn black-btn1 " routerLink='/properties'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forbuy'" routerLink='/propertiesbuy'>See All</button>
+    <button class="black-btn btn-slide-left black-btn1 " *ngIf="href == '/forrent'" routerLink='/propertiesrent'>See All</button>
   </div>
 
 </div>
