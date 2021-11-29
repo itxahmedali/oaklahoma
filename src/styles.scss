@@ -61,11 +61,17 @@
   background: linear-gradient(to left, #000 50%, transparent 50%);
   background-size: 210% 100%;
   background-position: right bottom;
+  border: 1px solid transparent;
+  transition: 0.5s all ease-in-out;
 }
 .btn-slide-left:hover {
   background-position: left bottom;
+  border-color: #b48618;
 }
-
+// .btn-slide-left{
+//     background-color: #000;
+//     transition: 0.5s all ease-in-out;
+// }
 
 
 

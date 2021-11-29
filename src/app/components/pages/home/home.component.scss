@@ -48,17 +48,19 @@
     position: relative;
     .search-box {
         background: #fff;
-        position: absolute;
+        // position: absolute;
         width: 50%;
         // min-height: 150px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -100px;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // top: -100px;
         padding: 1rem;
         border-radius: 10px;
         box-shadow: 0px 10px 44px -6px #00000073;
         -webkit-box-shadow: 0px 10px 44px -6px #00000073;
         -moz-box-shadow: 0px 10px 44px -6px #00000073;
+        margin: auto;
+    margin-top: -6rem;
         .search-tabs {
             input {
                 border-radius: 50px;
@@ -71,6 +73,9 @@
             }
         }
     }
+}
+.mainBox{
+    position: relative;
 }
 
 // slick slider
@@ -115,7 +120,7 @@
 
 // latest-properties
 .latest-properties {
-    margin-top: 7rem;
+    margin-top: 5rem;
     h1 {
         margin-bottom: 30px;
         font-family: rubiksemibold;
@@ -142,7 +147,7 @@
             label {
                 margin: 0;
                 color: #fff;
-                font-size: 17px;
+                font-size: 14px;
             }
         }
         .slide {
@@ -586,6 +591,14 @@
                 font-size: 2.5rem;
             }
         }
+    }
+    .latest-properties{
+        h1{
+            font-size: 30px;
+        }
+    }
+    .want-to-sec{
+        margin-top: 2rem;
     }
     .search {
         .search-box {
