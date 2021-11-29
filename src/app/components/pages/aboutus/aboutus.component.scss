@@ -152,11 +152,16 @@
         font-family: rubiksemibold;
         font-size: 43px;
     }
-    .ourMissonPara p {
+    .ourMissonPara {
+    max-width: 1000px;
+    margin: auto;
+
+    p {
         color: #B48618;
         font-family: poppinregular;
         text-align: center;
-    }
+        font-size: 14px;
+    }}
 }
 
 // review-banner

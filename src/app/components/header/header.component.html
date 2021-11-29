@@ -39,16 +39,16 @@
 
 <!-- small screen navbar -->
 <nav class="mobile-nav navbar">
-  <div class="sidenav-btn" id="nav-icon1" (click)="sidenav($event)">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <div class="container">
+
+  <div class="container position-relative">
     <a class="navbar-brand" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">
       <img src="../../../assets/1x/logo.png" alt="">
     </a>
-
+    <div class="sidenav-btn" id="nav-icon1" (click)="sidenav($event)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </nav>
 <div class="sider">
@@ -73,13 +73,17 @@
           Articles</a>
 
       </li>
-      <li class="nav-item navBtnss">
-        <a class="btns" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignInModal">Login</a>
-      </li>
-      <li class="nav-item navBtnss">
-        <a class="signup-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign
-          Up</a>
-      </li>
+      <div class="signInBox d-flex flex-column justify-content-end">
+
+        <li class="nav-item navBtnss">
+          <a class="btns" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignInModal">Login</a>
+        </li>
+        <li class="nav-item navBtnss">
+          <a class="signup-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignUpModal">Sign
+            Up</a>
+        </li>
+      </div>
+
     </ul>
   </div>
 </div>

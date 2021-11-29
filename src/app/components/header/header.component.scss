@@ -103,7 +103,10 @@
   ul {
     list-style: none;
     margin-top: 5rem;
-
+    height: 88%;
+    .signInBox  {
+            height: 100%;
+      }
     li {
       margin-top: 40px;
       text-align: center;
@@ -165,7 +168,7 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    top: 3%;
+    top: 30%;
     right: 25px;
     z-index: 302;
     display: block;
@@ -246,4 +249,38 @@
   background-color: rgba(0, 0, 0, 0.855);
   backdrop-filter: blur(5px);
   box-shadow: rgb(0 0 0 / 31%) 0px 17px 22px 1px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sideNave {
+    display: none
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .sideNave {
+    display: block
+  }
+
+}
+@media only screen and (max-width: 540px) {
+  .sideNave {
+  background: linear-gradient(284deg, #b48618, #000000);
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  left: -300px;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  ul {
+    list-style: none;
+    margin-top: 5rem;
+    height: 85%;
+    .signInBox  {
+            height: 100%;
+      }
+    }}
 }
