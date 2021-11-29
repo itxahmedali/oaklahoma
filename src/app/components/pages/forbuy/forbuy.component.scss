@@ -42,19 +42,53 @@
             }
         }
     }
-
+    .mainBox{
+        position: relative;
+    }
+    .slick-slide{
+        display: block;
+    }
+    .slide {
+        position: relative;
+            cursor: pointer;
+            height: 240px;
+            border-radius: 15px;
+            overflow: hidden;
+        .heart-icon {
+            transition: 0.5s all ease-in-out;
+            background-color: #000000bf;
+            border-radius: 50px;
+            height: 40px;
+            width: 40px;
+            padding: 8px 7px 8px 7px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            .fa-heart:before {
+                // content: "\F08A";
+                color: #fff;
+            }
+        }
+        .heart-icon:hover{
+            background: #b48618d9;
+        }
+       
+    }
     // search box section
     .search {
         position: relative;
+        margin-top: -5rem;
         .search-box {
             background: #fff;
-            position: absolute;
-            width: 58%;
-            min-height: 110px;
+            // position: absolute;
+            width: 70%;
+            // min-height: 110px;
             left: 50%;
-            transform: translateX(-50%);
-            top: -100px;
-            padding: 2rem 2rem;
+            // transform: translateX(-50%);
+            // top: -100px;
+            margin: auto;
+            padding: 2rem;
             border-radius: 10px;
             box-shadow: 0px 10px 44px -6px #00000073;
             -webkit-box-shadow: 0px 10px 44px -6px #00000073;
@@ -63,23 +97,26 @@
         .search_Boxs {
             input {
                 outline: none;
-                border: 1px solid #B3B3B3;
+                border: 1px solid lightgrey;
                 border-radius: 50px;
                 font-family: 'rubiklight';
-                font-size: 12px;
-                padding-left: 10px;
-                width: 45%;
+                font-size: 14px;
+                padding: 10px 15px;
+                width: 100%;
             }
             .buttonsBox1 {
-                margin: 0 6px !important;
+                // margin: 0 6px !important;
+                button{
+                    min-width: auto;
+                }
                 .ng-select {
                     background-color: #B48618 !important;
                     border-radius: 50px !important;
-                    min-width: 130px !important;
+                    min-width: 100% !important;
                     .ng-select.ng-select-single .ng-select-container {
                         background-color: #B48618 !important;
                         border-radius: 50px !important;
-                        min-width: 130px !important;
+                        min-width: 100% !important;
                         .ng-value-container {
                             color: #fff !important;
                             font-family: 'rubiklight' !important;
@@ -162,7 +199,54 @@
             }
         }
     }
-
+    .content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #000000bd;
+        color: #fff;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        align-items: center;
+        transition: 0.5s all ease-in-out;
+        label {
+            font-size: 20px;
+            font-family: rubiklight;
+            width: 70%;
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #B48618;
+            border-radius: 50px;
+            border: none;
+            overflow: hidden;
+            transition: 0.5s all ease-in-out;
+            border: 2px solid transparent;
+            i {
+                font-size: 20px;
+                transition: 0.5s all ease-in-out;
+            }
+            &:hover{
+                background-color: transparent;
+                border-color: #B48618;
+                i{
+                    transform: rotate(360deg);
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
     // media queries
     @media only screen and (min-width:2560px) {
         .main-bg {
@@ -357,7 +441,7 @@
             justify-content: center;
         }
         .search .search_Boxs .buttonsBox1 {
-            margin: 5px 6px !important;
+            margin-top: 10px !important;
         }
     }
 

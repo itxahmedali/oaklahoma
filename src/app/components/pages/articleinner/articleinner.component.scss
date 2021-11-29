@@ -1,11 +1,12 @@
 .inner-article {
     width: 100%;
-    // margin-top: 2rem;
-    padding-top: 6rem;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 10rem;
     img {
         width: 100%;
         height: 100%;
-        border-radius: 10px;
+        object-fit: cover;
     }
 }
 
@@ -24,9 +25,8 @@
             flex-wrap: wrap;
             .article {
                 width: 100%;
-
-                &:hover img{
-                  transform: scale(1.3);
+                &:hover img {
+                    transform: scale(1.3);
                 }
                 button {
                     width: 60px;
@@ -35,9 +35,8 @@
             }
             .article2 {
                 width: 100%;
-
-                &:hover img{
-                  transform: scale(1.3);
+                &:hover img {
+                    transform: scale(1.3);
                 }
                 button {
                     width: 40px;
@@ -54,7 +53,7 @@
                 img {
                     width: 100%;
                     object-fit: cover;
-                    transition:all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
                 }
                 .content {
                     position: absolute;
@@ -103,7 +102,7 @@
 .cstm-container {
     .articles-section {
         .articles {
-            h3 {
+            h2 {
                 text-align: center;
                 width: 100%;
                 color: #1A1A1A;
@@ -150,16 +149,21 @@
 }
 
 @media only screen and (max-width: 414px) {
+    .inner-article {
+        margin-top: 6rem;
+    }
     .article-inner-content1 {
-        margin-top: 1rem !important;
         h2 {
+            font-size: 22px;
+            margin-top: 0.5rem;
+        }
+        p {
             font-size: 16px;
         }
     }
-    .article-inner-content2 h2 {
-        font-size: 16px;
-    }
-    .cstm-container .articles-section {
-        margin-top: 0rem !important;
+    .cstm-container {
+        .articles-section {
+            margin-top: 2rem !important;
+        }
     }
 }
