@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ObservableService } from 'src/app/services/observable.service';
+import * as $ from 'jquery';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -51,4 +53,25 @@ export class HeaderComponent implements OnInit {
       }
     })
   }
+
+  public isVisited = false;
+  sidenav(event) {
+    this.isVisited = !this.isVisited;
+    if (this.isVisited == true) {
+      $('.sider').css('display', 'block')
+      setTimeout(() => {
+        $('.sider').css('opacity', '1');
+        $('.sideNave').css('left', '0')
+      })
+    } else {
+      $('.sideNave').css('left', '-300px')
+      setTimeout(() => {
+        $('.sider').css('opacity', '0');
+      }, 300)
+      setTimeout(() => {
+        $('.sider').css('display', 'none')
+      }, 600)
+    }
+  }
+
 }
