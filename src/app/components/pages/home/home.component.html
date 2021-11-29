@@ -55,9 +55,9 @@
     <h1 class="text-center">Latest Properties</h1>
     <div class="properties-slider">
 
-      <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
         (init)="slickInit($event)" (breakpoint)="breakpoint($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide" routerLink='/propertyinner'>
+        <!-- <div ngxSlickItem *ngFor="let slide of slides" class="slide" routerLink='/propertyinner'>
           <div class="heart-icon">
             <i class="fa fa-heart fa-lg"></i>
           </div>
@@ -83,27 +83,32 @@
               </div>
             </div>
           </div>
-        </div>
-      </ngx-slick-carousel> -->
-      <div routerlink="/propertyinner" class="mainBox" tabindex="-1" ng-reflect-router-link="/propertyinner"
-        data-slick-index="1" aria-hidden="true" style="width: 350px;">
-        <div class="heart-icon"><i class="fa fa-heart fa-lg"></i></div><img alt="" width="100%"
-          src="../../../../assets/1x/slider-img2.png">
-        <div class="content">
-          <div class="row">
-            <div class="col-sm-12"><label for="">770 West Senna Ave. Spiro, OK 74959</label></div>
-            <div class="col-sm-12">
-              <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd,</label><label
-                  for=""><strong>2</strong> bath, </label></div>
-            </div>
-            <div class="col-sm-6">
-              <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
-            </div>
-            <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00 </strong></label>
-            </div>
+        </div> -->
+        <div ngxSlickItem *ngFor="let slide of slides" class="mainBox slide" tabindex="-1" ng-reflect-router-link="/propertyinner" data-slick-index="1"
+          aria-hidden="true" style="width: 350px;">
+          <div class="heart-icon">
+            <img src="../../../../assets/SVG/heart-outline.svg" alt="">
+          </div>
+          <img alt="" width="100%" src="../../../../assets/1x/slider-img2.png">
+          <div class="content">
+            <a routerLink='/propertyinner'>
+              <div class="row">
+                <div class="col-sm-12"><label for="">770 West Senna Ave. Spiro, OK 74959</label></div>
+                <div class="col-sm-12">
+                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd,</label><label
+                      for=""><strong>2</strong> bath, </label></div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                </div>
+                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00 </strong></label>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </div>
+      </ngx-slick-carousel>
+
     </div>
   </div>
   <!-- want to section -->
@@ -112,7 +117,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="row">
-          <div class="col-lg-6 d-flex justify-content-end">
+          <div class="col-lg-6 d-flex justify-content-start">
             <div class="img-box">
               <img src="../../../../assets/1x/want-img1.png" alt="">
             </div>
@@ -131,7 +136,7 @@
       </div>
       <div class="col-lg-12 second-col">
         <div class="row flex-row-reverse">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex justify-content-end">
             <div class="img-box">
               <img src="../../../../assets/1x/want-img2.png" alt="">
             </div>
