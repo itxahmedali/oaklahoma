@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
+import { Router } from '@angular/router';
+import { ObservableService } from 'src/app/services/observable.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+
+  href: string
+  constructor(
+    private router: Router
+  ) {
+    this.href = this.router.url;
+    ObservableService.webUrl.next(this.href)
+  }
 
   ngOnInit(): void {
   }
@@ -46,6 +55,10 @@ export class ProfileComponent implements OnInit {
   //     this.btnVal2 = "See Less"
   //   }
   // }
+
+
+
+
   // see more or less buttons
   btnVal1 = "See More";
   btnVal2 = "See More";

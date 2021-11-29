@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ObservableService } from 'src/app/services/observable.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,16 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  href: string;
+  constructor(
+    private router: Router
+  ) {
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
+    this.href = this.router.url;
+    ObservableService.webUrl.next(this.href)
   }
   // property slider
   slides = [
@@ -63,7 +71,7 @@ export class HomeComponent implements OnInit {
     },
   ];
   slideConfig = {
-    "autoplay":true,"autoplaySpeed":1500,"slidesToShow": 3, "slidesToScroll": 1, prevArrow: '<button class="slide-arrow prev-arrow" > <i class="fa fa-chevron-left fa-lg"></i></button>',
+    "autoplay": true, "autoplaySpeed": 1500, "slidesToShow": 3, "slidesToScroll": 1, prevArrow: '<button class="slide-arrow prev-arrow" > <i class="fa fa-chevron-left fa-lg"></i></button>',
     nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-chevron-right fa-lg"></i></button>',
     'responsive': [
       {
@@ -96,13 +104,13 @@ export class HomeComponent implements OnInit {
     console.log('breakpoint');
   }
 
-  afterChange(e) {
-    console.log('afterChange');
-  }
+  // afterChange(e) {
+  //   console.log('afterChange');
+  // }
 
-  beforeChange(e) {
-    console.log('beforeChange');
-  }
+  // beforeChange(e) {
+  //   console.log('beforeChange');
+  // }
 
 
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ObservableService } from 'src/app/services/observable.service';
 @Component({
   selector: 'app-forbuy',
   templateUrl: './forbuy.component.html',
@@ -14,7 +14,10 @@ export class ForbuyComponent implements OnInit {
 
   ngOnInit() {
     this.href = this.router.url;
-    console.log(this.router.url);
+    ObservableService.webUrl.next(this.href)
   }
 
+
 }
+
+
