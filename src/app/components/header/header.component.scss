@@ -97,9 +97,53 @@
   left: -300px;
   transition: 0.5s all ease-in-out;
   display: flex;
-  align-items: center;
+  // align-items: center;
   flex-direction: column;
   padding-top: 1rem;
+  ul {
+    list-style: none;
+    margin-top: 5rem;
+
+    li {
+      margin-top: 40px;
+      text-align: center;
+
+
+      a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .active {
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 130%;
+          height: 1px;
+          background-color: #fff;
+          bottom: -2px;
+          left: -14%;
+        }
+      }
+
+      .signup-btn {
+        background-color: #B48618;
+        padding: 10px 1.5rem;
+        border-radius: 50px;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 .sidenav-btns {
