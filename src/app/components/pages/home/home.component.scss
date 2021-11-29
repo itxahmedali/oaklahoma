@@ -66,16 +66,6 @@
                 border: 1px solid #B3B3B3;
                 outline: none;
             }
-            .search-btn {
-                // button {
-                //     padding: 10px 0;
-                //     border-radius: 50px;
-                //     border: none;
-                //     min-width: 170px;
-                //     background: #000;
-                //     color: #fff;
-                // }
-            }
         }
     }
 }
@@ -314,9 +304,7 @@
             .article {
                 width: 670px;
                 margin: 2.5px auto;
-                &:hover .fa-arrow-right{
-                  left: 0 !important;
-                }
+
                 &:hover img{
                   transform: scale(1.3);
                 }
@@ -328,9 +316,7 @@
             .article2 {
                 width: 445px;
                 margin: 2.5px auto;
-                &:hover .fa-arrow-right{
-                  left: 0 !important;
-                }
+
                 &:hover img{
                   transform: scale(1.3);
                 }
@@ -376,9 +362,6 @@
                         overflow: hidden;
                         i {
                             font-size: 20px;
-                            position: relative;
-                            left: -40px;
-                            transition: all 0.5s ease-in-out;
                         }
                     }
                 }
