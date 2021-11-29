@@ -316,6 +316,9 @@
             .article2 {
                 width: 445px;
                 margin: 2.5px auto;
+                label {
+                  font-size: 14px !important ;
+                }
 
                 &:hover img{
                   transform: scale(1.3);

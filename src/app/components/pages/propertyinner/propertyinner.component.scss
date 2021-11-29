@@ -657,6 +657,69 @@
     font-size: 23px;
   }
 }
+ .properties-slider {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        .content {
+            position: absolute;
+            bottom: 0;
+            background: #000000ad;
+            max-width: 385px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 10px;
+            label {
+                margin: 0;
+                color: #fff;
+                font-size: 15px;
+                strong {
+                    font-family: rubikbold;
+                }
+            }
+        }
+        .slide {
+            position: relative;
+            width: 310px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            img {
+                border-radius: 15px;
+            }
+            .heart-icon {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: #000000b8;
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fa-heart:before {
+                    // content: "\f004";
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .properties-slider{
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .slide {
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+.customSlider{}
 @media only screen and (min-width:2560px) {
   .yellow-section-6-inner {
     .yellow-background {
@@ -746,6 +809,12 @@
       left: 10px
     }
   }
+   // properties items
+        .properties-slider {
+            .slide {
+                width: 270px;
+            }
+        }
 }
 
 @media only screen and (max-width:768px) {
@@ -1075,7 +1144,13 @@
       font-size: 18px;
     }
   }
-
+// properties items
+        .properties-slider {
+            .slide {
+                width: 320px;
+                margin: 10px;
+            }
+        }
 }
 
 @media only screen and (max-width:414px) {
@@ -1410,6 +1485,18 @@
     font-size: 15px;
   }
 }
+
+        // properties items
+        .properties-slider {
+            .content {
+                label {
+                    font-size: 17px;
+                }
+            }
+            .slide {
+                width: 100%;
+            }
+        }
 
 }
 

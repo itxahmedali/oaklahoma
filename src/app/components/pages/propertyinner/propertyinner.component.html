@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="latest-properties property customProp">
-    <div class="properties-slider ">
+    <div class="properties-slider customSlider ">
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
         (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
         (beforeChange)="beforeChange($event)">
@@ -733,6 +733,101 @@
           </div>
         </div>
       </div>
+
+    </div>
+  </div>
+  <div class="slider ">
+    <h3 class="text-center">Nearby Similar Homes</h3>
+
+    <div class="properties-slider">
+      <div class="slide" routerLink='/propertyinner'>
+        <div class="heart-icon">
+          <i class="fa fa-heart"></i>
+        </div>
+        <img src="../../../../assets/1x/slider-img1.png" alt="" width="100%">
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="">770 West Senna Ave. Spiro, OK 74959 </label>
+            </div>
+            <div class="col-sm-12 ">
+              <div class="upper-cols d-flex">
+                <label for=""><strong>3</strong> bd,</label>
+                <label for=""><strong>2</strong> bath,</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="lower-cols">
+                <label for=""><strong>1360</strong> sqft</label>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right">
+              <label for="" class="text-right" *ngIf="href == '/forbuy'"><strong>$750,000</strong></label>
+              <label for="" class="text-right" *ngIf="href == '/forrent'"><strong>$7000-9000</strong></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" routerLink='/propertyinner'>
+        <div class="heart-icon">
+          <i class="fa fa-heart"></i>
+        </div>
+        <img src="../../../../assets/1x/slider-img2.png" alt="" width="100%">
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="">770 West Senna Ave. Spiro, OK 74959 </label>
+            </div>
+            <div class="col-sm-12 ">
+              <div class="upper-cols d-flex">
+                <label for=""><strong>3</strong> bd,</label>
+                <label for=""><strong>2</strong> bath,</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="lower-cols">
+                <label for=""><strong>1360</strong> sqft</label>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right">
+              <label for="" class="text-right" *ngIf="href == '/forbuy'"><strong>$750,000</strong></label>
+              <label for="" class="text-right" *ngIf="href == '/forrent'"><strong>$7000-9000</strong></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" routerLink='/propertyinner'>
+        <div class="heart-icon">
+          <i class="fa fa-heart"></i>
+        </div>
+        <img src="../../../../assets/1x/slider-img3.png" alt="" width="100%">
+        <div class="content">
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="">770 West Senna Ave. Spiro, OK 74959 </label>
+            </div>
+            <div class="col-sm-12 ">
+              <div class="upper-cols d-flex">
+                <label for=""><strong>3</strong> bd,</label>
+                <label for=""><strong>2</strong> bath,</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="lower-cols">
+                <label for=""><strong>1360</strong> sqft</label>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right">
+              <label for="" class="text-right" *ngIf="href == '/forbuy'"><strong>$750,000</strong></label>
+              <label for="" class="text-right" *ngIf="href == '/forrent'"><strong>$7000-9000</strong></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt2 mb3">
+      <button class="black-btn btn-slide-left black-btn1 ">See
+        All</button>
 
     </div>
   </div>

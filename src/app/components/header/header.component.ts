@@ -58,12 +58,14 @@ export class HeaderComponent implements OnInit {
   sidenav(event) {
     this.isVisited = !this.isVisited;
     if (this.isVisited == true) {
+      $(".sidenav-btn").addClass('open')
       $('.sider').css('display', 'block')
       setTimeout(() => {
         $('.sider').css('opacity', '1');
         $('.sideNave').css('left', '0')
       })
     } else {
+      $(".sidenav-btn").removeClass('open')
       $('.sideNave').css('left', '-300px')
       setTimeout(() => {
         $('.sider').css('opacity', '0');
