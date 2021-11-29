@@ -68,6 +68,9 @@
 .mobile-nav {
   display: none;
 }
+.sideNave  {
+  display: none;
+}
 
 @media screen and (max-width:768px) {
   .navbar {
@@ -257,12 +260,7 @@
   }
 
 }
-@media only screen and (max-width: 768px) {
-  .sideNave {
-    display: block
-  }
 
-}
 @media only screen and (max-width: 540px) {
   .sideNave {
   background: linear-gradient(284deg, #b48618, #000000);
