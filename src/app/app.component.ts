@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
+import { NgwWowService } from 'ngx-wow';
 
 @Component({
   selector: 'app-root',
@@ -31,8 +32,10 @@ export class AppComponent {
   pageNameCon: boolean = false;
 
   public href: string = "";
-
-  constructor(private router: Router) { }
+  // constructor(private wowService: NgwWowService) {
+  //   this.wowService.init();
+  // }
+  constructor(private router: Router, ) { }
 
   ngOnInit() {
     this.href = this.router.url;
@@ -63,4 +66,5 @@ export class AppComponent {
       this.pageNameCon = true
     }
   }
+
 }

@@ -36,6 +36,7 @@ import { PropertyinnerComponent } from './components/pages/propertyinner/propert
 import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
+import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { TestCompoComponent } from './test-compo/test-compo.component';
     NgxPaginationModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCab5ahH6KkodUavDwBCigXTL7ZbrkzS94'
-    })
+    }),
+    NgwWowModule
   ],
   providers: [
   ],

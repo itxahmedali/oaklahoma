@@ -24,49 +24,49 @@ export class HomeComponent implements OnInit {
     {
       img: "../../../../assets/1x/slider-img1.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
     {
       img: "../../../../assets/1x/slider-img2.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
     {
       img: "../../../../assets/1x/slider-img3.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
     {
       img: "../../../../assets/1x/slider-img1.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
     {
       img: "../../../../assets/1x/slider-img2.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
     {
       img: "../../../../assets/1x/slider-img3.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
-      bedroom: 2 + " bd,",
-      bathroom: 2 + " bath,",
-      sqft: 1360 + " sqft",
+      bedroom: 2 ,
+      bathroom: 2,
+      sqft: 1360,
       price: 750000
     },
   ];
