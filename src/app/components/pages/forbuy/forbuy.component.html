@@ -1,5 +1,5 @@
 <!-- home banner -->
-<div class="main-bg d-flex align-items-center">
+<div class="main-bg d-flex align-items-center" [ngClass]="href == '/forbuy' ? 'forBuyBg' : 'forRentBg'">
   <div class="container">
     <div class="row">
       <div class="col-lg-6" *ngIf="href == '/forbuy'">

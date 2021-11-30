@@ -1,8 +1,16 @@
     // banner section
+    .forBuyBg{
+        &:before
+        {background: url(../../../../assets/1x/forbuyBanner.png);}
+    }
+    .forRentBg{
+        &:before
+        {background: url(../../../../assets/1x/forrentbanner.png);}
+    }
     .main-bg {
         position: relative;
         &:before {
-            background: url(../../../../assets/1x/forbuyBanner.png);
+            
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -42,6 +50,7 @@
             }
         }
     }
+    
     .mainBox{
         position: relative;
     }
