@@ -454,13 +454,13 @@
     h4{
       color:#fff;
     font-family: rubikregular;
-
+    transform: translateY(7px) !important; 
     }
 
     .black-btn {
       &:hover {
-        color: #fff !important;
-        font-size: 14px;
+        border-color: #fff !important;
+        color: #fff !important
       }
     }
   }
@@ -767,7 +767,7 @@
       padding: 40px 40px 40px 160px !important;
 
       h4 {
-        transform: translateX(520px) !important;
+        transform: translateX(532px) !important;
       }
     }
   }
@@ -786,7 +786,7 @@
       padding: 40px 40px 40px 160px !important;
 
       h4 {
-        transform: translateX(250px);
+        transform: translateX(238px);
       }
     }
   }
@@ -797,6 +797,8 @@
     }
   }
 }
+
+
 
 @media only screen and (max-width:1600px) {
   .yellow-section-6-inner {
@@ -816,7 +818,21 @@
     }
   }
 }
+@media only screen and (max-width:1440px) {
+  .yellow-section-6-inner {
+    .yellow-background {
+      h4 {
+        transform: translateX(8px);
+      }
+    }
+  }
 
+  .bannerBox {
+    .buttonsBox {
+      left: 10px
+    }
+  }
+}
 @media only screen and (max-width:1366px) {
   .yellow-section-6-inner {
     .yellow-background {
@@ -1061,6 +1077,7 @@
       h4 {
         transform: translateX(0px);
         margin-bottom: 1rem;
+        margin-right: 5rem;
       }
     }
 
@@ -1501,7 +1518,10 @@
       width: 100%;
 
       h4 {
-        transform: translateX(0px);
+        margin-right: 5rem;
+        margin-bottom: 1rem;
+        transform: translateX(2.5rem) !important;
+    
       }
     }
 
@@ -1658,10 +1678,16 @@
       font-size: 26px;
     }
   }
-
-
-
-
-
-
+}
+.brg{
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    background-color: lightgrey;
+    width: 1px;
+    top: 0;
+    left: -2rem;
+  }
 }

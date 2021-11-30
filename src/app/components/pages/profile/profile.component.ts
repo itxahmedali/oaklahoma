@@ -8,9 +8,8 @@ import { ObservableService } from 'src/app/services/observable.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
-
-  href: string
+  href: string;
+  opo = [1,2,3,4,5,6]
   constructor(
     private router: Router
   ) {
@@ -54,22 +53,22 @@ export class ProfileComponent implements OnInit {
   // property slider
   slides = [
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "https://images.unsplash.com/photo-1549517045-bc93de075e53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80",
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "/assets/1x/slider-img2.png",
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "/assets/1x/slider-img3.png",
     },
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "/assets/1x/slider-img1.png",
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "/assets/1x/slider-img2.png",
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "/assets/1x/slider-img3.png",
     },
   ];
   slideConfig = {
@@ -114,5 +113,27 @@ export class ProfileComponent implements OnInit {
   beforeChange(e) {
     console.log('beforeChange');
   }
+  propertysell:number = 0;
+  propertyrent:number = 0;
+  propertysold:number = 0;
+  propertysellstop:any = setInterval(()=>{
+    this.propertysell++;
+    if(this.propertysell == 55){
+      clearInterval(this.propertysellstop)
+    }
+
+  },10)
+  propertyrentstop:any = setInterval(()=>{
+    this.propertyrent++;
+    if(this.propertyrent == 412){
+      clearInterval(this.propertyrentstop)
+    }
+  },10)
+  propertysoldstop:any = setInterval(()=>{
+    this.propertysold++;
+    if(this.propertysold == 112){
+      clearInterval(this.propertysoldstop)
+    }
+  },10)
 
 }

@@ -110,7 +110,7 @@ export class HomeComponent implements OnInit {
   propertysold:number = 0;
   propertysellstop:any = setInterval(()=>{
     this.propertysell++;
-    if(this.propertysell == 55){
+    if(this.propertysell == 558){
       clearInterval(this.propertysellstop)
     }
 
