@@ -25,7 +25,7 @@
         border-radius: 50px;
         width: 100%;
         margin-top: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 13px;
         font-family: poppinregular;
         margin-left: auto;
@@ -41,7 +41,7 @@
         font-family: poppinregular;
         font-size: 14px;
         margin-left: auto;
-        margin-bottom: 7px;
+        margin-bottom: 0.5rem;
         margin-right: auto;
     }
     .forgetPara {
@@ -55,18 +55,19 @@
     .orPara {
         position: relative;
         text-align: center;
-        font-family: 'poppinregular';
-        font-size: 22px;
+        font-family: rubiklight;
+        font-size: 16px;
         margin-top: 30px;
         margin-bottom: 30px;
+        color: #646464;
     }
     .orPara::before {
         content: "";
         width: 116px;
         height: 1px;
-        background: #efefef;
+        background: #646464;
         position: absolute;
-        top: 18px;
+        top: 13px;
         right: 0;
         left: 0;
         bottom: 0;
@@ -75,9 +76,9 @@
         content: "";
         width: 118px;
         height: 1px;
-        background: #efefef;
+        background: #646464;
         position: absolute;
-        top: 18px;
+        top: 13px;
         right: 0;
         bottom: 0;
     }

@@ -33,8 +33,7 @@
   <div class="latest-properties property customProp">
     <div class="properties-slider customSlider ">
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
-        >
+        (init)="slickInit($event)" (breakpoint)="breakpoint($event)">
         <div ngxSlickItem *ngFor="let slide of slides" class="slide">
           <img src="{{ slide.img }}" alt="" width="100%">
         </div>
@@ -737,10 +736,81 @@
     </div>
   </div>
   <div class="slider ">
-    <h3 class="text-center">Nearby Similar Homes</h3>
+    <h3 class="text-center mb3">Nearby Similar Homes</h3>
 
-    <div class="properties-slider">
-      <div class="slide" routerLink='/propertyinner'>
+    <div class="">
+      <div class="row">
+        <div class="col-lg-4 pr-lg-0">
+          <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+            class="mainBox slide">
+            <div class="heart-icon"><img src="../../../../assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+              width="100%" src="../../../../assets/1x/slider-img2.png">
+            <div class="content"><a routerlink="/propertyinner" ng-reflect-router-link="/propertyinner"
+                href="/propertyinner" tabindex="0">
+                <div class="row">
+                  <div class="col-sm-12"><label for="">770 West Senna Ave.
+                      Spiro, OK 74959</label></div>
+                  <div class="col-sm-12">
+                    <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                  </div>
+                  <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                      </strong></label></div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+        <div class="col-lg-4 pr-lg-0">
+          <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+            class="mainBox slide">
+            <div class="heart-icon"><img src="../../../../assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+              width="100%" src="../../../../assets/1x/slider-img2.png">
+            <div class="content"><a routerlink="/propertyinner" ng-reflect-router-link="/propertyinner"
+                href="/propertyinner" tabindex="0">
+                <div class="row">
+                  <div class="col-sm-12"><label for="">770 West Senna Ave.
+                      Spiro, OK 74959</label></div>
+                  <div class="col-sm-12">
+                    <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                  </div>
+                  <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                      </strong></label></div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div tabindex="0" ng-reflect-router-link="/propertyinner" data-slick-index="4" aria-hidden="false"
+            class="mainBox slide">
+            <div class="heart-icon"><img src="../../../../assets/SVG/heart-outline.svg" alt=""></div><img alt=""
+              width="100%" src="../../../../assets/1x/slider-img2.png">
+            <div class="content"><a routerlink="/propertyinner" ng-reflect-router-link="/propertyinner"
+                href="/propertyinner" tabindex="0">
+                <div class="row">
+                  <div class="col-sm-12"><label for="">770 West Senna Ave.
+                      Spiro, OK 74959</label></div>
+                  <div class="col-sm-12">
+                    <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd, <strong>2</strong> bath,</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                  </div>
+                  <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00
+                      </strong></label></div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="slide" routerLink='/propertyinner'>
         <div class="heart-icon">
           <i class="fa fa-heart"></i>
         </div>
@@ -823,9 +893,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-    <div class="d-flex justify-content-center mt2 mb3">
+    <div class="d-flex justify-content-center mt2 mb5">
       <button class="black-btn btn-slide-left black-btn1 ">See
         All</button>
 
