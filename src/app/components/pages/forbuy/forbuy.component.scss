@@ -8,49 +8,17 @@
         {background: url(../../../../assets/1x/forrentbanner.png);}
     }
     .main-bg {
-        position: relative;
         &:before {
-            
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
         }
         &:after {
-            background: url(../../../../assets/1x/bg-overlay.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
         }
-        .row {
-            width: 100%;
-            h1 {
-                font-size: 3.5rem;
-                color: #fff;
-                font-family: rubiklight;
-                span {
-                    font-family: rubikbold;
-                    color: #B48618;
-                }
-            }
-        }
+
     }
-    
+
     .mainBox{
         position: relative;
     }
@@ -75,14 +43,13 @@
             right: 10px;
             cursor: pointer;
             .fa-heart:before {
-                // content: "\F08A";
                 color: #fff;
             }
         }
         .heart-icon:hover{
             background: #b48618d9;
         }
-       
+
     }
     // search box section
     .search {
@@ -253,7 +220,7 @@
                     color: #fff;
                 }
             }
-            
+
         }
     }
     // media queries
@@ -379,6 +346,11 @@
                 width: 100% !important;
             }
         }
+        .slide{
+          img{
+            height: 100%;
+          }
+        }
     }
 
     @media only screen and (max-width:768px) {
@@ -442,6 +414,11 @@
                 margin: 10px;
             }
         }
+        .buttonsBox1{
+          text-align: center;
+          margin-top: 1rem;
+        }
+
     }
 
     @media only screen and (max-width:540px) {
@@ -557,6 +534,7 @@
                 width: 100%;
             }
         }
+
     }
 
     @media only screen and (max-width:375px) {
@@ -564,4 +542,5 @@
             // flex-wrap: wrap;
             justify-content: flex-start;
         }
+
     }
