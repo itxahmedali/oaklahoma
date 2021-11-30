@@ -723,8 +723,8 @@
             width: 310px;
             margin-top: 10px;
             margin-bottom: 10px;
-            margin-right: auto;
-            margin-left: auto;
+            margin-right: 5px;
+            margin-left: 5px;
             img {
                 border-radius: 15px;
             }
@@ -1192,8 +1192,102 @@
             }
         }
 }
-
+.content {
+  position: absolute;
+  bottom: 0;
+  background: #000000ad;
+  max-width: 385px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  label {
+      margin: 0;
+      color: #fff;
+      font-size: 15px;
+      strong {
+          font-family: rubikbold;
+      }
+  }
+}
+.slide {
+  position: relative;
+      cursor: pointer;
+      height: 240px;
+      border-radius: 15px;
+      overflow: hidden;
+  .heart-icon {
+      transition: 0.5s all ease-in-out;
+      background-color: #000000bf;
+      border-radius: 50px;
+      height: 40px;
+      width: 40px;
+      padding: 8px 7px 8px 7px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      .fa-heart:before {
+          // content: "\F08A";
+          color: #fff;
+      }
+  }
+  .heart-icon:hover{
+      background: #b48618d9;
+  }
+ 
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000bd;
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  label {
+      font-size: 20px;
+      font-family: rubiklight;
+      width: 70%;
+      margin: 0;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  a{
+      text-decoration: none;
+  }
+  button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #B48618;
+      border-radius: 50px;
+      border: none;
+      overflow: hidden;
+      transition: 0.5s all ease-in-out;
+      border: 2px solid transparent;
+      i {
+          font-size: 20px;
+          transition: 0.5s all ease-in-out;
+      }
+      &:hover{
+          background-color: transparent;
+          border-color: #B48618;
+          i{
+              transform: rotate(360deg);
+              color: #fff;
+          }
+      }
+      
+  }
+}
 @media only screen and (max-width:414px) {
+  .topButtonsSection{
+    padding-top: 7rem;
+  }
   .row {
     margin-top: 1rem !important;
 
@@ -1292,7 +1386,7 @@
     .buttonsBox {
       width: 100%;
       flex-wrap: wrap;
-      justify-content: unset !important;
+      justify-content: center !important;
 
       .cusotmBlack_btn {
         justify-content: flex-start;
@@ -1317,7 +1411,7 @@
   .bannerBox {
     .imageBox {
       height: 220px;
-      border-radius: 20px;
+      border-radius: 15px;
       overflow: hidden;
 
       img {
