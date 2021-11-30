@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
-
+import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -32,7 +32,13 @@ export class AppComponent {
 
   public href: string = "";
 
-  constructor(private router: Router) { }
+  // constructor(private router: Router) { }
+  constructor(
+    private wowService: NgwWowService,
+    private router: Router
+    ) {
+    this.wowService.init();
+  }
 
   ngOnInit() {
     this.href = this.router.url;

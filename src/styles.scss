@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import "~animate.css/animate.css";
+@import "~animate.css/animate.css";
 @font-face {
     font-family: rubikbold;
     src: url(./assets/fonts/Rubik/Rubik-Bold.ttf);
@@ -603,19 +604,9 @@ agm-map {
 }
 
 @media only screen and  (max-width:414px) {
-  // .customProp .properties-slider .customProp .next-arrow  {
-  //     display: none !important;
-  //   }
-
-// .propertyCustom {
-//   .properties-slider{
-//   .next-arrow{
-//      display: none !important
-//     }
-//     .prev-arrow {
-//          display: none !important
-//     }}
-// }
+.mainBox{
+    margin-bottom: 1rem;
+}
 .slide-arrow{
          display: none !important
     }
