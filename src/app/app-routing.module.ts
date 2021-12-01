@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'articles-inner', component: ArticleinnerComponent },
   { path: 'forgot', component: ForgotpasswordComponent },
   { path: 'terms', component: TermsComponent },
+  { path: 'privacy', component: TermsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'reset', component: ResetComponent },
   { path: 'testComp', component: TestCompoComponent },

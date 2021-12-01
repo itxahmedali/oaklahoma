@@ -3,7 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 mt4">
-                <h1>TERMS <span> AND </span> CONDITIONS</h1>
+                <h1 *ngIf="href != '/privacy'">TERMS <span> OF </span> USE</h1>
+                <h1 *ngIf="href == '/privacy'">PRIVACY <span> NOTICE </span></h1>
             </div>
         </div>
     </div>

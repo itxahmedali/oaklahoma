@@ -730,3 +730,26 @@ p{
 .heart-icon ~ img{
   height: 100%;
 }
+a:hover{
+  text-decoration: none;
+}
+input,
+textarea{
+  color: #000 !important;
+  font-family: 'rubikregular' !important;
+  resize: none;
+}
+.iconsPlay {
+  margin-top: 1rem;
+  a{
+    width: 100px;
+    height: fit-content;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+    &:nth-child(2){
+      margin-left: 10px;
+    }
+  }
+}

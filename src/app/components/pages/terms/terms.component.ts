@@ -15,6 +15,7 @@ export class TermsComponent implements OnInit {
   ) {
     this.href = this.router.url;
     ObservableService.webUrl.next(this.href)
+    console.log(this.href)
   }
 
   ngOnInit(): void {

@@ -20,7 +20,8 @@ export class HeaderComponent implements OnInit {
     'profile',
     'reset',
     'propertiesrent',
-    'propertiesbuy'
+    'propertiesbuy',
+    'privacy'
   ]
   pageNameCon: boolean = false;
 

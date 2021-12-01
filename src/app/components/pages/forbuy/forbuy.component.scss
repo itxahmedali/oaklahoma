@@ -233,9 +233,7 @@
                 width: 85%;
             }
         }
-        .search .search-box {
-            width: 33%
-        }
+
     }
 
     @media only screen and (min-width:1920px) {
@@ -245,6 +243,9 @@
         input {
             width: 79%;
         }
+        .search .search-box {
+          width: 33%
+      }
     }
 
     @media only screen and (min-width:1600px) {
