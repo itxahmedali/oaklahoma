@@ -71,17 +71,29 @@
                         width: 70%;
                     }
                     button {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: #B48618;
-                        border-radius: 50px;
-                        border: none;
-                        overflow: hidden;
-                        i {
-                            font-size: 20px;
-                        }
-                    }
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      background-color: #B48618;
+                      border-radius: 50px;
+                      border: none;
+                      overflow: hidden;
+                      transition: 0.5s all ease-in-out;
+                      border: 2px solid transparent;
+                      i {
+                          font-size: 20px;
+                          transition: 0.5s all ease-in-out;
+                      }
+                      &:hover{
+                          background-color: transparent;
+                          border-color: #B48618;
+                          i{
+                              transform: rotate(360deg);
+                              color: #fff;
+                          }
+                      }
+
+                  }
                 }
             }
         }

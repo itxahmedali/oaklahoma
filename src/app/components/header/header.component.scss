@@ -141,7 +141,7 @@
       a {
         color: #fff;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 18px;
 
         &:hover {
           text-decoration: none;
@@ -161,7 +161,7 @@
           left: -14%;
         }
       }
-      
+
 
       .signup-btn {
         background-color: #B48618;
@@ -312,7 +312,7 @@
 }
 @media only screen and (max-width:414px){
   #nav-icon1{
-    top: 16px;
+    top: 10px;
     right: 0;
 }
 }

@@ -22,22 +22,22 @@ export class PropertyinnerComponent implements OnInit {
   // property slider
   slides = [
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "assets/1x/sliderimg1.png",
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
     },
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "assets/1x/sliderimg1.png",
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
     },
   ];
   slideConfig = {

@@ -1,427 +1,475 @@
-    .properties-section {
-        padding-top: 4rem;
-        .row {
-            .col-lg-6 {
-                h3 {
-                    font-family: rubiksemibold;
-                    color: #000;
-                }
-                .filters {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    margin-top: 2rem;
-                    font-family: 'rubikregular';
-                    flex-wrap: wrap;
-                    .filter-dropdown {
-                        display: flex;
-                        align-items: baseline;
-                        label {
-                            font-family: 'rubikregular';
-                            color: #4D4D4D;
-                        }
-                        ng-select {
-                            margin-left: 10px;
-                        }
-                    }
-                    button {
-                        background: none;
-                        border: none;
-                        color: #B48618;
-                        font-size: 17px;
-                    }
-                }
-                .filters-label {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    margin-top: 2rem;
-                    label {
-                        color: #333333;
-                        font-family: 'rubikregular';
-                    }
-                }
-                // properties items
-                .properties-slider {
-                    position: relative;
-                    display: flex;
-                    flex-wrap: wrap;
-                    .content {
-                        position: absolute;
-                        bottom: 0;
-                        background: #000000ad;
-                        max-width: 385px;
-                        border-bottom-left-radius: 15px;
-                        border-bottom-right-radius: 15px;
-                        padding: 10px;
-                        label {
-                            margin: 0;
-                            color: #fff;
-                            font-size: 11px;
-                            strong {
-                                font-family: rubikbold;
-                            }
-                        }
-                    }
-                    .slide {
-                        position: relative;
-                        width: 250px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        margin-right: auto;
-                        img {
-                            border-radius: 15px;
-                        }
-                        .heart-icon {
-                            position: absolute;
-                            right: 10px;
-                            top: 10px;
-                            background: #000000b8;
-                            border-radius: 50px;
-                            width: 30px;
-                            height: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            .fa-heart:before {
-                                // content: "\F08A";
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
-                .prices-sec {
-                    h5 {
-                        font-family: rubiksemibold;
-                        color: #000;
-                        font-size: 20px;
-                        margin-top: 1.5rem;
-                    }
-                    h6 {
-                        font-family: rubikregular;
-                        color: #B48618;
-                    }
-                    .cities {
-                        .city {
-                            width: 250px;
-                            margin: 5px auto 5px 0;
-                            font-family: 'rubikregular';
-                            h6 {
-                                color: #B48618;
-                                font-size: 14px;
-                            }
-                            label {
-                                color: #666666;
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    .see-more {
-                        background: none;
-                        border: none;
-                        color: #B48618;
-                        font-size: 17px;
-                        padding: 0;
-                    }
-                }
-                .prices-sec {
-                    .schools-tab {
-                        p {
-                            color: #666666;
-                            font-family: rubikregular;
-                        }
-                    }
-                }
-                .fewer-filter {
-                    h5,
-                    h6 {
-                        font-family: rubiksemibold;
-                        color: #000;
-                    }
-                    h6 {
-                        font-family: rubikregular;
-                    }
-                    .beds {
-                        label {
-                            margin: 0 10px;
-                            font-size: 12px;
-                        }
-                        input {
-                            max-width: 120px;
-                            border: 1px solid #b48618;
-                            border-radius: 50px;
-                            padding: 8px 10px;
-                            outline: none;
-                            margin-top: 5px;
-                            &::placeholder {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    .baths,
-                    .garage-spots,
-                    .keywords {
-                        input {
-                            max-width: 300px;
-                            border: 1px solid #b48618;
-                            border-radius: 50px;
-                            padding: 8px 10px;
-                            outline: none;
-                            margin-top: 5px;
-                            &::placeholder {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    .property-type {
-                        .property-btns {
-                            .filter-bg {
-                                // background: linear-gradient(184deg, #b48618 10%, #ffffff 100%);
-                                // transition: all 0.1s ease-in-out;
-                                border: 1px solid #B48618;
-                                background-color: #B48618;
-                                label {
-                                    color: #fff;
-                                }
-                                .cls-1 {
-                                    fill: #fff;
-                                }
-                            }
-                            button {
-                                display: flex;
-                                flex-direction: column;
-                                width: 150px;
-                                height: 70px;
-                                justify-content: center;
-                                align-items: center;
-                                margin: 5px 10px 5px 0;
-                                background: none;
-                                border: 1px solid #4d4d4d;
-                                border-radius: 60px;
-                                transition: all 1s ease-in-out;
-                                img {
-                                    width: 30px;
-                                    height: 30px;
-                                    object-fit: contain;
-                                    object-position: center;
-                                }
-                                label {
-                                    margin: 0;
-                                    font-family: rubiklight;
-                                    color: #666666;
-                                }
-                            }
-                        }
-                    }
-                    .listing-status,
-                    .sold {
-                        .toggle-btn {
-                            p {
-                                margin: 0;
-                                color: #4D4D4D;
-                                font-family: rubikregular;
-                            }
-                        }
-                        h5 {
-                            margin-top: 2.5rem;
-                            font-family: rubiksemibold;
-                        }
-                    }
-                    .stories-pool {
-                        flex-wrap: wrap;
-                        .min-max {
-                            label {
-                                margin: 0 5px;
-                            }
-                        }
-                        .pool {
-                            width: 50%;
-                        }
-                    }
-                    .keywords {
-                        input {
-                            width: 100%;
-                            max-width: 100%;
-                        }
-                    }
-                    .school {
-                        p {
-                            color: #666666;
-                            font-family: rubikregular;
-                            margin-left: 5px;
-                        }
-                    }
-                    .reset-btn {
-                        color: #B48618;
-                        font-size: 18px;
-                        font-family: rubiklight;
-                    }
-                }
-                .bath-counter,
-                .garage-counter {
-                    position: relative;
-                    width: 100%;
-                    input {
-                        text-align: center;
-                    }
-                    .plus-btn {
-                        position: absolute;
-                        left: 15px;
-                        border: none;
-                        background: none;
-                        top: 10px;
-                        font-size: 20px;
-                        font-family: 'rubikregular';
-                    }
-                    .min-btn {
-                        position: absolute;
-                        right: 10px;
-                        border: none;
-                        background: none;
-                        top: 3px;
-                        font-size: 30px;
-                        font-family: 'rubikregular';
-                    }
-                }
-                .garage-spots {
-                    h6 {
-                        color: #4D4D4D;
-                        font-family: 'rubikregular';
-                    }
-                    .min-btn {
-                        right: 65%;
-                    }
-                }
-                .school-rating {
-                    h6 {
-                        color: #4D4D4D;
-                        font-family: 'rubikregular';
-                    }
-                }
-                .keywords {
-                    h6 {
-                        color: #4D4D4D;
-                        font-family: 'rubikregular';
-                    }
-                }
-            }
+.properties-section {
+  padding-top: 4rem;
+  .row {
+    .col-lg-6 {
+      h3 {
+        font-family: rubiksemibold;
+        color: #000;
+      }
+      .filters {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 2rem;
+        font-family: "rubikregular";
+        flex-wrap: wrap;
+        .filter-dropdown {
+          display: flex;
+          align-items: baseline;
+          label {
+            font-family: "rubikregular";
+            color: #4d4d4d;
+          }
+          ng-select {
+            margin-left: 10px;
+          }
         }
-    }
-    .lower-cols,
-    .line10{
-        line-height: 10px;
-    }
-    @media only screen and (max-width:1024px) {
-        .properties-section {
-            .row {
-                .col-lg-6 {
-                    // properties items
-                    .properties-slider {
-                        .slide {
-                            width: 220px;
-                        }
-                    }
-                }
-            }
+        button {
+          background: none;
+          border: none;
+          color: #b48618;
+          font-size: 17px;
         }
-    }
-    
-    @media only screen and (max-width:768px) {
-        .properties-section {
-            .row {
-                .right-side {
-                    margin-top: 2rem;
-                    // properties items
-                    .properties-slider {
-                        .slide {
-                            width: 210px;
-                            margin: 10px;
-                            .content {
-                                label {
-                                    font-size: 11px;
-                                }
-                            }
-                        }
-                    }
-                    .checks-col2 {
-                        transform: translateY(-30px);
-                        margin-bottom: 0 !important;
-                    }
-                    .checks-col1 {
-                        margin-bottom: 0 !important;
-                    }
-                }
-            }
+      }
+      .filters-label {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 2rem;
+        label {
+          color: #333333;
+          font-family: "rubikregular";
         }
-        .lower-cols,
-        .line10{
-            line-height: 22px;
-        }
-    }
-    
-    @media only screen and (max-width:414px) {
-        .properties-section {
-            .row {
-                .col-lg-6 {
-                    // properties items
-                    .properties-slider {
-                        .content {
-                            label {
-                                font-size: 17px !important;
-                            }
-                        }
-                        .slide {
-                            width: 100%;
-                        }
-                    }
-                    .beds {
-                        input {
-                            max-width: 150px !important;
-                            width: 150px;
-                        }
-                    }
-                    .stories-pool {
-                        .pool {
-                            margin-top: 2rem;
-                            width: 100% !important;
-                        }
-                    }
-                }
+      }
+      // properties items
+      .properties-slider {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        .content {
+          position: absolute;
+          bottom: 0;
+          background: #000000ad;
+          max-width: 385px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          padding: 10px;
+          label {
+            margin: 0;
+            color: #fff;
+            font-size: 11px;
+            strong {
+              font-family: rubikbold;
             }
-            .sold {
-                h4 {
-                    margin-top: 1.5rem !important;
-                }
-            }
+          }
         }
-    }
-    
-    @media only screen and (max-width:375px) {
-        .properties-section {
-            .row {
-                .col-lg-6 {
-                    .beds {
-                        input {
-                            max-width: 130px !important;
-                            width: 130px;
-                        }
-                    }
-                    .filters {
-                        .filter-dropdown {
-                            ng-select {
-                                min-width: 140px;
-                            }
-                        }
-                        button {
-                            margin-top: 1rem;
-                        }
-                    }
-                }
-                .sold {
-                    h4 {
-                        margin-top: 1.5rem !important;
-                    }
-                }
+        .slide {
+          position: relative;
+          width: 250px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right: auto;
+          img {
+            border-radius: 15px;
+          }
+          .heart-icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #000000b8;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-heart:before {
+              // content: "\F08A";
+              color: #fff;
             }
+          }
         }
+      }
+      .prices-sec {
+        h5 {
+          font-family: rubiksemibold;
+          color: #000;
+          font-size: 20px;
+          margin-top: 1.5rem;
+        }
+        h6 {
+          font-family: rubikregular;
+          color: #b48618;
+        }
+        .cities {
+          .city {
+            width: 250px;
+            margin: 5px auto 5px 0;
+            font-family: "rubikregular";
+            h6 {
+              color: #b48618;
+              font-size: 14px;
+            }
+            label {
+              color: #666666;
+              font-size: 14px;
+            }
+          }
+        }
+        .see-more {
+          background: none;
+          border: none;
+          color: #b48618;
+          font-size: 17px;
+          padding: 0;
+        }
+      }
+      .prices-sec {
+        .schools-tab {
+          p {
+            color: #666666;
+            font-family: rubikregular;
+          }
+        }
+      }
+      .fewer-filter {
+        h5,
+        h6 {
+          font-family: rubiksemibold;
+          color: #000;
+        }
+        h6 {
+          font-family: rubikregular;
+        }
+        .beds {
+          label {
+            margin: 0 10px;
+            font-size: 12px;
+          }
+          input {
+            max-width: 120px;
+            border: 1px solid #b48618;
+            border-radius: 50px;
+            padding: 8px 10px;
+            outline: none;
+            margin-top: 5px;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+        .baths,
+        .garage-spots,
+        .keywords {
+          input {
+            max-width: 300px;
+            border: 1px solid #b48618;
+            border-radius: 50px;
+            padding: 8px 10px;
+            outline: none;
+            margin-top: 5px;
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+        .property-type {
+          .property-btns {
+            .filter-bg {
+              // background: linear-gradient(184deg, #b48618 10%, #ffffff 100%);
+              // transition: all 0.1s ease-in-out;
+              border: 1px solid #b48618;
+              background-color: #b48618;
+              label {
+                color: #fff;
+              }
+              .cls-1 {
+                fill: #fff;
+              }
+            }
+            button {
+              display: flex;
+              flex-direction: column;
+              width: 150px;
+              height: 70px;
+              justify-content: center;
+              align-items: center;
+              margin: 5px 10px 5px 0;
+              background: none;
+              border: 1px solid #4d4d4d;
+              border-radius: 60px;
+              transition: all 1s ease-in-out;
+              img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                object-position: center;
+              }
+              label {
+                margin: 0;
+                font-family: rubiklight;
+                color: #666666;
+              }
+            }
+          }
+        }
+        .listing-status,
+        .sold {
+          .toggle-btn {
+            p {
+              margin: 0;
+              color: #4d4d4d;
+              font-family: rubikregular;
+            }
+          }
+          h5 {
+            margin-top: 2.5rem;
+            font-family: rubiksemibold;
+          }
+        }
+        .stories-pool {
+          flex-wrap: wrap;
+          .min-max {
+            label {
+              margin: 0 5px;
+            }
+          }
+          .pool {
+            width: 50%;
+          }
+        }
+        .keywords {
+          input {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+        .school {
+          p {
+            color: #666666;
+            font-family: rubikregular;
+            margin-left: 5px;
+          }
+        }
+        .reset-btn {
+          color: #b48618;
+          font-size: 18px;
+          font-family: rubiklight;
+        }
+      }
+      .bath-counter,
+      .garage-counter {
+        position: relative;
+        width: 100%;
+        input {
+          text-align: center;
+        }
+        .plus-btn {
+          position: absolute;
+          left: 15px;
+          border: none;
+          background: none;
+          top: 10px;
+          font-size: 20px;
+          font-family: "rubikregular";
+        }
+        .min-btn {
+          position: absolute;
+          right: 10px;
+          border: none;
+          background: none;
+          top: 3px;
+          font-size: 30px;
+          font-family: "rubikregular";
+        }
+      }
+      .garage-spots {
+        h6 {
+          color: #4d4d4d;
+          font-family: "rubikregular";
+        }
+        .min-btn {
+          right: 65%;
+        }
+      }
+      .school-rating {
+        h6 {
+          color: #4d4d4d;
+          font-family: "rubikregular";
+        }
+      }
+      .keywords {
+        h6 {
+          color: #4d4d4d;
+          font-family: "rubikregular";
+        }
+      }
     }
+  }
+}
+.lower-cols,
+.line10 {
+  line-height: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .bed-baths{
+    flex-wrap: wrap;
+    .baths{
+      margin-top:1rem
+    }
+  }
+  .stories-pool{
+    flex-wrap: wrap;
+    .pool{
+      margin-top:1rem;
+      width: 51% !important;
+    }
+  }
+  .properties-section {
+    .row {
+      .col-lg-6 {
+        // properties items
+        .properties-slider {
+          .slide {
+            width: 220px;
+          }
+        }
+        .garage-spots {
+          .min-btn {
+            right: 57%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .properties-section {
+    .row {
+      .right-side {
+        margin-top: 2rem;
+        // properties items
+        .properties-slider {
+          .slide {
+            width: 210px;
+            margin: 10px;
+            .content {
+              label {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+        .checks-col2 {
+          transform: translateY(-30px);
+          margin-bottom: 0 !important;
+        }
+        .checks-col1 {
+          margin-bottom: 0 !important;
+        }
+      }
+      .col-lg-6 {
+        .garage-spots {
+          .min-btn {
+            right: 72%;
+          }
+        }
+      }
+    }
+  }
+  .lower-cols,
+  .line10 {
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+        .garage-spots {
+          .min-btn {
+            right: 62%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 414px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+        // properties items
+        .properties-slider {
+          .content {
+            label {
+              font-size: 17px !important;
+            }
+          }
+          .slide {
+            width: 100%;
+          }
+        }
+        .beds {
+          input {
+            max-width: 150px !important;
+            width: 150px;
+          }
+        }
+        .stories-pool {
+          .pool {
+            margin-top: 2rem;
+            width: 100% !important;
+          }
+        }
+        .garage-spots {
+          .min-btn {
+            right: 50%;
+          }
+        }
+      }
+    }
+    .sold {
+      h4 {
+        margin-top: 1.5rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .properties-section {
+    .row {
+      .col-lg-6 {
+        .beds {
+          input {
+            max-width: 130px !important;
+            width: 130px;
+          }
+        }
+        .filters {
+          .filter-dropdown {
+            ng-select {
+              min-width: 140px;
+            }
+          }
+          button {
+            margin-top: 1rem;
+          }
+        }
+          .garage-spots {
+            .min-btn {
+                right: 45%;
+            }
+
+        }
+      }
+      .sold {
+        h4 {
+          margin-top: 1.5rem !important;
+        }
+      }
+    }
+  }
+}

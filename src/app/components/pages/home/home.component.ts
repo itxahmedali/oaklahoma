@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   // property slider
   slides = [
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "assets/1x/sliderimg1.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       price: 750000
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       price: 750000
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,
@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
       price: 750000
     },
     {
-      img: "../../../../assets/1x/slider-img1.png",
+      img: "assets/1x/sliderimg1.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
       price: 750000
     },
     {
-      img: "../../../../assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
       price: 750000
     },
     {
-      img: "../../../../assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
       address: "770 West Senna Ave. Spiro, OK 74959",
       bedroom: 2 ,
       bathroom: 2,

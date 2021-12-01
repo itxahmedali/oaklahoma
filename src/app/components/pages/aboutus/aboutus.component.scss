@@ -234,6 +234,9 @@
 }
 
 @media only screen and (max-width:768px) {
+    .download-section{
+        text-align: center;
+    }
     .main-bg {
         &:before {
             width: 1045px;
@@ -427,8 +430,11 @@
     .ourMissionContainer .ourMissonPara p {
         font-size: 12px;
     }
+    .head{
+      margin-top: 5rem !important;
+    }
     .download-section .head h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .download-section h4 {
         font-size: 13px;

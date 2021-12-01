@@ -17,8 +17,8 @@ import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'forbuy', component: ForbuyComponent },
   { path: 'forrent', component: ForbuyComponent },
   { path: 'aboutus', component: AboutusComponent },

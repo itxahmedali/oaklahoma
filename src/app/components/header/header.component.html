@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg  " [ngClass]="pageNameCon ? 'bgBlack' : ''">
   <!-- use this class for backgroundColor Black (bgBlack) -->
   <div class="container">
-    <a class="navbar-brand" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">
-      <img src="assets/SVG/logo.svg" alt="">
+    <a class="navbar-brand" href="javascript:void(0)" routerLink=''>
+      <img src="assets/1x/white-logo.png" alt="">
     </a>
     <div class=" justify-content-end align-items-center">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="navbar-link" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">Home</a>
+          <a class="navbar-link" href="javascript:void(0)" routerLink='' [ngClass]="cUrl == '/' ? 'active' : '' ">Home</a>
         </li>
         <li class="nav-item">
           <a class="navbar-link" href="javascript:void(0)" routerLink='/forbuy' routerLinkActive="active">For Buy</a>
@@ -41,8 +41,8 @@
 <nav class="mobile-nav navbar" [ngClass]="pageNameCon ? 'bgBlack' : ''">
 
   <div class="container position-relative">
-    <a class="navbar-brand" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">
-      <img src="assets/SVG/logo.svg" alt="">
+    <a class="navbar-brand" href="javascript:void(0)" routerLink='' routerLinkActive="active">
+      <img src="assets/1x/white-logo.png" alt="">
     </a>
     <div class="sidenav-btn" id="nav-icon1" (click)="sidenav($event)">
       <span></span>
@@ -55,31 +55,31 @@
   <div class="sideNave">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="navbar-link" href="javascript:void(0)" routerLink='/home' routerLinkActive="active">Home</a>
+        <a class="navbar-link" href="javascript:void(0)" routerLink='' routerLinkActive="active" (click)="close($event)">Home</a>
       </li>
       <li class="nav-item">
-        <a class="navbar-link" href="javascript:void(0)" routerLink='/forbuy' routerLinkActive="active">For Buy</a>
+        <a class="navbar-link" href="javascript:void(0)" routerLink='/forbuy' routerLinkActive="active" (click)="close($event)">For Buy</a>
 
       </li>
       <li class="nav-item">
-        <a class="navbar-link" href="javascript:void(0)" routerLink='/forrent' routerLinkActive="active">For Rent</a>
+        <a class="navbar-link" href="javascript:void(0)" routerLink='/forrent' routerLinkActive="active" (click)="close($event)">For Rent</a>
       </li>
       <li class="nav-item">
-        <a class="navbar-link" href="javascript:void(0)" routerLink='/aboutus' routerLinkActive="active">About Us</a>
+        <a class="navbar-link" href="javascript:void(0)" routerLink='/aboutus' routerLinkActive="active" (click)="close($event)">About Us</a>
 
       </li>
       <li class="nav-item">
-        <a class="navbar-link" href="javascript:void(0)" routerLink='/articles' routerLinkActive="active">News &
+        <a class="navbar-link" href="javascript:void(0)" routerLink='/articles' routerLinkActive="active" (click)="close($event)">News &
           Articles</a>
 
       </li>
       <div class="signInBox d-flex flex-column justify-content-end">
 
         <li class="nav-item navBtnss">
-          <a class="btns" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignUpModal">Login</a>
+          <a class="btns" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignUpModal" (click)="close($event)">Login</a>
         </li>
         <li class="nav-item navBtnss">
-          <a class="signup-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignInModal ">Sign
+          <a class="signup-btn" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#SignInModal " (click)="close($event)">Sign
             Up</a>
         </li>
       </div>

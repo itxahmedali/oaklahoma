@@ -56,19 +56,19 @@ export class ProfileComponent implements OnInit {
       img: "https://images.unsplash.com/photo-1549517045-bc93de075e53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80",
     },
     {
-      img: "/assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
     },
     {
-      img: "/assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
     },
     {
-      img: "/assets/1x/slider-img1.png",
+      img: "assets/1x/sliderimg1.png",
     },
     {
-      img: "/assets/1x/slider-img2.png",
+      img: "assets/1x/sliderimg2.png",
     },
     {
-      img: "/assets/1x/slider-img3.png",
+      img: "assets/1x/sliderimg3.png",
     },
   ];
   slideConfig = {

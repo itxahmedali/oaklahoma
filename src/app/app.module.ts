@@ -30,6 +30,8 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
 import { NgwWowModule } from 'ngx-wow';
+// import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { NgwWowModule } from 'ngx-wow';
     }),
   ],
   providers: [
-  ],
+    // {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ]
+    ,
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,6 +11,7 @@ import * as $ from 'jquery';
 export class HeaderComponent implements OnInit {
 
   public href: string = "";
+  cUrl:string = '';
   pageName = [
     'propertyinner',
     'articles-inner',
@@ -32,7 +33,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.href = this.router.url;
     ObservableService.webUrl.subscribe(value => {
-      console.log(value)
+      console.log(this.href)
+      this.cUrl = value
       this.urlCheck(value)
     })
   }
@@ -79,6 +81,9 @@ export class HeaderComponent implements OnInit {
         $('.sider').css('display', 'none')
       }, 600)
     }
+  }
+  close(event){
+    $('#nav-icon1').trigger('click');
   }
 
 }

@@ -69,4 +69,7 @@ export class AppComponent {
       this.pageNameCon = true
     }
   }
+  onActivate(event) {
+    window.scroll(0,0);
+}
 }

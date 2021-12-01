@@ -63,7 +63,7 @@
     overflow: hidden;
 
     img {
-      object-fit: center;
+      object-fit: cover;
       width: 100%;
       height: 100%;
     }
@@ -146,6 +146,8 @@
     .slide {
       position: relative;
       cursor: pointer;
+      margin-left: 5px;
+      margin-right: 5px;
 
       .heart-icon {
         position: absolute;
@@ -454,7 +456,7 @@
     h4{
       color:#fff;
     font-family: rubikregular;
-    transform: translateY(7px) !important; 
+    transform: translateY(7px) !important;
     }
 
     .black-btn {
@@ -1251,7 +1253,7 @@
   .heart-icon:hover{
       background: #b48618d9;
   }
- 
+
 }
 .content {
   position: absolute;
@@ -1298,10 +1300,22 @@
               color: #fff;
           }
       }
-      
+
   }
 }
 @media only screen and (max-width:414px) {
+
+  .pocer{
+    flex-wrap: wrap;
+    .price{
+      margin-bottom: 1rem;
+    }
+    .details {
+      justify-content: center !important;
+      width: 100%;
+    }
+  }
+
   .topButtonsSection{
     padding-top: 7rem;
   }
@@ -1476,6 +1490,7 @@
       font-size: 14px;
       font-family: poppinregular;
       padding: 0;
+      background-color: transparent;
     }
   }
 
@@ -1521,7 +1536,7 @@
         margin-right: 5rem;
         margin-bottom: 1rem;
         transform: translateX(2.5rem) !important;
-    
+
       }
     }
 
