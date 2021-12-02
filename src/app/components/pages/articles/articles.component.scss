@@ -2,12 +2,6 @@
 .main-bg {
     &:before {
         background: url(../../../../assets/1x/articlebacking.png);
-        width: 100%;
-        height: 100%;
-    }
-    &:after {
-        width: 100%;
-        height: 100%;
     }
 }
 
@@ -114,41 +108,23 @@
 }
 
 @media only screen and (min-width:2560px) {
-    .main-bg {
-        height: 800px !important;
-    }
 }
 
 @media only screen and (min-width:1920px) {
-    .main-bg {
-        height: 900px;
-    }
 }
 
 @media only screen and (max-width:1600px) {
-    .main-bg {
-        height: 700px;
-    }
 }
 
 @media only screen and (max-width:1600px) {}
 
 @media only screen and (max-width:1440px) {
-    .main-bg {
-        height: 650px;
-    }
 }
 
 @media only screen and (max-width:1366px) {
-    .main-bg {
-        height: 520px;
-    }
 }
 
 @media only screen and (max-width:1024px) {
-    .main-bg {
-        height: 770px;
-    }
 }
 
 @media only screen and (max-width:768px) {
@@ -186,7 +162,6 @@
 
 @media only screen and (max-width:414px) {
     .main-bg {
-        height: 500px;
         .row {
             h1 {
                 font-size: 2.5rem;

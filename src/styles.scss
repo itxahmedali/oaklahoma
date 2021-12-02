@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 @import "~animate.css/animate.css";
 @import "~animate.css/animate.css";
@@ -27,43 +27,50 @@
   font-family: poppinregular;
   src: url(assets/fonts/Rubik/Poppins-Regular.ttf);
 }
-
+@font-face {
+  font-family: poppinbolditalic;
+  src: url(assets/fonts/Rubik/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: poppinlight;
+  src: url(assets/fonts/Rubik/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: poppinExtraLight;
+  src: url(assets/fonts/Rubik/Poppins-ExtraLight.ttf);
+}
 // main-bg heading
 .main-bg {
+  overflow: hidden;
   position: relative;
-  &:before {
-      background-size: cover !important;
-      background-repeat: no-repeat !important;
-      background-position: bottom !important;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-  }
+  clip-path: polygon(0% 0%, 100% 0%, 100% 64.8%, 24% 89.8%, 22.2% 90%, 20.6% 89.8%, 19.1% 89%, 17.7% 87.8%, 0% 73%);
   &:after {
-      background: url(assets/1x/bgoverlay.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
+    background: #000000bf;
+  }
+  &::after,
+  &::before{
+    overflow: hidden;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
   }
   .row {
-      h1 {
-          font-size: 3.5rem;
-          color: #fff;
-          font-family: rubiklight;
-          span {
-              font-family: rubikbold;
-              color: #B48618;
-          }
+    h1 {
+      font-size: 3.5rem;
+      color: #fff;
+      font-family: rubiklight;
+      span {
+        font-family: rubikbold;
+        color: #b48618;
       }
+    }
   }
 }
 
@@ -87,13 +94,12 @@
   cursor: pointer;
   transition: all 0.5s ease;
   cursor: pointer;
-//   min-width: 150px;
+  //   min-width: 150px;
 }
 
 .black-btn:hover {
   outline: 0;
   color: rgb(0, 0, 0);
-
 }
 
 .black-btn:active {
@@ -102,13 +108,9 @@
 }
 
 .btn-slide-left {
-//   background: linear-gradient(to left, #000 50%, transparent 50%);
-//   background-size: 210% 100%;
-//   background-position: right bottom;
   border: 1px solid #000;
   transition: 0.5s all ease-in-out;
-    background-color: #000;
-
+  background-color: #000;
 }
 
 .btn-slide-left:hover {
@@ -117,7 +119,6 @@
   border-color: #b48618;
   font-size: 16px;
 }
-
 
 // carousel next previous btn
 .prev-arrow {
@@ -197,7 +198,7 @@ a:not([href]):not([class]) {
 
 // tabs
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: #fff;
   background-color: #b48618;
   font-weight: 400;
@@ -206,7 +207,7 @@ a:not([href]):not([class]) {
 .nav-pills .nav-link {
   min-width: 130px;
   border-radius: 50px !important;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin-right: 10px;
   color: #000;
   font-weight: 500;
@@ -222,13 +223,13 @@ a:not([href]):not([class]) {
   input[type="checkbox"] {
     visibility: hidden;
 
-    &:checked+label {
+    &:checked + label {
       // transform: rotate(360deg);
       background-color: #b4861845;
 
       &:before {
         transform: translateX(23px);
-        background-color: #B48618;
+        background-color: #b48618;
       }
     }
   }
@@ -237,23 +238,23 @@ a:not([href]):not([class]) {
     display: flex;
     width: 45px;
     height: 20px;
-    border: 1px solid #4D4D4D;
+    border: 1px solid #4d4d4d;
     border-radius: 99em;
     position: relative;
-    transition:  0.75s all ease-in-out;
+    transition: 0.1s all ease-in-out;
     transform-origin: 50% 50%;
     cursor: pointer;
     margin: 0;
 
     &:before {
-      transition: transform .75s ease;
-      transition-delay: .5s;
+      transition: transform 0.75s ease;
+      transition-delay: 0.1s;
       content: "";
       display: block;
       position: absolute;
       width: 14px;
       height: 14px;
-      background-color: #4D4D4D;
+      background-color: #4d4d4d;
       border-radius: 50%;
       top: 2px;
       left: 3px;
@@ -262,7 +263,7 @@ a:not([href]):not([class]) {
 }
 
 .status-timeon .ng-select.ng-select-single .ng-select-container {
-  border: 1px solid #4D4D4D;
+  border: 1px solid #4d4d4d;
   background: none;
   min-height: 40px;
 }
@@ -290,7 +291,7 @@ a:not([href]):not([class]) {
     visibility: hidden;
     position: absolute;
 
-    &:checked~.check {
+    &:checked ~ .check {
       border-color: #fff;
       box-shadow: 0px 0px 0px 15px #666666 inset;
 
@@ -320,7 +321,7 @@ a:not([href]):not([class]) {
 .more {
   background: none;
   border: none;
-  color: #B48618;
+  color: #b48618;
   font-size: 17px;
   padding: 0;
 }
@@ -342,25 +343,25 @@ a:not([href]):not([class]) {
     border-color: #b48618 transparent transparent;
   }
 
-  .ng-select.ng-select-opened>.ng-select-container .ng-arrow {
+  .ng-select.ng-select-opened > .ng-select-container .ng-arrow {
     border-color: transparent transparent #b48618;
   }
 }
 
 .pool {
   .ng-select-container {
-    border: 1px solid #4D4D4D !important;
+    border: 1px solid #4d4d4d !important;
     background: none !important;
     height: 40px !important;
     min-height: 40px;
   }
 
   .ng-select .ng-arrow-wrapper .ng-arrow {
-    border-color: #4D4D4D transparent transparent;
+    border-color: #4d4d4d transparent transparent;
   }
 
-  .ng-select.ng-select-opened>.ng-select-container .ng-arrow {
-    border-color: transparent transparent #4D4D4D;
+  .ng-select.ng-select-opened > .ng-select-container .ng-arrow {
+    border-color: transparent transparent #4d4d4d;
   }
 }
 
@@ -378,7 +379,7 @@ a:not([href]):not([class]) {
     border-color: #b48618 transparent transparent;
   }
 
-  .ng-select.ng-select-opened>.ng-select-container .ng-arrow {
+  .ng-select.ng-select-opened > .ng-select-container .ng-arrow {
     border-color: transparent transparent #b48618;
   }
 }
@@ -400,17 +401,17 @@ agm-map {
 
 .ng-select.ng-select-single .ng-select-container {
   border-radius: 50px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   color: #333333;
   outline: none;
   min-width: 100px;
   box-shadow: none;
-  font-family: 'rubikregular';
+  font-family: "rubikregular";
   min-height: 40px;
 }
 
-.ng-select.ng-select-opened.ng-select-bottom>.ng-select-container {
+.ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
   border-radius: 50px;
 }
 
@@ -419,7 +420,7 @@ agm-map {
   background: none;
   outline: none;
   min-width: 200px;
-  font-family: 'rubikregular';
+  font-family: "rubikregular";
 }
 
 .ng-dropdown-panel.ng-select-bottom {
@@ -429,24 +430,20 @@ agm-map {
 }
 
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
-  // background-color: #b48618;
-  // color: #fff;
   color: #000;
   background-color: #adacac;
 }
 
 .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
-.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked {
-  // color: #fff;
-  // background-color: #b48618;
+.ng-dropdown-panel
+  .ng-dropdown-panel-items
+  .ng-option.ng-option-selected.ng-option-marked {
   color: #000;
   background-color: #adacac;
 }
-.ng-dropdown-panel .ng-dropdown-panel-items .ng-option{
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
   font-size: 14px;
 }
-// collapseable div
-// ng select
 .ng-select .ng-clear-wrapper {
   display: none;
 }
@@ -458,17 +455,17 @@ agm-map {
 
 .ng-select.ng-select-single .ng-select-container {
   border-radius: 50px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   color: #333333;
   outline: none;
   min-width: 100px;
   box-shadow: none;
-  font-family: 'rubikregular';
+  font-family: "rubikregular";
   min-height: 40px;
 }
 
-.ng-select.ng-select-opened.ng-select-bottom>.ng-select-container {
+.ng-select.ng-select-opened.ng-select-bottom > .ng-select-container {
   border-radius: 50px;
 }
 
@@ -477,7 +474,7 @@ agm-map {
   background: none;
   outline: none;
   min-width: 200px;
-  font-family: 'rubikregular';
+  font-family: "rubikregular";
 }
 
 .ng-dropdown-panel.ng-select-bottom {
@@ -487,7 +484,7 @@ agm-map {
 // forBuy
 .buttonsBox1 {
   .ng-select.ng-select-single .ng-select-container {
-    background-color: #B48618;
+    background-color: #b48618;
     border-radius: 50px;
     min-width: 130px;
 
@@ -500,16 +497,16 @@ agm-map {
     }
 
     .ng-select.ng-select-single .ng-select-container {
-      background-color: #B48618;
+      background-color: #b48618;
       border-radius: 50px;
       min-width: 130px;
 
       .ng-value-container {
         color: #fff;
-        font-family: 'rubiklight';
+        font-family: "rubiklight";
 
         .ng-value {
-          font-family: 'rubiklight';
+          font-family: "rubiklight";
         }
       }
     }
@@ -526,9 +523,8 @@ agm-map {
   }
 }
 
-//
 .wishListFilters {
-  border: 1px solid #B48618;
+  border: 1px solid #b48618;
   border-radius: 50px;
 
   .filter1 {
@@ -560,43 +556,43 @@ agm-map {
 }
 
 .mt1 {
-  margin-top: 1rem !important
+  margin-top: 1rem !important;
 }
 
 .mt2 {
-  margin-top: 2rem !important
+  margin-top: 2rem !important;
 }
 
 .mt3 {
-  margin-top: 3rem !important
+  margin-top: 3rem !important;
 }
 
 .mt4 {
-  margin-top: 4rem !important
+  margin-top: 4rem !important;
 }
 
 .mt5 {
-  margin-top: 5rem !important
+  margin-top: 5rem !important;
 }
 
 .mt6 {
-  margin-top: 6rem !important
+  margin-top: 6rem !important;
 }
 
 .mt7 {
-  margin-top: 7rem !important
+  margin-top: 7rem !important;
 }
 
 .mt8 {
-  margin-top: 8rem !important
+  margin-top: 8rem !important;
 }
 
 .mt9 {
-  margin-top: 9rem !important
+  margin-top: 9rem !important;
 }
 
 .mt10 {
-  margin-top: 10rem !important
+  margin-top: 10rem !important;
 }
 
 .mt13 {
@@ -608,97 +604,145 @@ agm-map {
 }
 
 .mb1 {
-  margin-bottom: 1rem !important
+  margin-bottom: 1rem !important;
 }
 
 .mb2 {
-  margin-bottom: 2rem !important
+  margin-bottom: 2rem !important;
 }
 
 .mb3 {
-  margin-bottom: 3rem !important
+  margin-bottom: 3rem !important;
 }
 
 .mb4 {
-  margin-bottom: 4rem !important
+  margin-bottom: 4rem !important;
 }
 
 .mb5 {
-  margin-bottom: 5rem !important
+  margin-bottom: 5rem !important;
 }
 
 .mb6 {
-  margin-bottom: 6rem !important
+  margin-bottom: 6rem !important;
 }
 
 .mb7 {
-  margin-bottom: 7rem !important
+  margin-bottom: 7rem !important;
 }
 
 .mb8 {
-  margin-bottom: 8rem !important
+  margin-bottom: 8rem !important;
 }
 
 .mb9 {
-  margin-bottom: 9rem !important
+  margin-bottom: 9rem !important;
 }
 
 .mb10 {
-  margin-bottom: 10rem !important
+  margin-bottom: 10rem !important;
 }
-
-@media only screen and (max-width:1024px) {
-
+// modal
+.modal-dialog{
+  margin: auto;
+}
+.modal-content{
+  background: none !important;
+}
+@media only screen and (min-width:2560px){
+  .main-bg {
+    height: 1000px !important;
+}
+}
+@media only screen and (min-width:1920px){
+  .main-bg {
+    height: 800px ;
+}
+}
+@media only screen and (min-width:1600px){
+  .main-bg {
+    height: 700px ;
+}
+}
+@media only screen and (min-width: 1300px) {
+  .main-bg {
+    height: 700px ;
+}
+  .modal-lg {
+    max-width: 500px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .main-bg {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 64.8%, 31.2% 84.5%, 27.9% 85.5%, 24.5% 85.8%, 21% 85%, 17.6% 83.5%, 0% 73%);
+    height: 600px ;
+}
   // latest-properties
   .propertyCustom {
     .properties-slider {
       .next-arrow {
-        display: none !important
+        display: none !important;
       }
 
       .prev-arrow {
-        display: none !important
+        display: none !important;
       }
     }
   }
   .heart-icon,
   .heart-icon2 {
-      height: 45px !important;
-      width: 45px !important;
-      padding: 10px 9px 8px 9px !important;
+    height: 45px !important;
+    width: 45px !important;
+    padding: 10px 9px 8px 9px !important;
+  }
+  .modal-lg {
+    max-width: 450px !important;
   }
 }
 
-@media only screen and (max-width:768px) {
-
+@media only screen and (max-width: 768px) {
+  .main-bg{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 64.8%, 34.3% 80.5%, 29.4% 81.5%, 23.9% 81.3%, 18.7% 80%, 13.8% 78.3%, 0% 73%);
+  }
   // ng map
   agm-map {
     height: 300px;
   }
 
   .slide-arrow {
-    display: none !important
+    display: none !important;
   }
+  .modal-lg {
+    max-width: 400px !important;
+}
 }
 
-@media only screen and (max-width:414px) {
+@media only screen and (max-width: 414px) {
+  .main-bg{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 64.8%, 47% 76%, 38.7% 77.5%, 30.9% 77.8%, 22.7% 77.3%, 14.4% 76.3%, 0% 73%);
+  }
   .mainBox {
     margin-bottom: 1rem;
   }
 
   .slide-arrow {
-    display: none !important
+    display: none !important;
   }
 }
 
 h3 {
-  font-family: 'rubiksemibold';
+  font-family: "rubiksemibold";
 }
-p{
+p {
   font-size: 14px;
-
 }
-
+.main-bg {
+  .row {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
 
 // scroll
 /* width */
@@ -722,33 +766,33 @@ p{
 ::-webkit-scrollbar-thumb:hover {
   background: #b48618b3;
 }
-.slick-list{
-  .heart-icon{
+.slick-list {
+  .heart-icon {
     padding: 9px 6px 8px 6px !important;
   }
 }
-.heart-icon ~ img{
+.heart-icon ~ img {
   height: 100%;
 }
-a:hover{
+a:hover {
   text-decoration: none;
 }
 input,
-textarea{
+textarea {
   color: #000 !important;
-  font-family: 'rubikregular' !important;
+  font-family: "rubikregular" !important;
   resize: none;
 }
 .iconsPlay {
   margin-top: 1rem;
-  a{
+  a {
     width: 100px;
     height: fit-content;
-    img{
+    img {
       height: 100%;
       width: 100%;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: 10px;
     }
   }

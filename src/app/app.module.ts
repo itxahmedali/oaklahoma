@@ -30,6 +30,7 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
 import { NgwWowModule } from 'ngx-wow';
+import { NotfoundComponent } from './components/pages/notfound/notfound.component';
 // import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 
@@ -54,6 +55,7 @@ import { NgwWowModule } from 'ngx-wow';
     ProfileComponent,
     ResetComponent,
     TestCompoComponent,
+    NotfoundComponent,
 
   ],
   imports: [

@@ -33,16 +33,17 @@
     }
     .continueBtn {
         background-color: #B48618;
-        padding: 10px 30px;
+        padding: 10px 50px;
         border-radius: 50px;
         border: none;
         outline: none;
         color: #fff;
-        font-family: poppinregular;
+        font-family: poppinExtraLight;
         font-size: 14px;
         margin-left: auto;
         margin-bottom: 0.5rem;
         margin-right: auto;
+
     }
     .forgetPara {
         font-size: 12px;
@@ -55,15 +56,15 @@
     .orPara {
         position: relative;
         text-align: center;
-        font-family: rubiklight;
+        font-family: rubiksemibold;
         font-size: 16px;
         margin-top: 30px;
         margin-bottom: 30px;
-        color: #646464;
+        color: #fff;
     }
     .orPara::before {
         content: "";
-        width: 116px;
+        width: 210px;
         height: 1px;
         background: #646464;
         position: absolute;
@@ -74,7 +75,7 @@
     }
     .orPara::after {
         content: "";
-        width: 118px;
+        width: 210px;
         height: 1px;
         background: #646464;
         position: absolute;
@@ -98,6 +99,10 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        .btn-content{
+          margin: 0 auto;
+          min-width: 200px;
+        }
     }
     .iconsText {
         border: none;
@@ -105,7 +110,7 @@
         text-align: center;
         font-size: 12px;
         color: #4D4D4D;
-        font-family: 'rubiksemibold';
+        font-family: rubiklight;
         transform: translateY(2px);
     }
     .freesignIn {
@@ -128,23 +133,39 @@
         font-size: 20px;
     }
 }
-
+@media only screen and (max-width:1024px){
+  .modalMain {
+  .orPara::before,
+  .orPara::after {
+    width: 170px;
+}
+}
+}
+@media only screen and (max-width:768px){
+  .modalMain {
+  .orPara::before,
+  .orPara::after {
+    width: 150px;
+}
+}
+}
 @media only screen and (max-width: 540px) {
     .modalMain {
         .containueWithBtns {
-            width: 42%;
+            width: 52%;
         }
-        .orPara::before {
-            width: 223px;
-        }
+        .orPara::before,
         .orPara::after {
-            width: 223px;
-        }
+          width: 120px;
+      }
     }
 }
 
 @media only screen and (max-width: 414px) {
     .modalMain {
+      .continueBtn{
+        padding: 10px 30px;
+      }
         .containueWithBtns {
             width: 57%;
         }

@@ -77,7 +77,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="more mb2" (click)="collapse.toggle(); seelessclickEvent($event)" [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                    <button type="button" class="seecol more mb2" (click)="collapse.toggle(); seelessclickEvent($event)" [ngClass]="status2 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
             {{btnVal1}} <i class="fa fa-chevron-down"></i>
           </button>
                     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
@@ -128,9 +128,10 @@
                         <div class="baths">
                             <h5>Baths</h5>
                             <div class="bath-counter">
-                                <button class="plus-btn">+</button>
-                                <input type="text" placeholder="No Min">
-                                <button class="min-btn">-</button>
+                                <button class="plus-btn" (click)="add(this)">+</button>
+                                <!-- <input type="text" placeholder="No Min"> -->
+                                <label for="" class="bathcounter-label">{{counter}}</label>
+                                <button class="min-btn" (click)="min(this)">-</button>
                             </div>
                         </div>
                     </div>
@@ -334,7 +335,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="more mb2" (click)="collapse.toggle(); seeless2clickEvent($event)" [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                    <button type="button" class="see more mb2" (click)="collapse.toggle(); seeless2clickEvent($event)" [ngClass]="status3 ? 'text-before' : 'text-after'" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
             {{btnVal2}} <i class="fa fa-chevron-down"></i>
           </button>
                     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
@@ -383,9 +384,10 @@
                                 <div class="garage-spots">
                                     <h6>Garage Spots</h6>
                                     <div class="garage-counter">
-                                        <button class="plus-btn">+</button>
-                                        <input type="text" placeholder="No Min">
-                                        <button class="min-btn">-</button>
+                                      <button class="plus-btn">+</button>
+                                      <input type="text" placeholder="No Min">
+                                      <!-- <label for="" class="bathcounter-label">{{counter}}</label> -->
+                                      <button class="min-btn">-</button>
                                     </div>
                                 </div>
                             </div>

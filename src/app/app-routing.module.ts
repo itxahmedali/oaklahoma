@@ -1,3 +1,4 @@
+import { NotfoundComponent } from './components/pages/notfound/notfound.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
@@ -17,7 +18,7 @@ import { ResetComponent } from './components/pages/reset/reset.component';
 import { TestCompoComponent } from './test-compo/test-compo.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '/*path', redirectTo: 'home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
   { path: 'forbuy', component: ForbuyComponent },
   { path: 'forrent', component: ForbuyComponent },
@@ -36,8 +37,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'reset', component: ResetComponent },
   { path: 'testComp', component: TestCompoComponent },
-
-
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '404' }
 
 ];
 

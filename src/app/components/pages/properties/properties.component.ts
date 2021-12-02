@@ -298,7 +298,21 @@ export class PropertiesComponent implements OnInit {
       return
     }
   }
-
+// counter
+counter:number=0;
+min(i){
+  if(this.counter <= 0 ){
+    return
+  }
+  else{
+    this.counter--;
+  }
+  console.log(this.counter)
+}
+add(i){
+  this.counter++;
+  console.log(this.counter)
+}
   public href: string
   constructor(
     private router: Router
