@@ -1,22 +1,24 @@
 // commons
 .head h5,
-    .head h1,
-    .missionHeader h1,
-    .aboutUsPara h3{
-      color:#000;
-    }
-    .reviewsbox1 h1,
-    .review-banner,
-    .reviewsbox2 p,
-    .download-section{
-      font-family: rubiklight;
-    }
-    .head h1,
-    .aboutUsPara h3,
-    .missionHeader h1{
-      font-family: rubiksemibold;
+.head h1,
+.missionHeader h1,
+.aboutUsPara h3 {
+    color: #000;
+}
 
-    }
+.reviewsbox1 h1,
+.review-banner,
+.reviewsbox2 p,
+.download-section {
+    font-family: rubiklight;
+}
+
+.head h1,
+.aboutUsPara h3,
+.missionHeader h1 {
+    font-family: rubiksemibold;
+}
+
 // banner section
 .main-bg {
     &:before {
@@ -40,11 +42,9 @@
         background-repeat: no-repeat;
         background-position: bottom;
     }
-
     .head {
         h1 {
             font-size: 35px;
-
         }
         img {
             width: 150px;
@@ -160,14 +160,11 @@
 }
 
 // media queries
-@media only screen and (min-width:2560px) {
-}
+@media only screen and (min-width:2560px) {}
 
-@media only screen and (min-width:1920px) {
-}
+@media only screen and (min-width:1920px) {}
 
-@media only screen and (max-width:1600px) {
-}
+@media only screen and (max-width:1600px) {}
 
 @media only screen and (max-width:1440px) {
     input {
@@ -187,8 +184,7 @@
     }
 }
 
-@media only screen and (max-width:1366px) {
-}
+@media only screen and (max-width:1366px) {}
 
 @media only screen and (max-width:1024px) {
     .main-bg {
@@ -199,7 +195,7 @@
 }
 
 @media only screen and (max-width:768px) {
-    .download-section{
+    .download-section {
         text-align: center;
     }
     .main-bg {
@@ -245,6 +241,9 @@
     .download-section {
         .download-icons {
             position: static;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
         .forWeb {
             display: none
@@ -366,20 +365,20 @@
         margin-top: 2rem !important;
     }
     .download-section {
-      h5{
-        font-size: 17px;
-        margin: 0;
-      }
-      .download-icons {
-        label{
-          margin: 0;
+        h5 {
+            font-size: 17px;
+            margin: 0;
         }
-          .iconsPlay{
-            justify-content: center;
-            margin-top: 10px;
-          }
-      }
-  }
+        .download-icons {
+            label {
+                margin: 0;
+            }
+            .iconsPlay {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -406,8 +405,8 @@
     .ourMissionContainer .ourMissonPara p {
         font-size: 12px;
     }
-    .head{
-      margin-top: 5rem !important;
+    .head {
+        margin-top: 5rem !important;
     }
     .download-section .head h1 {
         font-size: 24px;

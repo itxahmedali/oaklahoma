@@ -1,1722 +1,1511 @@
 // <!-- Buttons --> //
-.container{
-  margin-top: 5rem;
+.container {
+    margin-top: 5rem;
 }
+
 .topButtonsSection {
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-  transition: 0.4s all ease-in-out;
-  top:0;
-
-  .cusotmBlack_btn {
-    background-color: #f1f1f1;
-    margin: 0 5px;
-    color: #000000;
-    font-family: rubiklight;
-    padding: 0;
-    height: 45px;
-    width: 135px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  .cusotmBlack_btn.active {
-    background-color: #B48618;
-    color: white;
-  }
-
-
-  .cusotmBlack_btn:hover {
-    background-color: #B48618;
-    color: white;
-  }
-
-
-
-  .heart-icon {
-    background-color: #B48618;
-    width: 40px;
-    height: 40px;
-    margin: 0 4px;
-    padding: 7px 10px 0px 10px;
-    border-radius: 100px;
-
-    .fa-heart {
-      color: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    transition: 0.4s all ease-in-out;
+    top: 0;
+    .cusotmBlack_btn {
+        background-color: #f1f1f1;
+        margin: 0 5px;
+        color: #000000;
+        font-family: rubiklight;
+        padding: 0;
+        height: 45px;
+        width: 135px;
+        font-size: 14px;
+        font-weight: bold;
     }
-  }
-
-  .heart-icon2 {
-    background-color: #505050;
-    width: 40px;
-    height: 40px;
-    margin: 0 4px;
-    padding: 7px 10px 0px 10px;
-    border-radius: 100px;
-
-    .fa-share {
-      color: #fff;
+    .cusotmBlack_btn.active {
+        background-color: #B48618;
+        color: white;
     }
-  }
+    .cusotmBlack_btn:hover {
+        background-color: #B48618;
+        color: white;
+    }
+    .heart-icon {
+        background-color: #B48618;
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        padding: 7px 10px 0px 10px;
+        border-radius: 100px;
+        .fa-heart {
+            color: #fff;
+        }
+    }
+    .heart-icon2 {
+        background-color: #505050;
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        padding: 7px 10px 0px 10px;
+        border-radius: 100px;
+        .fa-share {
+            color: #fff;
+        }
+    }
 }
+
 // bannerBox
 .bannerBox {
-  .imageBox {
-    height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+    .imageBox {
+        height: 500px;
+        border-radius: 15px;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
     }
-  }
-
-  .buttonsBox {
-    bottom: 10px;
-    left: 50px;
-  }
-
-  .bannerButton {
-    background-color: #f1f1f1;
-    margin: 0 5px;
-    color: #000;
-    font-family: rubiklight;
-    padding: 0;
-    height: 50px;
-    width: 231px;
-    font-size: 15px;
-    border: none;
-    font-weight: bold;
-    border-radius: 30px;
-    margin-bottom: 5px;
-  }
-  .bannerButton:hover {
-    background-color: #B48618;
-    color: white;
-  }
+    .buttonsBox {
+        bottom: 10px;
+        left: 50px;
+    }
+    .bannerButton {
+        background-color: #f1f1f1;
+        margin: 0 5px;
+        color: #000;
+        font-family: rubiklight;
+        padding: 0;
+        height: 50px;
+        width: 231px;
+        font-size: 15px;
+        border: none;
+        font-weight: bold;
+        border-radius: 30px;
+        margin-bottom: 5px;
+    }
+    .bannerButton:hover {
+        background-color: #B48618;
+        color: white;
+    }
 }
 
 // slick slider
 .carousel {
-  width: 100%;
-  margin: 0px auto;
-  position: relative;
-
-  .slick-slide {
-    margin: 10px;
-  }
-
-  .slick-slide img {
     width: 100%;
-    border: 2px solid #fff;
-    height: 100%;
-  }
-
-  .wrapper .slick-dots li button:before {
-    font-size: 20px;
-    color: white;
-  }
-  .slide {
-    height: 120px;
-    overflow: hidden;
-    border-radius: 15px;
-  }
+    margin: 0px auto;
+    position: relative;
+    .slick-slide {
+        margin: 10px;
+    }
+    .slick-slide img {
+        width: 100%;
+        border: 2px solid #fff;
+        height: 100%;
+    }
+    .wrapper .slick-dots li button:before {
+        font-size: 20px;
+        color: white;
+    }
+    .slide {
+        height: 120px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
 }
 
 // latest-properties
 .latest-properties {
-  margin-top: .5rem;
-
-  h1 {
-    margin-bottom: 30px;
-    font-family: rubiksemibold;
-    color: #000;
-  }
-
-  .slick-slide {
-    overflow: hidden;
-
-    img {
-      border: none;
-      border-radius: 10px;
-      object-fit: cover;
+    margin-top: .5rem;
+    h1 {
+        margin-bottom: 30px;
+        font-family: rubiksemibold;
+        color: #000;
     }
-  }
-
-  .properties-slider {
-    position: relative;
-
-    .slide {
-      position: relative;
-      cursor: pointer;
-      margin-left: 5px;
-      margin-right: 5px;
-
-      .heart-icon {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        background: #000000b8;
-        border-radius: 50px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .fa-heart:before {
-          // content: "\f00";
-          color: #fff;
+    .slick-slide {
+        overflow: hidden;
+        img {
+            border: none;
+            border-radius: 10px;
+            object-fit: cover;
         }
-      }
     }
-
-  }
-}
-
-// map container
-.map-container2 {
-  agm-map {
-    height: 250px;
-  }
-}
-
-// property details
-.cstm-row {
-  .col1{
-    width: 65%;
-    .yellow-background{
-      position: relative;
-      &::after{
-        position: absolute;
-        top: 0;
-        left:-710px;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: #B48618;
-        z-index: -12;
-      }
-      .cstm-container{
-        align-items: center;
-        h4{
-          margin:0;
-        }
-      }
-    }
-  }
-  .col2{
-    width: 30%;
-
-
-  }
-  .cstm-col {
-    .map-container1 {
-      agm-map {
-        height: 450px;
-      }
-    }
-
-    .head {
-      span {
-        font-family: rubikregular;
-        font-size: 36px;
-        color:#000;
-
-      }
-
-      h1 {
-        font-family: rubikbold;
-        font-size: 38px;
-        color:#000;
-
-      }
-
-      .content {
-        width: 90%;
-        .price {
-          h5 {
-            font-size: 24px;
-            font-family: rubiksemibold;
-            color:#000;
-            margin: 0;
-          }
-        }
-
-        .details {
-          width: 50%;
-
-          .beds,
-          .baths,
-          .sqft {
-            text-align: center;
-            h3{
-            color:#000;
-            margin: 0;
-            font-family: rubiksemibold;
-            }
-            label{
-              color: #666666;
-              margin: 0;
-            }
-          }
-
-          .detial {
-            min-width: 100px;
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
-
-.get-in-touch-form {
-  border-radius: 10px;
-  background: transparent;
-  box-shadow: 0px 0px 10px #9c9c9c;
-  text-align: center;
-  padding: 1rem;
-  position: -webkit-sticky;
-    position: sticky;
-    top: 130px;
-
-  h1 {
-    font-family: rubiksemibold;
-    color: #000;
-  }
-
-  .get-form-input {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 10px 15px;
-    border-radius: 50px;
-    border: 1px solid #4D4D4D;
-    font-family: rubiklight;
-    color: #4D4D4D;
-    outline: none;
-  }
-
-  .get-form-textarea {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #4D4D4D;
-    font-family: rubiklight;
-    color: #4D4D4D;
-    outline: none;
-  }
-  .get-form-input,
-  .get-form-textarea{
-    &::placeholder{
-      font-size: 12px;
-    }
-  }
-
-  .get-touch-btn {
-    padding: 8px 2.3rem;
-    color: #fff;
-    background: #000;
-    border: none;
-    border-radius: 50px;
-    width: 50%;
-    cursor: pointer;
-  }
-}
-
-.Description-section-1-inner {
-  h2 {
-    font-family: rubiksemibold;
-    color: #000000;
-    font-size: 28px;
-  }
-
-  p {
-    font-family: rubiklight;
-    color: #666666;
-    margin-bottom: 0px;
-    font-size: 14px;
-  }
-
-  button {
-    border: none;
-    color: #B48618;
-    font-size: 14px;
-    font-family: rubiklight;
-    padding: 0;
-    margin-top: 10px;
-  }
-  button i {
-    margin-left: 10px;
-  }
-}
-
-.Status-section-2-inner {
-  h3 {
-    font-family: rubiksemibold;
-    color: #000000;
-    font-size: 28px;
-  }
-
-  .grey-text {
-    color: #4D4D4D;
-    font-size: 14px;
-    font-family: rubiklight;
-    width: fit-content;
-    margin-top: 10px;
-  }
-
-  .yellow-text {
-    color: #B48618;
-    font-size: 14px;
-        font-family: rubikregular;
-    width: fit-content;
-    margin-top: 10px;
-  }
-}
-
-.Price-section-3-inner {
-  h3 {
-    font-family: rubiksemibold;
-    color: #000000;
-    font-size: 28px;
-  }
-
-  .grey-text {
-    color: #4D4D4D;
-    font-size: 14px;
-    font-family: rubiklight;
-    width: fit-content;
-    margin-top: 10px;
-  }
-
-  .yellow-text {
-    color: #B48618;
-    font-size: 14px;
-    font-family: rubikregular;
-    width: fit-content;
-    margin-top: 10px;
-  }
-}
-
-.Property-section-4-inner {
-  h2 {
-    font-family: rubiksemibold;
-    color: #000000;
-    font-size: 28px;
-  }
-
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubikregular;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.Interior-section-5-inner {
-  h4 {
-    font-family: rubikregular;
-    color: #333333;
-    font-size: 16px
-  }
-
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubiklight;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.yellow-section-6-inner {
-  width: 100%;
-
-  .yellow-background {
-    background: #B48618;
-    padding: 40px 40px 40px 160px;
-    h4{
-      color:#fff;
-    font-family: rubikregular;
-    // transform: translateY(7px) !important;
-    }
-
-    .black-btn {
-      &:hover {
-        border-color: #fff !important;
-        color: #fff !important
-      }
-    }
-  }
-}
-
-.Homeowners-section-7-inner {
-  h4 {
-    font-family: rubikregular;
-    color: #333333;
-
-  }
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubikregular;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.Utilities-section-8-inner {
-  h4 {
-    font-family: rubikregular;
-    color: #333333;
-
-  }
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubikregular;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.LotDetails-section-9-inner {
-  h4 {
-    font-family: rubikregular;
-    color: #333333;
-
-  }
-
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubikregular;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.Location-section-10-inner {
-  h4 {
-    font-family: rubikregular;
-    color: #333333;
-
-  }
-
-  span {
-    margin-top: 2rem;
-    font-size: 18px;
-    color: #333333;
-    font-family: poppinregular;
-    font-weight: 600;
-  }
-
-  .text-style {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      color: #B48618;
-      font-family: rubikregular;
-      font-size: 14px;
-    }
-  }
-
-  .text-style-black {
-    font-size: 16px;
-    font-family: rubikregular;
-    color: #000000;
-  }
-
-  li {
-    color: #666666;
-    font-size: 14px;
-    font-family: rubiklight;
-  }
-}
-
-.Schools-section-11-inner {
-
-  h2{
-    color:#000000;
-    font-family: rubiksemibold;
-    font-size: 28px;
-  }
-  .vistrula-text-line {
-    font-size: 14px;
-    font-family: rubiklight;
-    color: #666666;
-  }
-
-  .last-section-text-main {
-    p {
-      color: #B48618;
-      font-size: 16px;
-      font-family: rubikregular;
-      margin: 0;
-    }
-
-    span {
-      font-size: 14px;
-      font-family: rubiklight;
-      color: #666666;
-    }
-  }
-
-  .last-section-text {
-    text-align: center;
-    line-height: 16px;
-
-    p {
-      color: #B48618;
-      font-size: 16px;
-      font-family: rubikregular;
-      margin-bottom: 4px;
-
-
-      i {
-        color: #4D4D4D;
-      }
-    }
-
-    span {
-      font-size: 14px;
-      font-family: rubiklight;
-      color: #666666;
-    }
-  }
-
-  .text-style-black {
-    font-size: 20px;
-    font-family: rubiksemibold;
-    color: #000;
-  }
-}
-.vistrula-text-line,
-.Interior-section-5-inner,
-.Location-section-10-inner,
-.LotDetails-section-9-inner,
-.Utilities-section-8-inner,
-.Homeowners-section-7-inner{
-  h4{
-    border-radius: 100px;
-    background: transparent;
-    box-shadow: 0px 0px 10px #9c9c9c7d;
-    padding: 1rem;
-    color:#000000;
-    font-size: 16px;
-    font-family: rubikregular;
-
-  }
-}
- .properties-slider {
+    .properties-slider {
         position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        .content {
-            position: absolute;
-            bottom: 0;
-            background: #000000ad;
-            max-width: 385px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            padding: 10px;
-            label {
-                margin: 0;
-                color: #fff;
-                font-size: 15px;
-                strong {
-                    font-family: rubikbold;
-                }
-            }
-        }
         .slide {
             position: relative;
-            width: 310px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-right: 5px;
+            cursor: pointer;
             margin-left: 5px;
-            img {
-                border-radius: 15px;
-            }
+            margin-right: 5px;
             .heart-icon {
                 position: absolute;
                 right: 10px;
                 top: 10px;
                 background: #000000b8;
                 border-radius: 50px;
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .fa-heart:before {
-                    // content: "\f004";
+                    // content: "\f00";
                     color: #fff;
                 }
             }
         }
     }
-    .properties-slider{
-    flex-wrap: wrap;
-    margin: 0 auto;
-
-    .slide {
-    position: relative;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    }
-}
-.customSlider{}
-@media only screen and (min-width:2560px) {
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
 }
 
-@media only screen and (min-width:1920px) {
-  .yellow-section-6-inner {
-    .yellow-background {
-      padding: 40px 40px 40px 160px ;
-
-      h4 {
-        transform: translateX(-150px) ;
-      }
+// map container
+.map-container2 {
+    agm-map {
+        height: 250px;
     }
-  }
-
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
 }
 
-
-
-@media only screen and (max-width:1600px) {
-  .yellow-section-6-inner {
-    .yellow-background {
-      padding: 40px 40px 40px 160px ;
-
-      h4 {
-        transform: translateX(-150px) ;
-      }
-    }
-  }
-
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
-}
-@media only screen and (max-width:1440px) {
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
-}
-@media only screen and (max-width:1366px) {
-  .yellow-section-6-inner {
-    .yellow-background {
-      padding: 40px 40px 40px 120px ;
-      h4 {
-        transform: translateX(-120px) ;
-      }
-    }
-  }
-
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
-}
-
-@media only screen and (max-width:1024px) {
-  .yellow-section-6-inner {
-    .yellow-background {
-      padding: 40px 40px 40px 20px ;
-
-      h4 {
-        transform: translateX(0px);
-      }
-    }
-  }
-
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
-   // properties items
-        .properties-slider {
-            .slide {
-                width: 270px;
+// property details
+.cstm-row {
+    .col1 {
+        width: 65%;
+        .yellow-background {
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: -710px;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #B48618;
+                z-index: -12;
+            }
+            .cstm-container {
+                align-items: center;
+                h4 {
+                    margin: 0;
+                }
             }
         }
-        .cstm-row {
-          .col1{
-            .yellow-background{
-              &::after{
-                left:-510px;
-              }
-            }
-          }
-        }
-}
-
-@media only screen and (max-width:768px) {
-  .vistrula-text-line {
-    padding-left: 0 !important;
-  }
-  .cstm-row {
-    margin-top: 1rem !important;
-    flex-wrap: wrap;
-    .col1,.col2{
-      width: 100%;
+    }
+    .col2 {
+        width: 30%;
     }
     .cstm-col {
-      width: 100%;
-      .map-container1 {
-        agm-map {
-          height: 450px;
-        }
-      }
-
-      .head {
-        span {
-          font-family: rubikregular;
-          font-size: 38px;
-        }
-
-        h1 {
-          font-family: rubiksemibold;
-          font-size: 38px;
-        }
-
-        .content {
-          margin-top: 1rem !important;
-
-          .price {
-            h5 {
-              font-size: 22px;
-              font-family: rubikregular;
+        .map-container1 {
+            agm-map {
+                height: 450px;
             }
-          }
-
-          .details {
-            width: 50%;
-
-            .beds {
-              text-align: center;
-
-              h5 {
-                font-size: 18px;
-              }
-
-              label {
-                font-size: 16px;
-              }
-            }
-
-            .baths {
-              text-align: center;
-
-              h5 {
-                font-size: 18px;
-              }
-
-              label {
-                font-size: 16px;
-              }
-            }
-
-            .sqft {
-              text-align: center;
-
-              h5 {
-                font-size: 18px;
-              }
-
-              label {
-                font-size: 16px;
-              }
-            }
-
-            .detial {
-              min-width: 100px;
-              text-align: center;
-            }
-          }
         }
-      }
-    }
-
-    .col-lg-4 {
-      display: flex;
-      flex-direction: column-reverse;
-
-      .map-container2 {
-        margin-top: 1.5rem;
-      }
-    }
-  }
-
-  .bannerBox {
-    .buttonsBox {
-      left: 10px
-    }
-  }
-
-  .topButtonsSection {
-    width: 100%;
-
-    .buttonsBox {
-      width: 100%;
-    }
-
-    .cusotmBlack_btn {
-      font-family: rubiklight;
-      padding: 0;
-      height: 45px;
-      width: 100% !important;
-      font-size: 12px;
-      font-weight: bold;
-    }
-  }
-
-  .bannerBox {
-    .imageBox {
-      height: 265px;
-      border-radius: 20px;
-      overflow: hidden;
-
-      img {
-        object-fit: cover;
-      }
-    }
-
-    .buttonsBox {
-      bottom: 10px;
-      left: 0px !important;
-      width: 100% !important;
-    }
-
-    .bannerButton {
-      font-family: rubiklight;
-      padding: 0;
-      height: 50px;
-      width: 231px;
-      font-size: 15px;
-      border: none;
-      font-weight: bold;
-    }
-  }
-
-  .Description-section-1-inner {
-    margin-top: 1rem !important;
-
-    h2 {
-      font-family: rubikregular;
-      color: #000;
-    }
-
-    p {
-      font-family: poppinregular;
-      color: #666666;
-      margin-bottom: 0px;
-    }
-
-    button {
-      border: none;
-      color: #B48618;
-      font-size: 14px;
-      font-family: poppinregular;
-      padding: 0;
-    }
-  }
-
-  .Price-section-3-inner {
-    margin-top: 2rem !important;
-
-    h3 {
-      font-family: rubikregular;
-      color: #000;
-    }
-
-    .grey-text {
-      color: #4D4D4D;
-      font-size: 16px;
-      font-family: poppinregular;
-      width: fit-content;
-      margin-top: 10px;
-    }
-
-    .yellow-text {
-      color: #B48618;
-      font-size: 16px;
-      font-family: poppinregular;
-      width: fit-content;
-      margin-top: 10px;
-    }
-  }
-
-  .Interior-section-5-inner {
-    margin-top: 2rem !important;
-  }
-
-  .yellow-section-6-inner {
-    width: 100%;
-
-    .yellow-background {
-      padding: 30px 40px;
-      width: 100%;
-
-      h4 {
-        transform: translateX(-40px);
-      }
-    }
-
-    .cstm-col {
-      .cstm-container {
-        justify-content: center !important;
-
-        .heading-2 {
-          justify-content: center;
-          width: 100%;
-          text-align: center;
+        .head {
+            span {
+                font-family: rubikregular;
+                font-size: 36px;
+                color: #000;
+            }
+            h1 {
+                font-family: rubikbold;
+                font-size: 38px;
+                color: #000;
+            }
+            .content {
+                width: 90%;
+                .price {
+                    h5 {
+                        font-size: 24px;
+                        font-family: rubiksemibold;
+                        color: #000;
+                        margin: 0;
+                    }
+                }
+                .details {
+                    width: 50%;
+                    .beds,
+                    .baths,
+                    .sqft {
+                        text-align: center;
+                        h3 {
+                            color: #000;
+                            margin: 0;
+                            font-family: rubiksemibold;
+                        }
+                        label {
+                            color: #666666;
+                            margin: 0;
+                        }
+                    }
+                    .detial {
+                        min-width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
         }
-      }
     }
-  }
+}
 
-  .Homeowners-section-7-inner {
-    margin-top: 4rem !important;
-  }
-
-  .Utilities-section-8-inner {
-    margin-top: 2rem !important;
-  }
-
-  .LotDetails-section-9-inner {
-    margin-top: 2rem !important;
-  }
-
-  .Location-section-10-inner {
-    margin-top: 2rem !important;
-  }
-
-  .Schools-section-11-inner {
-    margin-top: 2.5rem !important;
-  }
-
-  .Schools-section-11-inner {
-    .last-section-text-main {
-      p {
-        color: #B48618;
-        font-size: 14px;
-        margin-top: 10px;
-      }
-
-      span {
-        font-size: 14px;
-      }
-    }
-
-    .last-section-text {
-      p {
-        color: #B48618;
-        font-size: 14px;
+.get-in-touch-form {
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 0px 10px #9c9c9c;
+    text-align: center;
+    padding: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+    h1 {
         font-family: rubiksemibold;
-        margin-top: 10px;
-      }
-
-      span {
-        font-size: 12px;
-      }
+        color: #000;
     }
-
-    .text-style-black {
-      font-size: 16px;
+    .get-form-input {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        border-radius: 50px;
+        border: 1px solid #4D4D4D;
+        font-family: rubiklight;
+        color: #4D4D4D;
+        outline: none;
     }
-  }
+    .get-form-textarea {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: 1px solid #4D4D4D;
+        font-family: rubiklight;
+        color: #4D4D4D;
+        outline: none;
+    }
+    .get-form-input,
+    .get-form-textarea {
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+    .get-touch-btn {
+        padding: 8px 2.3rem;
+        color: #fff;
+        background: #000;
+        border: none;
+        border-radius: 50px;
+        width: 50%;
+        cursor: pointer;
+    }
+}
 
-  .Property-section-4-inner {
+.Description-section-1-inner {
     h2 {
-      font-size: 26px;
+        font-family: rubiksemibold;
+        color: #000000;
+        font-size: 28px;
     }
-
-  }
-
-  .Status-section-2-inner {
-    h3 {
-      font-size: 26px;
+    p {
+        font-family: rubiklight;
+        color: #666666;
+        margin-bottom: 0px;
+        font-size: 14px;
     }
-  }
-
-  .Price-section-3-inner {
-    h3 {
-      font-size: 26px;
-    }
-  }
-
-  .LotDetails-section-9-inner {
-    h4 {
-      padding-left: 1rem;
-      font-size: 18px;
-    }
-  }
-
-  .Location-section-10-inner {
-    h4 {
-      padding-left: 1rem;
-      font-size: 18px;
-    }
-  }
-
-  .Homeowners-section-7-inner {
-    .vistrula-text-line {
-      font-size: 22px;
-    }
-  }
-
-  .Interior-section-5-inner {
-    h4 {
-       padding-left: 1rem;
-      font-size: 18px;
-    }
-  }
-
-  .Utilities-section-8-inner {
-    h4 {
-       padding-left: 1rem;
-      font-size: 18px;
-    }
-  }
-// properties items
-        .properties-slider {
-            .slide {
-                width: 320px;
-                margin: 10px;
-            }
-        }
-}
-.content {
-  position: absolute;
-  bottom: 0;
-  background: #000000ad;
-  max-width: 385px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  padding: 10px;
-  label {
-      margin: 0;
-      color: #fff;
-      font-size: 15px;
-      strong {
-          font-family: rubikbold;
-      }
-  }
-}
-.slide {
-  position: relative;
-      cursor: pointer;
-      height: 200px;
-      border-radius: 15px;
-      overflow: hidden;
-  .heart-icon {
-      transition: 0.5s all ease-in-out;
-      background-color: #000000bf;
-      border-radius: 50px;
-      height: 40px;
-      width: 40px;
-      padding: 8px 7px 8px 7px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      .fa-heart:before {
-          // content: "\F08A";
-          color: #fff;
-      }
-  }
-  .heart-icon:hover{
-      background: #b48618d9;
-  }
-
-}
-.content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000bd;
-  color: #fff;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  align-items: center;
-  transition: 0.5s all ease-in-out;
-  label {
-      font-size: 20px;
-      font-family: rubiklight;
-      width: 100%;
-      margin: 0;
-      color: #fff;
-      font-size: 14px;
-      cursor: pointer;
-  }
-  a{
-      text-decoration: none;
-  }
-  button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #B48618;
-      border-radius: 50px;
-      border: none;
-      overflow: hidden;
-      transition: 0.5s all ease-in-out;
-      border: 2px solid transparent;
-      i {
-          font-size: 20px;
-          transition: 0.5s all ease-in-out;
-      }
-      &:hover{
-          background-color: transparent;
-          border-color: #B48618;
-          i{
-              transform: rotate(360deg);
-              color: #fff;
-          }
-      }
-
-  }
-}
-@media only screen and (max-width:414px) {
-
-  .pocer{
-    flex-wrap: wrap;
-    .price{
-      margin-bottom: 1rem;
-    }
-    .details {
-      justify-content: center !important;
-      width: 100%;
-    }
-  }
-
-  .topButtonsSection{
-    padding-top: 7rem;
-  }
-  .cstm-row {
-    margin-top: 1rem !important;
-
-    .cstm-col {
-      .map-container1 {
-        agm-map {
-          height: 450px;
-        }
-      }
-
-      .head {
-        span {
-          font-family: rubikregular;
-          font-size: 30px;
-        }
-
-        h1 {
-          font-family: rubiksemibold;
-          font-size: 30px;
-        }
-
-        .content {
-          margin-top: 1rem !important;
-
-          .price {
-            h5 {
-              font-size: 22px;
-              font-family: rubiksemibold;
-
-
-            }
-          }
-
-          .details {
-            width: 50%;
-
-            .beds {
-              text-align: center;
-
-              h5 {
-                font-size: 14px;
-              }
-
-              label {
-                font-size: 12px;
-              }
-            }
-
-            .baths {
-              text-align: center;
-
-              h5 {
-                font-size: 14px;
-              }
-
-              label {
-                font-size: 12px;
-              }
-            }
-
-            .sqft {
-              text-align: center;
-
-              h5 {
-                font-size: 14px;
-              }
-
-              label {
-                font-size: 12px;
-              }
-            }
-
-            .detial {
-              min-width: 100px;
-              text-align: center;
-            }
-          }
-        }
-      }
-    }
-
-    .col-lg-4 {
-      display: flex;
-      flex-direction: column-reverse;
-
-      .map-container2 {
-        margin-top: 1.5rem;
-      }
-    }
-  }
-
-  .topButtonsSection {
-    flex-wrap: wrap;
-    width: 100%;
-
-    .buttonsBox {
-      width: 100%;
-      flex-wrap: wrap;
-
-      .cusotmBlack_btn {
-        justify-content: flex-start;
+    button {
+        border: none;
+        color: #B48618;
+        font-size: 14px;
         font-family: rubiklight;
         padding: 0;
-        height: 40px;
-        width: 30% !important;
-        font-size: 12px;
-        font-weight: bold;
-        margin: 5px;
-      }
-    }
-
-    .iconsBtnbox {
-      justify-content: flex-end;
-      width: 100%;
-      margin-top: 1rem;
-      margin-right: 12px;
-    }
-  }
-
-  .bannerBox {
-    .imageBox {
-      height: 220px;
-      border-radius: 15px;
-      overflow: hidden;
-
-      img {
-        object-fit: cover;
-      }
-    }
-
-    .buttonsBox {
-      bottom: 10px;
-      left: 0px !important;
-      width: 100% !important;
-    }
-
-    .bannerButton {
-      background-color: #F2F2F2;
-      margin: 0 5px;
-      color: #000;
-      font-family: rubiklight;
-      padding: 0;
-      height: 40px;
-      width: 120px;
-      font-size: 12px;
-      border: none;
-      font-weight: bold;
-    }
-  }
-
-  .Description-section-1-inner {
-    h2 {
-      font-family: rubikregular;
-      color: #000;
-      font-size: 26px !important;
-    }
-
-    p {
-      font-family: rubiklight;
-      color: #666666;
-      margin-bottom: 0px;
-      font-size: 14px;
-    }
-
-    button {
-      border: none;
-      color: #B48618;
-      font-size: 14px;
-      font-family: poppinregular;
-      padding: 0;
-      background-color: transparent;
-    }
-  }
-
-
-  .LotDetails-section-9-inner {
-    h4 {
-      padding-left: 0;
-    }
-  }
-
-  .Location-section-10-inner {
-    h4 {
-      padding-left: 0;
-    }
-  }
-
-
-
-  .Interior-section-5-inner {
-    h4 {
-      padding-left: 0;
-    }
-  }
-
-  .yellow-section-6-inner {
-    width: 100%;
-
-    .yellow-background {
-      padding: 30px 0px ;
-      width: 100%;
-      .cstm-container{
-        justify-content: center !important;
-        flex-direction: column;
-      }
-      h4 {
-        margin-right: 5rem;
-        margin-bottom: 1rem !important;
-        transform: translateX(0) ;
-
-      }
-    }
-
-    .cstm-col {
-      .cstm-container {
-        justify-content: center !important;
-
-        .heading-2 {
-          justify-content: center;
-          width: 100%;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  .Property-section-4-inner {
-    h2 {
-      font-size: 26px;
-    }
-
-
-  }
-
-  .Status-section-2-inner {
-    h3 {
-      font-size: 26px;
-    }
-  }
-
-  .Price-section-3-inner {
-    h3 {
-      font-size: 26px;
-    }
-  }
-
-  .LotDetails-section-9-inner {
-    h4 {
-       padding-left: 1rem;
-      font-size: 15px;
-    }
-  }
-
-  .Location-section-10-inner {
-    h4 {
-      padding-left: 1rem;
-      font-size: 15px;
-    }
-  }
-
-  .Homeowners-section-7-inner {
-    .vistrula-text-line {
-      padding-left: 1rem;
-      font-size: 15px;
-    }
-  }
-
-  .Interior-section-5-inner {
-    h4 {
-      padding-left: 1rem;
-      font-size: 15px;
-    }
-  }
-
-  .Utilities-section-8-inner {
-    h4 {
-      padding-left: 1rem;
-      font-size: 15px;
-    }
-  }
-
-  .Schools-section-11-inner {
-    .last-section-text-main {
-      p {
-        color: #B48618;
-        font-size: 14px;
         margin-top: 10px;
-      }
-
-      span {
-        font-size: 14px;
-      }
     }
+    button i {
+        margin-left: 10px;
+    }
+}
 
-    .last-section-text {
-      p {
-        color: #B48618;
-        font-size: 14px;
+.Status-section-2-inner {
+    h3 {
         font-family: rubiksemibold;
+        color: #000000;
+        font-size: 28px;
+    }
+    .grey-text {
+        color: #4D4D4D;
+        font-size: 14px;
+        font-family: rubiklight;
+        width: fit-content;
         margin-top: 10px;
-      }
-
-      span {
-        font-size: 12px;
-      }
     }
+    .yellow-text {
+        color: #B48618;
+        font-size: 14px;
+        font-family: rubikregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
 
+.Price-section-3-inner {
+    h3 {
+        font-family: rubiksemibold;
+        color: #000000;
+        font-size: 28px;
+    }
+    .grey-text {
+        color: #4D4D4D;
+        font-size: 14px;
+        font-family: rubiklight;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    .yellow-text {
+        color: #B48618;
+        font-size: 14px;
+        font-family: rubikregular;
+        width: fit-content;
+        margin-top: 10px;
+    }
+}
+
+.Property-section-4-inner {
+    h2 {
+        font-family: rubiksemibold;
+        color: #000000;
+        font-size: 28px;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
     .text-style-black {
-      font-size: 18px;
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
     }
-  }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
 
-  .latest-properties {
+.Interior-section-5-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+        font-size: 16px
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubiklight;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
+    }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
+
+.yellow-section-6-inner {
     width: 100%;
-    margin-top: 1rem;
-  }
-  .vistrula-text-line,
+    .yellow-background {
+        background: #B48618;
+        padding: 40px 40px 40px 160px;
+        h4 {
+            color: #fff;
+            font-family: rubikregular;
+            // transform: translateY(7px) !important;
+        }
+        .black-btn {
+            &:hover {
+                border-color: #fff !important;
+                color: #fff !important
+            }
+        }
+    }
+}
+
+.Homeowners-section-7-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
+    }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
+
+.Utilities-section-8-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
+    }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
+
+.LotDetails-section-9-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
+    }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
+
+.Location-section-10-inner {
+    h4 {
+        font-family: rubikregular;
+        color: #333333;
+    }
+    span {
+        margin-top: 2rem;
+        font-size: 18px;
+        color: #333333;
+        font-family: poppinregular;
+        font-weight: 600;
+    }
+    .text-style {
+        display: flex;
+        flex-direction: column;
+        a {
+            color: #B48618;
+            font-family: rubikregular;
+            font-size: 14px;
+        }
+    }
+    .text-style-black {
+        font-size: 16px;
+        font-family: rubikregular;
+        color: #000000;
+    }
+    li {
+        color: #666666;
+        font-size: 14px;
+        font-family: rubiklight;
+    }
+}
+
+.Schools-section-11-inner {
+    h2 {
+        color: #000000;
+        font-family: rubiksemibold;
+        font-size: 28px;
+    }
+    .vistrula-text-line {
+        font-size: 14px;
+        font-family: rubiklight;
+        color: #666666;
+    }
+    .last-section-text-main {
+        p {
+            color: #B48618;
+            font-size: 16px;
+            font-family: rubikregular;
+            margin: 0;
+        }
+        span {
+            font-size: 14px;
+            font-family: rubiklight;
+            color: #666666;
+        }
+    }
+    .last-section-text {
+        text-align: center;
+        line-height: 16px;
+        p {
+            color: #B48618;
+            font-size: 16px;
+            font-family: rubikregular;
+            margin-bottom: 4px;
+            i {
+                color: #4D4D4D;
+            }
+        }
+        span {
+            font-size: 14px;
+            font-family: rubiklight;
+            color: #666666;
+        }
+    }
+    .text-style-black {
+        font-size: 20px;
+        font-family: rubiksemibold;
+        color: #000;
+    }
+}
+
+.vistrula-text-line,
 .Interior-section-5-inner,
 .Location-section-10-inner,
 .LotDetails-section-9-inner,
 .Utilities-section-8-inner,
-.Homeowners-section-7-inner{
-  h4{
-
-    font-size: 15px;
-  }
+.Homeowners-section-7-inner {
+    h4 {
+        border-radius: 100px;
+        background: transparent;
+        box-shadow: 0px 0px 10px #9c9c9c7d;
+        padding: 1rem;
+        color: #000000;
+        font-size: 16px;
+        font-family: rubikregular;
+    }
 }
 
-        // properties items
-        .properties-slider {
-            .content {
-                label {
-                    font-size: 17px;
-                }
-            }
-            .slide {
-                width: 100%;
+.properties-slider {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    .content {
+        position: absolute;
+        bottom: 0;
+        background: #000000ad;
+        max-width: 385px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 10px;
+        label {
+            margin: 0;
+            color: #fff;
+            font-size: 15px;
+            strong {
+                font-family: rubikbold;
             }
         }
+    }
+    .slide {
+        position: relative;
+        width: 310px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        img {
+            border-radius: 15px;
+        }
+        .heart-icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: #000000b8;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-heart:before {
+                // content: "\f004";
+                color: #fff;
+            }
+        }
+    }
+}
 
+.properties-slider {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    .slide {
+        position: relative;
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.customSlider {}
+
+@media only screen and (min-width:2560px) {
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            padding: 40px 40px 40px 160px;
+            h4 {
+                transform: translateX(-150px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            padding: 40px 40px 40px 160px;
+            h4 {
+                transform: translateX(-150px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            padding: 40px 40px 40px 120px;
+            h4 {
+                transform: translateX(-120px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .yellow-section-6-inner {
+        .yellow-background {
+            padding: 40px 40px 40px 20px;
+            h4 {
+                transform: translateX(0px);
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+    // properties items
+    .properties-slider {
+        .slide {
+            width: 270px;
+        }
+    }
+    .cstm-row {
+        .col1 {
+            .yellow-background {
+                &::after {
+                    left: -510px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .vistrula-text-line {
+        padding-left: 0 !important;
+    }
+    .cstm-row {
+        margin-top: 1rem !important;
+        flex-wrap: wrap;
+        .col1,
+        .col2 {
+            width: 100%;
+        }
+        .cstm-col {
+            width: 100%;
+            .map-container1 {
+                agm-map {
+                    height: 450px;
+                }
+            }
+            .head {
+                span {
+                    font-family: rubikregular;
+                    font-size: 38px;
+                }
+                h1 {
+                    font-family: rubiksemibold;
+                    font-size: 38px;
+                }
+                .content {
+                    margin-top: 1rem !important;
+                    .price {
+                        h5 {
+                            font-size: 22px;
+                            font-family: rubikregular;
+                        }
+                    }
+                    .details {
+                        width: 50%;
+                        .beds {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .baths {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .sqft {
+                            text-align: center;
+                            h5 {
+                                font-size: 18px;
+                            }
+                            label {
+                                font-size: 16px;
+                            }
+                        }
+                        .detial {
+                            min-width: 100px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .col-lg-4 {
+            display: flex;
+            flex-direction: column-reverse;
+            .map-container2 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .bannerBox {
+        .buttonsBox {
+            left: 10px
+        }
+    }
+    .topButtonsSection {
+        width: 100%;
+        .buttonsBox {
+            width: 100%;
+        }
+        .iconsBtnbox {
+            margin-top: 1rem;
+        }
+        .cusotmBlack_btn {
+            font-family: rubiklight;
+            padding: 0;
+            height: 45px;
+            width: 100% !important;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    .bannerBox {
+        .imageBox {
+            height: 265px;
+            border-radius: 20px;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+        }
+        .buttonsBox {
+            bottom: 10px;
+            left: 0px !important;
+            width: 100% !important;
+        }
+        .bannerButton {
+            font-family: rubiklight;
+            padding: 0;
+            height: 50px;
+            width: 231px;
+            font-size: 15px;
+            border: none;
+            font-weight: bold;
+        }
+    }
+    .Description-section-1-inner {
+        margin-top: 1rem !important;
+        h2 {
+            font-family: rubikregular;
+            color: #000;
+        }
+        p {
+            font-family: poppinregular;
+            color: #666666;
+            margin-bottom: 0px;
+        }
+        button {
+            border: none;
+            color: #B48618;
+            font-size: 14px;
+            font-family: poppinregular;
+            padding: 0;
+        }
+    }
+    .Price-section-3-inner {
+        margin-top: 2rem !important;
+        h3 {
+            font-family: rubikregular;
+            color: #000;
+        }
+        .grey-text {
+            color: #4D4D4D;
+            font-size: 16px;
+            font-family: poppinregular;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .yellow-text {
+            color: #B48618;
+            font-size: 16px;
+            font-family: poppinregular;
+            width: fit-content;
+            margin-top: 10px;
+        }
+    }
+    .Interior-section-5-inner {
+        margin-top: 2rem !important;
+    }
+    .yellow-section-6-inner {
+        width: 100%;
+        .yellow-background {
+            padding: 30px 40px;
+            width: 100%;
+            h4 {
+                transform: translateX(-40px);
+            }
+        }
+        .cstm-col {
+            .cstm-container {
+                justify-content: center !important;
+                .heading-2 {
+                    justify-content: center;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Homeowners-section-7-inner {
+        margin-top: 4rem !important;
+    }
+    .Utilities-section-8-inner {
+        margin-top: 2rem !important;
+    }
+    .LotDetails-section-9-inner {
+        margin-top: 2rem !important;
+    }
+    .Location-section-10-inner {
+        margin-top: 2rem !important;
+    }
+    .Schools-section-11-inner {
+        margin-top: 2.5rem !important;
+    }
+    .Schools-section-11-inner {
+        .last-section-text-main {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .last-section-text {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                font-family: rubiksemibold;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .text-style-black {
+            font-size: 16px;
+        }
+    }
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+    }
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 18px;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 18px;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            font-size: 22px;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 18px;
+        }
+    }
+    .Utilities-section-8-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 18px;
+        }
+    }
+    // properties items
+    .properties-slider {
+        .slide {
+            width: 320px;
+            margin: 10px;
+        }
+    }
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: #000000ad;
+    max-width: 385px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    label {
+        margin: 0;
+        color: #fff;
+        font-size: 15px;
+        strong {
+            font-family: rubikbold;
+        }
+    }
+}
+
+.slide {
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    .heart-icon {
+        transition: 0.5s all ease-in-out;
+        background-color: #000000bf;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        padding: 8px 7px 8px 7px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        .fa-heart:before {
+            // content: "\F08A";
+            color: #fff;
+        }
+    }
+    .heart-icon:hover {
+        background: #b48618d9;
+    }
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000bd;
+    color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    transition: 0.5s all ease-in-out;
+    label {
+        font-size: 20px;
+        font-family: rubiklight;
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #B48618;
+        border-radius: 50px;
+        border: none;
+        overflow: hidden;
+        transition: 0.5s all ease-in-out;
+        border: 2px solid transparent;
+        i {
+            font-size: 20px;
+            transition: 0.5s all ease-in-out;
+        }
+        &:hover {
+            background-color: transparent;
+            border-color: #B48618;
+            i {
+                transform: rotate(360deg);
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .pocer {
+        flex-wrap: wrap;
+        .price {
+            margin-bottom: 1rem;
+        }
+        .details {
+            justify-content: center !important;
+            width: 100%;
+        }
+    }
+    .topButtonsSection {
+        padding-top: 1rem;
+    }
+    .cstm-row {
+        margin-top: 1rem !important;
+        .cstm-col {
+            .map-container1 {
+                agm-map {
+                    height: 450px;
+                }
+            }
+            .head {
+                span {
+                    font-family: rubikregular;
+                    font-size: 30px;
+                }
+                h1 {
+                    font-family: rubiksemibold;
+                    font-size: 30px;
+                }
+                .content {
+                    margin-top: 1rem !important;
+                    .price {
+                        h5 {
+                            font-size: 22px;
+                            font-family: rubiksemibold;
+                        }
+                    }
+                    .details {
+                        width: 50%;
+                        .beds {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .baths {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .sqft {
+                            text-align: center;
+                            h5 {
+                                font-size: 14px;
+                            }
+                            label {
+                                font-size: 12px;
+                            }
+                        }
+                        .detial {
+                            min-width: 100px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .col-lg-4 {
+            display: flex;
+            flex-direction: column-reverse;
+            .map-container2 {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .topButtonsSection {
+        flex-wrap: wrap;
+        width: 100%;
+        .buttonsBox {
+            width: 100%;
+            flex-wrap: wrap;
+            .cusotmBlack_btn {
+                justify-content: flex-start;
+                font-family: rubiklight;
+                padding: 0;
+                height: 40px;
+                width: 40% !important;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 5px;
+            }
+        }
+        .iconsBtnbox {
+            justify-content: flex-end;
+            width: 100%;
+            margin-top: 1rem;
+            margin-right: 12px;
+        }
+    }
+    .bannerBox {
+        .imageBox {
+            height: 220px;
+            border-radius: 15px;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+            }
+        }
+        .buttonsBox {
+            bottom: 10px;
+            left: 0px !important;
+            width: 100% !important;
+        }
+        .bannerButton {
+            background-color: #F2F2F2;
+            margin: 0 5px;
+            color: #000;
+            font-family: rubiklight;
+            padding: 0;
+            height: 40px;
+            width: 120px;
+            font-size: 12px;
+            border: none;
+            font-weight: bold;
+        }
+    }
+    .Description-section-1-inner {
+        h2 {
+            font-family: rubikregular;
+            color: #000;
+            font-size: 26px !important;
+        }
+        p {
+            font-family: rubiklight;
+            color: #666666;
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+        button {
+            border: none;
+            color: #B48618;
+            font-size: 14px;
+            font-family: poppinregular;
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 0;
+        }
+    }
+    .yellow-section-6-inner {
+        width: 100%;
+        .yellow-background {
+            padding: 30px 0px;
+            width: 100%;
+            .cstm-container {
+                justify-content: center !important;
+                flex-direction: column;
+            }
+            h4 {
+                margin-right: 5rem;
+                margin-bottom: 1rem !important;
+                transform: translateX(0);
+            }
+        }
+        .cstm-col {
+            .cstm-container {
+                justify-content: center !important;
+                .heading-2 {
+                    justify-content: center;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+    }
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    .LotDetails-section-9-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+    }
+    .Location-section-10-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+    }
+    .Homeowners-section-7-inner {
+        .vistrula-text-line {
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+    }
+    .Interior-section-5-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+    }
+    .Utilities-section-8-inner {
+        h4 {
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+    }
+    .Schools-section-11-inner {
+        .last-section-text-main {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        .last-section-text {
+            p {
+                color: #B48618;
+                font-size: 14px;
+                font-family: rubiksemibold;
+                margin-top: 10px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .text-style-black {
+            font-size: 18px;
+        }
+    }
+    .latest-properties {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .vistrula-text-line,
+    .Interior-section-5-inner,
+    .Location-section-10-inner,
+    .LotDetails-section-9-inner,
+    .Utilities-section-8-inner,
+    .Homeowners-section-7-inner {
+        h4 {
+            font-size: 15px;
+        }
+    }
+    // properties items
+    .properties-slider {
+        .content {
+            label {
+                font-size: 17px;
+            }
+        }
+        .slide {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width:375px) {
-  .Property-section-4-inner {
-    h2 {
-      font-size: 26px;
+    .Property-section-4-inner {
+        h2 {
+            font-size: 26px;
+        }
+        .vistrula-text-line {
+            padding-left: 0;
+        }
     }
-
-    .vistrula-text-line {
-      padding-left: 0;
+    .Status-section-2-inner {
+        h3 {
+            font-size: 26px;
+        }
     }
-  }
-
-  .Status-section-2-inner {
-    h3 {
-      font-size: 26px;
+    .Price-section-3-inner {
+        h3 {
+            font-size: 26px;
+        }
     }
-  }
-
-  .Price-section-3-inner {
-    h3 {
-      font-size: 26px;
-    }
-  }
 }
-.brg{
-  position: relative;
-  &::after{
-    position: absolute;
-    content: "";
-    height: 100%;
-    background-color: lightgrey;
-    width: 1px;
-    top: 0;
-    left: -2rem;
-  }
+
+.brg {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        background-color: lightgrey;
+        width: 1px;
+        top: 0;
+        left: -2rem;
+    }
 }
