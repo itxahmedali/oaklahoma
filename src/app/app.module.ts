@@ -6,7 +6,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
 // ng google map
 import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -73,6 +73,7 @@ import { NotfoundComponent } from './components/pages/notfound/notfound.componen
   ],
   providers: [
     // {provide: LocationStrategy, useClass: HashLocationStrategy}
+    Title
   ]
     ,
   bootstrap: [AppComponent]

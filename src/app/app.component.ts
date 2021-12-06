@@ -1,7 +1,9 @@
 import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
 import * as $ from 'jquery';
 import { NgwWowService } from 'ngx-wow';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -35,7 +37,9 @@ export class AppComponent {
   // constructor(private router: Router) { }
   constructor(
     private wowService: NgwWowService,
-    private router: Router
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private titleService: Title
     ) {
     this.wowService.init();
   }
@@ -43,7 +47,25 @@ export class AppComponent {
   ngOnInit() {
     this.href = this.router.url;
     console.log(this.router.url);
-    this.urlCheck(this.href)
+    this.urlCheck(this.href);
+
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+    ).subscribe(() => {
+      const rt = this.getChild(this.activatedRoute);
+      rt.data.subscribe(data => {
+        console.log(data);
+        this.titleService.setTitle(data.title)});
+    });
+  }
+
+  getChild(activatedRoute: ActivatedRoute) {
+    if (activatedRoute.firstChild) {
+      return this.getChild(activatedRoute.firstChild);
+    } else {
+      return activatedRoute;
+    }
+
   }
 
   // adding bg behind navbar
