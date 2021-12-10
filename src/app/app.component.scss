@@ -6,17 +6,17 @@
         border-radius: 8px;
     }
     .emailBox {
-      .label1{
+        .label1 {
             font-family: rubiklight;
-    margin: 0;
-      }
+            margin: 0;
+        }
     }
     .loginHeading {
         font-family: poppinregular;
         font-size: 13px;
     }
-    .loginHeading2{
-      font-size: 20px;
+    .loginHeading2 {
+        font-size: 20px;
     }
     .emailInputI {
         border: none;
@@ -43,7 +43,6 @@
         margin-left: auto;
         margin-bottom: 0.5rem;
         margin-right: auto;
-
     }
     .forgetPara {
         font-size: 12px;
@@ -62,26 +61,30 @@
         margin-bottom: 30px;
         color: #fff;
     }
-    .orPara::before {
-        content: "";
-        width: 210px;
-        height: 1px;
-        background: #646464;
-        position: absolute;
-        top: 13px;
-        right: 0;
-        left: 0;
-        bottom: 0;
+    .orPara {
+        .span-line::before {
+            content: "";
+            width: 120px;
+            height: 1px;
+            background: #646464;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
     }
-    .orPara::after {
-        content: "";
-        width: 210px;
-        height: 1px;
-        background: #646464;
-        position: absolute;
-        top: 13px;
-        right: 0;
-        bottom: 0;
+    .orPara {
+        .span-line::after {
+            content: "";
+            width: 120px;
+            height: 1px;
+            background: #646464;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            bottom: 0;
+        }
     }
     .IconsImage {
         height: 20px;
@@ -99,9 +102,9 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        .btn-content{
-          margin: 0 auto;
-          min-width: 200px;
+        .btn-content {
+            margin: 0 auto;
+            min-width: 200px;
         }
     }
     .iconsText {
@@ -133,22 +136,25 @@
         font-size: 20px;
     }
 }
-@media only screen and (max-width:1024px){
-  .modalMain {
-  .orPara::before,
-  .orPara::after {
-    width: 170px;
+
+@media only screen and (max-width:1024px) {
+    .modalMain {
+        .orPara::before,
+        .orPara::after {
+            width: 170px;
+        }
+    }
 }
+
+@media only screen and (max-width:768px) {
+    .modalMain {
+        .orPara::before,
+        .orPara::after {
+            width: 150px;
+        }
+    }
 }
-}
-@media only screen and (max-width:768px){
-  .modalMain {
-  .orPara::before,
-  .orPara::after {
-    width: 150px;
-}
-}
-}
+
 @media only screen and (max-width: 540px) {
     .modalMain {
         .containueWithBtns {
@@ -156,16 +162,16 @@
         }
         .orPara::before,
         .orPara::after {
-          width: 120px;
-      }
+            width: 120px;
+        }
     }
 }
 
 @media only screen and (max-width: 414px) {
     .modalMain {
-      .continueBtn{
-        padding: 10px 30px;
-      }
+        .continueBtn {
+            padding: 10px 30px;
+        }
         .containueWithBtns {
             width: 57%;
         }

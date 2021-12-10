@@ -1,31 +1,29 @@
 <!-- home banner -->
 <div class="main-bg d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h1 class="wow fadeInUp" data-wow-delay="0.5s">Find Your <span> Dream House </span> By Us</h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="wow fadeInUp" data-wow-delay="0.5s">Find Your <span> Dream House </span> By Us</h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <!-- home search box -->
 <div class="search wow fadeInDown" data-wow-delay="0.5s">
-  <div class="search-box">
-    <div class="search-tabs">
-      <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy"
-            type="button" role="tab" aria-controls="pills-buy" aria-selected="true" target="_self">For Buy</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button"
-            role="tab" aria-controls="pills-rent" aria-selected="false" target="_self">For Rent</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
-          <div class="">
-            <!-- <div class="row">
+    <div class="search-box">
+        <div class="search-tabs">
+            <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true" target="_self">For Buy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent" aria-selected="false" target="_self">For Rent</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
+                    <div class="">
+                        <!-- <div class="row">
               <div class="col-lg-8 pr-lg-0">
                 <input type="text" placeholder="Enter Address,City,State,ZIP">
               </div>
@@ -35,247 +33,248 @@
                 </div>
               </div>
             </div> -->
-            <div class="d-flex align-items-center justify-content-between searchable">
-              <input type="text" placeholder="Enter Address,City,State,ZIP" class="mr-lg-3">
-              <div class="search-btn">
-                  <button class="black-btn btn-slide-left">Search</button>
+                        <div class="d-flex align-items-center justify-content-between searchable">
+                            <input type="text" placeholder="Enter Address, City, State, ZIP" class="mr-lg-3">
+                            <div class="search-btn">
+                                <button class="black-btn btn-slide-left">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
+                    <div class="">
+                        <div class="d-flex align-items-center justify-content-between searchable">
+                            <input type="text" placeholder="Enter Address, City, State, ZIP" class="mr-lg-3">
+                            <div class="search-btn">
+                                <button class="black-btn btn-slide-left">Search</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
-        <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
-          <div class="">
-            <div class="d-flex align-items-center justify-content-between searchable">
-              <input type="text" placeholder="Enter Address,City,State,ZIP" class="mr-lg-3">
-              <div class="search-btn">
-                  <button class="black-btn btn-slide-left">Search</button>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 <!-- slick slider -->
 <div class="container">
-  <div class="latest-properties">
-    <h1 class="text-center wow bounceIn" data-wow-delay="0.5s">Latest Properties</h1>
-    <div class="properties-slider">
+    <div class="latest-properties">
+        <h1 class="text-center wow bounceIn" data-wow-delay="0.5s">Latest Properties</h1>
+        <div class="properties-slider">
 
-      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
-        (init)="slickInit($event)" (breakpoint)="breakpoint($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="mainBox slide" tabindex="-1" ng-reflect-router-link="/propertyinner" data-slick-index="1"
-          aria-hidden="true" style="width: 350px;">
-          <div class="heart-icon">
-            <img src="assets/SVG/heart-outline.svg" alt="">
-          </div>
-          <a href="javascript:void()" routerLink='/propertyinner'>
-            <img alt="" width="100%" src="assets/1x/sliderimg2.png">
-          </a>
-          <div class="content">
-            <a href="javascript:void()" routerLink='/propertyinner'>
-              <div class="row">
-                <div class="col-sm-12"><label for="">770 West Senna Ave. Spiro, OK 74959</label></div>
-                <div class="col-sm-12">
-                  <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd,</label><label
-                      for=""><strong>2</strong> bath, </label></div>
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (breakpoint)="breakpoint($event)">
+                <div ngxSlickItem *ngFor="let slide of slides" class="mainBox slide" tabindex="-1" ng-reflect-router-link="/propertyinner" data-slick-index="1" aria-hidden="true" style="width: 350px;">
+                    <div class="heart-icon">
+                        <img src="assets/SVG/heart-outline.svg" alt="">
+                    </div>
+                    <a href="javascript:void()" routerLink='/propertyinner'>
+                        <img alt="" width="100%" src="assets/1x/sliderimg2.png">
+                    </a>
+                    <div class="content">
+                        <a href="javascript:void()" routerLink='/propertyinner'>
+                            <div class="row">
+                                <div class="col-sm-12"><label for="">770 West Senna Ave. Spiro, OK 74959</label></div>
+                                <div class="col-sm-12">
+                                    <div class="upper-cols d-flex"><label for=""><strong>2</strong> bd,</label><label for=""><strong>2</strong> bath, </label></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
+                                </div>
+                                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00 </strong></label>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="lower-cols"><label for=""><strong>1360</strong> sqft </label></div>
-                </div>
-                <div class="col-sm-6 text-right"><label for="" class="text-right"><strong> $750,000.00 </strong></label>
-                </div>
-              </div>
-            </a>
-          </div>
+            </ngx-slick-carousel>
+
         </div>
-      </ngx-slick-carousel>
-
     </div>
-  </div>
-  <!-- want to section -->
+    <!-- want to section -->
 
-  <div class="want-to-sec">
-    <div class="row">
-      <div class="col-lg-12">
+    <div class="want-to-sec">
         <div class="row">
-          <div class="col-lg-6 d-flex justify-content-start wow fadeInLeft" data-wow-delay="0.5s">
-            <div class="img-box">
-              <img src="assets/1x/wantimg1.png" alt="">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-start wow fadeInLeft" data-wow-delay="0.5s">
+                        <div class="img-box">
+                            <img src="assets/1x/wantimg1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                        <h3>Want To Buy Your</h3>
+                        <h1>Dream House?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+                        <a href="javascript:void(0)" routerLink='/forbuy'> <button class="black-btn btn-slide-left">View More</button></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
-            <h3>Want To Buy Your</h3>
-            <h1>Dream House?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-              Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet
-              ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
-            <button class="black-btn btn-slide-left" routerLink='/forbuy'>View More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-12 second-col">
-        <div class="row flex-row-reverse">
-          <div class="col-lg-6 d-flex justify-content-end wow fadeInLeft" data-wow-delay="0.5s">
-            <div class="img-box">
-              <img src="assets/1x/wantimg2.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
-            <h3>Need a Luxury Home</h3>
-            <h1>For Rent?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-              Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet
-              ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
-            <button class="black-btn btn-slide-left" routerLink='/forrent'>View More</button>
-            <!-- <button class="black-btn btn-slide-left btn-slide-left">View More</button> -->
+            <div class="col-lg-12 second-col">
+                <div class="row flex-row-reverse">
+                    <div class="col-lg-6 d-flex justify-content-end wow fadeInLeft" data-wow-delay="0.5s">
+                        <div class="img-box">
+                            <img src="assets/1x/wantimg2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                        <h3>Need a Luxury Home</h3>
+                        <h1>For Rent?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Non, praesentium, nostrum ipsa consectetur ullam error quo eius, odio eveniet adipisci facere beatae amet ducimus corrupti nesciunt aliquid maxime quae voluptate?</p>
+                        <a href="javascript:void(0)" routerLink='/forrent'><button class="black-btn btn-slide-left" >View More</button></a>
+                        <!-- <button class="black-btn btn-slide-left btn-slide-left">View More</button> -->
 
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <!-- reviews-counter -->
 <div class="review-banner-mainR mt5 mb5 wow fadeInUp" data-wow-delay="0.5s">
-  <div class="container">
-    <div class="review-banner d-flex justify-content-around">
-      <div class="columns text-center">
-        <h1>{{propertysell}}</h1>
-        <h5>Property for sell</h5>
-      </div>
-      <div class="columns text-center">
-        <h1>{{propertyrent}}</h1>
-        <h5>Property for rent</h5>
-      </div>
-      <div class="columns text-center">
-        <h1>{{propertysold}}</h1>
-        <h5>Recently sold</h5>
-      </div>
-      <div class="columns text-center">
-        <h1>4.5</h1>
-        <h5>Reviews</h5>
-      </div>
-    </div>
+    <div class="container">
+        <div class="review-banner d-flex justify-content-around">
+            <div class="columns text-center">
+                <h1>{{propertysell}}</h1>
+                <h5>Property for sell</h5>
+            </div>
+            <div class="columns text-center">
+                <h1>{{propertyrent}}</h1>
+                <h5>Property for rent</h5>
+            </div>
+            <div class="columns text-center">
+                <h1>{{propertysold}}</h1>
+                <h5>Recently sold</h5>
+            </div>
+            <div class="columns text-center">
+                <h1>4.5</h1>
+                <h5>Reviews</h5>
+            </div>
+        </div>
 
-  </div>
+    </div>
 </div>
 <!-- download section -->
 <div class="download-section wow fadeInUp" data-wow-delay="0.5s">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="head d-flex align-items-center">
-          <h1>Download</h1>
-          <img src="assets/SVG/logo2.svg" alt="">
-        </div>
-        <h4>Use Our App For Buy And Rent <br> Property Faster</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="head d-flex align-items-center">
+                    <h1>Download</h1>
+                    <img src="assets/SVG/logo2.svg" alt="">
+                </div>
+                <h4>Use Our App For Buy And Rent <br> Property Faster</h4>
 
-        <div class="download-icons">
-          <label for="">Available on</label>
-          <div class="iconsPlay d-flex">
-            <a href="javascript:void(0)">
-              <img src="assets/1x/playstore.png" alt="">
-            </a>
-            <a href="javascript:void(0)">
-              <img src="assets/1x/appstore.png" alt="">
-            </a>
+                <div class="download-icons">
+                    <label for="">Available on</label>
+                    <div class="iconsPlay d-flex">
+                        <a href="javascript:void(0)">
+                            <img src="assets/1x/playstore.png" alt="">
+                        </a>
+                        <a href="javascript:void(0)">
+                            <img src="assets/1x/appstore.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="img-box">
+                    <img src="assets/1x/downloadprop.png" alt="">
+                </div>
+            </div>
         </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="img-box">
-          <img src="assets/1x/downloadprop.png" alt="">
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 <div class="cstm-container">
-  <div class="articles-section">
-    <h1 class="text-center wow fadeInDown" data-wow-delay="0.5s">
-      News & Articles
-    </h1>
-    <div class="articles">
-      <div class="article wow bounceIn" data-wow-delay="0.5s" >
-        <div class="img-box">
-          <img src="assets/1x/article1.png" alt="">
-          <div class="content d-flex justify-content-between">
-            <label for="">
+    <div class="articles-section">
+        <h1 class="text-center wow fadeInDown" data-wow-delay="0.5s">
+            News & Articles
+        </h1>
+        <div class="articles">
+            <div class="article wow bounceIn" data-wow-delay="0.5s">
+                <div class="img-box">
+                    <img src="assets/1x/article1.png" alt="">
+                    <div class="content d-flex justify-content-between">
+                        <label for="">
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button routerLink='/articles'>
-              <i class="fa fa-arrow-right fa-lg"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="article wow bounceIn"data-wow-delay="0.75s">
-        <div class="img-box">
-          <img src="assets/1x/article2.png" alt="">
-          <div class="content d-flex justify-content-between">
-            <label for="">
+                        <a href="javascript:void(0)" routerLink='/articles'>
+                            <button>
+                          <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="article wow bounceIn" data-wow-delay="0.75s">
+                <div class="img-box">
+                    <img src="assets/1x/article2.png" alt="">
+                    <div class="content d-flex justify-content-between">
+                        <label for="">
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button routerLink='/articles'>
-              <i class="fa fa-arrow-right fa-lg"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="article2 wow bounceIn" data-wow-delay="1s">
-        <div class="img-box">
-          <img src="assets/1x/article3.png" alt="">
-          <div class="content d-flex justify-content-between">
-            <label for="">
+                        <a href="javascript:void(0)" routerLink='/articles'>
+                            <button>
+                          <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="article2 wow bounceIn" data-wow-delay="1s">
+                <div class="img-box">
+                    <img src="assets/1x/article3.png" alt="">
+                    <div class="content d-flex justify-content-between">
+                        <label for="">
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button routerLink='/articles'>
-              <i class="fa fa-arrow-right fa-lg"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="article2 wow bounceIn" data-wow-delay="0.5s">
-        <div class="img-box">
-          <img src="assets/1x/article4.png" alt="">
-          <div class="content d-flex justify-content-between">
-            <label for="">
+                        <a href="javascript:void(0)" routerLink='/articles'>
+                            <button>
+                          <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="article2 wow bounceIn" data-wow-delay="0.5s">
+                <div class="img-box">
+                    <img src="assets/1x/article4.png" alt="">
+                    <div class="content d-flex justify-content-between">
+                        <label for="">
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button routerLink='/articles'>
-              <i class="fa fa-arrow-right fa-lg"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="article2 wow bounceIn" data-wow-delay="0.75s" routerLink='/articles'>
-        <div class="img-box">
-          <img src="assets/1x/article5.png" alt="">
-          <div class="content d-flex justify-content-between">
-            <label for="">
+                        <a href="javascript:void(0)" routerLink='/articles'>
+                            <button>
+                          <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="article2 wow bounceIn" data-wow-delay="0.75s" routerLink='/articles'>
+                <div class="img-box">
+                    <img src="assets/1x/article5.png" alt="">
+                    <div class="content d-flex justify-content-between">
+                        <label for="">
               Ten Benefits Of Rentals That May Change
               Your Perspective
             </label>
-            <button>
-              <i class="fa fa-arrow-right fa-lg"></i>
-            </button>
-          </div>
+                        <a href="javascript:void(0)" routerLink='/articles'>
+                            <button>
+                          <i class="fa fa-arrow-right fa-lg"></i>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="load-more-btn">
-    <button class="black-btn btn-slide-left" routerLink='/articles'>Load More</button>
-  </div>
+    <div class="load-more-btn">
+        <a href="javascript:void(0)" routerLink='/articles'> <button class="black-btn btn-slide-left">Load More</button></a>
+    </div>
 </div>

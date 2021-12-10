@@ -35,33 +35,36 @@
                         </ng-select>
                     </div>
                     <div class="properties-slider">
-                        <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide" routerLink='/propertyinner'>
-                            <div class="heart-icon">
-                                <i class="fa fa-heart"></i>
-                            </div>
-                            <img src="{{ property.img }}" alt="" width="100%">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-sm-12 line10">
-                                        <label for="">{{property.address}}</label>
-                                    </div>
-                                    <div class="col-sm-12 ">
-                                        <div class="upper-cols d-flex">
-                                            <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
-                                            <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
+                        <div *ngFor="let property of properties | paginate: { itemsPerPage: 8, currentPage: p }" class="slide">
+                            <a href="javascript:(0)" routerLink='/propertyinner'>
+                                <div class="heart-icon">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <img src="{{ property.img }}" alt="" width="100%">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-sm-12 line10">
+                                            <label for="">{{property.address}}</label>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="lower-cols">
-                                            <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
+                                        <div class="col-sm-12 ">
+                                            <div class="upper-cols d-flex">
+                                                <label for=""> <strong> {{property.bedroom}} </strong> bd, </label>
+                                                <label for=""> <strong>{{property.bathroom}} </strong> bath,</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6 text-right line10">
-                                        <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
+                                        <div class="col-sm-6">
+                                            <div class="lower-cols">
+                                                <label for=""> <strong> {{property.sqft}}</strong> sqft</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 text-right line10">
+                                            <label for="" class="text-right"> <strong>{{property.price | currency:"USD"}} </strong> </label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+
                     </div>
 
                     <pagination-controls (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
@@ -139,79 +142,101 @@
                         <h5>Property Type</h5>
                         <div class="property-btns d-flex flex-wrap">
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn1.png" alt="">
-                <!-- <img src="assets/1x/white-1.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Home
-                </label>
-              </button>
+                                <img src="assets/1x/btn1.png" alt="">
+                                <!-- <img src="assets/1x/white-1.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Home
+                                </label>
+                              </button>
+
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn2.png" alt="">
-                <!-- <img src="assets/1x/white-2.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Townhouse
-                </label>
-              </button>
+                                <img src="assets/1x/btn3.png" alt="">
+                                <!-- <img src="assets/1x/white-3.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Condo
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn3.png" alt="">
-                <!-- <img src="assets/1x/white-3.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Condo
-                </label>
-              </button>
+                                <img src="assets/1x/btn2.png" alt="">
+                                <!-- <img src="assets/1x/white-2.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Townhouse
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn4.png" alt="">
-                <!-- <img src="assets/1x/white-4.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Land
-                </label>
-              </button>
+                                <img src="assets/1x/btn7.png" alt="">
+                                <!-- <img src="assets/1x/white-7.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Co-op
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn5.png" alt="">
-                <!-- <img src="assets/1x/white-5.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Multi-Family
-                </label>
-              </button>
+                                <img src="assets/1x/btn5.png" alt="">
+                                <!-- <img src="assets/1x/white-5.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                    Multi-Family
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn6.png" alt="">
-                <!-- <img src="assets/1x/white-6.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Manufactured
-                </label>
-              </button>
+                                <img src="assets/1x/btn6.png" alt="">
+                                <!-- <img src="assets/1x/white-6.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Manufactured
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn7.png" alt="">
-                <!-- <img src="assets/1x/white-7.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Co-op
-                </label>
-              </button>
+                                <img src="assets/1x/btn4.png" alt="">
+                                <!-- <img src="assets/1x/white-4.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Land
+                                </label>
+                              </button>
                             <button (click)="filter($event)" class="filter-btn">
-                <img src="assets/1x/btn8.png" alt="">
-                <!-- <img src="assets/1x/white-8.png" alt="" *ngIf="!filtericon"> -->
-                <label for="" class="filterlabel">
-                  Other
-                </label>
-              </button>
+                                <img src="assets/1x/btn8.png" alt="">
+                                <!-- <img src="assets/1x/white-8.png" alt="" *ngIf="!filtericon"> -->
+                                <label for="" class="filterlabel">
+                                  Other
+                                </label>
+                              </button>
                         </div>
                     </div>
-                    <div class="listing-status mt2">
-                        <h5 class="mb1">Listing Status</h5>
-                        <div class="toggle-btn d-flex align-items-center">
-                            <p for="">For Sale</p>
+                    <div class="status-timeon mt2">
+                        <div class="row">
+                            <!-- <p for="">For Sale</p>
                             <input type="checkbox" id="toggle1" />
-                            <label for="toggle1"></label>
+                            <label for="toggle1"></label> -->
+                            <div class="col-lg-6 mb1">
+                                <div class="status">
+                                    <h5>Listing Type</h5>
+                                    <ng-select placeholder=" For Sale">
+                                        <ng-option>
+                                            For Sale
+                                        </ng-option>
+                                        <ng-option>
+                                            Just Sold
+                                        </ng-option>
+                                        <ng-option>
+                                            New Construction
+                                        </ng-option>
+                                    </ng-select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="status-timeon mt2">
                         <div class="row">
                             <div class="col-lg-6 mb1">
                                 <div class="status">
-                                    <h5>Status</h5>
-                                    <ng-select placeholder="Active + Coming Soon Listings">
+                                    <h5>Listting Status</h5>
+                                    <ng-select placeholder="Active">
                                         <ng-option>
-                                            Active + Coming Soon Listings
+                                            New
+                                        </ng-option>
+                                        <ng-option>
+                                            Active
+                                        </ng-option>
+                                        <ng-option>
+                                            Pending/Contingent
                                         </ng-option>
                                     </ng-select>
                                 </div>
@@ -222,30 +247,25 @@
                                         <label for="one">Open Houses</label>
                                     </div>
                                     <div class="box">
-                                        <input id="two" type="checkbox">
-                                        <span class="check"></span>
-                                        <label for="two">Self Tour Only</label>
-                                    </div>
-                                    <div class="box">
                                         <input id="three" type="checkbox">
                                         <span class="check"></span>
                                         <label for="three">3D Walkthrough & Video Tour</label>
-                                    </div>
-                                    <div class="box">
-                                        <input id="four" type="checkbox">
-                                        <span class="check"></span>
-                                        <label for="four">Exclude 55+ Communities</label>
                                     </div>
                                     <div class="box">
                                         <input id="five" type="checkbox">
                                         <span class="check"></span>
                                         <label for="five">Price Reduced</label>
                                     </div>
+                                    <div class="box">
+                                        <input id="six" type="checkbox">
+                                        <span class="check"></span>
+                                        <label for="six">Fixer-Uppers Only</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb1">
                                 <div class="timeon">
-                                    <h5>Time on Oklahoma</h5>
+                                    <h5>Days on Oklahoma</h5>
                                     <ng-select placeholder="No Min">
                                         <ng-option>
                                             1
@@ -267,11 +287,6 @@
                                 </div>
 
                                 <div class="timeon-check">
-                                    <div class="box">
-                                        <input id="six" type="checkbox">
-                                        <span class="check"></span>
-                                        <label for="six">Fixer-Uppers Only</label>
-                                    </div>
                                     <div class="box">
                                         <input id="seven" type="checkbox">
                                         <span class="check"></span>
@@ -347,7 +362,7 @@
                                         <input type="checkbox" id="toggle2" />
                                         <label for="toggle2"></label>
                                     </div>
-                                    <h5>Home Amenities</h5>
+                                    <h5>The Home</h5>
                                 </div>
                             </div>
                             <div class="col-lg-12 mt1">
