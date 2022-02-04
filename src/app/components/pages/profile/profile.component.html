@@ -33,9 +33,9 @@
 
         <!--Start Email Settings Link Tabs-->
 
-        <li class="nav-item" role="presentation">
+        <!-- <li class="nav-item" role="presentation">
             <button class="nav-link" id="emailSettingsTab" data-bs-toggle="pill" data-bs-target="#emailSettings" type="button" role="tab" aria-controls="emailSettings" aria-selected="false">Email Settings</button>
-        </li>
+        </li> -->
 
         <!--End Email Settings Link Tabs-->
 
@@ -56,12 +56,13 @@
                         <h1>Account Settings</h1>
                     </div>
                     <div class="accountSettingProfileImage mt-5">
-                        <img src="assets/1x/profileImage.png">
+                        <img src="{{bannerimage}}">
+                        <input type="file" name="banner" id="bannerUpload" (change)="readUrl($event,'bannerimage')" hidden>
                     </div>
-                    <div class="accountSettingEditImage mt-5">
+                    <label for="bannerUpload" class="accountSettingEditImage mt-5">
                         <img src="assets/1x/edit.png">
                         <i class="fa fa-edit"></i>
-                    </div>
+                    </label>
                     <div class="row mt-5">
                         <div class="col-lg-4">
                             <div class="fullName mt-3">
