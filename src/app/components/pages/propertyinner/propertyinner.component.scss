@@ -11,20 +11,20 @@
       font-family: rubiklight;
       a{
         color: #666666;
+        text-decoration: none;
       }
       span{
         color: #666666;
         font-size: 14px;
         font-family: rubiklight;
-        text-decoration: underline;
+        // text-decoration: underline;
       }
     }
   }
   .smlImgBox {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 38px;
     overflow: hidden;
-
     img {
       width: 100%;
       height: 100%;

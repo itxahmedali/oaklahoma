@@ -105,7 +105,9 @@ footer {
     justify-content: center;
     text-align: center;
     margin: 10px 0 30px 0;
-
+    label{
+      font-family: 'rubiksemibold';
+    }
     .cstmCol {
       width: 100%;
       display: flex;
@@ -131,7 +133,14 @@ footer {
     }
   }
 }
-
+.AinO{
+  color: #666;
+  font-family: 'rubikregular';
+  font-size: 14px;
+  a{
+    color: #666;
+  }
+}
 @media only screen and(max-width:768px) {
   footer {
     .footer-row {
