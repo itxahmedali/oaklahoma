@@ -20,6 +20,15 @@ export class HomeComponent implements OnInit {
     this.href = this.router.url;
     ObservableService.webUrl.next(this.href)
     this.cd.detectChanges();
+
+    // $("#dynamicSlider")
+  }
+  ngAfterViewInit() {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.id="idxwidgetsrc-12312"
+    s.src = "//buyoklahomes.idxbroker.com/idx/widgets/12312";
+    $("#dynamicSlider").append(s)
   }
   // property slider
   slides = [
@@ -127,4 +136,5 @@ export class HomeComponent implements OnInit {
       clearInterval(this.propertysoldstop)
     }
   },10)
+
 }
